@@ -23,15 +23,14 @@ body {
     letter-spacing: $letter-spacing;
     line-height: $line-height;
     font-size: $font-size-sm;
-    background: $color-primary;
   }
 }
 
 .page {
   position: relative;
   width: $page-width;
-  background: $color-white;
-  color: $color-primary;
+  background: $color-primary;
+  color: $color-white;
   margin: 0 auto;
   height: 100vh;
 }

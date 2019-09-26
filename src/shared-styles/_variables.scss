@@ -1,5 +1,5 @@
-// brand blue
-$color-primary: #313E50;
+// brand green
+$color-primary: #1f3634;
 $color-white: #ffffff;
 // blueberry
 $color-link: #4A86E8;
@@ -24,10 +24,9 @@ $color-link: #4A86E8;
        url('/fonts/Matter-SemiBold.woff') format('woff');
 }
 
-$font-family: 'Matter-SemiBold', serif; //sans-serif;
+$font-family-bold: 'Matter-SemiBold', serif; //sans-serif;
 
-$font-family-reg: 'Matter-Regular', serif; //sans-serif;
-
+$font-family: 'Matter-Regular', serif; //sans-serif;
 $letter-spacing: -.035em;
 $letter-spacing-small-text: .04em;
 $font-size-base: 16px;
