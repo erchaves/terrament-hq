@@ -1,0 +1,59 @@
+@import './shared-styles/variables.scss';
+@import './shared-styles/mixins.scss';
+@import './shared-styles/reset.scss';
+@import './shared-styles/fontello/css/fontello.css';
+@import './shared-styles/fontello/css/animation.css';
+//
+// @import url('https://fonts.googleapis.com/css?family=Karla:400,700');
+
+html,
+body {
+  font-size: $font-size-base;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  .page {
+    // when these were added to just the body, they weren't winning out for some reason
+    // Note: this was due to this bug: https://github.com/webpack-contrib/extract-text-webpack-plugin/issues/200
+    // Fix for now is to make the reset.css a reset.scss.
+    font-family: $font-family;
+    letter-spacing: $letter-spacing;
+    line-height: $line-height;
+    font-size: $font-size-sm;
+    background: $color-primary;
+  }
+}
+
+.page {
+  position: relative;
+  width: $page-width;
+  background: $color-white;
+  color: $color-primary;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: $color-link;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+button {
+  border: none;
+}
+
+.react-static-loading {
+  // git rid of the spinning loader. It's distracting.
+  display: none !important;
+
+  svg {
+    @include center-both();
+  }
+}
