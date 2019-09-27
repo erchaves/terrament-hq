@@ -1,23 +1,27 @@
 @import '../../shared-styles/variables.scss';
 @import '../../shared-styles/mixins.scss';
 
+$left-margin: 5vw;
+
 .page-home {
   .h1-wrap {
     position: absolute;
     top: 50vh;
-    left: 2em;
+    left: $left-margin;
+    font-size: 2.3vw;
   }
 
   .h1 {
     line-height: 0;
-    font-size: 10vw;
+    font-size: 4.09em;
     letter-spacing: 0.01em;
     margin-top: -1em;
+    margin-left: -2vw
   }
 
   .h2 {
-    margin-top: -.5rem;
-    font-size: 3vw;
+    margin-top: -0.9em;
+    font-size: 1em;
     letter-spacing: 0.03em;
   }
 
@@ -35,31 +39,33 @@
   }
 
   .footer {
-    bottom: 2rem;
     width: 100%;
     position: absolute;
+    bottom: 2rem;
+    opacity: .8;
+    text-align: center;
     display: flex;
     align-items: center;
-    opacity: .4;
-    text-align: center;
 
     img {
       width: 3em;
     }
 
     span, a {
-      margin: 1rem 0;
       color: white;
     }
     span {
-      display: block;
+      margin: 0 1rem;
     }
   }
 
   .footer-inner {
-    position: relative;
     display: inline;
     margin: 0 auto;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   @media screen and (max-width: $screen-size-mobile) {
@@ -67,10 +73,22 @@
       text-align: center;
       left: 0;
       right: 0;
+      font-size: 3vw;
     }
 
-    .h1 {
-      font-size: 13vw;
+    .footer-inner {
+      margin: 0 auto;
+      display: block;
+
+      span {
+        display: block;
+        margin: 1rem;
+        font-size: 1.2rem;
+      }
+
+      img {
+        width: 2em;
+      }
     }
   }
 }

@@ -16,17 +16,17 @@ class Home extends React.Component {
           </h1>
 
           <h2 className="h2">
-            Solving our multi-trillion dollar energy storage crisis
+            Solving our trillion-dollar energy storage crisis
           </h2>
         </div>
         <div className="footer">
           <div className="footer-inner">
             <span>
-              Coming soon.
+              Launching soon.
             </span>
             <img src="/logo-white.png" alt="Terrament logo" />
             <span>
-              Contact <a href="mailto:eric@syllablehq.com">eric@syllablehq.com</a> for details.
+              For details, contact <a href="mailto:hello@terramenthq.com">hello@terramenthq.com</a>.
             </span>
           </div>
         </div>
