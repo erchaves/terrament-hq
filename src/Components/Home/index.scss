@@ -61,6 +61,10 @@ $left-margin: 5vw;
     span {
       margin: 0 1rem;
     }
+
+    a {
+      cursor: pointer;
+    }
   }
 
   .footer-inner {
@@ -136,6 +140,7 @@ $left-margin: 5vw;
       img {
         width: 2em;
       }
+
     }
   }
 }
