@@ -29,16 +29,16 @@ $left-margin: 5vw;
   .menu-ul {
     margin: 5vh 5vw;
 
-    .menu-li {
-      display: inline-block;
-      margin: 0 2rem;
-      font-size: $font-size-md;
-    }
-
     a {
       color: $color-white;
       cursor: pointer;
     }
+  }
+
+  .menu-li {
+    display: inline-block;
+    margin: 0 2rem;
+    font-size: $font-size-md;
   }
 
   .footer {
@@ -106,11 +106,21 @@ $left-margin: 5vw;
   }
 
   @media screen and (max-width: $screen-size-mobile) {
-    .h1-wrap {
-      text-align: center;
-      left: 0;
-      right: 0;
-      font-size: 3.25vw;
+    .page-screen-home {
+      .h1-wrap {
+        text-align: center;
+        left: 0;
+        right: 0;
+        font-size: 3.25vw;
+      }
+    }
+
+    .menu-li {
+      margin: 0 1rem;
+    }
+
+    .footer {
+      bottom: 1rem;
     }
 
     .footer-inner {
