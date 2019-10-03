@@ -4,27 +4,6 @@
 $left-margin: 5vw;
 
 .page-home {
-  .h1-wrap {
-    position: absolute;
-    top: 50vh;
-    left: $left-margin;
-    font-size: 2.3vw;
-  }
-
-  .h1 {
-    line-height: 0;
-    font-size: 4.09em;
-    letter-spacing: 0.01em;
-    margin-top: -1em;
-    margin-left: -2vw
-  }
-
-  .h2 {
-    margin-top: -0.9em;
-    font-size: 1em;
-    letter-spacing: 0.03em;
-  }
-
   .bullet {
     padding-left: 0.1em;
     padding-right: 0.5em;
@@ -38,10 +17,35 @@ $left-margin: 5vw;
     };
   }
 
+  .nav-content {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    text-align: center;
+    z-index: 2;
+  }
+
+  .menu-ul {
+    margin: 5vh 5vw;
+
+    .menu-li {
+      display: inline-block;
+      margin: 0 2rem;
+      font-size: $font-size-md;
+    }
+
+    a {
+      color: $color-white;
+      cursor: pointer;
+    }
+  }
+
   .footer {
     width: 100%;
     position: absolute;
     bottom: 2rem;
+    left: 0;
     opacity: .8;
     text-align: center;
     display: flex;
@@ -66,6 +70,39 @@ $left-margin: 5vw;
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  .page-screen-home {
+    .h1-wrap {
+      text-align: center;
+      left: 0;
+      right: 0;
+      position: absolute;
+      top: 50vh;
+      // left: $left-margin;
+      font-size: 2.3vw;
+    }
+
+    .h1 {
+      line-height: 0;
+      font-size: 4.09em;
+      letter-spacing: 0.01em;
+      margin-top: -1em;
+      margin-left: -2vw
+    }
+
+    .h2 {
+      margin-top: -0.9em;
+      font-size: 1em;
+      font-weight: 300;
+      font-family: $font-family;
+      letter-spacing: 0.03em;
+    }
+  }
+
+  .page-screen-about {
+    background: white;
+    color: $color-primary;
   }
 
   @media screen and (max-width: $screen-size-mobile) {
