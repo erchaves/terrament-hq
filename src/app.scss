@@ -8,7 +8,7 @@
 
 html,
 body {
-  font-size: $font-size-base;
+  font-size: $font-size-sm;
 }
 
 body {
@@ -36,11 +36,7 @@ body {
 
 .page-screen {
   position: relative;
-  height: 100vh;
-}
-
-.page-screen-2 {
-  background: white;
+  min-height: 100vh;
 }
 
 a {
@@ -63,4 +59,43 @@ button {
   svg {
     @include center-both();
   }
+}
+
+.screen-content {
+  // the 6rem leaves enough room for the globe footer
+  padding: 5vh 5vw 8rem 5vw;
+  max-width: 50rem;
+
+  .h2 {
+    font-size: $font-size-lg;
+    font-family: $font-family-bold;
+    font-weight: $font-weight-bold;
+    margin: 1rem 0;
+  }
+
+  .h3 {
+    font-size: $font-size-md;
+    font-family: $font-family-bold;
+    font-weight: $font-weight-bold;
+    margin-bottom: .75rem;
+  }
+
+  &.screen-content-dark {
+    a {
+      color: $color-white;
+      text-decoration: underline;
+    }
+  }
+}
+
+.content-section {
+  margin-bottom: 2rem;
+}
+
+.info-link-list {
+  margin-bottom: 1rem;
+}
+
+.info-link {
+  margin-bottom: 0.75rem;
 }
