@@ -19,7 +19,8 @@
     "react-hot-loader": "^4.3.12",
     "react-lottie": "^1.2.3",
     "react-static": "^6.0.18",
-    "react-static-plugin-sass": "^6.3.0"
+    "react-static-plugin-sass": "^6.3.0",
+    "smoothscroll": "^0.4.0"
   },
   "devDependencies": {
     "eslint-config-react-tools": "1.x.x",

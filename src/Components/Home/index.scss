@@ -38,6 +38,26 @@ $left-margin: 5vw;
     };
   }
 
+  .menu-main {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 2;
+  }
+
+  .menu-ul {
+    margin: 2rem;
+
+    li {
+      display: inline-block;
+      margin-left: 2rem;
+    }
+
+    a {
+      color: $color-white;
+    }
+  }
+
   .footer {
     width: 100%;
     position: absolute;
