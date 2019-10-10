@@ -28,9 +28,9 @@ class Home extends React.Component {
           <div className="screen-content screen-content-dark">
             <div className="h1-wrap">
               <h1 className="h1">
-                Terr
+                Ter
                 <span className="bullet" />
-                a
+                ra
                 <span className="bullet" />
                 ment
               </h1>
