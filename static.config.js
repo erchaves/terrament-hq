@@ -8,7 +8,7 @@ export default {
   getSiteData: () => ({
     title: 'Terrament',
     siteRoot: siteRoot,
-    description: 'Terrament is solving our multi-trillion dollar energy storage crisis.',
+    description: 'Terrament is an energy startup solving our trillion-dollar energy storage crisis. We are using Underground Pumped Hydro Energy Storage which is cheaper and less risky at scale than lithium ion technology.',
     imageUrl: `${siteRoot}/terrament-logo.png`,
     type: 'website',
   }),
