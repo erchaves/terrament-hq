@@ -109,15 +109,15 @@ class Home extends React.Component {
                     Pitch deck
                   </a>: &nbsp;
                   <span>
-                    Our pitch deck (draft). This is not yet intended for investors. Its purpose is to find a civil engineer co-founder. Interested? <a href="mailto:hello@terramenthq.com" target="_blank" rel="noopener noreferrer">Contact us</a>.
+                    Our pitch deck summary. This is not yet intended for investors. Its purpose is to find a civil engineer co-founder. Interested? <a href="mailto:hello@terramenthq.com" target="_blank" rel="noopener noreferrer">Contact us</a>.
                   </span>
                 </li>
                 <li className="info-link">
-                  <a href="https://github.com/syllable-hq/uphs-feasibility-study" target="_blank" rel="noopener noreferrer">
+                  <a href="/underground-pumped-hydroelectric-storage-feasibility-study.pdf" target="_blank" rel="noopener noreferrer">
                     Feasibility study
                   </a>: &nbsp;
                   <span>
-                    Our feasibility report about Underground Pumped Storage.
+                    Our feasibility report about Underground Pumped Storage. This report is <a href="https://github.com/syllable-hq/uphs-feasibility-study" target="_blank" rel="noopener noreferrer">open-source</a> and may be updated in the future.
                   </span>
                 </li>
               </ul>
