@@ -46,7 +46,7 @@ class Home extends React.Component {
                   smooth={true}
                   duration={500}
                 >
-                  <img src="/logo-white.png" alt="Terrament logo" />
+                  <img src="/terrament-logo-white.png" alt="Terrament logo" />
                 </Link>
               </div>
             </div>
@@ -176,7 +176,7 @@ class Home extends React.Component {
                   smooth={true}
                   duration={500}
                 >
-                  <img src="/logo.png" alt="Terrament logo" />
+                  <img src="/terrament-logo.png" alt="Terrament logo" />
                 </Link>
             </div>
           </div>
@@ -204,7 +204,7 @@ class Home extends React.Component {
                   smooth={true}
                   duration={500}
                 >
-                  <img src="/logo-white.png" alt="Terrament logo" />
+                  <img src="/terrament-logo-white.png" alt="Terrament logo" />
                 </Link>
               </div>
             </div>
