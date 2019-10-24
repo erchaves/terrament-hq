@@ -69,22 +69,34 @@ class Home extends React.Component {
 
             <div className="content-section">
               <h3 className="h3">
-                Solution
-              </h3>
-              <p>
-                Terrament's design uses a technology called Underground Pumped Hydro Storage, or UPHS. UPHS is a simple, well-researched technology that can provide scalable energy storage at an affordable cost. We estimate our design to be 3-15 times cheaper than lithium ion storage over a lifetime of forty years.
-              </p>
-            </div>
-
-            <div className="content-section">
-              <h3 className="h3">
                 Summary
               </h3>
               <p>
                 <a href="https://www.scribd.com/embeds/427763238/content?start_page=1&view_mode=slideshow" target="_blank" rel="noopener noreferrer"
                 >
-                  View our summary deck to learn more
+                  View the Terrament summary deck
                 </a>.
+              </p>
+            </div>
+
+            <div className="content-section">
+              <h3 className="h3">
+                Problem
+              </h3>
+              <p>
+                We are in a state of climate emergency. We must replace fossil fuels with renewable sources like wind and solar.
+              </p>
+              <p>
+                But our power grid cannot support very much wind and solar energy until we build an immense amount of energy storage.
+              </p>
+            </div>
+
+            <div className="content-section">
+              <h3 className="h3">
+                Solution
+              </h3>
+              <p>
+                Terrament is building affordable, scalable energy storage using a technology called Underground Pumped Hydro Storage, or UPHS. UPHS is a well-researched, low-risk technology. Our design will be 3-15 times cheaper than lithium ion storage over a lifetime of forty years.
               </p>
             </div>
 
@@ -93,10 +105,10 @@ class Home extends React.Component {
                 Why Terrament?
               </h3>
               <p>
-                World governments have promised to quit fossil fuels by 2050. But we are not yet on track to meet those promises. <a href="https://www.eto.think.woodmac.com" target="_blank" rel="noopener noreferrer">Research shows</a> that if we don't expand our energy storage capacity, our solar and wind energy markets will stagnate and fail to reach even 25% of the energy market by 2040. This will cause global temperatures to rise over 3°C, a level which will cause catastrophic climate damage. We must do better.
+                World governments have promised to quit fossil fuels by 2050. But we are not yet on track to meet those promises. <a href="https://www.eto.think.woodmac.com" target="_blank" rel="noopener noreferrer">Research shows</a> that if we don't expand our energy storage capacity, our solar and wind energy markets will stagnate and fail to reach even 25% of the energy market by 2040. This will cause global temperatures to rise over 3°C, a level which will cause catastrophic climate damage. We have to do better.
               </p>
               <p>
-                We need highly-scalable energy storage, and we need it immediately. Terrament provides a low-risk solution for an affordable cost.
+                It is critical that we immediately build highly-scalable energy storage. Terrament provides a low-risk solution for an affordable cost.
               </p>
             </div>
             <div className="content-section">
