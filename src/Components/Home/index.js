@@ -84,10 +84,13 @@ class Home extends React.Component {
                 Problem
               </h3>
               <p>
-                We are in a state of climate emergency. We must replace fossil fuels with renewable sources like wind and solar.
+              Dear Neighbor,
               </p>
               <p>
-                But our power grid cannot support very much wind and solar energy until we build an immense amount of energy storage.
+              As you know, global heating is an international emergency. It is urgent that we redouble efforts to replace fossil fuels with renewable energy.
+              </p>
+              <p>
+                But, did you know that our power grids can't switch to variable energy sources like wind and solar until we build <i>trillions of dollars</i> of energy storage?
               </p>
             </div>
 
@@ -108,7 +111,7 @@ class Home extends React.Component {
                 World governments have promised to quit fossil fuels by 2050. But we are not yet on track to meet those promises. <a href="https://www.eto.think.woodmac.com" target="_blank" rel="noopener noreferrer">Research shows</a> that if we don't expand our energy storage capacity, our solar and wind energy markets will stagnate and fail to reach even 25% of the energy market by 2040. This will cause global temperatures to rise over 3°C, a level which will cause catastrophic climate damage. We have to do better.
               </p>
               <p>
-                It is critical that we immediately build highly-scalable energy storage. Terrament provides a low-risk solution for an affordable cost.
+                We have to build highly-scalable energy storage, immediately. Terrament provides a low-risk solution for an affordable cost.
               </p>
             </div>
             <div className="content-section">
@@ -121,7 +124,7 @@ class Home extends React.Component {
                     Pitch deck
                   </a>: &nbsp;
                   <span>
-                    Our pitch deck summary. This is not yet intended for investors. Its purpose is to find a civil engineer co-founder. Interested? <a href="mailto:hello@terramenthq.com" target="_blank" rel="noopener noreferrer">Contact us</a>.
+                    Our pitch deck summary is not intended for investors (yet). We made it to help us find a civil engineer co-founder. Interested? <a href="mailto:hello@terramenthq.com" target="_blank" rel="noopener noreferrer">Contact us</a>.
                   </span>
                 </li>
                 <li className="info-link">
