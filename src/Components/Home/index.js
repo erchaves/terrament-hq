@@ -84,10 +84,7 @@ class Home extends React.Component {
                 Problem
               </h3>
               <p>
-              Dear Neighbor,
-              </p>
-              <p>
-              As you know, global heating is an international emergency. It is urgent that we redouble efforts to replace fossil fuels with renewable energy.
+              As you know, our climate emergency is a grave international threat. It is urgent that we redouble efforts to replace fossil fuels with renewable energy.
               </p>
               <p>
                 But, did you know that our power grids can't switch to variable energy sources like wind and solar until we build <i>trillions of dollars</i> of energy storage?
