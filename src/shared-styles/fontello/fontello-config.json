@@ -63,6 +63,12 @@
       "css": "spin3",
       "code": 59442,
       "src": "fontelico"
+    },
+    {
+      "uid": "bf882b30900da12fca090d9796bc3030",
+      "css": "mail",
+      "code": 59394,
+      "src": "fontawesome"
     }
   ]
 }

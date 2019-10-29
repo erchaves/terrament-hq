@@ -59,7 +59,8 @@ $left-margin: 5vw;
       color: white;
     }
     span {
-      margin: 0 1rem;
+      font-size: 1.75rem;
+      margin: 0 .75rem;
     }
 
     a {
@@ -130,11 +131,11 @@ $left-margin: 5vw;
     .footer-inner {
       margin: 0 auto;
       display: block;
+      font-size: 1.2rem;
 
       span {
         display: block;
         margin: 1rem;
-        font-size: 1.2rem;
       }
 
       img {
@@ -142,5 +143,15 @@ $left-margin: 5vw;
       }
 
     }
+  }
+
+  .page-screen-contact .footer-inner {
+    li {
+      display: inline-block;
+    }
+  }
+
+  span.icon-mail {
+    font-size: 1.75em;
   }
 }

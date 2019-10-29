@@ -195,17 +195,24 @@ class Home extends React.Component {
             </p>
             <br />
             <p>
-              Got questions or feedback? Please <a href="mailto:hello@terramenthq.com" target="_blank" rel="noopener noreferrer">email us</a>.
+              <a href="mailto:hello@terramenthq.com" target="_blank" rel="noopener noreferrer">
+                hello@terramenthq.com
+              </a>
             </p>
             <div className="footer">
               <div className="footer-inner">
-                <Link
-                  to="home"
-                  smooth={true}
-                  duration={500}
-                >
-                  <img src="/terrament-logo-white.png" alt="Terrament logo" />
-                </Link>
+                <ul>
+                  <li>
+                    <a href="https://twitter.com/terrament" target="_blank" rel="noopener noreferrer">
+                      <span className="menu-item__icon icon-twitter"></span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="mailto:hello@terramenthq.com" target="_blank" rel="noopener noreferrer">
+                      <span className="menu-item__icon icon-mail"></span>
+                    </a>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>

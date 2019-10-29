@@ -28,6 +28,13 @@ export default class Navbar extends Component {
               Contact
             </Link>
           </li>
+          {/*
+          <li className="menu-li">
+            <a href="https://twitter.com/syllablehq" target="_blank" rel="noopener noreferrer">
+              <span className="menu-item__icon icon-twitter"></span>
+            </a>
+          </li>
+          */}
         </ul>
       </nav>
     );
