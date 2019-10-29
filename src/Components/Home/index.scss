@@ -110,6 +110,23 @@ $left-margin: 5vw;
     color: $color-primary;
   }
 
+  .float-left {
+  }
+
+  .pnl-report-diagram {
+    width: 80%;
+    margin: 2rem auto 1rem auto;
+    display: block;
+  }
+
+  .caption {
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    font-style: italic;
+    font-size: .8em;
+  }
+
   @media screen and (max-width: $screen-size-mobile) {
     .page-screen-home {
       .h1-wrap {

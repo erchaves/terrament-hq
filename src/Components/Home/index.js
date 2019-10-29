@@ -84,10 +84,10 @@ class Home extends React.Component {
                 Problem
               </h3>
               <p>
-              As you know, our climate emergency is a grave international threat. It is urgent that we redouble efforts to replace fossil fuels with renewable energy.
+              Climate damage is a grave threat to our health, economy, and national security. We must redouble our efforts to replace fossil fuels with renewable energy.
               </p>
               <p>
-                But, did you know that our power grids can't switch to variable energy sources like wind and solar until we build <i>trillions of dollars</i> of energy storage?
+                But there's a problem: Even if we had plenty of wind and solar energy, our power grid isn't built to handle weather-dependent variability. To fix this, we must invest <i>trillions of dollars</i> to build more energy storage capacity.
               </p>
             </div>
 
@@ -95,8 +95,14 @@ class Home extends React.Component {
               <h3 className="h3">
                 Solution
               </h3>
-              <p>
+              <p className="block">
+                <span>
                 Terrament is building affordable, scalable energy storage using a technology called Underground Pumped Hydro Storage, or UPHS. UPHS is a well-researched, low-risk technology. Our design will be 3-15 times cheaper than lithium ion storage over a lifetime of forty years.
+                </span>
+                <img className="pnl-report-diagram" src="/pnl-report-diagram-2.png" alt="A UPHS design from a U.S. Gov Report" />
+                <span class="caption">
+                  UPHS design from a U.S. DOE report. See key research below.
+                </span>
               </p>
             </div>
 
@@ -105,10 +111,16 @@ class Home extends React.Component {
                 Why Terrament?
               </h3>
               <p>
-                World governments have promised to quit fossil fuels by 2050. But we are not yet on track to meet those promises. <a href="https://www.eto.think.woodmac.com" target="_blank" rel="noopener noreferrer">Research shows</a> that if we don't expand our energy storage capacity, our solar and wind energy markets will stagnate and fail to reach even 25% of the energy market by 2040. This will cause global temperatures to rise over 3°C, a level which will cause catastrophic climate damage. We have to do better.
+                Terrament provides a low-risk, affordable solution for scalable energy storage.
               </p>
               <p>
-                We have to build highly-scalable energy storage, immediately. Terrament provides a low-risk solution for an affordable cost.
+                World governments have declared a state of climate emergency. And they have pledged to quit fossil fuels by 2050. But we are not yet on track to meet those promises. <a href="https://www.eto.think.woodmac.com" target="_blank" rel="noopener noreferrer">Research shows</a> that if we don't expand our energy storage capacity, our solar and wind energy markets will stagnate.
+              </p>
+              <p>
+                Without energy storage, renewables will fail to reach even 25% of the energy market by 2040. This will cause global temperatures to rise over 3°C, a level which will cause catastrophic climate damage.
+              </p>
+              <p>
+                We have to do better.
               </p>
             </div>
             <div className="content-section">
