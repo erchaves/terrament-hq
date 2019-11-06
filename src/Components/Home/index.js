@@ -97,7 +97,7 @@ class Home extends React.Component {
               </h3>
               <p className="block">
                 <span>
-                Terrament is building affordable, scalable energy storage using a technology called Underground Pumped Hydro Storage, or UPHS. UPHS is a well-researched, low-risk technology. Our design will be 3-15 times cheaper than lithium ion storage over a lifetime of forty years.
+                Terrament is building affordable, scalable energy storage using a technology called Underground Pumped Hydro Storage, or UPHS. UPHS is a well-researched, low-risk technology. We estimate that our design will be 3-15 times cheaper than lithium ion storage over a lifetime of forty years.
                 </span>
                 <img className="pnl-report-diagram" src="/pnl-report-diagram-2.png" alt="A UPHS design from a U.S. Gov Report" />
                 <span class="caption">
