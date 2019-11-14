@@ -46,16 +46,15 @@ $left-margin: 5vw;
     position: absolute;
     bottom: 2rem;
     left: 0;
-    opacity: .8;
     text-align: center;
     display: flex;
     align-items: center;
-
     img {
       width: 3em;
     }
 
     span, a {
+      opacity: .9;
       color: white;
     }
     span {
@@ -65,6 +64,10 @@ $left-margin: 5vw;
 
     a {
       cursor: pointer;
+
+      &:hover {
+        opacity: 1;
+      }
     }
   }
 
