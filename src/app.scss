@@ -73,6 +73,7 @@ button {
   // the 6rem leaves enough room for the globe footer
   padding: 5vh 5vw 8rem 5vw;
   max-width: 40rem;
+  margin: 0 auto;
 
   .h2 {
     font-size: $font-size-lg;
@@ -97,7 +98,7 @@ button {
 }
 
 .content-section {
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 .info-link-list {

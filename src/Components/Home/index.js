@@ -65,44 +65,44 @@ class Home extends React.Component {
               <p>
                 Terrament is an energy startup solving our trillion-dollar energy storage crisis. <br/>
               </p>
-            </div>
-
-            <div className="content-section">
-              <h3 className="h3">
-                Summary
-              </h3>
               <p>
-                <a href="https://www.scribd.com/embeds/427763238/content?start_page=1&view_mode=slideshow" target="_blank" rel="noopener noreferrer"
-                >
-                  View the Terrament summary deck
-                </a>.
-              </p>
-            </div>
-
-            <div className="content-section">
-              <h3 className="h3">
-                Problem
-              </h3>
-              <p>
-              Climate damage is a grave threat to our health, economy, and national security. We must redouble our efforts to replace fossil fuels with renewable energy.
+                We are building affordable, scalable energy storage using a technology called Underground Pumped Hydro Storage, or UPHS.
               </p>
               <p>
-                But there's a problem: Even if we had plenty of wind and solar energy, our power grid isn't built to handle weather-dependent variability. To fix this, we must invest <i>trillions of dollars</i> to build more energy storage capacity.
-              </p>
-            </div>
-
-            <div className="content-section">
-              <h3 className="h3">
-                Solution
-              </h3>
-              <p className="block">
-                <span>
-                Terrament is building affordable, scalable energy storage using a technology called Underground Pumped Hydro Storage, or UPHS. UPHS is a well-researched, low-risk technology. We estimate that our design will be 3-15 times cheaper than lithium ion storage over a lifetime of forty years.
-                </span>
                 <img className="pnl-report-diagram" src="/pnl-report-diagram-2.png" alt="A UPHS design from a U.S. Gov Report" />
-                <span class="caption">
+                <span className="caption">
                   UPHS design from a U.S. DOE report. See key research below.
                 </span>
+              </p>
+            </div>
+
+            <div className="content-section">
+              <h3 className="h3">
+                Our Energy Storage Problem
+              </h3>
+              <p>
+              Climate damage is a grave threat to our health, economy, and national security. We must accelerate our efforts to replace fossil fuels with renewable energy.
+              </p>
+              <p>
+                But renewable energy has a problem: it's dependent on fickle weather. Because of this variability, wind and solar energy is not enough to solve our carbon problem. We must also invest <i>trillions of dollars</i> to build more energy storage.
+              </p>
+            </div>
+
+            <div className="content-section">
+              <h3 className="h3">
+                Terrament's Solution
+              </h3>
+              <p className="block">
+                Terrament is building closed-loop, underground pumped hydro storage (UPHS). UPHS is a well-researched, low-risk technology. We estimate that our design will be 3-15 times cheaper than lithium ion storage over a lifetime of forty years.
+              </p>
+              <p className="block">
+                Terrament's unique design solves previous barriers to the construction of UPHS.
+              </p>
+            </div>
+
+            <div className="content-section">
+              <p className="p-summary-deck">
+                <iframe className="scribd_iframe_embed" title="Terrament Pitch Deck - Draft for Founder Search" src="https://www.scribd.com/embeds/427763238/content?start_page=3&view_mode=slideshow&show_recommendations=true&access_key=key-ANp95hsITbjLqjZZ0wII" data-auto-height="true" data-aspect-ratio="1.7790927021696252" scrolling="no" width="100%" height="450px" frameborder="0"></iframe>
               </p>
             </div>
 
@@ -123,35 +123,20 @@ class Home extends React.Component {
                 We have to do better.
               </p>
             </div>
-            <div className="content-section">
-              <h3 className="h3">
-                Links
-              </h3>
-              <ul className="info-link-list">
-                <li className="info-link">
-                  <a href="https://www.scribd.com/embeds/427763238/content?start_page=1&view_mode=slideshow" target="_blank" rel="noopener noreferrer">
-                    Pitch deck
-                  </a>: &nbsp;
-                  <span>
-                    Our pitch deck summary is not intended for investors (yet). We made it to help us find a civil engineer co-founder. Interested? <a href="mailto:hello@terramenthq.com" target="_blank" rel="noopener noreferrer">Contact us</a>.
-                  </span>
-                </li>
-                <li className="info-link">
-                  <a href="/underground-pumped-hydroelectric-storage-feasibility-study.pdf" target="_blank" rel="noopener noreferrer">
-                    Feasibility study
-                  </a>: &nbsp;
-                  <span>
-                    Our feasibility report about Underground Pumped Storage. This report is <a href="https://github.com/syllable-hq/uphs-feasibility-study" target="_blank" rel="noopener noreferrer">open-source</a> and may be updated in the future.
-                  </span>
-                </li>
-              </ul>
-            </div>
 
             <div className="content-section">
               <h3 className="h3">
                 Key Research
               </h3>
               <ul className="info-link-list">
+                <li className="info-link">
+                  <a href="/underground-pumped-hydroelectric-storage-feasibility-study.pdf" target="_blank" rel="noopener noreferrer">
+                    Terrament's feasibility study on UPHS
+                  </a>: &nbsp;
+                  <span>
+                    Our feasibility report about Underground Pumped Storage. This report is <a href="https://github.com/syllable-hq/uphs-feasibility-study" target="_blank" rel="noopener noreferrer">open-source</a> and may be updated in the future.
+                  </span>
+                </li>
                 <li className="info-link">
                   <a href="https://www.osti.gov/biblio/6517343" target="_blank" rel="noopener noreferrer">
                     UPHS Report (U.S. Department of Energy)
@@ -169,13 +154,6 @@ class Home extends React.Component {
                   </span>
                 </li>
               </ul>
-            </div>
-            <div className="content-section">
-              <p>
-                Terrament is currently unfunded and sponsored by <a href="https://www.syllablehq.com" target="_blank" rel="noopener noreferrer">
-                  Syllable Technology and Design
-                </a>.
-              </p>
             </div>
           </div>
           <div className="footer">
@@ -200,9 +178,16 @@ class Home extends React.Component {
             </h2>
             <br />
             <p>
-              Terrament is currently seeking a civil engineer co-founder to join our team. <br/>Any introductions are greatly appreciated.
+              Terrament is sponsored by <a href="https://www.syllablehq.com" target="_blank" rel="noopener noreferrer">
+                Syllable Technology and Design
+              </a>.
             </p>
-            <br />
+            <p>
+              We are currently working with civil engineers to develop our designs and patents. And we are actively seeking partners and advisors. We are also seeking grant support and seed funding to sustain us until we can secure series A funding.
+            </p>
+            <p>
+              Any introductions to interested parties would be greatly appreciated.
+            </p>
             <p>
               <a href="mailto:hello@terramenthq.com" target="_blank" rel="noopener noreferrer">
                 hello@terramenthq.com
