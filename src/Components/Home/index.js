@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from "../Navbar";
 import Section from "../Section";
+import VideoBg from "../VideoBg";
 import { Link } from "react-scroll";
 
 import './index.scss';
@@ -15,6 +16,11 @@ const onLoad = () => {
   // alert('test');
 };
 
+const videoPoster = 'homepage-bg.jpg';
+// const videoOgg = 'https://uploads.codesandbox.io/uploads/user/979de439-4f3c-445b-ab75-ec2ce2f24a5f/AY5H-Neon.ogg';
+// const videoWebm = 'https://uploads.codesandbox.io/uploads/user/979de439-4f3c-445b-ab75-ec2ce2f24a5f/gOrX-Neon.webm';
+const videoMp4 = 'homepage-bg.mp4';
+
 class Home extends React.Component {
   render() {
     return (
@@ -26,6 +32,12 @@ class Home extends React.Component {
           id="home"
         >
           <div className="screen-content screen-content-dark">
+            <VideoBg
+              poster={videoPoster}
+            >
+              <source src={videoMp4} type="video/mp4" />
+            </VideoBg>
+
             <div className="h1-wrap">
               <h1 className="h1">
                 Ter
