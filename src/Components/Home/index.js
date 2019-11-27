@@ -25,6 +25,10 @@ class Home extends React.Component {
   render() {
     return (
       <div className={`page page-home`}>
+        <div className="header-logo">
+          <img src="/terrament-logo-white.png" alt="Terrament logo" />
+        </div>
+
         <Navbar/>
 
         <Section
@@ -51,17 +55,19 @@ class Home extends React.Component {
                 Solving our trillion-dollar energy storage crisis
               </h2>
             </div>
-            <div className="footer">
-              <div className="footer-inner">
-                <Link
-                  to="about"
-                  smooth={true}
-                  duration={500}
-                >
-                  <img src="/terrament-logo-white.png" alt="Terrament logo" />
-                </Link>
+            {/*
+              <div className="footer">
+                <div className="footer-inner">
+                  <Link
+                    to="about"
+                    smooth={true}
+                    duration={500}
+                  >
+                    <img src="/terrament-logo-white.png" alt="Terrament logo" />
+                  </Link>
+                </div>
               </div>
-            </div>
+            */}
           </div>
         </Section>
         <Section
@@ -168,6 +174,7 @@ class Home extends React.Component {
               </ul>
             </div>
           </div>
+          {/*
           <div className="footer">
             <div className="footer-inner">
               <Link
@@ -179,6 +186,7 @@ class Home extends React.Component {
                 </Link>
             </div>
           </div>
+          */}
         </Section>
         <Section
           name="contact"

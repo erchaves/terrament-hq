@@ -2,6 +2,9 @@
 @import '../../shared-styles/mixins.scss';
 
 $left-margin: 5vw;
+$menu-margin-x: 3vw;
+$logo-size: 4rem;
+$logo-size-m: 3rem;
 
 .page-home {
   .bullet {
@@ -18,6 +21,18 @@ $left-margin: 5vw;
     };
   }
 
+  .header-logo {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+
+    img {
+      margin: $menu-margin-x;
+      max-width: $logo-size;
+    }
+  }
+
   .nav-content {
     position: absolute;
     left: 0;
@@ -28,11 +43,12 @@ $left-margin: 5vw;
   }
 
   .menu-ul {
-    margin: 5vh 5vw;
+    margin: $menu-margin-x 5vw;
 
     a {
       color: $color-white;
       cursor: pointer;
+      line-height: $logo-size;
     }
   }
 
@@ -40,6 +56,10 @@ $left-margin: 5vw;
     display: inline-block;
     margin: 0 2rem;
     font-size: $font-size-md;
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 
   .footer {
@@ -88,9 +108,9 @@ $left-margin: 5vw;
       left: 0;
       right: 0;
       position: absolute;
-      top: 85vh;
+      bottom: 7vh;
       // left: $left-margin;
-      font-size: 1.4vw;
+      font-size: 1.6vw;
     }
 
     .h1 {
@@ -140,7 +160,7 @@ $left-margin: 5vw;
     &:after {
       @include full-size();
 
-      opacity: .2;
+      opacity: .3;
       content: '';
       display: block;
       background-image: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 75%, rgb(0, 0, 0) 100%);
@@ -159,6 +179,29 @@ $left-margin: 5vw;
         left: 0;
         right: 0;
         font-size: 3.25vw;
+      }
+
+      .h1 {
+        margin-left: -2.9vw;
+      }
+
+      .h2 {
+        margin-top: .2em;
+      }
+    }
+
+    .menu-ul {
+      margin-top: $logo-size-m / 2;
+
+      a {
+        line-height: $logo-size-m;
+      }
+    }
+
+    .header-logo {
+      img {
+        margin: $logo-size-m / 2;
+        max-width: $logo-size-m;
       }
     }
 
@@ -179,11 +222,6 @@ $left-margin: 5vw;
         display: block;
         margin: 1rem;
       }
-
-      img {
-        width: 2em;
-      }
-
     }
   }
 
