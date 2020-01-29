@@ -102,7 +102,7 @@ class Home extends React.Component {
               Climate damage is a grave threat to our health, economy, and national security. We must accelerate our efforts to replace fossil fuels with renewable energy.
               </p>
               <p>
-                But renewable energy has a problem: it's dependent on fickle weather. Because of this variability, wind and solar energy is not enough to solve our carbon problem. We must also invest <i>trillions of dollars</i> to build more energy storage.
+                But renewable energy has a problem: wind and solar power is variable -- it fluctuates with the weather. And our power grid isn't built to handle variable power. Research shows how this problem will be solved. In addition to expanding power transmission, it calls for <i>trillions of dollars</i> of additional energy storage.
               </p>
             </div>
 
