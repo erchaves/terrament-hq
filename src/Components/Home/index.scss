@@ -63,10 +63,9 @@ $logo-size-m: 3rem;
   }
 
   .footer {
-    width: 100%;
     position: absolute;
-    bottom: 2.5rem;
-    left: 0;
+    width: 100%;
+    background: $color-primary;
     text-align: center;
     display: flex;
     align-items: center;
@@ -94,6 +93,7 @@ $logo-size-m: 3rem;
   }
 
   .footer-inner {
+    padding: 1rem 0;
     display: inline;
     margin: 0 auto;
     align-items: center;
@@ -114,19 +114,21 @@ $logo-size-m: 3rem;
     }
 
     .h1 {
-      line-height: 0;
-      font-size: 4.45em;
-      letter-spacing: 0.01em;
-      margin-top: -1em;
-      margin-left: -1.2vw;
+      width: 23.1em;
+      margin: 0 auto;
+
+      img {
+        margin-left: -1.1em;
+        width: 100%;
+      }
     }
 
     .h2 {
-      margin-top: .1em;
-      font-size: 1em;
+      margin-top: -0.25em;
+      font-size: 1.39em;
       font-weight: 300;
       font-family: $font-family;
-      letter-spacing: 0.03em;
+      letter-spacing: 0.02em;
     }
   }
 
@@ -175,18 +177,7 @@ $logo-size-m: 3rem;
   @media screen and (max-width: $screen-size-mobile) {
     .page-screen-home {
       .h1-wrap {
-        text-align: center;
-        left: 0;
-        right: 0;
         font-size: 3.25vw;
-      }
-
-      .h1 {
-        margin-left: -2.9vw;
-      }
-
-      .h2 {
-        margin-top: .2em;
       }
     }
 
@@ -207,10 +198,6 @@ $logo-size-m: 3rem;
 
     .menu-li {
       margin: 0 1rem;
-    }
-
-    .footer {
-      bottom: 1rem;
     }
 
     .footer-inner {

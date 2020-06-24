@@ -44,15 +44,10 @@ class Home extends React.Component {
 
             <div className="h1-wrap">
               <h1 className="h1">
-                Ter
-                <span className="bullet" />
-                ra
-                <span className="bullet" />
-                ment
+                <img src="/terrament-logo-text-white.svg" alt="Terrament logo" />
               </h1>
-
               <h2 className="h2">
-                Solving our trillion-dollar energy storage crisis
+                Radically Scalable Energy Storage
               </h2>
             </div>
             {/*
@@ -119,9 +114,15 @@ class Home extends React.Component {
             </div>
 
             <div className="content-section">
-              <p className="p-summary-deck">
-                <iframe className="scribd_iframe_embed" title="Terrament Pitch Deck - Draft for Founder Search" src="https://www.scribd.com/embeds/427763238/content?start_page=3&view_mode=slideshow&show_recommendations=true&access_key=key-ANp95hsITbjLqjZZ0wII" data-auto-height="true" data-aspect-ratio="1.7790927021696252" scrolling="no" width="100%" height="450px" frameborder="0"></iframe>
-              </p>
+              <div class="responsive-google-slides">
+                <iframe
+                  src="https://docs.google.com/presentation/d/e/2PACX-1vRAx_zGoWME9GspEBwb6Ss3zX7dRh74G36690nuYKGFbphRtIQ88V8MjpUqKEhvnK8rjH4VeqI_r5ge/embed?start=false&loop=false&delayms=10000"
+                  frameborder="0"
+                  allowfullscreen="true"
+                  mozallowfullscreen="true"
+                  webkitallowfullscreen="true">
+                </iframe>
+              </div>
             </div>
 
             <div className="content-section">
@@ -174,63 +175,18 @@ class Home extends React.Component {
               </ul>
             </div>
           </div>
-          {/*
-          <div className="footer">
+        </Section>
+        <div className="footer">
             <div className="footer-inner">
               <Link
                   to="contact"
                   smooth={true}
                   duration={500}
                 >
-                  <img src="/terrament-logo.png" alt="Terrament logo" />
+                  <img src="/terrament-logo-white.png" alt="Terrament logo" />
                 </Link>
             </div>
           </div>
-          */}
-        </Section>
-        <Section
-          name="contact"
-          id="contact"
-        >
-          <div className="screen-content screen-content-dark">
-            <h2 className="h2">
-              Contact Us
-            </h2>
-            <br />
-            <p>
-              Terrament is sponsored by <a href="https://www.syllablehq.com" target="_blank" rel="noopener noreferrer">
-                Syllable Technology and Design
-              </a>.
-            </p>
-            <p>
-              We are currently working with civil engineers to develop our designs and patents. And we are actively seeking partners and advisors. We are also seeking grant support and seed funding to sustain us until we can secure series A funding.
-            </p>
-            <p>
-              Any introductions to interested parties would be greatly appreciated.
-            </p>
-            <p>
-              <a href="mailto:hello@terramenthq.com" target="_blank" rel="noopener noreferrer">
-                hello@terramenthq.com
-              </a>
-            </p>
-            <div className="footer">
-              <div className="footer-inner">
-                <ul>
-                  <li>
-                    <a href="https://twitter.com/terrament" target="_blank" rel="noopener noreferrer">
-                      <span className="menu-item__icon icon-twitter"></span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="mailto:hello@terramenthq.com" target="_blank" rel="noopener noreferrer">
-                      <span className="menu-item__icon icon-mail"></span>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </Section>
       </div>
     );
   }

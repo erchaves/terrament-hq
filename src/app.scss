@@ -109,10 +109,31 @@ button {
   margin-bottom: 0.75rem;
 }
 
+.responsive-google-slides {
+  position: relative;
+  // padding-bottom: 56.25%; /* 16:9 Ratio */
+  // this is a more propper fit. I'm not sure why.
+  padding-bottom: 60.3%;
+  height: 0;
+  overflow: hidden;
+
+  iframe {
+    border: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
 
 @media screen and (max-width: $screen-size-mobile) {
   html,
   body {
     font-size: $font-size-base;
+  }
+
+  .responsive-google-slides {
+    padding-bottom: 63.5%;
   }
 }
