@@ -1,7 +1,6 @@
 @import '../../shared-styles/variables.scss';
 @import '../../shared-styles/mixins.scss';
 
-$left-margin: 5vw;
 $menu-margin-x: 3vw;
 $logo-size: 4rem;
 $logo-size-m: 3rem;
@@ -102,15 +101,15 @@ $logo-size-m: 3rem;
     justify-content: center;
   }
 
-  .page-screen-home {
+  .screen-content-above-fold {
     .h1-wrap {
-      text-align: center;
+      position: absolute;
       left: 0;
       right: 0;
-      position: absolute;
+      text-align: center;
       bottom: 7vh;
-      // left: $left-margin;
       font-size: 1.6vw;
+      color: $color-white;
     }
 
     .h1 {
@@ -130,18 +129,6 @@ $logo-size-m: 3rem;
       font-family: $font-family;
       letter-spacing: 0.02em;
     }
-  }
-
-  .page-screen-about {
-    background: white;
-    color: $color-primary;
-  }
-
-  .page-screen-contact {
-    background: $color-primary;
-  }
-
-  .float-left {
   }
 
   .pnl-report-diagram {
@@ -175,7 +162,7 @@ $logo-size-m: 3rem;
   }
 
   @media screen and (max-width: $screen-size-mobile) {
-    .page-screen-home {
+    .screen-content-above-fold {
       .h1-wrap {
         font-size: 3.25vw;
       }
