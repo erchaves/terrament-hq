@@ -62,6 +62,10 @@ button {
   border: none;
 }
 
+.media-wrap {
+  margin-bottom: 1.5rem;
+}
+
 .react-static-loading {
   // git rid of the spinning loader. It's distracting.
   display: none !important;

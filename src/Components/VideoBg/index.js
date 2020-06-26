@@ -12,7 +12,7 @@ const VideoBg = ({
   el: El = "div"
 }) => (
   <El
-    className={`component-video ${wrapperClass ? wrapperClass : ""}`}
+    className={`component-video-bg ${wrapperClass ? wrapperClass : ""}`}
   >
     <img className="video-fallback-img" style={{display: "none"}} src={poster} alt="terrament style image of renewable energy" />
     <video
