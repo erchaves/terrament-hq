@@ -1,12 +1,14 @@
 import React from 'react';
 import Navbar from "../Navbar";
-import VideoBg from "../VideoBg";
-import { Link } from "react-scroll";
+import VideoComp from "../VideoComp";
+import { Link } from '@reach/router'
 
 import './index.scss';
 
-const videoPoster = 'homepage-bg.jpg';
-const videoMp4 = 'homepage-bg.mp4';
+const videoPosterBg = 'homepage-bg.jpg';
+const videoPoster = '';
+const videoMp4Bg = 'homepage-bg.mp4';
+const videoMp4 = 'terrament-prototype-R7-animation-2020-05-12-sm.mp4';
 
 class Home extends React.Component {
   render() {
@@ -20,11 +22,12 @@ class Home extends React.Component {
 
         <div className="page-screen">
           <div className="screen-content screen-content-above-fold">
-            <VideoBg
-              poster={videoPoster}
+            <VideoComp
+              isBackgroundVideo={true}
+              poster={videoPosterBg}
             >
-              <source src={videoMp4} type="video/mp4" />
-            </VideoBg>
+              <source src={videoMp4Bg} type="video/mp4" />
+            </VideoComp>
 
             <div className="h1-wrap">
               <h1 className="h1">
@@ -53,7 +56,39 @@ class Home extends React.Component {
 
             <div className="content-section">
               <h2 className="h2">
-                Terrament’s Pitch Deck
+                Terrament Alpha Design
+              </h2>
+
+              <p>
+                Our alpha design is in very early development. This 3D animation is an early draft of our design concept. More details to be revealed post-funding.
+              </p>
+
+              <VideoComp wrapperClass="media-wrap">
+                <source src={videoMp4} type="video/mp4" />
+              </VideoComp>
+
+              <p>
+                Terrament’s patent-pending design achieves breakthrough efficiency by maximizing the two simple principals of gravity storage: height and weight.
+              </p>
+
+              <ol className="list-items">
+                <li>
+                  Height: We achieve 10 times more height than above-ground solutions. This is solved by digging a mile deep into bedrock (or using abandoned mine shafts).
+                </li>
+
+                <li>
+                  Weight: We achieve nearly 100% volume capacity with densely packed weight. This is solved with a modular design of self-supporting autonomous units.
+                </li>
+              </ol>
+
+              <p>
+                Our solution is low-risk. We use only well-established mining technologies, and we do not rely on any risky, unproven chemical battery technologies.
+              </p>
+            </div>
+
+            <div className="content-section">
+              <h2 className="h2">
+                Terrament Pitch Deck
               </h2>
 
               <div class="media-wrap responsive-google-slides">
@@ -65,32 +100,6 @@ class Home extends React.Component {
                   webkitallowfullscreen="true">
                 </iframe>
               </div>
-
-              <p>
-                Terrament’s patent-pending design achieves breakthrough efficiency by maximizing the two simple principals of gravity storage: height and weight.
-              </p>
-
-              <p>
-                1: We leverage 10 times more height than above-ground solutions. We achieve this by digging a mile deep into bedrock (or re-using abandoned mine shafts).
-              </p>
-
-              <p>
-                2: We leverage 100% of our volume - a full mile of densely packed weight. We achieve this using a modular design of self-supporting autonomous units.
-              </p>
-
-              <p>
-                Our solution is low-risk, employing only well-established mining technologies, not unproven, risky chemical technologies.
-              </p>
-            </div>
-
-            <div className="content-section">
-              <h2 className="h2">
-                Terrament’s Alpha Design
-              </h2>
-
-              <p>
-                Our alpha design is in very early development. The 3D rendering below is merely an approximation to communicate our design concept.
-              </p>
             </div>
 
             <div className="content-section">
@@ -98,16 +107,16 @@ class Home extends React.Component {
                 Learn More
               </h2>
               <p>
-                Terrament is a pre-funding startup based in Brooklyn, NY. We are currently seeking our first round of investment.
-                <Link
+                Terrament is a pre-funded startup based in Brooklyn, NY. We are currently seeking our first round of investment.
+                <Link className="block-link"
                   to="/"
                 >
                   About us
                 </Link>
               </p>
               <p>
-                Our long term strategy includes a type of energy storage called underground pumped hydro storage, or UPHS. Learn more:
-                <Link
+                Our long term strategy includes a type of energy storage called underground pumped hydro storage, or UPHS.
+                <Link className="block-link"
                   to="/"
                 >
                   UPHS Research

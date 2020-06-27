@@ -208,4 +208,25 @@ $logo-size-m: 3rem;
   span.icon-mail {
     font-size: 1.75em;
   }
+
+  .list-items li {
+    font-style: italic;
+    margin-bottom: 1rem;
+  }
+
+  .block-link {
+    display: block;
+
+    &:before {
+      content: "^";
+      display: inline-block;
+      vertical-align: middle;
+      transform: rotate(90deg);
+      padding: 2em 0 0 0;
+      line-height: 0;
+      height: 0;
+      margin-left: 1em;
+      margin-right: -.5em;
+    }
+  }
 }
