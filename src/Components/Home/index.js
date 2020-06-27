@@ -109,7 +109,7 @@ class Home extends React.Component {
               <p>
                 Terrament is a pre-funded startup based in Brooklyn, NY. We are currently seeking our first round of investment.
                 <Link className="block-link"
-                  to="/"
+                  to="/about"
                 >
                   About us
                 </Link>
@@ -117,7 +117,7 @@ class Home extends React.Component {
               <p>
                 Our long term strategy includes a type of energy storage called underground pumped hydro storage, or UPHS.
                 <Link className="block-link"
-                  to="/"
+                  to="/uphs-research"
                 >
                   UPHS Research
                 </Link>

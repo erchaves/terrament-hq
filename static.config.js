@@ -25,6 +25,10 @@ export default {
       component: 'src/Components/Home',
     },
     {
+      path: 'about',
+      component: 'src/Components/About',
+    },
+    {
       path: '404',
       component: 'src/Components/404',
     },

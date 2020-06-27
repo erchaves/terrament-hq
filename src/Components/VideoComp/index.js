@@ -8,7 +8,7 @@ const VideoComp = ({
   loop=true,
   muted=true,
   autoPlay=true,
-  controls=true,
+  controls,
   poster,
   children,
   el: El = "div"
@@ -28,7 +28,7 @@ const VideoComp = ({
       muted={muted}
       poster={poster}
       autoPlay={autoPlay}
-      controls={controls}
+      controls={controls || !isBackgroundVideo}
     >
       {children}
     </video>
