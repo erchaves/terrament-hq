@@ -13,7 +13,7 @@ export default class Navbar extends Component {
           </li>
           <li className="menu-li">
             <Link to="/uphs" >
-              UPHS Research
+              UPHS <span className="hide-mobile">Research</span>
             </Link>
           </li>
           <li className="menu-li">

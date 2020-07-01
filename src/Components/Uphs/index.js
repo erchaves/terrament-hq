@@ -6,6 +6,8 @@ import { Link } from '@reach/router'
 import './index.scss';
 
 const videoBgShort = '/video-bg-short.jpg';
+const videoMp4Bg = 'homepage-bg-uphs.mp4';
+const videoPosterBg = 'homepage-bg.jpg';
 
 class Uphs extends React.Component {
   render() {
@@ -35,6 +37,20 @@ class Uphs extends React.Component {
               <p>
                 Our patent pending design uses modular, solid-mass weights deployed deep underground. This design was largely inspired and informed by a different design which uses water. This technology is called Underground Pumped Hydro Storage, or UPHS.
               </p>
+
+              <div className="media-wrap">
+                <VideoComp
+                  wrapperClass="captioned-media"
+                  isBackgroundVideo={false}
+                  poster={videoPosterBg}
+                >
+                  <source src={videoMp4Bg} type="video/mp4" />
+                </VideoComp>
+
+                <span className="caption">
+                  Video collage of technologies related to UPHS
+                </span>
+              </div>
             </div>
             <div className="content-section">
               <h2 className="h2">
@@ -45,7 +61,7 @@ class Uphs extends React.Component {
               </p>
 
               <div className="media-wrap">
-                <img className="pnl-report-diagram" src="/pnl-report-diagram-2.png" alt="A UPHS design from a U.S. Gov Report" />
+                <img className="captioned-media" src="/pnl-report-diagram-2.png" alt="A UPHS design from a U.S. Gov Report" />
                 <span className="caption">
                   UPHS design from a U.S. DOE report. See key research below.
                 </span>

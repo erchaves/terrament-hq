@@ -1,9 +1,10 @@
 @import './shared-styles/variables.scss';
 @import './shared-styles/mixins.scss';
 
-$menu-margin-x: 3vw;
+$menu-margin-x: 2.5vw;
 $logo-size: 4rem;
 $logo-size-m: 3rem;
+$flex-padding: 1.25rem;
 
 .page {
   position: relative;
@@ -11,6 +12,11 @@ $logo-size-m: 3rem;
   background: $color-primary;
   color: $color-white;
   margin: 0 auto;
+
+  .content-section {
+    margin-bottom: 3rem;
+    line-height: $line-height;
+  }
 
   .header-logo {
     position: absolute;
@@ -117,7 +123,7 @@ $logo-size-m: 3rem;
     }
 
     .h2 {
-      margin-top: -0.25em;
+      margin-top: .05em;
       font-size: 1.39em;
       font-weight: 300;
       font-family: $font-family;
@@ -146,6 +152,73 @@ $logo-size-m: 3rem;
     }
   }
 
+  // todo: Move to a new section;
+  .profile-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -$flex-padding;
+    margin-right: -$flex-padding;
+  }
+
+  .profile-wrap {
+    width: 33.3333%;
+    height: 100%;
+    box-sizing: border-box;
+    display: block;
+    padding: $flex-padding/2 $flex-padding;
+
+    p {
+      font-size: $font-size-base;
+      line-height: $line-height-sm;
+      text-align: justify;
+    }
+  }
+
+  .profile-name,
+  .profile-title {
+    text-align: center;
+    font-weight: $font-weight-bold;
+    line-height: 1em;
+
+    .bold-not {
+      font-weight: 100;
+    }
+  }
+
+  .profile-name {
+    margin-bottom: .25rem;
+  }
+
+  .profile-title {
+    font-size: $font-size-base;
+    margin-bottom: .5rem;
+    font-style: italic;
+  }
+
+  .profile-img {
+    width: 100%;
+    margin-bottom: .25rem;
+
+    &.crop-circle {
+      overflow: hidden;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+  }
+  // endtodo: Move to a new section;
+
+  .media-wrap {
+    margin-bottom: 1.5rem;
+  }
+
+
+  // .inline-img {
+  //   float: left;
+  //   width: 25%;
+  //   padding-right: 1rem;
+  //   padding-bottom: 0.5rem;
+  // }
+
   @media screen and (max-width: $screen-size-mobile) {
     .screen-content-above-fold {
       .h1-wrap {
@@ -169,7 +242,7 @@ $logo-size-m: 3rem;
     }
 
     .menu-li {
-      margin: 0 1rem;
+      margin: 0 .8rem;
     }
 
     .footer-inner {
@@ -182,26 +255,27 @@ $logo-size-m: 3rem;
         margin: 1rem;
       }
     }
-  }
 
-  .p-wrap {
-    clear: both;
+    .profile-row {
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: -$flex-padding;
+      margin-right: -$flex-padding;
+    }
 
-    &:after {
-      content: "";
+    .profile-wrap {
+      width: 100%;
+      box-sizing: border-box;
       display: block;
-      clear: both;
+      padding: $flex-padding;
+    }
+
+    .h2 {
+      margin-top: .2em;
     }
   }
 
-  .inline-img {
-    float: left;
-    width: 25%;
-    padding-right: 1rem;
-    padding-bottom: 0.5rem;
-  }
-
-  .pnl-report-diagram {
+  .captioned-media {
     width: 100%;
     margin: 2rem auto 1rem auto;
     display: block;
@@ -214,5 +288,4 @@ $logo-size-m: 3rem;
     font-style: italic;
     font-size: .8em;
   }
-
 }

@@ -19,7 +19,6 @@ body {
     // Fix for now is to make the reset.css a reset.scss.
     font-family: $font-family;
     letter-spacing: $letter-spacing;
-    line-height: $line-height;
     font-size: $font-size-sm;
   }
 }
@@ -60,10 +59,6 @@ button {
   border: none;
 }
 
-.media-wrap {
-  margin-bottom: 1.5rem;
-}
-
 .react-static-loading {
   // git rid of the spinning loader. It's distracting.
   display: none !important;
@@ -101,10 +96,6 @@ button {
   }
 }
 
-.content-section {
-  margin-bottom: 3rem;
-}
-
 .info-link-list {
   margin-bottom: 1rem;
 }
@@ -139,5 +130,9 @@ button {
 
   .responsive-google-slides {
     padding-bottom: 63.5%;
+  }
+
+  .hide-mobile {
+    display: none;
   }
 }
