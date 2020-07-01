@@ -29,6 +29,10 @@ export default {
       component: 'src/Components/About',
     },
     {
+      path: 'uphs',
+      component: 'src/Components/Uphs',
+    },
+    {
       path: '404',
       component: 'src/Components/404',
     },

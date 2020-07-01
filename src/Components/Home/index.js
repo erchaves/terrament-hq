@@ -91,13 +91,12 @@ class Home extends React.Component {
                 Terrament Pitch Deck
               </h2>
 
-              <div class="media-wrap responsive-google-slides">
+              <div className="media-wrap responsive-google-slides">
                 <iframe
                   src="https://docs.google.com/presentation/d/e/2PACX-1vRAx_zGoWME9GspEBwb6Ss3zX7dRh74G36690nuYKGFbphRtIQ88V8MjpUqKEhvnK8rjH4VeqI_r5ge/embed?start=false&loop=false&delayms=10000"
-                  frameborder="0"
-                  allowfullscreen="true"
-                  mozallowfullscreen="true"
-                  webkitallowfullscreen="true">
+                  frameBorder={0}
+                  allowFullScreen={true}
+                >
                 </iframe>
               </div>
             </div>

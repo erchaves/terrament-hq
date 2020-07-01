@@ -2,20 +2,6 @@
 @import '../../shared-styles/mixins.scss';
 
 .page-home {
-  .pnl-report-diagram {
-    width: 80%;
-    margin: 2rem auto 1rem auto;
-    display: block;
-  }
-
-  .caption {
-    margin: 0 auto;
-    display: block;
-    text-align: center;
-    font-style: italic;
-    font-size: .8em;
-  }
-
   .component-video-bg {
     &:after {
       @include full-size();
@@ -32,7 +18,7 @@
     left: 30%;
   }
 
-  .page-screen-contact .footer-inner {
+  .page-screen-uphs .footer-inner {
     li {
       display: inline-block;
     }

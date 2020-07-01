@@ -7,21 +7,13 @@ export default class Navbar extends Component {
       <nav className="nav-content" id="navbar">
         <ul className="menu-ul">
           <li className="menu-li">
-            <Link
-              to="about"
-              smooth={true}
-              duration={500}
-            >
+            <Link to="/about" >
               About
             </Link>
           </li>
           <li className="menu-li">
-            <Link
-              to="contact"
-              smooth={true}
-              duration={500}
-            >
-              Contact
+            <Link to="/uphs" >
+              UPHS Research
             </Link>
           </li>
           <li className="menu-li">

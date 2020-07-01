@@ -16,7 +16,8 @@ $logo-size-m: 3rem;
     position: absolute;
     left: 0;
     top: 0;
-    z-index: 2;
+    // sit on top of nav for link to work
+    z-index: 3;
 
     img {
       margin: $menu-margin-x;
@@ -182,4 +183,36 @@ $logo-size-m: 3rem;
       }
     }
   }
+
+  .p-wrap {
+    clear: both;
+
+    &:after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+  }
+
+  .inline-img {
+    float: left;
+    width: 25%;
+    padding-right: 1rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .pnl-report-diagram {
+    width: 100%;
+    margin: 2rem auto 1rem auto;
+    display: block;
+  }
+
+  .caption {
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    font-style: italic;
+    font-size: .8em;
+  }
+
 }
