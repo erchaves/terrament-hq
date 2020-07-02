@@ -10,7 +10,7 @@ export default {
     siteRoot: siteRoot,
     description: 'Terrament is solving our trillion-dollar energy storage crisis. We are using Underground Gravity Storage to build low risk high scale energy storage that is far cheaper than Li-ion battery technology.',
     imageUrl: `${siteRoot}/terrament-logo.png`,
-    imageWideUrl: `${siteRoot}/terrament-logo-text.png`,
+    imageWideUrl: `${siteRoot}/terrament-logo-new-temp.png`,
     type: 'website',
   }),
   plugins: ["react-static-plugin-sass"],
