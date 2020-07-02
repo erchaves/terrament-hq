@@ -54,7 +54,7 @@ class About extends React.Component {
                   <h3 className="profile-name">Eric Chaves</h3>
                   <h4 className="profile-title">Founder</h4>
                   <p>
-                    Eric Chaves is the founder of Terrament. He is a technol&shy;ogist and entre&shy;preneur living in Brooklyn, New York. He is a software developer and multi-disciplinary designer with experience in a range of fields from architecture to industrial design. Terrament is his third company. His first two companies are <a href="https://angel.co/company/antenna-1" title="Antenna Startup Company: Next-gen recommendations powered by mobile-first feedback on everything">Antenna</a> and <a href="https://www.syllablehq.com/" title="Syllable Technology and Design">Syllable</a>.
+                    Eric Chaves is the founder of Terrament. He is a technol&shy;ogist and entre&shy;preneur living in Brooklyn, New York. He is a software developer and multi-disciplinary designer with experience in a range of fields from architecture to industrial design. Terrament is his third company. His first two companies are <a href="https://angel.co/company/antenna-1" title="Antenna Startup Company: Next-gen recommendations powered by mobile-first feedback on everything" target="_blank" rel="noopener noreferrer">Antenna</a> and <a href="https://www.syllablehq.com/" title="Syllable Technology and Design" target="_blank" rel="noopener noreferrer">Syllable</a>.
                   </p>
                 </div>
                 <div className="profile-wrap">
@@ -120,6 +120,19 @@ class About extends React.Component {
                     Thanks to the rest of our slack team support crew whose Venn diagrams of  tallent include grant writing, climate advocacy, entre&shy;preneurship, software develop&shy;ment, and more.
                   </p>
                 </div>
+              </div>
+            </div>
+            <div className="content-section">
+              <h2 className="h2">
+                Contact Us
+              </h2>
+              <div className="contact-info">
+                <address>
+                  Terrament, LLC <br />
+                  67 West St, Suite 401-C11 <br />
+                  Brooklyn, NY 11222
+                </address>
+                <a href="mailto:eric@terramenthq.com">eric@terramenthq.com</a>
               </div>
             </div>
           </div>
