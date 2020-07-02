@@ -1,13 +1,18 @@
 import React from 'react'
 import { Root, Routes } from 'react-static'
-import { Link } from '@reach/router'
+import { Router } from '@reach/router'
+import Loading from './Components/Loading'
 
 import './app.scss'
 
 function App() {
   return (
     <Root>
-      <Routes />
+      <React.Suspense fallback={Loading()}>
+        <Router>
+          <Routes path="*" />
+        </Router>
+      </React.Suspense>
     </Root>
   )
 }
