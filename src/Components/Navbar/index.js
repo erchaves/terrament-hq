@@ -1,31 +1,19 @@
 import React, { Component } from "react";
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from '@reach/router'
 
 export default class Navbar extends Component {
-  scrollToTop = () => {
-    scroll.scrollToTop();
-  };
-
   render() {
     return (
       <nav className="nav-content" id="navbar">
         <ul className="menu-ul">
           <li className="menu-li">
-            <Link
-              to="about"
-              smooth={true}
-              duration={500}
-            >
+            <Link to="/about" >
               About
             </Link>
           </li>
           <li className="menu-li">
-            <Link
-              to="contact"
-              smooth={true}
-              duration={500}
-            >
-              Contact
+            <Link to="/uphs" >
+              UPHS <span className="hide-mobile">Research</span>
             </Link>
           </li>
           <li className="menu-li">

@@ -1,162 +1,8 @@
 @import '../../shared-styles/variables.scss';
 @import '../../shared-styles/mixins.scss';
 
-$left-margin: 5vw;
-$menu-margin-x: 3vw;
-$logo-size: 4rem;
-$logo-size-m: 3rem;
-
 .page-home {
-  .bullet {
-    padding-left: 0;
-    padding-right: 0.35em;
-    font-size: 0.6em;
-    transform: translateY(-.45em);
-    display: inline-block;
-
-    &::after {
-      content: '•';
-      position: absolute;
-      display: inline-block;
-    };
-  }
-
-  .header-logo {
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: 2;
-
-    img {
-      margin: $menu-margin-x;
-      max-width: $logo-size;
-    }
-  }
-
-  .nav-content {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    text-align: right;
-    z-index: 2;
-  }
-
-  .menu-ul {
-    margin: $menu-margin-x 5vw;
-
-    a {
-      color: $color-white;
-      cursor: pointer;
-      line-height: $logo-size;
-    }
-  }
-
-  .menu-li {
-    display: inline-block;
-    margin: 0 2rem;
-    font-size: $font-size-md;
-
-    &:last-child {
-      margin-right: 0;
-    }
-  }
-
-  .footer {
-    width: 100%;
-    position: absolute;
-    bottom: 2.5rem;
-    left: 0;
-    text-align: center;
-    display: flex;
-    align-items: center;
-
-    img {
-      width: 3em;
-    }
-
-    span, a {
-      opacity: .9;
-      color: white;
-    }
-    span {
-      font-size: 1.75rem;
-      margin: 0 .75rem;
-    }
-
-    a {
-      cursor: pointer;
-
-      &:hover {
-        opacity: 1;
-      }
-    }
-  }
-
-  .footer-inner {
-    display: inline;
-    margin: 0 auto;
-    align-items: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .page-screen-home {
-    .h1-wrap {
-      text-align: center;
-      left: 0;
-      right: 0;
-      position: absolute;
-      bottom: 7vh;
-      // left: $left-margin;
-      font-size: 1.6vw;
-    }
-
-    .h1 {
-      line-height: 0;
-      font-size: 4.45em;
-      letter-spacing: 0.01em;
-      margin-top: -1em;
-      margin-left: -1.2vw;
-    }
-
-    .h2 {
-      margin-top: .1em;
-      font-size: 1em;
-      font-weight: 300;
-      font-family: $font-family;
-      letter-spacing: 0.03em;
-    }
-  }
-
-  .page-screen-about {
-    background: white;
-    color: $color-primary;
-  }
-
-  .page-screen-contact {
-    background: $color-primary;
-  }
-
-  .float-left {
-  }
-
-  .pnl-report-diagram {
-    width: 80%;
-    margin: 2rem auto 1rem auto;
-    display: block;
-  }
-
-  .caption {
-    margin: 0 auto;
-    display: block;
-    text-align: center;
-    font-style: italic;
-    font-size: .8em;
-  }
-
-  .component-video {
+  .component-video-bg {
     &:after {
       @include full-size();
 
@@ -172,60 +18,7 @@ $logo-size-m: 3rem;
     left: 30%;
   }
 
-  @media screen and (max-width: $screen-size-mobile) {
-    .page-screen-home {
-      .h1-wrap {
-        text-align: center;
-        left: 0;
-        right: 0;
-        font-size: 3.25vw;
-      }
-
-      .h1 {
-        margin-left: -2.9vw;
-      }
-
-      .h2 {
-        margin-top: .2em;
-      }
-    }
-
-    .menu-ul {
-      margin-top: $logo-size-m / 2;
-
-      a {
-        line-height: $logo-size-m;
-      }
-    }
-
-    .header-logo {
-      img {
-        margin: $logo-size-m / 2;
-        max-width: $logo-size-m;
-      }
-    }
-
-    .menu-li {
-      margin: 0 1rem;
-    }
-
-    .footer {
-      bottom: 1rem;
-    }
-
-    .footer-inner {
-      margin: 0 auto;
-      display: block;
-      font-size: 1.2rem;
-
-      span {
-        display: block;
-        margin: 1rem;
-      }
-    }
-  }
-
-  .page-screen-contact .footer-inner {
+  .page-screen-uphs .footer-inner {
     li {
       display: inline-block;
     }
@@ -233,5 +26,30 @@ $logo-size-m: 3rem;
 
   span.icon-mail {
     font-size: 1.75em;
+  }
+
+  .list-items li {
+    font-style: italic;
+    margin-bottom: 1rem;
+  }
+
+  .block-link {
+    display: block;
+
+    &:before {
+      content: "^";
+      display: inline-block;
+      vertical-align: middle;
+      transform: rotate(90deg);
+      padding: 2em 0 0 0;
+      line-height: 0;
+      height: 0;
+      margin-left: 1em;
+      margin-right: -.5em;
+    }
+  }
+
+  .scroll-link {
+    cursor: pointer;
   }
 }

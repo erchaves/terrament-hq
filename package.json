@@ -14,12 +14,14 @@
   "dependencies": {
     "@reach/router": "^1.2.1",
     "axios": "^0.18.0",
+    "css-loader": "^3.6.0",
     "react": "^16.8.1",
     "react-dom": "^16.8.1",
     "react-hot-loader": "^4.3.12",
-    "react-scroll": "^1.7.14",
+    "react-scroll": "^1.7.16",
     "react-static": "^6.0.18",
-    "react-static-plugin-sass": "^6.3.0"
+    "react-static-plugin-sass": "^6.3.0",
+    "webpack": "^4.43.0"
   },
   "devDependencies": {
     "eslint-config-react-tools": "1.x.x",

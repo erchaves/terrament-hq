@@ -2,9 +2,7 @@
 @import './shared-styles/mixins.scss';
 @import './shared-styles/reset.scss';
 @import './shared-styles/fontello/css/fontello.css';
-// @import './shared-styles/fontello/css/animation.css';
-//
-// @import url('https://fonts.googleapis.com/css?family=Karla:400,700');
+@import './page.scss';
 
 html,
 body {
@@ -21,7 +19,6 @@ body {
     // Fix for now is to make the reset.css a reset.scss.
     font-family: $font-family;
     letter-spacing: $letter-spacing;
-    line-height: $line-height;
     font-size: $font-size-sm;
   }
 }
@@ -41,6 +38,8 @@ i {
 .page-screen {
   position: relative;
   min-height: 100vh;
+  background: white;
+  color: $color-primary;
 }
 
 a {
@@ -97,10 +96,6 @@ button {
   }
 }
 
-.content-section {
-  margin-bottom: 3rem;
-}
-
 .info-link-list {
   margin-bottom: 1rem;
 }
@@ -109,10 +104,35 @@ button {
   margin-bottom: 0.75rem;
 }
 
+.responsive-google-slides {
+  position: relative;
+  // padding-bottom: 56.25%; /* 16:9 Ratio */
+  // this is a more propper fit. I'm not sure why.
+  padding-bottom: 60.3%;
+  height: 0;
+  overflow: hidden;
+
+  iframe {
+    border: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
 
 @media screen and (max-width: $screen-size-mobile) {
   html,
   body {
     font-size: $font-size-base;
+  }
+
+  .responsive-google-slides {
+    padding-bottom: 63.5%;
+  }
+
+  .hide-mobile {
+    display: none;
   }
 }
