@@ -124,7 +124,7 @@ class Home extends React.Component {
                 <Link className="block-link"
                   to="/about"
                 >
-                  About us
+                  About Us
                 </Link>
               </p>
               <p>
@@ -135,7 +135,7 @@ class Home extends React.Component {
                   UPHS Research
                 </Link>
               </p>
-              <p class="disclaimer">
+              <p className="disclaimer">
                 Note: The header video above is merely a collage of relevant technologies and asserts no claims.
               </p>
             </div>
