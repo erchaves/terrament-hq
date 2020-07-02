@@ -22,7 +22,6 @@ const VideoComp = ({
   >
     <img className="video-fallback-img" style={{display: "none"}} src={poster} alt="terrament style image of renewable energy" />
     <video
-      onClick="this.paused ? this.play() : this.pause()"
       className={`video-html5 ${videoClass ? videoClass : ""}`}
       loop={loop}
       muted={muted}

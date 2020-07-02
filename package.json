@@ -1,29 +1,37 @@
 {
   "name": "terrament-website",
   "version": "1.0.3",
-  "main": "index.js",
   "license": "MIT",
   "scripts": {
     "start": "react-static start",
     "stage": "react-static build --staging",
     "build": "react-static build",
-    "bundle": "react-static bundle",
-    "export": "react-static export",
-    "serve": "serve dist -p 3000 -s"
+    "analyze": "react-static build --analyze",
+    "serve": "serve dist -p 3000"
   },
   "dependencies": {
     "@reach/router": "^1.2.1",
-    "css-loader": "^3.6.0",
-    "react": "^16.8.1",
-    "react-dom": "^16.8.1",
-    "react-hot-loader": "^4.3.12",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-hot-loader": "^4.12.21",
     "react-scroll": "^1.7.16",
-    "react-static": "^6.0.18",
+    "react-static": "^7.2.0",
+    "react-static-plugin-reach-router": "^7.2.0",
     "react-static-plugin-sass": "^6.3.0",
+    "react-static-plugin-sitemap": "^7.2.0",
+    "react-static-plugin-source-filesystem": "^7.2.0",
     "webpack": "^4.43.0"
   },
   "devDependencies": {
-    "eslint-config-react-tools": "1.x.x",
-    "serve": "10.1.1"
+    "babel-eslint": "^10.0.2",
+    "eslint": "^6.1.0",
+    "eslint-config-react-app": "^5.0.1",
+    "eslint-config-react-tools": "^1.1.7",
+    "eslint-plugin-flowtype": "^4.2.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.14.3",
+    "eslint-plugin-react-hooks": "^4.0.2",
+    "serve": "^11.1.0"
   }
 }
