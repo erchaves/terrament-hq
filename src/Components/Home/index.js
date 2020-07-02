@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from "../Navbar";
 import VideoComp from "../VideoComp";
 import { Link } from '@reach/router'
+import { Link as ScrollLink } from "react-scroll";
 
 import './index.scss';
 
@@ -20,6 +21,7 @@ class Home extends React.Component {
 
         <Navbar/>
 
+
         <div className="page-screen">
           <div className="screen-content screen-content-above-fold">
             <VideoComp
@@ -29,17 +31,27 @@ class Home extends React.Component {
               <source src={videoMp4Bg} type="video/mp4" />
             </VideoComp>
 
-            <div className="h1-wrap">
-              <h1 className="h1">
-                <img src="/terrament-logo-text-white.svg" alt="Terrament logo" />
-              </h1>
-              <h2 className="h2">
-                Radically Scalable Energy Storage
-              </h2>
-            </div>
+            <ScrollLink
+              to="belowfold"
+              smooth={true}
+              duration={500}
+              className="scroll-link"
+            >
+              <div className="h1-wrap">
+                <h1 className="h1">
+                  <img src="/terrament-logo-text-white.svg" alt="Terrament logo" />
+                </h1>
+                <h2 className="h2">
+                  Radically Scalable Energy Storage
+                </h2>
+              </div>
+            </ScrollLink>
           </div>
         </div>
-        <div className="page-screen">
+        <div className="page-screen"
+          name="belowfold"
+          id="belowfold"
+        >
           <div className="screen-content screen-content-below-fold">
             <div className="content-section">
               <h2 className="h2">
@@ -47,14 +59,16 @@ class Home extends React.Component {
               </h2>
 
               <p>
-                The threat of climate change has sparked an energy revolution; wind and solar technologies are poised to replace fossil fuels. This transition is urgent. But it will stall without a key ingredient: energy storage.
+                The threat of climate change has sparked an energy revolution; wind and solar technologies are poised to replace fossil fuels. This transition is urgent, but it will stall without a key ingredient: energy storage.
               </p>
               <p>
-                Terrament is building low-cost, high-scale energy storage using gravity batteries lowered deep underground.
+                That's why Terrament is building low-cost, high-scale energy storage. Our patent pending design utilizes solid-mass gravity batteries dropped deep underground.
               </p>
             </div>
 
-            <div className="content-section">
+            <div className="content-section"
+              id="alphaDesign"
+            >
               <h2 className="h2">
                 Terrament Alpha Design
               </h2>
@@ -68,7 +82,7 @@ class Home extends React.Component {
               </VideoComp>
 
               <p>
-                Terrament’s patent-pending design achieves breakthrough efficiency by maximizing the two simple principals of gravity storage: height and weight.
+                Terrament’s patent pending design achieves breakthrough efficiency by maximizing the two simple principals of gravity storage: height and weight.
               </p>
 
               <ol className="list-items">
@@ -116,10 +130,13 @@ class Home extends React.Component {
               <p>
                 Our long term strategy includes a type of energy storage called underground pumped hydro storage, or UPHS.
                 <Link className="block-link"
-                  to="/uphs-research"
+                  to="/uphs"
                 >
                   UPHS Research
                 </Link>
+              </p>
+              <p class="disclaimer">
+                Note: The header video above is merely a collage of relevant technologies and asserts no claims.
               </p>
             </div>
           </div>

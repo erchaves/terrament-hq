@@ -30,17 +30,14 @@ class About extends React.Component {
                 About Terrament
               </h2>
               <p>
-                Terrament is a renewable energy company building low-cost, high-scale energy storage. We believe that our patent-pending design for underground gravity batteries will lead our future's multi-billion dollar energy storage market.
+                Terrament is a renewable energy company building low-cost, high-scale energy storage. We believe that our patent pending design for underground gravity batteries will lead our future's multi-billion dollar energy storage market.
               </p>
 
               <p>
                 Terrament's gravity storage design was inspired by a related technology called Underground Pumped Hydro Storage, or UPHS. In fact, the company was born out of a research project exploring the feasibility UPHS. By leveraging our UPHS research to spark discussions with industry experts and validate our market assumptions, we proved that Terrament's concept was not just viable, it was urgently needed.
               </p>
               <p>
-                Under the threat of a destablized climate, demand for cheap, scaleable energy storage has exploded. And no one has yet developed a satisfactory solution. The market is wide open, and Terrament has already piqued early interest from experts, advisors, and investors.
-              </p>
-              <p>
-                Terrament, LLC was founded at the start of 2020 and holds a provisional patent for our innovative approach to underground energy storage.
+                Under the threat of climate destablization, the market demand for cheap, scaleable energy storage is rising exponentially. No one has yet developed an affordable solution; this burgeoning market is wide open. In light of this, we're pleased to have already piqued early interest from some advisors, and investors.
               </p>
             </div>
             <div className="content-section">
@@ -117,7 +114,7 @@ class About extends React.Component {
                   </h3>
                   <h4 className="profile-title">Creatives, etc</h4>
                   <p>
-                    Thanks to the rest of our slack team support crew whose Venn diagrams of  tallent include grant writing, climate advocacy, entre&shy;preneurship, software develop&shy;ment, and more.
+                    Thanks to the rest of Slack channel support crew! We appreciate all of you whose Venn diagrams of tallent include grant writing, climate advocacy, entre&shy;preneurship, software develop&shy;ment, and more.
                   </p>
                 </div>
               </div>
@@ -127,7 +124,11 @@ class About extends React.Component {
                 Contact Us
               </h2>
               <div className="contact-info">
+                <p>
+                  Terrament was founded at the start of 2020 and holds a provisional patent for our innovative approach to underground energy storage. We are now seeking a seed round of funding.
+                </p>
                 <address>
+                  Eric Chaves, Founder<br />
                   Terrament, LLC <br />
                   67 West St, Suite 401-C11 <br />
                   Brooklyn, NY 11222

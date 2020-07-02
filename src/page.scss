@@ -211,13 +211,12 @@ $flex-padding: 1.25rem;
     margin-bottom: 1.5rem;
   }
 
-
-  // .inline-img {
-  //   float: left;
-  //   width: 25%;
-  //   padding-right: 1rem;
-  //   padding-bottom: 0.5rem;
-  // }
+  .disclaimer {
+    font-size: $font-size-base;
+    font-style: italic;
+    // temp rule
+    margin-top: 2rem;
+  }
 
   @media screen and (max-width: $screen-size-mobile) {
     .screen-content-above-fold {
