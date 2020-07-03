@@ -41,16 +41,18 @@
   }
 
   @media (max-width: 768px) {
-    .video-fallback-img {
-      @include center-both();
+    &.component-video-bg {
+      .video-fallback-img {
+        @include center-both();
 
-      max-height: 100%;
-      min-width: 100%;
-      display: block !important;
-    }
+        max-height: 100%;
+        min-width: 100%;
+        display: block !important;
+      }
 
-    .video-html5 {
-      display: none;
+      .video-html5 {
+        display: none;
+      }
     }
   }
 }

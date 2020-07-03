@@ -6,8 +6,7 @@ import { Link as ScrollLink } from "react-scroll";
 
 import './index.scss';
 
-const videoPosterBg = 'homepage-bg.jpg';
-const videoPoster = '';
+const videoPoster = 'homepage-bg.jpg';
 const videoMp4Bg = 'homepage-bg.mp4';
 const videoMp4 = 'terrament-prototype-R7-animation-2020-05-12-sm.mp4';
 
@@ -26,7 +25,7 @@ class Home extends React.Component {
           <div className="screen-content screen-content-above-fold">
             <VideoComp
               isBackgroundVideo={true}
-              poster={videoPosterBg}
+              poster={videoPoster}
             >
               <source src={videoMp4Bg} type="video/mp4" />
             </VideoComp>
@@ -77,9 +76,17 @@ class Home extends React.Component {
                 Our alpha design is in very early development. This 3D animation is an early draft of our design concept. More details to be revealed post-funding.
               </p>
 
-              <VideoComp wrapperClass="media-wrap">
-                <source src={videoMp4} type="video/mp4" />
-              </VideoComp>
+              <div className="media-wrap">
+                <VideoComp
+                  wrapperClass="captioned-media"
+                  poster={videoPoster}
+                >
+                  <source src={videoMp4} type="video/mp4" />
+                </VideoComp>
+                <span className="caption">
+                  3D animation of Terrament alpha design concept (early draft).
+                </span>
+              </div>
 
               <p>
                 Terrament’s patent pending design achieves breakthrough efficiency by maximizing the two simple principals of gravity storage: height and weight.

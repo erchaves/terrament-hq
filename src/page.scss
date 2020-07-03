@@ -14,7 +14,7 @@ $flex-padding: 1.25rem;
   margin: 0 auto;
 
   .content-section {
-    margin-bottom: 3rem;
+    margin-bottom: 2.75rem;
     line-height: $line-height;
   }
 
@@ -107,7 +107,7 @@ $flex-padding: 1.25rem;
       left: 0;
       right: 0;
       text-align: center;
-      bottom: 7vh;
+      bottom: 7.5vh;
       font-size: 1.6vw;
       color: $color-white;
     }
@@ -208,14 +208,14 @@ $flex-padding: 1.25rem;
   // endtodo: Move to a new section;
 
   .media-wrap {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.25rem;
   }
 
   .disclaimer {
     font-size: $font-size-base;
     font-style: italic;
     // temp rule
-    margin-top: 2rem;
+    margin-top: 1.5rem;
   }
 
   @media screen and (max-width: $screen-size-mobile) {

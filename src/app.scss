@@ -55,6 +55,12 @@ p {
   }
 }
 
+.h1,
+.h2,
+.h3 {
+  line-height: 1em;
+}
+
 button {
   border: none;
 }
@@ -70,7 +76,7 @@ button {
 
 .screen-content {
   // the 6rem leaves enough room for the globe footer
-  padding: 5vh 5vw 4rem 5vw;
+  padding: 5vh 5vw 3rem 5vw;
   max-width: 40rem;
   margin: 0 auto;
 
@@ -78,14 +84,14 @@ button {
     font-size: $font-size-lg;
     font-family: $font-family-bold;
     font-weight: $font-weight-bold;
-    margin: 1rem 0;
+    margin: .75rem 0;
   }
 
   .h3 {
     font-size: $font-size-md;
     font-family: $font-family-bold;
     font-weight: $font-weight-bold;
-    margin-bottom: .75rem;
+    margin-bottom: .65rem;
   }
 
   &.screen-content-dark {
