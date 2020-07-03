@@ -12,7 +12,9 @@ const VideoComp = ({
   poster,
   children,
   el: El = "div"
-}) => (
+}) => {
+  debugger;
+  return (
   <El
     className={`
       component-video
@@ -32,6 +34,6 @@ const VideoComp = ({
       {children}
     </video>
   </El>
-);
+)};
 
 export default VideoComp;

@@ -6,7 +6,8 @@ import { Link as ScrollLink } from "react-scroll";
 
 import './index.scss';
 
-const videoPoster = 'homepage-bg.jpg';
+const videoPosterBg = 'homepage-bg.jpg';
+const videoPosterDesign = 'terrament-prototype-R7-cover.png';
 const videoMp4Bg = 'homepage-bg.mp4';
 const videoMp4 = 'terrament-prototype-R7-animation-2020-05-12-sm.mp4';
 
@@ -25,7 +26,7 @@ class Home extends React.Component {
           <div className="screen-content screen-content-above-fold">
             <VideoComp
               isBackgroundVideo={true}
-              poster={videoPoster}
+              poster={videoPosterBg}
             >
               <source src={videoMp4Bg} type="video/mp4" />
             </VideoComp>
@@ -79,7 +80,7 @@ class Home extends React.Component {
               <div className="media-wrap">
                 <VideoComp
                   wrapperClass="captioned-media"
-                  poster={videoPoster}
+                  poster={videoPosterBg}
                 >
                   <source src={videoMp4} type="video/mp4" />
                 </VideoComp>
@@ -105,6 +106,26 @@ class Home extends React.Component {
               <p>
                 Our solution is low-risk. We use only well-established mining technologies, and we do not rely on any risky, unproven chemical battery technologies.
               </p>
+            </div>
+
+            <div className="content-section related-technologies hide-desktop">
+              <h2 className="h2">
+                Related Technologies
+              </h2>
+              <div className="media-wrap">
+                <VideoComp
+                  wrapperClass="captioned-media"
+                  poster={videoPosterDesign}
+                  autoPlay={false}
+                  preload="none"
+                >
+                  <source src={videoMp4Bg} type="video/mp4" />
+                </VideoComp>
+                <span className="caption">
+                  Video collage of technologies related to Terrament gravity storage. <br/>
+                  Note: This video is merely a collage of relevant technologies and asserts no claims.
+                </span>
+              </div>
             </div>
 
             <div className="content-section">
@@ -142,7 +163,7 @@ class Home extends React.Component {
                   UPHS Research
                 </Link>
               </p>
-              <p className="disclaimer">
+              <p className="disclaimer hide-mobile">
                 Note: The header video above is merely a collage of relevant technologies and asserts no claims.
               </p>
             </div>

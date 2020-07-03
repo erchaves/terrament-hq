@@ -128,6 +128,11 @@ button {
   }
 }
 
+
+.hide-desktop {
+  display: none;
+}
+
 @media screen and (max-width: $screen-size-mobile) {
   html,
   body {
@@ -140,5 +145,9 @@ button {
 
   .hide-mobile {
     display: none;
+  }
+
+  .hide-desktop {
+    display: block !important;
   }
 }
