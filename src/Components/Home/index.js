@@ -117,7 +117,6 @@ class Home extends React.Component {
                   wrapperClass="captioned-media"
                   poster={videoPosterBg}
                   autoPlay={false}
-                  preload="none"
                 >
                   <source src={videoMp4Bg} type="video/mp4" />
                 </VideoComp>
