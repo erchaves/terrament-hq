@@ -80,7 +80,7 @@ class Home extends React.Component {
               <div className="media-wrap">
                 <VideoComp
                   wrapperClass="captioned-media"
-                  poster={videoPosterBg}
+                  poster={videoPosterDesign}
                 >
                   <source src={videoMp4} type="video/mp4" />
                 </VideoComp>
@@ -115,7 +115,7 @@ class Home extends React.Component {
               <div className="media-wrap">
                 <VideoComp
                   wrapperClass="captioned-media"
-                  poster={videoPosterDesign}
+                  poster={videoPosterBg}
                   autoPlay={false}
                   preload="none"
                 >

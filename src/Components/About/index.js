@@ -37,7 +37,7 @@ class About extends React.Component {
                 Terrament's gravity storage design was inspired by a related technology called Underground Pumped Hydro Storage, or UPHS. In fact, the company was born out of a research project exploring the feasibility UPHS. By leveraging our UPHS research to spark discussions with industry experts and validate our market assumptions, we proved that Terrament's concept was not just viable, it was urgently needed.
               </p>
               <p>
-                Under the threat of climate destablization, the market demand for cheap, scaleable energy storage is rising exponentially. No one has yet developed an affordable solution; this burgeoning market is wide open. In light of this, we're pleased to have already piqued early interest from some advisors, and investors.
+                Under the threat of climate destabilization, the market demand for cheap, scalable energy storage is rising exponentially. No one has yet developed an affordable solution; this burgeoning market is wide open. In light of this, we're pleased to have already piqued early interest from some advisors, and investors.
               </p>
             </div>
             <div className="content-section">
@@ -114,7 +114,7 @@ class About extends React.Component {
                   </h3>
                   <h4 className="profile-title">Creatives, etc</h4>
                   <p>
-                    Thanks to the rest of Slack channel support crew! We appreciate all of you whose Venn diagrams of tallent include grant writing, climate advocacy, entre&shy;preneurship, software develop&shy;ment, and more.
+                    Thanks to the rest of Slack channel support crew! We appreciate all of you whose Venn diagrams of talent include grant writing, climate advocacy, entre&shy;preneurship, software develop&shy;ment, and more.
                   </p>
                 </div>
               </div>

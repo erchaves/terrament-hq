@@ -54,7 +54,7 @@ class Uphs extends React.Component {
                 The Feasibility of UPHS
               </h2>
               <p>
-                Drawing from US government research, our UPHS white paper explained why the “UPHS concept is technically feasible and economically viable.” Further, we contextualized this past research to demonstrate that building a UHPS installation today would be more feasible than ever due to low interest rates, improved mining technology, and an accelerating demand for large-scale energy storge driven by climate change. We estimated that over a 20-40 year project lifespan, UPHS could be an order of magnitude cheaper than Li-ion battery technology built today.
+                Drawing from US government research, our UPHS white paper explained why the “UPHS concept is technically feasible and economically viable.” Further, we contextualized this past research to demonstrate that building a UHPS installation today would be more feasible than ever due to low interest rates, improved mining technology, and an accelerating demand for large-scale energy storage driven by climate change. We estimated that over a 20-40 year project lifespan, UPHS could be an order of magnitude cheaper than Li-ion battery technology built today.
               </p>
 
               <div className="media-wrap">
