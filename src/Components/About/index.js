@@ -8,6 +8,10 @@ import './index.scss';
 const videoBgShort = '/video-bg-short.jpg';
 
 class About extends React.Component {
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
+
   render() {
     return (
       <div className={`page page-about`}>

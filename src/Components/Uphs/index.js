@@ -10,6 +10,10 @@ const videoMp4Bg = 'homepage-bg-uphs.mp4';
 const videoPosterBg = 'homepage-bg.jpg';
 
 class Uphs extends React.Component {
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
+
   render() {
     return (
       <div className={`page page-uphs`}>

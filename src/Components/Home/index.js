@@ -12,6 +12,10 @@ const videoMp4Bg = 'homepage-bg.mp4';
 const videoMp4 = 'terrament-prototype-R7-animation-2020-05-12-sm.mp4';
 
 class Home extends React.Component {
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
+
   render() {
     return (
       <div className={`page page-home`}>
