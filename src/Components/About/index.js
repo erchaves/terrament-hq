@@ -78,7 +78,7 @@ class About extends React.Component {
                       Engineering Advisor
                     <span className="bold-not">]</span>
                   </h3>
-                  <h4 className="profile-title">Mechanical Engineer, PhD</h4>
+                  <h4 className="profile-title">Civil Engineer, PhD</h4>
                   <p>
                     One of our interim advisors is a Civil Engineer, PhD. <br/>
                     We greatly appreciate their support while we seek early investment and carefully build our team.
