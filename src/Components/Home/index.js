@@ -94,7 +94,7 @@ class Home extends React.Component {
               </div>
 
               <p>
-                Terrament’s patent pending design achieves breakthrough efficiency by maximizing the two simple principals of gravity storage: height and weight.
+                Terrament’s patent pending design achieves breakthrough efficiency by maximizing the two simple principles of gravity storage: height and weight.
               </p>
 
               <ol className="list-items">
