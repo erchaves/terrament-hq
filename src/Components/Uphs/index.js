@@ -36,7 +36,7 @@ class Uphs extends React.Component {
                 Underground Pumped Hydro Storage
               </h2>
               <p>
-                Terrament was born out of curiosity and a growing concern about climate change. It started as a blog post about an old but neglected technology called Underground Pumped Hydro Storage, or UPHS. Over the summer of 2019, a fascination for this technology escalated into a 70 page <a href="https://blog.syllablehq.com/underground-pumped-hydroelectric-storage-a-feasibility-study/" target="_blank" rel="noopener noreferrer">feasibility study of UPHS</a>.
+                Terrament was born out of curiosity and a growing concern about climate change. It started as a <a href="https://blog.syllablehq.com/underground-pumped-hydroelectric-storage-a-feasibility-study" target="_blank" rel="noopener noreferrer">blog post</a> about an old but neglected technology called Underground Pumped Hydro Storage, or UPHS. Over the summer of 2019, my fascination for this technology escalated into a 70 page <a href="https://github.com/syllable-hq/uphs-feasibility-study/raw/master/report.pdf">feasibility study of UPHS</a>.
               </p>
 
               <div className="media-wrap">
@@ -73,7 +73,7 @@ class Uphs extends React.Component {
                 Terrament and UPHS
               </h2>
               <p>
-                Although our long term road map does leave room to explore UPHS, we do not have any immediate plans to focus on the technology. Instead, we're fully focused on our own solid-mass design inspired by both UPHS as well as other types of gravity storage.
+                Although our long term road map does leave room to explore UPHS, we do not have any immediate plans to focus on the technology. Instead, we're fully focused on our own solid-mass gravity storage design inspired by both UPHS and other types of gravity storage.
               </p>
               <p>
                 Our Terrament energy storage design gains the height benefits of UPHS while also leveraging the modularity of solid-mass gravity storage. Learn more about our alpha design on our <a href="/">home page</a>.
