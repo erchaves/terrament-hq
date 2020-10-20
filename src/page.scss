@@ -38,6 +38,8 @@ $flex-padding: 1.25rem;
     top: 0;
     text-align: right;
     z-index: 2;
+    // fixes annoying issue with chrome graphic optimization that makes the video sometimes hide the menu
+    backface-visibility: hidden;
   }
 
   .menu-ul {
