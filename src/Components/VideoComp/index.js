@@ -13,7 +13,6 @@ const VideoComp = ({
   children,
   el: El = "div"
 }) => {
-  debugger;
   return (
   <El
     className={`

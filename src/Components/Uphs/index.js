@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from "../Navbar";
 import VideoComp from "../VideoComp";
+import Footer from "../Footer";
 import { Link } from '@reach/router'
 
 import './index.scss';
@@ -82,15 +83,7 @@ class Uphs extends React.Component {
           </div>
         </div>
 
-        <div className="footer">
-          <div className="footer-inner">
-            <Link
-                to="/"
-              >
-                <img src="/terrament-logo-white.png" alt="Terrament logo" />
-            </Link>
-          </div>
-        </div>
+        <Footer />
       </div>
     );
   }

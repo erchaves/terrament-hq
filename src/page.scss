@@ -3,6 +3,7 @@
 
 $menu-margin-x: 2.5vw;
 $logo-size: 4rem;
+$logo-size-footer: 1.25em;
 $logo-size-m: 3rem;
 $flex-padding: 1.25rem;
 
@@ -66,22 +67,7 @@ $flex-padding: 1.25rem;
     position: absolute;
     width: 100%;
     background: $color-primary;
-    text-align: center;
-    display: flex;
-    align-items: center;
-
-    img {
-      width: 3em;
-    }
-
-    span, a {
-      opacity: .9;
-      color: white;
-    }
-    span {
-      font-size: 1.75rem;
-      margin: 0 .75rem;
-    }
+    padding: ($logo-size-footer * .5) 0;
 
     a {
       cursor: pointer;
@@ -90,16 +76,34 @@ $flex-padding: 1.25rem;
         opacity: 1;
       }
     }
+
+    img {
+      height: $logo-size-footer;
+      width: auto;
+    }
   }
 
-  .footer-inner {
-    padding: 1rem 0;
-    display: inline;
-    margin: 0 auto;
-    align-items: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  .footer-link {
+    padding: 1rem 0 1rem $logo-size-footer;
+    display: inline-block;
+  }
+
+  .footer-center {
+    @include center-both();
+  }
+
+  .footer-left {
+    float: left;
+  }
+
+  .footer-right {
+    float: right;
+    margin-right: $logo-size-footer;
+
+    span {
+      color: white;
+      font-size: $logo-size-footer * .9;
+    }
   }
 
   .screen-content-above-fold {
@@ -243,17 +247,6 @@ $flex-padding: 1.25rem;
 
     .menu-li {
       margin: 0 .8rem;
-    }
-
-    .footer-inner {
-      margin: 0 auto;
-      display: block;
-      font-size: 1.2rem;
-
-      span {
-        display: block;
-        margin: 1rem;
-      }
     }
 
     .profile-row {
