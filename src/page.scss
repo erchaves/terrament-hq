@@ -1,8 +1,6 @@
 @import './shared-styles/variables.scss';
 @import './shared-styles/mixins.scss';
 
-$menu-margin-x: 2.5vw;
-$logo-size: 4rem;
 $logo-size-footer: 1.25em;
 $logo-size-m: 3rem;
 $flex-padding: 1.25rem;
@@ -19,11 +17,16 @@ $flex-padding: 1.25rem;
     line-height: $line-height;
   }
 
-  .header-logo {
+  .header-logo,
+  .nav-content {
     position: absolute;
-    left: 0;
+    // fixes annoying issue with chrome graphic optimization that makes the video sometimes hide the menu
+    backface-visibility: hidden;
     top: 0;
-    // sit on top of nav for link to work
+    left: 0;
+  }
+
+  .header-logo {
     z-index: 3;
 
     img {
@@ -33,34 +36,8 @@ $flex-padding: 1.25rem;
   }
 
   .nav-content {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    text-align: right;
-    z-index: 2;
-    // fixes annoying issue with chrome graphic optimization that makes the video sometimes hide the menu
-    backface-visibility: hidden;
-  }
-
-  .menu-ul {
-    margin: $menu-margin-x 5vw;
-
-    a {
-      color: $color-white;
-      cursor: pointer;
-      line-height: $logo-size;
-    }
-  }
-
-  .menu-li {
-    display: inline-block;
-    margin: 0 2rem;
-    font-size: $font-size-md;
-
-    &:last-child {
-      margin-right: 0;
-    }
+    width: 100%;
+    z-index: 4;
   }
 
   .footer {
@@ -239,8 +216,10 @@ $flex-padding: 1.25rem;
     }
 
     .header-logo {
+      margin: $logo-size-m / 4;
+
       img {
-        margin: $logo-size-m / 2;
+        margin: $logo-size-m / 4;
         max-width: $logo-size-m;
       }
     }

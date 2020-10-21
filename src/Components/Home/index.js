@@ -26,7 +26,6 @@ class Home extends React.Component {
 
         <Navbar/>
 
-
         <div className="page-screen">
           <div className="screen-content screen-content-above-fold">
             <VideoComp

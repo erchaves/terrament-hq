@@ -1,27 +1,12 @@
 import React, { Component } from "react";
 import { Link } from '@reach/router'
+import HamburgerMenu from '../HamburgerMenu';
 
 export default class Navbar extends Component {
   render() {
     return (
       <nav className="nav-content" id="navbar">
-        <ul className="menu-ul">
-          <li className="menu-li">
-            <Link to="/about" >
-              About
-            </Link>
-          </li>
-          <li className="menu-li">
-            <Link to="/uphs" >
-              UPHS <span className="hide-mobile">Research</span>
-            </Link>
-          </li>
-          <li className="menu-li">
-            <a href="https://twitter.com/terrament" target="_blank" rel="noopener noreferrer">
-              <span className="menu-item__icon icon-twitter"></span>
-            </a>
-          </li>
-        </ul>
+        <HamburgerMenu />
       </nav>
     );
   }
