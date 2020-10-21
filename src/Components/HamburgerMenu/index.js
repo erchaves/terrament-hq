@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from '@reach/router'
 import './index.scss';
 
 export default () => (
@@ -11,20 +12,28 @@ export default () => (
       </label>
 
       <nav id="main-menu" role="navigation" className="main-menu" aria-expanded="false" aria-label="Main menu">
-        <label for="main-menu-checkbox"className="menu-close">
+        <label for="main-menu-checkbox"className="menu-close menu-toggle">
           <span className="sr-only">Close main menu</span>
           <span className="menu-btn btn-close" aria-hidden="true"></span>
         </label>
-        <ul>
-          <li><a href="#">Products</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
+        <ul className="menu-ul">
+          <li className="menu-li">
+            <Link to="/about" >
+              About
+            </Link>
+          </li>
+          <li className="menu-li">
+            <Link to="/uphs" >
+              UPHS <span className="hide-mobile">Research</span>
+            </Link>
+          </li>
+          <li className="menu-li">
+            <a href="https://twitter.com/terrament" target="_blank" rel="noopener noreferrer">
+              <span className="menu-item__icon icon-twitter"></span>
+            </a>
+          </li>
         </ul>
       </nav>
-      <label for="main-menu-checkbox"
-         className="backdrop"
-         tabindex="-1"
-         aria-hidden="true" hidden></label>
     </div>
   </div>
 );
