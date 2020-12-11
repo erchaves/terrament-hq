@@ -1,6 +1,16 @@
 @import '../../shared-styles/variables.scss';
 @import '../../shared-styles/mixins.scss';
 
+// todo move this
+$fadeinMin: .3;
+$fadeinMax: .8;
+$fadeinTime: 3s;
+@keyframes fadeInOut {
+  0%   { opacity: $fadeinMax; }
+  50%  { opacity: $fadeinMin; }
+  100% { opacity: $fadeinMax; }
+}
+
 .page-home {
   .component-video-bg {
     &:after {
@@ -44,5 +54,13 @@
 
   .scroll-link {
     cursor: pointer;
+  }
+
+  .down-caret {
+    margin-top: .5rem;
+    height: 1.5em;
+    width: 1.5em;
+    opacity: $fadeinMax;
+    animation: fadeInOut $fadeinTime infinite;
   }
 }

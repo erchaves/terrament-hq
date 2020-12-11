@@ -48,6 +48,7 @@ class Home extends React.Component {
                 <h2 className="h2">
                   Radically Scalable Energy Storage
                 </h2>
+                <img className="down-caret" src="/down-caret-white.png" alt="down-caret" />
               </div>
             </ScrollLink>
           </div>
@@ -73,9 +74,9 @@ class Home extends React.Component {
             <div className="content-section"
               id="alphaDesign"
             >
-              <h2 className="h2">
+              <h3 className="h3">
                 Terrament Alpha Design
-              </h2>
+              </h3>
 
               <p>
                 Our alpha design is in very early development. This 3D animation is an early draft of our design concept. More details to be revealed post-funding.
@@ -113,9 +114,9 @@ class Home extends React.Component {
             </div>
 
             <div className="content-section related-technologies hide-desktop">
-              <h2 className="h2">
+              <h3 className="h3">
                 Related Technologies
-              </h2>
+              </h3>
               <div className="media-wrap">
                 <VideoComp
                   wrapperClass="captioned-media"
@@ -132,13 +133,13 @@ class Home extends React.Component {
             </div>
 
             <div className="content-section">
-              <h2 className="h2">
+              <h3 className="h3">
                 Terrament Pitch Deck
-              </h2>
+              </h3>
 
               <div className="media-wrap responsive-google-slides">
                 <iframe
-                  src="https://docs.google.com/presentation/d/1q_psbWJCS66Pdfjm9MJwO1-hO7nymtPJyAbS3FuOTwE/embed?start=false&loop=false&delayms=10000"
+                  src="https://docs.google.com/presentation/d/1B9rUSwOiAsZZmNMFVf6JB6yqkdG1LrtpvadtntS_MX4/embed?start=false&loop=false&delayms=10000"
                   frameBorder={0}
                   allowFullScreen={true}
                 >
@@ -147,9 +148,9 @@ class Home extends React.Component {
             </div>
 
             <div className="content-section">
-              <h2 className="h2">
+              <h3 className="h3">
                 Learn More
-              </h2>
+              </h3>
               <p>
                 Terrament is a pre-funded startup based in Brooklyn, NY. We are currently seeking our first round of investment.
                 <Link className="block-link"
@@ -161,7 +162,7 @@ class Home extends React.Component {
               <p>
                 Our long term strategy includes a type of energy storage called underground pumped hydro storage, or UPHS.
                 <Link className="block-link"
-                  to="/uphs"
+                  to="/research"
                 >
                   UPHS Research
                 </Link>

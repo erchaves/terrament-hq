@@ -19,12 +19,12 @@ export default () => (
         <ul className="menu-ul">
           <li className="menu-li">
             <Link to="/about" >
-              About
+              About Us
             </Link>
           </li>
           <li className="menu-li">
-            <Link to="/uphs" >
-              UPHS <span className="hide-mobile">Research</span>
+            <Link to="/research" >
+              Research
             </Link>
           </li>
           <li className="menu-li">
