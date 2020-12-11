@@ -26,8 +26,8 @@ export default {
       template: 'src/Components/About',
     },
     {
-      path: 'uphs',
-      template: 'src/Components/Uphs',
+      path: 'research',
+      template: 'src/Components/Research',
     },
     {
       path: '404',
