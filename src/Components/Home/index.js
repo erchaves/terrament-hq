@@ -9,7 +9,7 @@ import './index.scss';
 
 const videoPosterBg = 'homepage-bg.jpg';
 const videoPosterDesign = 'terrament-prototype-R7-cover.png';
-const videoMp4Bg = 'homepage-bg.mp4';
+const videoMp4Bg = 'homepage-bg.mp4?v2';
 const videoMp4 = 'terrament-product-demo-video-compressed.mp4';
 
 class Home extends React.Component {
