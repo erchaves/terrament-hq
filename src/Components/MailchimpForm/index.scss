@@ -4,7 +4,16 @@
 .mailchimp-form {
   width: 100%;
 
-  #mc_embed_signup{
+  .field-group-wrap-name {
+    display: flex;
+    clear: both;
+
+    .mc-field-group {
+      width: 50%;
+    }
+  }
+
+  #mc_embed_signup {
     clear: left;
     width: 100%;
 
@@ -12,18 +21,9 @@
       padding: 0;
     }
 
-    .field-group-wrap-name {
-      display: flex;
-      clear: both;
-
-      .mc-field-group {
-        width: 50%;
-      }
-    }
-
-    h2 {
-      float: left;
-      font-size: $font-size-sm;
+    h4 {
+      margin: 2rem 0 .75rem 0;
+      font-size: 1.25rem;
     }
 
     label {
@@ -34,7 +34,6 @@
       display: inline-block;
       float: right;
       margin-right: 0;
-      margin-top: .75rem;
     }
 
     input,
@@ -43,7 +42,7 @@
       height: $form-height;
       line-height: $form-height;
       box-sizing: border-box;
-
+      text-indent: 0;
     }
 
     .mc-field-group {
@@ -52,62 +51,33 @@
       }
     }
 
-    .field-group-wrap-email-and-submit {
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: row;
-      align-items: flex-end;
+    .field-group-email {
+      width: 100%;
 
-
-      .field-group-email {
-        width: 66%;
-        flex-grow: 1;
-      }
-      .field-group-submit {
-        width: 30%;
-
-        input.button {
-          background: $color-link;
-          margin-bottom: 0;
-
-          &:hover {
-            background: $color-link-dark;
-          }
-        }
+      label {
+        float: left;
       }
     }
 
+    input.button {
+      width: 100%;
+      background: $color-link;
+      margin-bottom: 0;
+      font-size: 1rem;
+
+      &:hover {
+        background: $color-link-dark;
+      }
+    }
   }
 
-  // #mc_embed_signup_scroll {
-  //   text-align: left;
-  // }
+  @media screen and (max-width: $screen-size-mobile) {
+    .field-group-wrap-name {
+      display: block;
 
-
-  // #mc_embed_signup input.email {
-  //   width: 66%;
-  //   display: inline-flex;
-  //   align-self: flex-start;
-  //   margin-right: 0.5rem;
-  //   padding: 0 1rem;
-  // }
-
-  // #mc_embed_signup input.button {
-  //   padding: 0 $form-padding;
-  //   background: $color-link;
-
-  //   &:hover {
-  //     background: $color-link-dark;
-  //   }
-  // }
-
-  // #mc_embed_signup label.form-label {
-  //   font-size: $font-size-sm;
-  // }
-
-  // @media screen and (max-width: $screen-size-mobile) {
-  //   #mc_embed_signup input.email {
-  //     width: 100%;
-  //   }
-  // }
+      .mc-field-group {
+        width: 100% !important;
+      }
+    }
+  }
 }
