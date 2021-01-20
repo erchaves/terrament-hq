@@ -3,6 +3,7 @@ $color-primary: #1f3634;
 $color-white: #ffffff;
 // blueberry
 $color-link: #4A86E8;
+$color-link-dark: #3c75d2;
 
 @font-face {
   font-family: 'Matter-Regular';
@@ -46,3 +47,13 @@ $screen-size-tiny: 25rem;
 $page-width: 100%;
 $menu-margin-x: 2.5vw;
 $logo-size: 4rem;
+
+
+$form-height: 3rem;
+$form-padding: 3rem;
+
+$opacity-off-hover: .9;
+
+$logo-size-footer: 1.25em;
+$logo-size-m: 3rem;
+$flex-padding: 1.25rem;

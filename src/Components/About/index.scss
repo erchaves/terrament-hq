@@ -2,5 +2,122 @@
 @import '../../shared-styles/mixins.scss';
 
 .page-about {
+  .profile-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -$flex-padding;
+    margin-right: -$flex-padding;
+  }
 
+  .profile-wrap {
+    width: 33.3333%;
+    height: 100%;
+    box-sizing: border-box;
+    display: block;
+    padding: $flex-padding/2 $flex-padding;
+
+    p {
+      font-size: $font-size-base;
+      line-height: $line-height-sm;
+      text-align: justify;
+    }
+
+    &.full-row {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+
+      .profile-img-wrap {
+        padding-right: $flex-padding;
+        width: 33.3333%;
+        box-sizing: border-box;
+
+      }
+
+      .profile-content-wrap {
+        align-self: center;
+        padding-left: $flex-padding;
+        width: 66.666%;
+        box-sizing: border-box;
+      }
+    }
+  }
+
+  .profile-name,
+  .profile-title {
+    text-align: center;
+    font-weight: $font-weight-bold;
+    line-height: 1em;
+
+    .bold-not {
+      font-weight: 100;
+    }
+  }
+
+  .profile-name {
+    margin-bottom: .25rem;
+    font-size: $font-size-sm;
+  }
+
+  .profile-title {
+    font-size: $font-size-base;
+    margin-bottom: .5rem;
+    font-style: italic;
+  }
+
+  .profile-img {
+    width: 100%;
+    margin-bottom: .25rem;
+
+    &.crop-circle {
+      overflow: hidden;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+  }
+
+  .contact-info {
+    address,
+    .address-link {
+      line-height: $line-height-sm;
+      font-size: $font-size-base * 1.05;
+    }
+
+    p {
+    }
+  }
+
+  @media screen and (max-width: $screen-size-mobile) {
+    .profile-row {
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: -$flex-padding;
+      margin-right: -$flex-padding;
+    }
+
+    .profile-wrap {
+      box-sizing: border-box;
+      display: block;
+      padding: $flex-padding;
+    }
+
+    .profile-wrap {
+      width: 100%;
+
+      &.full-row {
+        display: block;
+
+        .profile-img-wrap,
+        .profile-content-wrap {
+          width: 100%;
+          padding-left: 0;
+          padding-right: 0;
+        }
+
+        .profile-img-wrap {
+          margin-bottom: 1rem;
+        }
+      }
+    }
+  }
 }

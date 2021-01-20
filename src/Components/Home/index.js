@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from "../Navbar";
 import VideoComp from "../VideoComp";
 import Footer from "../Footer";
+import MailchimpForm from "../MailchimpForm";
 import { Link } from '@reach/router'
 import { Link as ScrollLink } from "react-scroll";
 
@@ -25,7 +26,6 @@ class Home extends React.Component {
         </div>
 
         <Navbar/>
-
         <div className="page-screen">
           <div className="screen-content screen-content-above-fold">
             <VideoComp
@@ -68,6 +68,9 @@ class Home extends React.Component {
               </p>
               <p>
                 That's why Terrament is building low-cost, high-scale energy storage. Our patent pending design utilizes solid-mass gravity batteries dropped deep underground.
+              </p>
+              <p className="disclaimer hide-mobile">
+                Note: The header video above is merely a collage of relevant technologies and asserts no claims.
               </p>
             </div>
 
@@ -151,6 +154,7 @@ class Home extends React.Component {
               <h3 className="h3">
                 Learn More
               </h3>
+
               <p>
                 Terrament is a pre-funded startup based in Brooklyn, NY. We are currently seeking our first round of investment.
                 <Link className="block-link"
@@ -167,9 +171,12 @@ class Home extends React.Component {
                   UPHS Research
                 </Link>
               </p>
-              <p className="disclaimer hide-mobile">
-                Note: The header video above is merely a collage of relevant technologies and asserts no claims.
-              </p>
+            </div>
+            <div className="content-section">
+              <h3 className="h3">
+                Stay in Touch
+              </h3>
+              <MailchimpForm />
             </div>
           </div>
         </div>

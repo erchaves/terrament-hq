@@ -1,0 +1,48 @@
+@import '../../shared-styles/variables.scss';
+@import '../../shared-styles/mixins.scss';
+
+.mailchimp-form {
+  width: 100%;
+
+  #mc_embed_signup{
+    clear: left;
+    width: 100%;
+  }
+
+  #mc_embed_signup_scroll {
+    text-align: left;
+  }
+
+  #mc_embed_signup input.email,
+  #mc_embed_signup input.button {
+    height: $form-height;
+    line-height: $form-height;
+  }
+
+  #mc_embed_signup input.email {
+    width: 66%;
+    display: inline-flex;
+    align-self: flex-start;
+    margin-right: 0.5rem;
+    padding: 0 1rem;
+  }
+
+  #mc_embed_signup input.button {
+    padding: 0 $form-padding;
+    background: $color-link;
+
+    &:hover {
+      background: $color-link-dark;
+    }
+  }
+
+  #mc_embed_signup label.form-label {
+    font-size: $font-size-sm;
+  }
+
+  @media screen and (max-width: $screen-size-mobile) {
+    #mc_embed_signup input.email {
+      width: 100%;
+    }
+  }
+}
