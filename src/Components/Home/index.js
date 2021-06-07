@@ -142,10 +142,11 @@ class Home extends React.Component {
 
               <div className="media-wrap responsive-google-slides">
                 <iframe
-                  src="https://docs.google.com/presentation/d/1B9rUSwOiAsZZmNMFVf6JB6yqkdG1LrtpvadtntS_MX4/embed?start=false&loop=false&delayms=10000"
+                  src="https://docs.google.com/presentation/d/e/2PACX-1vTfgkk0f6_oPzGN7Z8SQY7UgnXlRovqEZaazJiD_NB4VoxocV5tunY8fqbKMtMLAhDvwQiisunZVMg5/embed?start=false&loop=false&delayms=10000"
                   frameBorder={0}
-                  allowFullScreen={true}
-                >
+                  width={960}
+                  height={569}
+                  allowFullScreen={true}>
                 </iframe>
               </div>
             </div>

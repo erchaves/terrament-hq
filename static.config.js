@@ -8,7 +8,7 @@ export default {
   getSiteData: () => ({
     title: 'Terrament | Radically Scalable Energy Storage',
     siteRoot: siteRoot,
-    description: 'Terrament is solving our trillion-dollar energy storage crisis. We are using Underground Gravity Storage to build low risk high scale energy storage that is far cheaper than Li-ion battery technology.',
+    description: 'Terrament builds grid-scale energy storage with underground gravity batteries. We maximize gravity storage with a modular design combined with deep mine shafts.',
     imageUrl: `${siteRoot}/terrament-logo.png`,
     imageWideUrl: `${siteRoot}/logo-combined.png`,
     type: 'website',
