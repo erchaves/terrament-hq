@@ -34,14 +34,19 @@ class About extends React.Component {
                 About Terrament
               </h2>
               <p>
-                Terrament is a renewable energy company building low-cost, high-scale energy storage. We believe that our patent pending design for underground gravity batteries will lead our future's multi-billion dollar energy storage market.
+                Terrament was founded at the start of 2020 and holds a provisional patent for our innovative approach to underground energy storage. We are now seeking angel investment and seed funding.
               </p>
-
+              <p>
+                We are proud to have been selected to join the <a
+                  href="https://www.cebip.org/terrament"
+                  target="_blank" rel="noopener noreferrer"
+                >CEBIP accelerator program</a>. CEBIP, the Clean Energy Business Incubator Program, is supported by Stony Brook University and the New York State Energy Research and Development Authority (<a
+                  href="https://www.nyserda.ny.gov/"
+                  target="_blank" rel="noopener noreferrer"
+                >NYSERDA</a>).
+              </p>
               <p>
                 Terrament's gravity storage design was inspired by a related technology called Underground Pumped Hydro Storage, or UPHS. In fact, the company was born out of a <a href="https://github.com/syllable-hq/uphs-feasibility-study" target="_blank" rel="noopener noreferrer">research project exploring the feasibility UPHS</a>. By leveraging our UPHS research to spark discussions with industry experts and validate our market assumptions, we demonstrated that Terrament's concept was not just viable, it was urgently needed.
-              </p>
-              <p>
-                Under the threat of climate destabilization, the market demand for cheap, scalable energy storage is rising exponentially. No one has yet developed an affordable solution; this burgeoning market is wide open. In light of this, we're pleased to have already piqued early interest from some advisors, and investors.
               </p>
             </div>
             <div className="content-section">
@@ -115,10 +120,10 @@ class About extends React.Component {
             </div>
             <div className="content-section">
               <h2 className="h2">
-                Contact Us
+                Stay in Touch
               </h2>
-              <div className="contact-info flex-wrap">
-                <div className="flex-33">
+              <div className="contact-info ">
+                <div className="">
                   <address>
                     Eric Chaves, Founder<br />
                     Terrament, LLC <br />
@@ -127,18 +132,10 @@ class About extends React.Component {
                   </address>
                   <a className="address-link" href="mailto:eric@terramenthq.com">eric@terramenthq.com</a>
                 </div>
-                <div className="flex-66">
-                  <p>
-                    Terrament was founded at the start of 2020 and holds a provisional patent for our innovative approach to underground energy storage. We are now seeking angel investment and seed funding.
-                  </p>
+                <div className="">
+                  <MailchimpForm />
                 </div>
               </div>
-            </div>
-            <div className="content-section">
-              <h3 className="h3">
-                Stay in Touch
-              </h3>
-              <MailchimpForm />
             </div>
           </div>
         </div>

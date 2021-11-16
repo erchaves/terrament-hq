@@ -148,7 +148,6 @@ button {
   padding-left: $flex-padding;
 }
 
-
 @media screen and (max-width: $screen-size-mobile) {
   html,
   body {
@@ -160,7 +159,7 @@ button {
   }
 
   .hide-mobile {
-    display: none;
+    display: none !important;
   }
 
   .hide-desktop {

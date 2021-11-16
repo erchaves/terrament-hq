@@ -37,7 +37,13 @@ class Research extends React.Component {
                 Research and Case Studies
               </h2>
               <p>
-                Terrament was born out of curiosity and a growing concern about climate change. It started as a <a href="https://blog.syllablehq.com/underground-pumped-hydroelectric-storage-a-feasibility-study" target="_blank" rel="noopener noreferrer">blog post</a> about an old but neglected technology called Underground Pumped Hydro Storage, or UPHS. Over the summer of 2019, my fascination for this technology escalated into a 70 page <a href="https://github.com/syllable-hq/uphs-feasibility-study/raw/master/report.pdf">feasibility study of UPHS</a>.
+                Terrament is building solid-mass, modular gravity storage. But our story starts with water.
+              </p>
+              <p>
+                Terrament's design was inspired by our research about the history of pumped hydro storage, and more specfically, with the question: Can gravity storage achieve more height by digging deep underground? This question led to a <a href="https://blog.syllablehq.com/underground-pumped-hydroelectric-storage-a-feasibility-study" target="_blank" rel="noopener noreferrer">blog post</a> about an old but neglected technology called Underground Pumped Hydro Storage, or UPHS. Over the summer of 2019, my fascination for this technology escalated into a 70 page <a href="https://github.com/syllable-hq/uphs-feasibility-study/raw/master/report.pdf">feasibility study of UPHS</a>.
+              </p>
+              <p>
+                Although Terrament is not building pumped hydro, this research about UPHS informs much of our solid-mass, underground gravity storage design.
               </p>
             </div>
             <div className="content-section">

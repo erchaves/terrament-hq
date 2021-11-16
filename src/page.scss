@@ -59,7 +59,20 @@
   .footer-link {
     padding: 1rem 0 1rem $logo-size-footer;
     display: inline-block;
+
+    &.footer-link-cebip {
+      padding: 0.5rem 0 0 $logo-size-footer;
+
+      img {
+        height: 3rem;
+      }
+    }
+
+    &.hide-desktop {
+      display: none;
+    }
   }
+
 
   .footer-center {
     @include center-both();
@@ -142,6 +155,26 @@
     margin-top: 1.5rem;
   }
 
+  .captioned-media {
+    width: 100%;
+    margin: 2rem auto 1rem auto;
+    display: block;
+  }
+
+  .caption {
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    font-style: italic;
+    font-size: .8em;
+  }
+
+  .meet-terrament-bullets {
+    margin-top: -0.625em;
+    margin-left: 1.25em;
+    list-style: disc;
+  }
+
   @media screen and (max-width: $screen-size-mobile) {
     .screen-content-above-fold {
       .h1-wrap {
@@ -173,19 +206,5 @@
     .h2 {
       margin-top: .2em;
     }
-  }
-
-  .captioned-media {
-    width: 100%;
-    margin: 2rem auto 1rem auto;
-    display: block;
-  }
-
-  .caption {
-    margin: 0 auto;
-    display: block;
-    text-align: center;
-    font-style: italic;
-    font-size: .8em;
   }
 }
