@@ -41,6 +41,8 @@
     width: 100%;
     background: $color-primary;
     padding: ($logo-size-footer * .5) 0;
+    display: flex;
+    justify-content: space-between;
 
     a {
       cursor: pointer;
@@ -61,10 +63,10 @@
     display: inline-block;
 
     &.footer-link-cebip {
-      padding: 0.5rem 0 0 $logo-size-footer;
+      padding: 0 0 0 $logo-size-footer * .5;
 
       img {
-        height: 3rem;
+        height: 5rem;
       }
     }
 
@@ -79,11 +81,10 @@
   }
 
   .footer-left {
-    float: left;
   }
 
   .footer-right {
-    float: right;
+    align-self: center;
     margin-right: $logo-size-footer;
 
     span {
@@ -180,6 +181,10 @@
       .h1-wrap {
         font-size: 3.25vw;
       }
+    }
+
+    .footer img {
+      height: $logo-size-footer * .75;
     }
 
     .menu-ul {
