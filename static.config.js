@@ -72,16 +72,6 @@ export default {
           <meta property="twitter:title" content={siteData.title} />
           <meta property="twitter:description" content={siteData.description} />
           <meta property="twitter:image" content={siteData.imageWideUrl} />
-
-          <!-- Global site tag (gtag.js) - Google Analytics -->
-          <script async src="https://www.googletagmanager.com/gtag/js?id=G-00TLPXE24D"></script>
-          <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', 'G-00TLPXE24D');
-          </script>
         </Head>
         <Body>{children}</Body>
       </Html>
