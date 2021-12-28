@@ -14,7 +14,7 @@
     height: 100%;
     box-sizing: border-box;
     display: block;
-    padding: $flex-padding/2 $flex-padding;
+    padding: calc($flex-padding/2) $flex-padding;
 
     p {
       font-size: $font-size-base;

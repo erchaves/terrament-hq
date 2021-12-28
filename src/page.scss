@@ -188,7 +188,7 @@
     }
 
     .menu-ul {
-      margin-top: $logo-size-m / 2;
+      margin-top: calc($logo-size-m / 2);
 
       a {
         line-height: $logo-size-m;
@@ -196,10 +196,10 @@
     }
 
     .header-logo {
-      margin: $logo-size-m / 4;
+      margin: calc($logo-size-m / 4);
 
       img {
-        margin: $logo-size-m / 4;
+        margin: calc($logo-size-m / 4);
         max-width: $logo-size-m;
       }
     }
