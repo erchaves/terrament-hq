@@ -1,7 +1,7 @@
 import React from 'react';
 
- const siteRoot = 'https://www.terramenthq.com';
- const stagingSiteRoot = 'http://localhost:3000';
+const siteRoot = 'https://www.terramenthq.com';
+const stagingSiteRoot = 'http://localhost:3000';
 
 // static.config.js
 export default {
@@ -74,6 +74,12 @@ export default {
           <meta property="twitter:image" content={siteData.imageWideUrl} />
 
           <script async src="https://www.googletagmanager.com/gtag/js?id=G-00TLPXE24D"></script>
+          <script dangerouslySetInnerHTML={{__html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-00TLPXE24D');
+          `}}></script>
         </Head>
         <Body>{children}</Body>
       </Html>
