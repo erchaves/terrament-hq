@@ -86,7 +86,25 @@ class About extends React.Component {
                     Mengye Chen, Advisor
                   </h3>
                   <h4 className="profile-title">
-                    Civil Engineer, PhD (2021)
+                    Civil Engineer, PhD
+                  </h4>
+                </div>
+                <div className="profile-wrap">
+                  <img src="/team-profile-pics/kathryn-gardner.png" className="profile-img" />
+                  <h3 className="profile-name">
+                    Kathryn Gardner, Advisor
+                  </h3>
+                  <h4 className="profile-title">
+                    Mining Engineer, P.E., MBA, Esq.
+                  </h4>
+                </div>
+                <div className="profile-wrap">
+                  <img src="/team-profile-pics/etinosa-ogiesoba.png" className="profile-img" />
+                  <h3 className="profile-name">
+                    Etinosa Ogiesoba, Advisor
+                  </h3>
+                  <h4 className="profile-title">
+                    Electrical Engineer, ME, MBA
                   </h4>
                 </div>
                 <div className="profile-wrap">
@@ -96,15 +114,6 @@ class About extends React.Component {
                   </h3>
                   <h4 className="profile-title">
                     Mechanical Engineer, ME
-                  </h4>
-                </div>
-                <div className="profile-wrap">
-                  <img src="/team-profile-pics/etinosa-ogiesoba.png" className="profile-img" />
-                  <h3 className="profile-name">
-                    Etinosa Ogiesoba, Advisor
-                  </h3>
-                  <h4 className="profile-title">
-                    Electrical Engineer, ME
                   </h4>
                 </div>
                 <div className="profile-wrap">

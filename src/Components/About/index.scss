@@ -14,7 +14,7 @@
     height: 100%;
     box-sizing: border-box;
     display: block;
-    padding: calc($flex-padding/2) $flex-padding;
+    padding: calc($flex-padding / 2) calc($flex-padding / 2);
 
     p {
       font-size: $font-size-base;
@@ -36,7 +36,7 @@
 
       .profile-content-wrap {
         align-self: center;
-        padding-left: $flex-padding;
+        padding-left: calc($flex-padding / 4);
         width: 66.666%;
         box-sizing: border-box;
       }
