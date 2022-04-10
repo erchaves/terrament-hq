@@ -64,44 +64,30 @@ class Home extends React.Component {
               </h2>
 
               <p>
-                Terrament is building long-duration energy storage using underground gravity batteries. Our patent-pending design achieves high scale and low cost by maximizing the two simple ingredients of gravity storage: height and weight:
+                Terrament is building long-duration energy storage using gravity batteries deployed deep underground. Our patent-pending design achieves high scale and low cost by maximizing the two simple ingredients of gravity storage: height and weight:
               </p>
               <ul className="meet-terrament-bullets">
                 <li>
                   First, we maximize height potential by digging a mile deep into bedrock.
                 </li>
                 <li>
-                  Second, we maximize weight using modules that lift their own weight.
+                  Second, we maximize density with modules that support their own weight.
                 </li>
               </ul>
             </div>
 
             <div className="content-section">
               <h3 className="h3">
-                Why Gravity Storage?
+                The Energy Storage Problem
               </h3>
               <p>
-                The threat of climate change has sparked action to replace fossil fuels with wind and solar energy. This transition is urgent, but it will stall without a key ingredient: energy storage.
+                The threat of climate change has sparked action to replace fossil fuels with wind and solar energy. But wind and solar are intermittent resources; the wind doesn't always blow, and the sun doesn't always shine. So without energy storage, our urgent transition to renewable energy will stall.
               </p>
               <p>
-                According to NREL, grid-scale energy storage capacity in the U.S. is <a
+              According to NREL, energy storage capacity in the U.S. is <a
                   href="https://www.nrel.gov/news/program/2021/grid-scale-storage-us-storage-capacity-could-grow-five-fold-by-2050.html"
                   title="NREL: Grid-Scale U.S. Storage Capacity Could Grow Five-Fold by 2050"
-                  target="_blank" rel="noopener noreferrer">expected to grow five-fold by 2050</a>. But we have a big problem: We don't yet have a viable energy storage technology that can reach this scale affordably.
-              </p>
-              <p>Today, pumped hydro makes up nearly all of our energy storage, but this resource is <a
-                  href="https://www.energy.gov/sites/prod/files/2018/02/f49/Hydropower-Vision-021518.pdf"
-                  title="NREL: Grid-Scale U.S. Storage Capacity Could Grow Five-Fold by 2050"
-                  target="_blank" rel="noopener noreferrer">nearly tapped out</a>. Our feasible pumped hydro sites will be exhausted before we reach even 2x.
-              </p>
-              <p>Meanwhile, even though Li-ion battery costs are dropping, they are still too expensive. And we don't even have enough raw Lithium material to produce the scale we would need to replace pumped hydro. Researchers are concerned that
-                <a
-                  href="https://www.spglobal.com/en/research-insights/articles/lithium-supply-is-set-to-triple-by-2025-will-it-be-enough"
-                  title="Lithium supply is set to triple by 2025. Will it be enough?"
-                  target="_blank" rel="noopener noreferrer"> we may not even have enough Lithium for electric vehicles</a>, let alone the much larger amount we would need to support grid storage at such an enormous scale.
-              </p>
-              <p>
-                We need a new solution. A solution which is low-risk, high-scale, and low-cost.
+                  target="_blank" rel="noopener noreferrer">expected to grow five-fold by 2050</a>. But we have a big problem: We don't yet have proven, low-cost technologies that can reach this scale.
               </p>
             </div>
 
@@ -113,7 +99,9 @@ class Home extends React.Component {
               </h3>
 
               <p>
-                Terrament's gravity storage design is in early development. This 3D animation is an early draft of our design concept. More details to be revealed post-funding.
+                Terrament's gravity storage can solve our massive energy storage demand at an affordable cost.
+              </p>
+              <p>Our full design is still confidential in early development. However, this early-draft animation illustrates our basic concept. More details to be revealed post-funding.
               </p>
 
               <div className="media-wrap">
@@ -182,6 +170,26 @@ class Home extends React.Component {
               </div>
             </div>
 
+
+            <div className="content-section">
+              <h3 className="h3">
+                Why Underground Gravity Storage?
+              </h3>
+              <p>Today, nearly all of our energy storage is pumped hydro, which is a <a
+                  href="https://www.energy.gov/sites/prod/files/2018/02/f49/Hydropower-Vision-021518.pdf"
+                  title="NREL: Grid-Scale U.S. Storage Capacity Could Grow Five-Fold by 2050"
+                  target="_blank" rel="noopener noreferrer">nearly tapped out resource</a>. And even though Li-ion battery costs are dropping, they are still too expensive. And we don't even have enough raw Lithium material to produce the scale we would need to replace pumped hydro. Researchers are concerned that
+                <a
+                  href="https://www.spglobal.com/en/research-insights/articles/lithium-supply-is-set-to-triple-by-2025-will-it-be-enough"
+                  title="Lithium supply is set to triple by 2025. Will it be enough?"
+                  target="_blank" rel="noopener noreferrer"> we may not even have enough Lithium for electric vehicles</a>, let alone the much larger amount we would need to support grid storage at such an enormous scale.
+              </p>
+              <p>
+                We need a new solution. A solution which is low-risk, high-scale, and low-cost.
+              </p>
+            </div>
+
+
             <div className="content-section">
               <h3 className="h3">
                 Learn More
@@ -198,14 +206,7 @@ class Home extends React.Component {
                   About Us
                 </Link>
               </p>
-              <p>
-                Our long term strategy includes a type of energy storage called underground pumped hydro storage, or UPHS.
-                <Link className="block-link"
-                  to="/research"
-                >
-                  UPHS Research
-                </Link>
-              </p>
+
             </div>
             <div className="content-section">
               <h3 className="h3">

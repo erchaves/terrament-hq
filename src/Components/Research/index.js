@@ -37,57 +37,19 @@ class Research extends React.Component {
                 Research and Case Studies
               </h2>
               <p>
-                Terrament is building solid-mass, modular gravity storage. But our story starts with water.
+                Terrament's early research into our solid-mass, modular gravity storage was largely inspired by the concept of underground pumped hydro storage, or UPHS. Terrament is very similar to UPHS. Although we don't use water, we still move heavy weight up and down a deep underground shaft to harness the power of gravitational potential energy.
               </p>
               <p>
-                Terrament's design was inspired by our research about the history of pumped hydro storage, and more specfically, with the question: Can gravity storage achieve more height by digging deep underground? This question led to a <a href="https://blog.syllablehq.com/underground-pumped-hydroelectric-storage-a-feasibility-study" target="_blank" rel="noopener noreferrer">blog post</a> about an old but neglected technology called Underground Pumped Hydro Storage, or UPHS. Over the summer of 2019, my fascination for this technology escalated into a 70 page <a href="https://github.com/syllable-hq/uphs-feasibility-study/raw/master/report.pdf">feasibility study of UPHS</a>.
+               When Terrament first started in 2019, we found our greatest inspiration from a research paper about underground pumped hydro written in 1984. This <a href="https://doi.org/10.2172/6517343" target="_blank" rel="noopener noreferrer">U.S. DOE report about the feasibility of Underground Pumped Hydro Storage</a> showed that it was “technically feasible and economically viable” to dig deep underground to push the height limits of gravity storage.
               </p>
               <p>
-                Although Terrament is not building pumped hydro, this research about UPHS informs much of our solid-mass, underground gravity storage design.
-              </p>
-            </div>
-            <div className="content-section">
-              <h3 className="h3">
-                Precedent: Underground Pumped Hydro Storage
-              </h3>
-              <div className="media-wrap">
-                <VideoComp
-                  wrapperClass="captioned-media"
-                  isBackgroundVideo={false}
-                  poster={videoPosterBg}
-                >
-                  <source src={videoMp4Bg} type="video/mp4" />
-                </VideoComp>
-
-                <span className="caption">
-                  Video collage of technologies related to UPHS
-                </span>
-              </div>
-            </div>
-            <div className="content-section">
-              <h3 className="h3">
-                UPHS Feasibility sets Precedent for Terrament
-              </h3>
-              <p>
-                Drawing from US government research, our UPHS white paper explained why the “UPHS concept is technically feasible and economically viable.” Further, we contextualized this past research to demonstrate that building a UHPS installation today would be more feasible than ever due to low interest rates, improved mining technology, and an accelerating demand for large-scale energy storage driven by climate change. We estimated that over a 20-40 year project lifespan, UPHS could be an order of magnitude cheaper than Li-ion battery technology built today.
-              </p>
-
-              <div className="media-wrap">
-                <img className="captioned-media" src="/pnl-report-diagram-2.png" alt="A UPHS design from a U.S. Gov Report" />
-                <span className="caption">
-                  UPHS design from a U.S. DOE report. See UPHS feasibility study for details.
-                </span>
-              </div>
-            </div>
-            <div className="content-section">
-              <h3 className="h3">
-                Terrament and UPHS
-              </h3>
-              <p>
-                Although our long term road map may include UPHS, we do not have any immediate plans to focus on the technology. Instead, we're fully focused on our own solid-mass gravity storage design inspired by both UPHS and other types of gravity storage.
+                Before Terrament decided to shift our focus entirely to solid mass instead of water, we wrote a <a href="https://github.com/syllable-hq/uphs-feasibility-study/raw/master/report.pdf" target="_blank" rel="noopener noreferrer">70-page white paper about UPHS</a> to help the public understand this fantastic technology. Although UPHS has still never been built, this research is still very relevant for demonstrating the promise of using mining and excavation technology for underground gravity storage.
               </p>
               <p>
-                Our Terrament energy storage design gains the height benefits of UPHS while also leveraging the modularity of solid-mass gravity storage. Learn more about our alpha design on our <a href="/">home page</a>.
+                Terrament believes that our solid-mass design holds even more promise than UPHS. By using solid mass, we gain greater density than water which can further offset the cost of excavation.
+              </p>
+              <p>
+                Learn more on our <a href="/">home page</a>.
               </p>
             </div>
           </div>
