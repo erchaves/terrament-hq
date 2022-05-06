@@ -33,6 +33,10 @@ export default {
       path: '404',
       template: 'src/Components/404',
     },
+    {
+      path: 'banana',
+      template: 'src/Components/Banana',
+    },
   ],
   Document: ({
     Html,
