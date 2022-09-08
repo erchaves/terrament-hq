@@ -117,12 +117,12 @@ class About extends React.Component {
                   </h4>
                 </div>
                 <div className="profile-wrap">
-                  <img src="/team-profile-pics/gregory-scott.png" className="profile-img" />
+                  <img src="/team-profile-pics/steven-decarlo.png" className="profile-img" />
                   <h3 className="profile-name">
-                    Gregory Scott, Advisor
+                    Steven DeCarlo, Advisor
                   </h3>
                   <h4 className="profile-title">
-                    Civil Engineer, PE
+                    Engineering, MBA, Grid Utilities
                   </h4>
                 </div>
               </div>
