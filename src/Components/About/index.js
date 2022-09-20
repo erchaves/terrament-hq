@@ -34,7 +34,7 @@ class About extends React.Component {
                 About Terrament
               </h2>
               <p>
-                Terrament was founded at the start of 2020 and holds a provisional patent for our innovative approach to underground energy storage. We are now seeking angel investment and seed funding.
+                Terrament was founded at the start of 2020 and has filed a patent application for our innovative approach to underground energy storage. We are now seeking angel investment and seed funding.
               </p>
               <p>
                 We are proud to have been selected to join the <a
