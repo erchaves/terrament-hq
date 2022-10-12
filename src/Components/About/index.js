@@ -72,21 +72,21 @@ class About extends React.Component {
                   </div>
                 </div>
                 <div className="profile-wrap">
-                  <img src="/team-profile-pics/colin-bateson.png" className="profile-img" />
+                  <img src="/team-profile-pics/steven-decarlo.png" className="profile-img" />
                   <h3 className="profile-name">
-                    Colin Bateson, Advisor
+                    Steven DeCarlo, Advisor
                   </h3>
                   <h4 className="profile-title">
-                    Mechanical Engineer, PhD
+                    Engineering, MBA, Grid Utilities
                   </h4>
                 </div>
                 <div className="profile-wrap">
-                  <img src="/team-profile-pics/mengye-chen.png" className="profile-img" />
+                  <img src="/team-profile-pics/paul-schwartz.png" className="profile-img" />
                   <h3 className="profile-name">
-                    Mengye Chen, Advisor
+                    Paul Schwartz, Advisor
                   </h3>
                   <h4 className="profile-title">
-                    Civil Engineer, PhD
+                    CEBIP Director, Energy Exec/Fin
                   </h4>
                 </div>
                 <div className="profile-wrap">
@@ -108,6 +108,24 @@ class About extends React.Component {
                   </h4>
                 </div>
                 <div className="profile-wrap">
+                  <img src="/team-profile-pics/colin-bateson.png" className="profile-img" />
+                  <h3 className="profile-name">
+                    Colin Bateson, Advisor
+                  </h3>
+                  <h4 className="profile-title">
+                    Mechanical Engineer, PhD
+                  </h4>
+                </div>
+                <div className="profile-wrap">
+                  <img src="/team-profile-pics/mengye-chen.png" className="profile-img" />
+                  <h3 className="profile-name">
+                    Mengye Chen, Advisor
+                  </h3>
+                  <h4 className="profile-title">
+                    Civil Engineer, PhD
+                  </h4>
+                </div>
+                <div className="profile-wrap">
                   <img src="/team-profile-pics/isabelle-heye.png" className="profile-img" />
                   <h3 className="profile-name">
                     Isabelle Heye, Advisor
@@ -117,12 +135,12 @@ class About extends React.Component {
                   </h4>
                 </div>
                 <div className="profile-wrap">
-                  <img src="/team-profile-pics/steven-decarlo.png" className="profile-img" />
+                  <img src="/team-profile-pics/gregory-scott.png" className="profile-img" />
                   <h3 className="profile-name">
-                    Steven DeCarlo, Advisor
+                    Gregory Scott, Advisor
                   </h3>
                   <h4 className="profile-title">
-                    Engineering, MBA, Grid Utilities
+                    Civil Engineer, PE
                   </h4>
                 </div>
               </div>
