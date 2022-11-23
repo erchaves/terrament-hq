@@ -29,6 +29,9 @@ class Home extends React.Component {
         <div className="page-screen">
           <div className="screen-content screen-content-above-fold">
             <VideoComp
+              // blocking the auto-load of the video to save bandwidth.
+              // this will result in just the bg image showing... quick fix.
+              autoPlay={false}
               isBackgroundVideo={true}
               poster={videoPosterBg}
             >
@@ -74,6 +77,22 @@ class Home extends React.Component {
                   Second, we maximize density with modules that support their own weight.
                 </li>
               </ul>
+            </div>
+
+            <div className="content-section">
+              <h3 className="h3">
+                Terrament Pitch Deck
+              </h3>
+
+              <div className="media-wrap responsive-google-slides">
+                <iframe
+                  src="https://docs.google.com/presentation/d/e/2PACX-1vSmAH2_biVYfPhQIAx5u20iVjzVy3tzJ2EUBYDYVGLekjvaqqlLcQIrk_l0frg69jSPwGcioM5CrNXm/embed?start=false&loop=false&delayms=10000"
+                  frameBorder={0}
+                  width={960}
+                  height={569}
+                  allowFullScreen={true}>
+                </iframe>
+              </div>
             </div>
 
             <div className="content-section">
@@ -135,7 +154,8 @@ class Home extends React.Component {
               </p>
             </div>
 
-            <div className="content-section related-technologies hide-desktop">
+{/* removing to speed up load time */}
+{/*            <div className="content-section related-technologies hide-desktop">
               <h3 className="h3">
                 Related Technologies
               </h3>
@@ -153,24 +173,7 @@ class Home extends React.Component {
                 </span>
               </div>
             </div>
-
-            <div className="content-section">
-              <h3 className="h3">
-                Terrament Pitch Deck
-              </h3>
-
-              <div className="media-wrap responsive-google-slides">
-                <iframe
-                  src="https://docs.google.com/presentation/d/e/2PACX-1vSmAH2_biVYfPhQIAx5u20iVjzVy3tzJ2EUBYDYVGLekjvaqqlLcQIrk_l0frg69jSPwGcioM5CrNXm/embed?start=false&loop=false&delayms=10000"
-                  frameBorder={0}
-                  width={960}
-                  height={569}
-                  allowFullScreen={true}>
-                </iframe>
-              </div>
-            </div>
-
-
+*/}
             <div className="content-section">
               <h3 className="h3">
                 Why Underground Gravity Storage?
