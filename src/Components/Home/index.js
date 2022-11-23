@@ -28,22 +28,22 @@ class Home extends React.Component {
         <Navbar/>
         <div className="page-screen">
           <div className="screen-content screen-content-above-fold">
-            <VideoComp
-              // blocking the auto-load of the video to save bandwidth.
-              // this will result in just the bg image showing... quick fix.
-              autoPlay={false}
-              isBackgroundVideo={true}
-              poster={videoPosterBg}
-            >
-              <source src={videoMp4Bg} type="video/mp4" />
-            </VideoComp>
-
             <ScrollLink
               to="belowfold"
               smooth={true}
               duration={500}
               className="scroll-link"
             >
+              <VideoComp
+                // blocking the auto-load of the video to save bandwidth.
+                // this will result in just the bg image showing... quick fix.
+                autoPlay={false}
+                isBackgroundVideo={true}
+                poster={videoPosterBg}
+              >
+                <source src={videoMp4Bg} type="video/mp4" />
+              </VideoComp>
+
               <div className="h1-wrap">
                 <h1 className="h1">
                   <img src="/terrament-logo-text-white.svg" alt="Terrament logo" />
