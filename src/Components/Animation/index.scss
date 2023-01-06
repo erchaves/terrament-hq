@@ -1,0 +1,23 @@
+@import '../../shared-styles/variables.scss';
+@import '../../shared-styles/mixins.scss';
+
+.page-animation {
+  height: 100vh;
+  width: 100%;
+  background: $color-primary;
+
+  .wrap {
+    @include center-both();
+    width: 60rem;
+    max-width: 90vw;
+    font-family: $font-family;
+    text-align: center;
+    color: $color-white;
+    font-size: $font-size-md;
+  }
+
+  .h1 {
+    font-size: $font-size-lg;
+    font-family: $font-family;
+  }
+}

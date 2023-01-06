@@ -34,6 +34,10 @@ export default {
       template: 'src/Components/404',
     },
     {
+      path: 'animation',
+      template: 'src/Components/Animation',
+    },
+    {
       path: 'banana',
       template: 'src/Components/Banana',
     },
