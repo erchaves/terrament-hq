@@ -2,8 +2,8 @@ import React from 'react'
 import VideoComp from "../VideoComp";
 import './index.scss';
 
-const videoMp4 = 'terrament-product-demo-video-compressed.mp4';
-const videoPosterDesign = 'terrament-prototype-R7-cover.png';
+const videoMp4 = '/terrament-product-demo-video-compressed.mp4';
+const videoPosterDesign = '/terrament-prototype-R7-cover.png';
 
 export default () => (
   <div className="page page-animation">
