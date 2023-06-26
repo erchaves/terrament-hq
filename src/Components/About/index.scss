@@ -91,31 +91,27 @@
     .profile-row {
       display: flex;
       flex-wrap: wrap;
-      margin-left: -$flex-padding;
-      margin-right: -$flex-padding;
     }
 
     .profile-wrap {
-      box-sizing: border-box;
-      display: block;
+      width: 50%;
       padding: $flex-padding;
-    }
-
-    .profile-wrap {
-      width: 100%;
 
       &.full-row {
+        width: 100%;
         display: block;
 
         .profile-img-wrap,
         .profile-content-wrap {
           width: 100%;
-          padding-left: 0;
-          padding-right: 0;
         }
 
         .profile-img-wrap {
           margin-bottom: 1rem;
+        }
+
+        .profile-content-wrap {
+          padding: 0;
         }
       }
     }

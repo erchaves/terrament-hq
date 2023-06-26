@@ -6,12 +6,6 @@ export default class Footer extends Component {
     return (
       <div className="footer">
         <div className="footer-left">
-          <a className="footer-link footer-link-cebip hide-mobile"
-              href="https://www.cebip.org/terrament"
-              target="_blank" rel="noopener noreferrer"
-            >
-              <img src="/cebip-logo.png" alt="CEBIP logo" />
-          </a>
           <Link className="footer-link hide-desktop"
               to="/"
             >

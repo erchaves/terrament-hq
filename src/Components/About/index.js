@@ -34,7 +34,10 @@ class About extends React.Component {
                 About Terrament
               </h2>
               <p>
-                Terrament was founded at the start of 2020 and has filed a patent application for our innovative approach to underground energy storage. We are now seeking angel investment and seed funding.
+                Terrament was founded at the start of 2020 and has filed two patent applications for our innovative approach to underground energy storage. We are now seeking $1 million in pre-seed funding.
+              </p>
+              <p>
+                Terrament's gravity storage design was inspired by a related technology called Underground Pumped Hydro Storage, or UPHS. In fact, the company was born out of a <a href="https://github.com/syllable-hq/uphs-feasibility-study" target="_blank" rel="noopener noreferrer">research project exploring the feasibility UPHS</a>. By leveraging our UPHS research to spark discussions with industry experts and validate our market assumptions, we demonstrated that Terrament's concept was not just viable, it was urgently needed.
               </p>
               <p>
                 We are proud to have been selected to join the <a
@@ -46,7 +49,13 @@ class About extends React.Component {
                 >NYSERDA</a>).
               </p>
               <p>
-                Terrament's gravity storage design was inspired by a related technology called Underground Pumped Hydro Storage, or UPHS. In fact, the company was born out of a <a href="https://github.com/syllable-hq/uphs-feasibility-study" target="_blank" rel="noopener noreferrer">research project exploring the feasibility UPHS</a>. By leveraging our UPHS research to spark discussions with industry experts and validate our market assumptions, we demonstrated that Terrament's concept was not just viable, it was urgently needed.
+                We're also grateful to have been selected as a <a
+                  href="https://www.newlab.com/articles/founder-fellowship-2023"
+                  target="_blank" rel="noopener noreferrer"
+                >2023 Fellowship Founder</a> at <a
+                  href="https://www.newlab.com/"
+                  target="_blank" rel="noopener noreferrer"
+                >Newlab</a>. The founder fellowship is run in partnership with the New York City Economic Development Corporation (NYCEDC)’s Venture Access NYC initiative.
               </p>
             </div>
             <div className="content-section">

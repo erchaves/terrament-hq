@@ -58,17 +58,27 @@
     }
   }
 
+  .brand-logo-section {
+    display: flex;
+  }
+
+  .brand-logo {
+    width: 50%;
+    display: flex;
+    margin-bottom: 1rem;
+
+    &:first-child {
+      padding-right: 4vw;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
   .footer-link {
     padding: 1rem 0 1rem $logo-size-footer;
     display: inline-block;
-
-    &.footer-link-cebip {
-      padding: 0 0 0 $logo-size-footer * .5;
-
-      img {
-        height: 5rem;
-      }
-    }
 
     &.hide-desktop {
       display: none;

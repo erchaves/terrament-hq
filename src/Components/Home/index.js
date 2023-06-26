@@ -67,18 +67,28 @@ class Home extends React.Component {
               </h2>
 
               <p>
-                Terrament is building long-duration energy storage using gravity batteries deployed deep underground. Our patent-pending design achieves high scale and low cost by maximizing the two simple ingredients of gravity storage: height and weight:
+                Terrament is building long-duration energy storage using gravity batteries deployed deep underground.
               </p>
-              <ul className="meet-terrament-bullets">
-                <li>
-                  First, we maximize height potential by digging a mile deep into bedrock.
-                </li>
-                <li>
-                  Second, we maximize density with modules that support their own weight.
-                </li>
-              </ul>
+              <p>
+                Our patent-pending design achieves high scale and low cost by maximizing the two simple ingredients of gravity storage: height and weight:
+              </p>
+              <p>
+                <ul className="meet-terrament-bullets">
+                  <li>
+                    First, we maximize height potential by digging a mile deep into bedrock.
+                  </li>
+                  <li>
+                    Second, we maximize density with modules that support their own weight.
+                  </li>
+                </ul>
+              </p>
+              <p>
+                Our solution is low-risk:
+              </p>
+              <p>
+                We don't depend on critical minerals, and we don't use any chemical batteries. Our innovative system uses only well-established technologies: We leverage the same motor/generators used in wind turbines, and we use the same mile-deep mine shafts which have been built by mining companies for over 50 years.
+              </p>
             </div>
-
             <div className="content-section">
               <h3 className="h3">
                 Terrament Pitch Deck
@@ -103,10 +113,25 @@ class Home extends React.Component {
                 The threat of climate change has sparked action to replace fossil fuels with wind and solar energy. But wind and solar are intermittent resources; the wind doesn't always blow, and the sun doesn't always shine. So without energy storage, our urgent transition to renewable energy will stall.
               </p>
               <p>
-              According to NREL, energy storage capacity in the U.S. is <a
+              According to NREL, energy storage capacity in the U.S. needs to <a
                   href="https://www.nrel.gov/news/program/2021/grid-scale-storage-us-storage-capacity-could-grow-five-fold-by-2050.html"
                   title="NREL: Grid-Scale U.S. Storage Capacity Could Grow Five-Fold by 2050"
-                  target="_blank" rel="noopener noreferrer">expected to grow five-fold by 2050</a>. But we have a big problem: We don't yet have proven, low-cost technologies that can reach this scale.
+                  target="_blank" rel="noopener noreferrer">grow five times larger by 2050</a> to support wind and solar energy.
+              </p>
+              <p>
+                  But we have a big problem: We don't yet have proven, low-cost technologies that can reach this scale.
+              </p>
+              <p>Today, nearly all of our energy storage is pumped hydro, which is a <a
+                  href="https://www.energy.gov/sites/prod/files/2018/02/f49/Hydropower-Vision-021518.pdf"
+                  title="NREL: Grid-Scale U.S. Storage Capacity Could Grow Five-Fold by 2050"
+                  target="_blank" rel="noopener noreferrer">nearly tapped out resource</a>. And Li-ion batteries remain too expensive and impractical to scale up for the entire grid. In fact, researchers are concerned that
+                <a
+                  href="https://www.spglobal.com/en/research-insights/articles/lithium-supply-is-set-to-triple-by-2025-will-it-be-enough"
+                  title="Lithium supply is set to triple by 2025. Will it be enough?"
+                  target="_blank" rel="noopener noreferrer"> we may struggle to mine enough Lithium for just electric vehicles</a>, let alone to serve both mobility and grid storage.
+              </p>
+              <p>
+                So we need a new solution. A solution which is low-risk, high-scale, and low-cost.
               </p>
             </div>
 
@@ -148,10 +173,6 @@ class Home extends React.Component {
                   Weight: We achieve nearly 100% volume capacity with densely packed weight. This is solved with a modular design of self-supporting autonomous units.
                 </li>
               </ol>
-
-              <p>
-                Our solution is low-risk. We use only well-established mining technologies, and we do not rely on any risky, unproven chemical battery technologies.
-              </p>
             </div>
 
 {/* removing to speed up load time */}
@@ -176,40 +197,46 @@ class Home extends React.Component {
 */}
             <div className="content-section">
               <h3 className="h3">
-                Why Underground Gravity Storage?
-              </h3>
-              <p>Today, nearly all of our energy storage is pumped hydro, which is a <a
-                  href="https://www.energy.gov/sites/prod/files/2018/02/f49/Hydropower-Vision-021518.pdf"
-                  title="NREL: Grid-Scale U.S. Storage Capacity Could Grow Five-Fold by 2050"
-                  target="_blank" rel="noopener noreferrer">nearly tapped out resource</a>. And even though Li-ion battery costs are dropping, they are still too expensive. And we don't even have enough raw Lithium material to produce the scale we would need to replace pumped hydro. Researchers are concerned that
-                <a
-                  href="https://www.spglobal.com/en/research-insights/articles/lithium-supply-is-set-to-triple-by-2025-will-it-be-enough"
-                  title="Lithium supply is set to triple by 2025. Will it be enough?"
-                  target="_blank" rel="noopener noreferrer"> we may not even have enough Lithium for electric vehicles</a>, let alone the much larger amount we would need to support grid storage at such an enormous scale.
-              </p>
-              <p>
-                We need a new solution. A solution which is low-risk, high-scale, and low-cost.
-              </p>
-            </div>
-
-
-            <div className="content-section">
-              <h3 className="h3">
-                Learn More
+                About Us
               </h3>
 
               <p>
-                Terrament is a pre-funded startup based in Brooklyn, NY. We have recently joined the <a
+                Terrament is a clean-tech startup based in Brooklyn, NY.
+              </p>
+              <p>We're a proud member of the <a
                   href="https://www.cebip.org/terrament"
                   target="_blank" rel="noopener noreferrer"
-                >CEBIP accelerator program</a>, and we are currently seeking our first round of investment.
+                >CEBIP accelerator program</a> at Stony Brook University.
+              And we're grateful to have beeen chosen for the <a
+                  href="https://www.newlab.com/articles/founder-fellowship-2023"
+                  target="_blank" rel="noopener noreferrer"
+                >2023 Founder Fellowship cohort at Newlab</a>.
+              </p>
+              <p className="brand-logo-section">
+                <a className="brand-logo"
+                  href="https://www.newlab.com"
+                  target="_blank" rel="noopener noreferrer"
+                >
+                  <img src="/newlab-logo.svg" alt="NEWLAB logo" />
+                </a>
+                <a className="brand-logo"
+                  href="https://www.cebip.org/terrament"
+                  target="_blank" rel="noopener noreferrer"
+                >
+                  <img src="/cebip-logo.png" alt="CEBIP logo" />
+                </a>
+              </p>
+              <p>We are currently building our prototype at <a
+                  href="https://www.newlab.com/"
+                  target="_blank" rel="noopener noreferrer"
+                >Newlab</a>, in the Brooklyn Navy Yard. We have two pending patent applications, and we're seeking our first round of investment.
+              </p>
+              <p>
                 <Link className="block-link"
                   to="/about"
-                >
-                  About Us
+                > Learn More
                 </Link>
               </p>
-
             </div>
             <div className="content-section">
               <h3 className="h3">
@@ -217,9 +244,6 @@ class Home extends React.Component {
               </h3>
               <MailchimpForm />
             </div>
-            <p className="disclaimer hide-mobile">
-              Note: The header video above is merely a collage of relevant technologies and asserts no claims.
-            </p>
           </div>
         </div>
 
