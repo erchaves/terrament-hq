@@ -71,33 +71,83 @@ class About extends React.Component {
                       Eric Chaves
                     </h3>
                     <h4 className="profile-title">
+                      Founder / CEO
+                    </h4>
+                  </div>
+                  <div className="profile-content-wrap">
+                    <p>
+                       Eric is a technol&shy;ogist and entre&shy;preneur with a diverse background spanning architecture, industrial design, and software. With a passion for design and experimentation, his broad experience empowers a multidisciplinary approach to entrepreneurship. Terrament is his third company. His former companies include a media-tech startup called <a href="https://angel.co/company/antenna-1" title="Antenna Startup Company: Next-gen recommendations powered by mobile-first feedback on everything" target="_blank" rel="noopener noreferrer">Antenna</a>, and a software and design studio called <a href="https://www.syllablehq.com/" title="Syllable Technology and Design" target="_blank" rel="noopener noreferrer">Syllable</a>.
+                    </p>
+                  </div>
+                </div>
+                <div className="profile-wrap full-row">
+{/*                  <div className="profile-img-wrap">
+                    <img src="/team-profile-pics/sukhbir-kalirai.png" className="profile-img crop-circle" />
+                    <h3 className="profile-name">
+                      Sukhbir Kalirai
+                    </h3>
+                    <h4 className="profile-title">
                       Founder
                     </h4>
                   </div>
                   <div className="profile-content-wrap">
                     <p>
-                      Eric Chaves is a technol&shy;ogist and entre&shy;preneur living in Brooklyn, New York. He is a software developer and multi-disciplinary designer with experience in a range of fields from architecture to industrial design. Terrament is his third company. His first two companies are <a href="https://angel.co/company/antenna-1" title="Antenna Startup Company: Next-gen recommendations powered by mobile-first feedback on everything" target="_blank" rel="noopener noreferrer">Antenna</a> and <a href="https://www.syllablehq.com/" title="Syllable Technology and Design" target="_blank" rel="noopener noreferrer">Syllable</a>.
+                       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                     </p>
                   </div>
                 </div>
+                */}
+                <div className="profile-img-wrap">
+                    <img src="/team-profile-pics/anon.png" className="profile-img crop-circle" />
+                    <h3 className="profile-name">
+                      Announced Soon
+                    </h3>
+                    <h4 className="profile-title">
+                      Co-Founder / Finance
+                    </h4>
+                  </div>
+                  <div className="profile-content-wrap">
+                    <p>
+                      Extensive experience in private equity and development. <br />
+                      Closed $1b+ deals in energy & infrastructure. <br />
+                      Built two previous companies, and grew revenue by 1,000% YoY. <br />
+                      More details announced soon...
+                    </p>
+                  </div>
+                </div>
+
+                <div className="profile-wrap">
+                  <img src="/team-profile-pics/wei-li.png" className="profile-img" />
+                  <h3 className="profile-name">
+                    Dr. Wei Li, Advisor
+                  </h3>
+                  <h4 className="profile-title">
+                    Geo-scientist, Civil Engineer, PhD <br />
+                    Professor, Stony Brook
+                  </h4>
+                </div>
+
+                <div className="profile-wrap">
+                  <img src="/team-profile-pics/jon-longtin.png" className="profile-img" />
+                  <h3 className="profile-name">
+                    Dr. Jon Longtin, Advisor
+                  </h3>
+                  <h4 className="profile-title">
+                    Mechanical Engineering, PhD, Dean, Stony Brook
+                  </h4>
+                </div>
+
                 <div className="profile-wrap">
                   <img src="/team-profile-pics/steven-decarlo.png" className="profile-img" />
                   <h3 className="profile-name">
                     Steven DeCarlo, Advisor
                   </h3>
                   <h4 className="profile-title">
-                    Engineering, MBA, Grid Utilities
+                    Electrical Engineering, MBA <br />
+                    Grid Utilities + Pumped Hydro
                   </h4>
                 </div>
-                <div className="profile-wrap">
-                  <img src="/team-profile-pics/paul-schwartz.png" className="profile-img" />
-                  <h3 className="profile-name">
-                    Paul Schwartz, Advisor
-                  </h3>
-                  <h4 className="profile-title">
-                    CEBIP Director, Energy Exec/Fin
-                  </h4>
-                </div>
+
                 <div className="profile-wrap">
                   <img src="/team-profile-pics/kathryn-gardner.png" className="profile-img" />
                   <h3 className="profile-name">
@@ -107,6 +157,29 @@ class About extends React.Component {
                     Mining Engineer, P.E., MBA, Esq.
                   </h4>
                 </div>
+
+                <div className="profile-wrap">
+                  <img src="/team-profile-pics/courtney-reich.png" className="profile-img" />
+                  <h3 className="profile-name">
+                    Courtney Reich, Advisor
+                  </h3>
+                  <h4 className="profile-title">
+                    Mechanical Engineering, M.S. <br />
+                    Battery Tech, Statistics
+                  </h4>
+                </div>
+
+                <div className="profile-wrap">
+                  <img src="/team-profile-pics/rich-delmerico.png" className="profile-img" />
+                  <h3 className="profile-name">
+                    Rich Delmerico, Advisor
+                  </h3>
+                  <h4 className="profile-title">
+                    Electrical/Industrial Engineering <br />
+                    Business M.S.
+                  </h4>
+                </div>
+
                 <div className="profile-wrap">
                   <img src="/team-profile-pics/etinosa-ogiesoba.png" className="profile-img" />
                   <h3 className="profile-name">
@@ -126,15 +199,6 @@ class About extends React.Component {
                   </h4>
                 </div>
                 <div className="profile-wrap">
-                  <img src="/team-profile-pics/mengye-chen.png" className="profile-img" />
-                  <h3 className="profile-name">
-                    Mengye Chen, Advisor
-                  </h3>
-                  <h4 className="profile-title">
-                    Civil Engineer, PhD
-                  </h4>
-                </div>
-                <div className="profile-wrap">
                   <img src="/team-profile-pics/isabelle-heye.png" className="profile-img" />
                   <h3 className="profile-name">
                     Isabelle Heye, Advisor
@@ -143,15 +207,17 @@ class About extends React.Component {
                     Mechanical Engineer, ME
                   </h4>
                 </div>
+
                 <div className="profile-wrap">
-                  <img src="/team-profile-pics/gregory-scott.png" className="profile-img" />
+                  <img src="/team-profile-pics/achal-upadhyaya.png" className="profile-img" />
                   <h3 className="profile-name">
-                    Gregory Scott, Advisor
+                    Achal Upadhyaya, Advisor
                   </h3>
                   <h4 className="profile-title">
-                    Civil Engineer, PE
+                    Mechanical Engineering, SpaceX
                   </h4>
                 </div>
+
               </div>
             </div>
             <div className="content-section">
@@ -161,10 +227,10 @@ class About extends React.Component {
               <div className="contact-info ">
                 <div className="">
                   <address>
-                    Eric Chaves, Founder<br />
-                    Terrament, LLC <br />
-                    67 West St, Suite 401-C11 <br />
-                    Brooklyn, NY 11222
+                    Eric Chaves, CEO<br />
+                    Terrament, Inc. <br />
+                    19 Morris Ave <br />
+                    Brooklyn, NY 11205
                   </address>
                   <a className="address-link" href="mailto:eric@terramenthq.com">eric@terramenthq.com</a>
                 </div>
