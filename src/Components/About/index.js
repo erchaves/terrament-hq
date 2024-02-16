@@ -34,7 +34,7 @@ class About extends React.Component {
                 About Terrament
               </h2>
               <p>
-                Terrament was founded at the start of 2020 and has filed two patent applications for our innovative approach to underground energy storage. We are now seeking $1 million in pre-seed funding.
+                Terrament was founded at the start of 2020. We have been awarded one US Patent, and we have two more pending patent applications. We are now seeking $1 million in pre-seed funding.
               </p>
               <p>
                 Terrament's gravity storage design was inspired by a related technology called Underground Pumped Hydro Storage, or UPHS. In fact, the company was born out of a <a href="https://github.com/syllable-hq/uphs-feasibility-study" target="_blank" rel="noopener noreferrer">research project exploring the feasibility UPHS</a>. By leveraging our UPHS research to spark discussions with industry experts and validate our market assumptions, we demonstrated that Terrament's concept was not just viable, it was urgently needed.

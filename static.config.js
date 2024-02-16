@@ -6,7 +6,7 @@ const stagingSiteRoot = 'http://localhost:3000';
 // static.config.js
 export default {
   getSiteData: () => ({
-    title: 'Terrament | Radically Scalable Energy Storage',
+    title: 'Terrament | Modular Underground Gravity Storage',
     siteRoot: siteRoot,
     description: 'Terrament builds grid-scale energy storage with underground gravity batteries. We maximize gravity storage with a modular design combined with deep mine shafts.',
     imageUrl: `${siteRoot}/terrament-logo.png`,
@@ -32,14 +32,6 @@ export default {
     {
       path: '404',
       template: 'src/Components/404',
-    },
-    {
-      path: 'animation',
-      template: 'src/Components/Animation',
-    },
-    {
-      path: 'banana',
-      template: 'src/Components/Banana',
     },
   ],
   Document: ({

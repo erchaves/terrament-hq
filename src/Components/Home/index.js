@@ -2,6 +2,7 @@
 import React from 'react';
 import Navbar from "../Navbar";
 import VideoComp from "../VideoComp";
+import VideoYoutube from "../VideoYoutube";
 import Footer from "../Footer";
 import MailchimpForm from "../MailchimpForm";
 import { Link } from '@reach/router'
@@ -13,6 +14,8 @@ const videoPosterBg = 'homepage-bg.jpg';
 const videoPosterDesign = 'terrament-prototype-R7-cover.png';
 const videoMp4Bg = 'homepage-bg.mp4?v2';
 const videoMp4 = 'terrament-product-demo-video-compressed.mp4';
+const videoYoutubeSrc = 'https://www.youtube.com/embed/RZ5RDMw1my4?si=BGFTinN1o21vN_z7&amp;controls=0';
+const videoVimeoSrc = 'https://player.vimeo.com/video/913860588?h=8ec504d4e6&autoplay=0&loop=1&title=0&byline=0&portrait=0';
 
 class Home extends React.Component {
   componentDidMount() {
@@ -50,7 +53,7 @@ class Home extends React.Component {
                   <img src="/terrament-logo-text-white.svg" alt="Terrament logo" />
                 </h1>
                 <h2 className="h2">
-                  Radically Scalable Energy Storage
+                  Modular Underground Gravity Storage
                 </h2>
                 <img className="down-caret" src="/down-caret-white.png" alt="down-caret" />
               </div>
@@ -64,27 +67,47 @@ class Home extends React.Component {
           <div className="screen-content screen-content-below-fold">
             <div className="content-section">
               <h2 className="h2">
-                Meet Terrament
+                Terrament Gravity Storage
               </h2>
 
               <p>
-                Terrament is building long-duration energy storage using gravity batteries deployed deep underground.
+                Terrament is building long-duration energy storage with gravity batteries deployed deep underground.
               </p>
               <p>
-                Our patent-pending design achieves high scale and low cost by maximizing the two simple ingredients of gravity storage: height and weight:
+                Our patented design achieves high scale and low cost by maximizing the two simple ingredients of gravity storage: height and weight.
               </p>
               <p>
                 <ul className="meet-terrament-bullets">
                   <li>
-                    First, we maximize height potential by digging a mile deep into bedrock.
+                    Height: We dig a mile deep into bedrock using existing drilling tech.
                   </li>
                   <li>
-                    Second, we maximize density with modules that support their own weight.
+                    Weight: We support modular weight with shaft bedrock, not a winch cable.
                   </li>
                 </ul>
               </p>
+
+              <div className="media-wrap">
+                <div style={{padding:'42.81% 0 0 0', position:'relative'}}>
+                  <iframe src={videoVimeoSrc}
+                    frameborder="0"
+                    allow="autoplay; fullscreen; picture-in-picture"
+                    style={{"position":"absolute","top":"0","left":"0","width":"100%","height":"100%"}}
+                    title="Terrament Gravity Storage Concept">
+                  </iframe>
+                </div>
+                <script src="https://player.vimeo.com/api/player.js"></script>
+
+                <span className="caption">
+                  How Terrament's Gravity Storage works (video by <a
+                  href="https://www.extinctionmachine.com"
+                  title="Extinction Machine: High-impact video content for high-tech startups"
+                  target="_blank" rel="noopener noreferrer">Extinction Machine</a>)
+                </span>
+              </div>
+
               <p>
-                Our solution is low-risk:
+                Terrament's gravity storage solution is low-risk:
               </p>
               <p>
                 We don't depend on critical minerals, and we don't use any chemical batteries. Our innovative system uses only well-established technologies: We leverage the same motor/generators used in wind turbines, and we use the same mile-deep mine shafts which have been built by mining companies for over 50 years.
@@ -136,66 +159,6 @@ class Home extends React.Component {
               </p>
             </div>
 
-            <div className="content-section"
-              id="alphaDesign"
-            >
-              <h3 className="h3">
-                Terrament's Gravity Storage
-              </h3>
-
-              <p>
-                Terrament's gravity storage can solve our massive energy storage demand at an affordable cost.
-              </p>
-              <p>Our full design is still confidential in early development. However, this early-draft animation illustrates our basic concept. More details to be revealed post-funding.
-              </p>
-
-              <div className="media-wrap">
-                <VideoComp
-                  wrapperClass="captioned-media"
-                  poster={videoPosterDesign}
-                >
-                  <source src={videoMp4} type="video/mp4" />
-                </VideoComp>
-                <span className="caption">
-                  3D animation of Terrament alpha design concept (early draft).
-                </span>
-              </div>
-
-              <p>
-                Terrament’s patent pending design achieves breakthrough efficiency by maximizing the two simple principles of gravity storage: height and weight.
-              </p>
-
-              <ol className="list-items">
-                <li>
-                  Height: We achieve 10 times more height than above-ground solutions. This is solved by digging a mile deep into bedrock (or using abandoned mine shafts).
-                </li>
-
-                <li>
-                  Weight: We achieve nearly 100% volume capacity with densely packed weight. This is solved with a modular design of self-supporting autonomous units.
-                </li>
-              </ol>
-            </div>
-
-{/* removing to speed up load time */}
-{/*            <div className="content-section related-technologies hide-desktop">
-              <h3 className="h3">
-                Related Technologies
-              </h3>
-              <div className="media-wrap">
-                <VideoComp
-                  wrapperClass="captioned-media"
-                  poster={videoPosterBg}
-                  autoPlay={false}
-                >
-                  <source src={videoMp4Bg} type="video/mp4" />
-                </VideoComp>
-                <span className="caption">
-                  Video collage of technologies related to Terrament gravity storage. <br/>
-                  Note: This video is merely a collage of relevant technologies and asserts no claims.
-                </span>
-              </div>
-            </div>
-*/}
             <div className="content-section">
               <h3 className="h3">
                 About Us
@@ -208,10 +171,10 @@ class Home extends React.Component {
                   href="https://www.cebip.org/terrament"
                   target="_blank" rel="noopener noreferrer"
                 >CEBIP accelerator program</a> at Stony Brook University.
-              And we're grateful to have beeen chosen for the <a
+              And we joined the <a
                   href="https://www.newlab.com/articles/founder-fellowship-2023"
                   target="_blank" rel="noopener noreferrer"
-                >2023 Founder Fellowship cohort at Newlab</a>.
+                >Founder Fellowship cohort at Newlab</a> in 2023.
               </p>
               <p className="brand-logo-section">
                 <a className="brand-logo"
@@ -227,10 +190,13 @@ class Home extends React.Component {
                   <img src="/cebip-logo.png" alt="CEBIP logo" />
                 </a>
               </p>
-              <p>We are currently building our prototype at <a
+              <p>We recently completed a prototype at <a
                   href="https://www.newlab.com/"
                   target="_blank" rel="noopener noreferrer"
-                >Newlab</a>, in the Brooklyn Navy Yard. We have two pending patent applications, and we're seeking our first round of investment.
+                >Newlab</a>, in the Brooklyn Navy Yard.
+              </p>
+              <p>
+                We have been awarded a US Patent. And we have two more pending patent applications. We're seeking our first round of investment.
               </p>
               <p>
                 <Link className="block-link"
