@@ -76,7 +76,7 @@ class About extends React.Component {
                   </div>
                   <div className="profile-content-wrap">
                     <p>
-                       Eric is a technol&shy;ogist and entre&shy;preneur with a diverse background spanning architecture, industrial design, and software. With a passion for design and experimentation, his broad experience empowers a multidisciplinary approach to entrepreneurship. Terrament is his third company. His former companies include a media-tech startup called <a href="https://angel.co/company/antenna-1" title="Antenna Startup Company: Next-gen recommendations powered by mobile-first feedback on everything" target="_blank" rel="noopener noreferrer">Antenna</a>, and a software and design studio called <a href="https://www.syllablehq.com/" title="Syllable Technology and Design" target="_blank" rel="noopener noreferrer">Syllable</a>.
+                       Eric is a technol&shy;ogist and entre&shy;preneur with a diverse background spanning architecture, industrial design, and software. He is a <a href="https://www.newlab.com/blogs/founder-fellowship-2023" title="Newlab 2023 Founder Fellowship" target="_blank" rel="noopener noreferrer">Founder Fellow at Newlab</a>, and a member of the <a href="https://cebip.org/companies/terrament" title="CEBIP accelerator at Stony Brook University" target="_blank" rel="noopener noreferrer">CEBIP accelerator at Stony Brook University</a>. With a passion for design and experimentation, his broad experience empowers a multidisciplinary approach to entrepreneurship. Terrament is his third company. His former companies include a media-tech startup called <a href="https://angel.co/company/antenna-1" title="Antenna Startup Company: Next-gen recommendations powered by mobile-first feedback on everything" target="_blank" rel="noopener noreferrer">Antenna</a>, and a software and design studio called <a href="https://www.syllablehq.com/" title="Syllable Technology and Design" target="_blank" rel="noopener noreferrer">Syllable</a>.
                     </p>
                   </div>
                 </div>
@@ -207,17 +207,6 @@ class About extends React.Component {
                     Mechanical Engineer, ME
                   </h4>
                 </div>
-
-                <div className="profile-wrap">
-                  <img src="/team-profile-pics/achal-upadhyaya.png" className="profile-img" />
-                  <h3 className="profile-name">
-                    Achal Upadhyaya, Advisor
-                  </h3>
-                  <h4 className="profile-title">
-                    Mechanical Engineering, SpaceX
-                  </h4>
-                </div>
-
               </div>
             </div>
             <div className="content-section">
