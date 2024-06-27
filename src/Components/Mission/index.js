@@ -34,7 +34,7 @@ class Mission extends React.Component {
                 Mission Statements
               </h2>
               <p>
-                Terrament's mission is building high-impact solutions to mitigate climate damage.
+                At Terrament, our mission is to build high-impact solutions that mitigate climate damage.
               </p>
               <p>
                 Terrament was born out of an urgent call to action: that society can, and must, mitigate the catastrophic costs of <a
