@@ -30,6 +30,10 @@ export default {
       template: 'src/Components/Mission',
     },
     {
+      path: 'howItWorks',
+      template: 'src/Components/HowItWorks',
+    },
+    {
       path: 'research',
       template: 'src/Components/Research',
     },

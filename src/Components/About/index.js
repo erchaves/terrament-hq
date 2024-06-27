@@ -31,7 +31,7 @@ class About extends React.Component {
           <div className="screen-content screen-content-below-fold">
             <div className="content-section">
               <h2 className="h2">
-                About Terrament
+                About our Team
               </h2>
                <p>
                 Terrament is a New York based clean-tech startup building long-duration energy storage with gravity batteries deployed deep underground.
@@ -265,25 +265,7 @@ class About extends React.Component {
                 </div>
               </div>
             </div>
-            <div className="content-section">
-              <h2 className="h2">
-                Stay in Touch
-              </h2>
-              <div className="contact-info ">
-                <div className="">
-                  <address>
-                    Eric Chaves, CEO<br />
-                    Terrament, Inc. <br />
-                    19 Morris Ave <br />
-                    Brooklyn, NY 11205
-                  </address>
-                  <a className="address-link" href="mailto:eric@terramenthq.com">eric@terramenthq.com</a>
-                </div>
-                <div className="">
-                  <MailchimpForm />
-                </div>
-              </div>
-            </div>
+
           </div>
         </div>
 

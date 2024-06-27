@@ -15,6 +15,7 @@ const videoPosterDesign = 'terrament-prototype-R7-cover.png';
 const videoMp4Bg = 'homepage-bg.mp4?v2';
 const videoMp4 = 'terrament-product-demo-video-compressed.mp4';
 const videoYoutubeSrc = 'https://www.youtube.com/embed/RZ5RDMw1my4?si=BGFTinN1o21vN_z7&amp;controls=0';
+// todo #deDup
 const videoVimeoSrc = 'https://player.vimeo.com/video/913860588?h=8ec504d4e6&autoplay=0&loop=1&title=0&byline=0&portrait=0';
 
 class Home extends React.Component {
@@ -145,14 +146,10 @@ class Home extends React.Component {
               <p>
                   But we have a big problem: We don't yet have proven, low-cost technologies that can reach this scale.
               </p>
-              <p>Today, nearly all of our energy storage is pumped hydro, which is a <a
+              <p>Today, 90% of the world's energy storage is pumped hydro, which is a <a
                   href="https://www.energy.gov/sites/prod/files/2018/02/f49/Hydropower-Vision-021518.pdf"
                   title="NREL: Grid-Scale U.S. Storage Capacity Could Grow Five-Fold by 2050"
-                  target="_blank" rel="noopener noreferrer">nearly tapped out resource</a>. And Li-ion batteries remain too expensive and impractical to scale up for the entire grid. In fact, researchers are concerned that
-                <a
-                  href="https://www.spglobal.com/en/research-insights/articles/lithium-supply-is-set-to-triple-by-2025-will-it-be-enough"
-                  title="Lithium supply is set to triple by 2025. Will it be enough?"
-                  target="_blank" rel="noopener noreferrer"> we may struggle to mine enough Lithium for just electric vehicles</a>, let alone to serve both mobility and grid storage.
+                  target="_blank" rel="noopener noreferrer">nearly tapped out resource</a>. And Lithium-ion batteries are too expensive at long durations.
               </p>
               <p>
                 So we need a new solution. A solution which is low-risk, high-scale, and low-cost.

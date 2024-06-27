@@ -18,18 +18,18 @@ export default () => (
         </label>
         <ul className="menu-ul">
           <li className="menu-li">
-            <Link to="/" >
-              Home
+            <Link to="/about" >
+              Team
             </Link>
           </li>
           <li className="menu-li">
-            <Link to="/about" >
-              About Us
+            <Link to="/howItWorks" >
+              How it Works
             </Link>
           </li>
           <li className="menu-li">
             <Link to="/mission" >
-              Mission & DEI+
+              Mission + Values
             </Link>
           </li>
           <li className="menu-li">
