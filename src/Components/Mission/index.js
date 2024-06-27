@@ -54,7 +54,7 @@ class Mission extends React.Component {
                 We acknowledge that climate damage impacts society unjustly; populations who cause more climate damage often feel less impacts, and vice versa.
               </p>
               <p>
-                To mitigate climate damage, society must transition to a safer, more sustainable, and more just energy infrastructure. A just transition requires that no one is left behind to endure unjust hardship, and that no one is disenfranchised from the energy transition’s wealth of opportunity.
+                To mitigate climate damage, society must transition to a safer, more sustainable, and more just energy infrastructure. A just transition requires that no one is left behind to endure unjust hardship and that no one is disenfranchised from the energy transition’s wealth of opportunity.
               </p>
               <p>
                 We believe that a healthy economy and a clean environment can and should co-exist. We believe this is possible without costing workers or community residents their health, environment, jobs, or economic assets. And we understand that a just transition is only possible if the organizations working towards it are also just and inclusive.
@@ -94,7 +94,7 @@ class Mission extends React.Component {
                 Terrament values diversity, and we strive to build teams in which everyone can be their authentic self. We encourage people from underrepresented backgrounds to apply.
               </p>
               <p>
-                Terrament is an equal opportunity employer, and seeks to recruit, hire, and provide opportunities for advancement without regard to race, color, creed, religion, sex, gender, pregnancy, age, disability, or any other characteristics and traits protected under applicable law. Please reach out with any questions or concerns.
+                Terrament is an equal opportunity employer and seeks to recruit, hire, and provide opportunities for advancement without regard to race, color, creed, religion, sex, gender, pregnancy, age, disability, or any other characteristics and traits protected under applicable law. Please reach out with any questions or concerns.
               </p>
               <p>
                 (We currently have no job openings. But feel free to drop us an <a

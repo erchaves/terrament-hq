@@ -223,7 +223,7 @@ class Home extends React.Component {
               </p>
 
               <p>
-                We have been awarded a U.S. Patent. And we have two more pending patent applications. We're seeking our first round of investment.
+                We have been awarded a U.S. Patent, and we have two more pending patent applications. We're seeking our first round of investment.
               </p>
               <p>
                 <Link className="block-link"
