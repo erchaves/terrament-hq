@@ -26,6 +26,10 @@ export default {
       template: 'src/Components/About',
     },
     {
+      path: 'mission',
+      template: 'src/Components/Mission',
+    },
+    {
       path: 'research',
       template: 'src/Components/Research',
     },

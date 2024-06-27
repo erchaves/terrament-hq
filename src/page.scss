@@ -60,19 +60,25 @@
 
   .brand-logo-section {
     display: flex;
+
+    &.row-2 {
+      .brand-logo {
+        min-width: 45%;
+      }
+    }
   }
 
   .brand-logo {
-    width: 50%;
+    min-width: 35%;
     display: flex;
     margin-bottom: 1rem;
 
     &:first-child {
       padding-right: 4vw;
     }
-
     img {
       width: 100%;
+      object-fit: contain;
     }
   }
 
@@ -180,10 +186,14 @@
     font-size: .8em;
   }
 
-  .meet-terrament-bullets {
-    margin-top: -0.625em;
+  .bullets {
     margin-left: 1.25em;
     list-style: disc;
+    margin-top: 0.5em;
+  }
+
+  .meet-terrament-bullets {
+    margin-top: -0.625em;
   }
 
   @media screen and (max-width: $screen-size-mobile) {

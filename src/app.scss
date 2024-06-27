@@ -65,6 +65,11 @@ button {
   border: none;
 }
 
+strong {
+  font-family: $font-family-bold;
+  font-weight: $font-weight-bold;
+}
+
 .react-static-loading {
   // git rid of the spinning loader. It's distracting.
   display: none !important;

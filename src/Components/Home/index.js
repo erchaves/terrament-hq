@@ -77,7 +77,7 @@ class Home extends React.Component {
                 Our patented design achieves high scale and low cost by maximizing the two simple ingredients of gravity storage: height and weight.
               </p>
               <p>
-                <ul className="meet-terrament-bullets">
+                <ul className="bullets meet-terrament-bullets">
                   <li>
                     Height: We dig a mile deep into bedrock using existing drilling tech.
                   </li>
@@ -165,38 +165,68 @@ class Home extends React.Component {
               </h3>
 
               <p>
-                Terrament is a clean-tech startup based in Brooklyn, NY.
-              </p>
-              <p>We're a proud member of the <a
-                  href="https://www.cebip.org/terrament"
-                  target="_blank" rel="noopener noreferrer"
-                >CEBIP accelerator program</a> at Stony Brook University.
-              And we joined the <a
-                  href="https://www.newlab.com/articles/founder-fellowship-2023"
-                  target="_blank" rel="noopener noreferrer"
-                >Founder Fellowship cohort at Newlab</a> in 2023.
+                Terrament is a clean-tech startup based in Brooklyn, NY. We are grateful to have been accepted into the following programs:
+                <ul className="bullets">
+                  <li>
+                    <a
+                    href="https://www.cebip.org/terrament"
+                    target="_blank" rel="noopener noreferrer"
+                    >CEBIP accelerator program</a> at Stony Brook University (since 2021).
+                  </li>
+
+                  <li>
+                    <a
+                    href="https://www.newlab.com/articles/founder-fellowship-2023"
+                    target="_blank" rel="noopener noreferrer"
+                    >Founder Fellowship cohort at Newlab</a> (in 2023, still active).
+                  </li>
+
+                  <li>
+                    <a
+                    href="https://www.plugandplaytechcenter.com/japan/"
+                    target="_blank" rel="noopener noreferrer"
+                    >Plug and Play Program</a> (Japan - Energy focus, in 2024).
+                  </li>
+                  <li>
+                    <a
+                    href="https://www.cleantechopen.org/en/page/northeast-en"
+                    target="_blank" rel="noopener noreferrer"
+                    >Clean Tech Open Program</a> (Northeast, in 2024).
+                  </li>
+                </ul>
               </p>
               <p className="brand-logo-section">
-                <a className="brand-logo"
-                  href="https://www.newlab.com"
-                  target="_blank" rel="noopener noreferrer"
-                >
-                  <img src="/newlab-logo.svg" alt="NEWLAB logo" />
-                </a>
                 <a className="brand-logo"
                   href="https://www.cebip.org/terrament"
                   target="_blank" rel="noopener noreferrer"
                 >
                   <img src="/cebip-logo.png" alt="CEBIP logo" />
                 </a>
-              </p>
-              <p>We recently completed a prototype at <a
-                  href="https://www.newlab.com/"
+
+                <a className="brand-logo"
+                  href="https://www.cleantechopen.org/en/page/northeast-en"
                   target="_blank" rel="noopener noreferrer"
-                >Newlab</a>, in the Brooklyn Navy Yard.
+                >
+                  <img src="/clean-tech-open-logo.png" alt="Cleantech Open Logo" />
+                </a>
               </p>
+              <p className="brand-logo-section row-2">
+                <a className="brand-logo"
+                  href="https://www.newlab.com"
+                  target="_blank" rel="noopener noreferrer"
+                >
+                  <img src="/newlab-logo.svg" alt="NEWLAB logo" />
+                </a>
+               <a className="brand-logo"
+                  href="https://www.plugandplaytechcenter.com/japan/"
+                  target="_blank" rel="noopener noreferrer"
+                >
+                  <img src="/plug-and-play-logo-blue.png" alt="Plug and Play logo" />
+                </a>
+              </p>
+
               <p>
-                We have been awarded a US Patent. And we have two more pending patent applications. We're seeking our first round of investment.
+                We have been awarded a U.S. Patent. And we have two more pending patent applications. We're seeking our first round of investment.
               </p>
               <p>
                 <Link className="block-link"

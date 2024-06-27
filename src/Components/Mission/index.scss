@@ -1,9 +1,8 @@
 @import '../../shared-styles/variables.scss';
 @import '../../shared-styles/mixins.scss';
 
-.page-about {
+.page-mission {
   .profile-row {
-    clear: both;
     display: flex;
     flex-wrap: wrap;
     margin-left: -$flex-padding;
@@ -11,7 +10,6 @@
   }
 
   .profile-wrap {
-    clear: both;
     width: 33.3333%;
     height: 100%;
     box-sizing: border-box;
@@ -19,9 +17,9 @@
     padding: calc($flex-padding / 2) calc($flex-padding / 2);
 
     p {
-      font-size: $font-size-sm;
+      font-size: $font-size-base;
       line-height: $line-height-sm;
-      // text-align: justify;
+      text-align: justify;
     }
 
     &.full-row {
@@ -41,28 +39,6 @@
         padding-left: calc($flex-padding / 4);
         width: 66.666%;
         box-sizing: border-box;
-      }
-
-      &.cofounder {
-        width: 50%;
-
-        p {
-          font-size: 1rem;
-        }
-
-        h4 {
-          // font-size: 1rem;
-        }
-
-        .profile-img-wrap {
-          width: 42%;
-        }
-
-        .profile-content-wrap {
-          align-self: auto;
-          margin-top: 0.5em;
-          width: 58%;
-        }
       }
     }
   }
@@ -136,17 +112,6 @@
 
         .profile-content-wrap {
           padding: 0;
-        }
-
-        &.cofounder {
-          .profile-img-wrap {
-            width: 100%;
-          }
-
-          .profile-content-wrap {
-            width: 100%;
-          }
-
         }
       }
     }

@@ -28,6 +28,11 @@ export default () => (
             </Link>
           </li>
           <li className="menu-li">
+            <Link to="/mission" >
+              Mission & DEI+
+            </Link>
+          </li>
+          <li className="menu-li">
             <a href="https://twitter.com/terrament" target="_blank" rel="noopener noreferrer">
               <span className="menu-item__icon icon-twitter"></span>
             </a>

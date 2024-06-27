@@ -33,36 +33,80 @@ class About extends React.Component {
               <h2 className="h2">
                 About Terrament
               </h2>
-              <p>
-                Terrament was founded at the start of 2020. We have been awarded one US Patent, and we have two more pending patent applications. We are now seeking $1 million in pre-seed funding.
+               <p>
+                Terrament is a New York based clean-tech startup building long-duration energy storage with gravity batteries deployed deep underground.
               </p>
               <p>
-                Terrament's gravity storage design was inspired by a related technology called Underground Pumped Hydro Storage, or UPHS. In fact, the company was born out of a <a href="https://github.com/syllable-hq/uphs-feasibility-study" target="_blank" rel="noopener noreferrer">research project exploring the feasibility UPHS</a>. By leveraging our UPHS research to spark discussions with industry experts and validate our market assumptions, we demonstrated that Terrament's concept was not just viable, it was urgently needed.
+                We have been awarded one US Patent, and we have two more pending patent applications. We are grateful to have been accepted into the following programs:
+                <ul className="bullets">
+                  <li>
+                    <a
+                    href="https://www.cebip.org/terrament"
+                    target="_blank" rel="noopener noreferrer"
+                    >CEBIP accelerator program</a> at Stony Brook University (since 2021).
+                  </li>
+
+                  <li>
+                    <a
+                    href="https://www.newlab.com/articles/founder-fellowship-2023"
+                    target="_blank" rel="noopener noreferrer"
+                    >Founder Fellowship cohort at Newlab</a> (in 2023, still active).
+                  </li>
+
+                  <li>
+                    <a
+                    href="https://www.plugandplaytechcenter.com/japan/"
+                    target="_blank" rel="noopener noreferrer"
+                    >Plug and Play Program</a> (Japan - Energy focus, in 2024).
+                  </li>
+                  <li>
+                    <a
+                    href="https://www.cleantechopen.org/en/page/northeast-en"
+                    target="_blank" rel="noopener noreferrer"
+                    >Clean Tech Open Program</a> (Northeast, in 2024).
+                  </li>
+                </ul>
               </p>
-              <p>
-                We are proud to have been selected to join the <a
+              <p className="brand-logo-section">
+                <a className="brand-logo"
                   href="https://www.cebip.org/terrament"
                   target="_blank" rel="noopener noreferrer"
-                >CEBIP accelerator program</a>. CEBIP, the Clean Energy Business Incubator Program, is supported by Stony Brook University and the New York State Energy Research and Development Authority (<a
-                  href="https://www.nyserda.ny.gov/"
+                >
+                  <img src="/cebip-logo.png" alt="CEBIP logo" />
+                </a>
+
+                <a className="brand-logo"
+                  href="https://www.cleantechopen.org/en/page/northeast-en"
                   target="_blank" rel="noopener noreferrer"
-                >NYSERDA</a>).
+                >
+                  <img src="/clean-tech-open-logo.png" alt="Cleantech Open Logo" />
+                </a>
               </p>
-              <p>
-                We're also grateful to have been selected as a <a
-                  href="https://www.newlab.com/articles/founder-fellowship-2023"
+              <p className="brand-logo-section row-2">
+                <a className="brand-logo"
+                  href="https://www.newlab.com"
                   target="_blank" rel="noopener noreferrer"
-                >2023 Fellowship Founder</a> at <a
-                  href="https://www.newlab.com/"
+                >
+                  <img src="/newlab-logo.svg" alt="NEWLAB logo" />
+                </a>
+               <a className="brand-logo"
+                  href="https://www.plugandplaytechcenter.com/japan/"
                   target="_blank" rel="noopener noreferrer"
-                >Newlab</a>. The founder fellowship is run in partnership with the New York City Economic Development Corporation (NYCEDC)’s Venture Access NYC initiative.
+                >
+                  <img src="/plug-and-play-logo-blue.png" alt="Plug and Play logo" />
+                </a>
               </p>
+
             </div>
             <div className="content-section">
               <h2 className="h2">
-                Our Team
+                Terrament Team
               </h2>
-
+            </div>
+            <div className="content-section">
+              <h3 className="h3">
+                Founder Team
+              </h3>
               <div className="profile-row">
                 <div className="profile-wrap full-row">
                   <div className="profile-img-wrap">
@@ -76,46 +120,58 @@ class About extends React.Component {
                   </div>
                   <div className="profile-content-wrap">
                     <p>
-                       Eric is a technol&shy;ogist and entre&shy;preneur with a diverse background spanning architecture, industrial design, and software. He is a <a href="https://www.newlab.com/blogs/founder-fellowship-2023" title="Newlab 2023 Founder Fellowship" target="_blank" rel="noopener noreferrer">Founder Fellow at Newlab</a>, and a member of the <a href="https://cebip.org/companies/terrament" title="CEBIP accelerator at Stony Brook University" target="_blank" rel="noopener noreferrer">CEBIP accelerator at Stony Brook University</a>. With a passion for design and experimentation, his broad experience empowers a multidisciplinary approach to entrepreneurship. Terrament is his third company. His former companies include a media-tech startup called <a href="https://angel.co/company/antenna-1" title="Antenna Startup Company: Next-gen recommendations powered by mobile-first feedback on everything" target="_blank" rel="noopener noreferrer">Antenna</a>, and a software and design studio called <a href="https://www.syllablehq.com/" title="Syllable Technology and Design" target="_blank" rel="noopener noreferrer">Syllable</a>.
-                    </p>
-                  </div>
-                </div>
-                <div className="profile-wrap full-row">
-{/*                  <div className="profile-img-wrap">
-                    <img src="/team-profile-pics/sukhbir-kalirai.png" className="profile-img crop-circle" />
-                    <h3 className="profile-name">
-                      Sukhbir Kalirai
-                    </h3>
-                    <h4 className="profile-title">
-                      Founder
-                    </h4>
-                  </div>
-                  <div className="profile-content-wrap">
-                    <p>
-                       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                    </p>
-                  </div>
-                </div>
-                */}
-                <div className="profile-img-wrap">
-                    <img src="/team-profile-pics/anon.png" className="profile-img crop-circle" />
-                    <h3 className="profile-name">
-                      Announced Soon
-                    </h3>
-                    <h4 className="profile-title">
-                      Co-Founder / Finance
-                    </h4>
-                  </div>
-                  <div className="profile-content-wrap">
-                    <p>
-                      Extensive experience in private equity and development. <br />
-                      Closed $1b+ deals in energy & infrastructure. <br />
-                      Built two previous companies, and grew revenue by 1,000% YoY. <br />
-                      More details announced soon...
+                      Eric Chaves is a technical entrepreneur with 20 years experience spanning Architecture, Industrial Design, and Software Engineering. With experience building two previous tech startups, he launched Terrament in 2020 to bring new innovation to the field of mechanical energy storage. He is a <a href="https://www.newlab.com/blogs/founder-fellowship-2023" title="Newlab 2023 Founder Fellowship" target="_blank" rel="noopener noreferrer">Founder Fellow at Newlab</a>, and a member of the <a href="https://cebip.org/companies/terrament" title="CEBIP accelerator at Stony Brook University" target="_blank" rel="noopener noreferrer">CEBIP accelerator at Stony Brook University</a>.
                     </p>
                   </div>
                 </div>
 
+                <div className="profile-wrap full-row cofounder">
+                  <div className="profile-img-wrap">
+                    <img src="/team-profile-pics/anon.png" className="profile-img crop-circle" />
+                    <h3 className="profile-name">
+                      Coming Soon
+                    </h3>
+                    {/*<h4 className="profile-title">
+                      Co-Founder / Finance
+                    </h4>*/}
+                  </div>
+                  <div className="profile-content-wrap">
+                    <h4>
+                      Co-Founder, Finance:
+                    </h4>
+                    <p>MBA with extensive experience modeling and executing Renewable Energy Project Finance.</p>
+                  </div>
+                </div>
+
+                <div className="profile-wrap full-row cofounder">
+                  <div className="profile-img-wrap">
+                    <img src="/team-profile-pics/anon.png" className="profile-img crop-circle" />
+                    <h3 className="profile-name">
+                      Coming Soon
+                    </h3>
+                    {/*<h4 className="profile-title">
+                      Co-Founder / Engineering
+                    </h4>*/}
+                  </div>
+                  <div className="profile-content-wrap">
+                    <h4>
+                      Co-Founder, CTO:
+                    </h4>
+                    <p>
+                      Mechanical Engineer PhD with extensive experience building large-scale mechanical systems.
+                    </p>
+                  </div>
+                </div>
+
+
+              </div>
+            </div>
+            <div className="content-section">
+              <h3 className="h3">
+                Advisors
+              </h3>
+
+              <div className="profile-row">
                 <div className="profile-wrap">
                   <img src="/team-profile-pics/wei-li.png" className="profile-img" />
                   <h3 className="profile-name">
