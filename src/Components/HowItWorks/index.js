@@ -64,7 +64,7 @@ class HowItWorks extends React.Component {
                 <div className="media-wrap">
                   <div style={{padding:'42.81% 0 0 0', position:'relative'}}>
                     <iframe src={videoVimeoSrc}
-                      frameborder="0"
+                      frameBorder="0"
                       allow="autoplay; fullscreen; picture-in-picture"
                       style={{"position":"absolute","top":"0","left":"0","width":"100%","height":"100%"}}
                       title="Terrament Gravity Storage Concept">

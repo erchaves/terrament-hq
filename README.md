@@ -10,18 +10,18 @@ Please see the [React-Static](https://github.com/nozzle/react-static) documentat
 ## Development
 To run in development, run:
 ```
-yarn start
+npm start
 ```
 
 
 ## Production
 To build for production, run:
 ```
-yarn build
+npm run build
 ```
 You can test the production build with:
 ```
-yarn serve
+npm run serve
 ```
 Yarn serve just serves the static build from the `/dist` folder. This folder can be deployed to a server to be run as a static build.
 
