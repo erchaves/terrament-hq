@@ -33,7 +33,9 @@
         padding-right: $flex-padding;
         width: 33.3333%;
         box-sizing: border-box;
-
+      }
+      .profile-img-wrap-founder {
+        width: 50%;
       }
 
       .profile-content-wrap {
@@ -43,27 +45,27 @@
         box-sizing: border-box;
       }
 
-      &.cofounder {
-        width: 50%;
+      // &.cofounder {
+      //   width: 50%;
 
-        p {
-          font-size: 1rem;
-        }
+      //   p {
+      //     font-size: 1rem;
+      //   }
 
-        h4 {
-          // font-size: 1rem;
-        }
+      //   h4 {
+      //     // font-size: 1rem;
+      //   }
 
-        .profile-img-wrap {
-          width: 42%;
-        }
+      //   .profile-img-wrap {
+      //     width: 42%;
+      //   }
 
-        .profile-content-wrap {
-          align-self: auto;
-          margin-top: 0.5em;
-          width: 58%;
-        }
-      }
+      //   .profile-content-wrap {
+      //     align-self: auto;
+      //     margin-top: 0.5em;
+      //     width: 58%;
+      //   }
+      // }
     }
   }
 

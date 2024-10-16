@@ -105,77 +105,34 @@ class About extends React.Component {
             </div>
             <div className="content-section">
               <h3 className="h3">
-                Founder Team
+                Eric Chaves, CEO/Founder
               </h3>
               <div className="profile-row">
                 <div className="profile-wrap full-row">
-                  <div className="profile-img-wrap">
+                  <div className="profile-img-wrap profile-img-wrap-founder">
                     <img src="/team-profile-pics/eric-chaves.png" className="profile-img crop-circle" />
-                    <h3 className="profile-name">
-                      Eric Chaves
-                    </h3>
-                    <h4 className="profile-title">
-                      Founder / CEO
-                    </h4>
+
                   </div>
                   <div className="profile-content-wrap">
                     <p>
-                      Eric Chaves is a technical entrepreneur with 20 years experience spanning Architecture, Industrial Design, and Software Engineering. With experience building two previous tech startups, he launched Terrament in 2020 to bring new innovation to the field of mechanical energy storage. He is a <a href="https://www.newlab.com/blogs/founder-fellowship-2023" title="Newlab 2023 Founder Fellowship" target="_blank" rel="noopener noreferrer">Founder Fellow at Newlab</a>, and a member of the <a href="https://cebip.org/companies/terrament" title="CEBIP accelerator at Stony Brook University" target="_blank" rel="noopener noreferrer">CEBIP accelerator at Stony Brook University</a>.
+                      Eric Chaves is a technical entrepreneur with 20 years experience spanning Architecture, Industrial Design, and Software Engineering. Terrament is his third company. His former companies include a media-tech startup called Antenna, and a software and design studio called Syllable. He is a <a href="https://www.newlab.com/blogs/founder-fellowship-2023" title="Newlab 2023 Founder Fellowship" target="_blank" rel="noopener noreferrer">Founder Fellow at Newlab</a>, and a member of the <a href="https://cebip.org/companies/terrament" title="CEBIP accelerator at Stony Brook University" target="_blank" rel="noopener noreferrer">CEBIP accelerator at Stony Brook University</a>. He has won a U.S. patent for Modular Underground Gravity Storage, and has a pending patent for Terrament's novel Linear Drive Conveyance System, a key enabler for gravity storage scale.
                     </p>
                   </div>
                 </div>
-
-                <div className="profile-wrap full-row cofounder">
-                  <div className="profile-img-wrap">
-                    <img src="/team-profile-pics/anon.png" className="profile-img crop-circle" />
-                    <h3 className="profile-name">
-                      Coming Soon
-                    </h3>
-                    {/*<h4 className="profile-title">
-                      Co-Founder / Finance
-                    </h4>*/}
-                  </div>
-                  <div className="profile-content-wrap">
-                    <h4>
-                      Co-Founder, Finance:
-                    </h4>
-                    <p>MBA with extensive experience modeling and executing Renewable Energy Project Finance.</p>
-                  </div>
-                </div>
-
-                <div className="profile-wrap full-row cofounder">
-                  <div className="profile-img-wrap">
-                    <img src="/team-profile-pics/anon.png" className="profile-img crop-circle" />
-                    <h3 className="profile-name">
-                      Coming Soon
-                    </h3>
-                    {/*<h4 className="profile-title">
-                      Co-Founder / Engineering
-                    </h4>*/}
-                  </div>
-                  <div className="profile-content-wrap">
-                    <h4>
-                      Co-Founder, CTO:
-                    </h4>
-                    <p>
-                      Mechanical Engineer PhD with extensive experience building large-scale mechanical systems.
-                    </p>
-                  </div>
-                </div>
-
-
               </div>
             </div>
             <div className="content-section">
               <h3 className="h3">
-                Advisors
+                Advisory Support Team
               </h3>
-
+              <h4 className="h4">
+                With funding support from NY State, our advisor team provides broad expertise including Engineering, Finance, and Market Modeling.
+              </h4>
               <div className="profile-row">
                 <div className="profile-wrap">
                   <img src="/team-profile-pics/wei-li.png" className="profile-img" />
                   <h3 className="profile-name">
-                    Dr. Wei Li, Advisor
+                    Dr. Wei Li
                   </h3>
                   <h4 className="profile-title">
                     Geo-scientist, Civil Engineer, PhD <br />
@@ -183,20 +140,21 @@ class About extends React.Component {
                   </h4>
                 </div>
 
-                <div className="profile-wrap">
-                  <img src="/team-profile-pics/jon-longtin.png" className="profile-img" />
+                 <div className="profile-wrap">
+                  <img src="/team-profile-pics/kathryn-gardner.png" className="profile-img" />
                   <h3 className="profile-name">
-                    Dr. Jon Longtin, Advisor
+                    Kathryn Gardner
                   </h3>
                   <h4 className="profile-title">
-                    Mechanical Engineering, PhD, Dean, Stony Brook
+                    Mining Engineer, P.E., MBA, Esq.
                   </h4>
                 </div>
+
 
                 <div className="profile-wrap">
                   <img src="/team-profile-pics/steven-decarlo.png" className="profile-img" />
                   <h3 className="profile-name">
-                    Steven DeCarlo, Advisor
+                    Steven DeCarlo
                   </h3>
                   <h4 className="profile-title">
                     Electrical Engineering, MBA <br />
@@ -205,19 +163,9 @@ class About extends React.Component {
                 </div>
 
                 <div className="profile-wrap">
-                  <img src="/team-profile-pics/kathryn-gardner.png" className="profile-img" />
-                  <h3 className="profile-name">
-                    Kathryn Gardner, Advisor
-                  </h3>
-                  <h4 className="profile-title">
-                    Mining Engineer, P.E., MBA, Esq.
-                  </h4>
-                </div>
-
-                <div className="profile-wrap">
                   <img src="/team-profile-pics/courtney-reich.png" className="profile-img" />
                   <h3 className="profile-name">
-                    Courtney Reich, Advisor
+                    Courtney Reich
                   </h3>
                   <h4 className="profile-title">
                     Mechanical Engineering, M.S. <br />
@@ -228,36 +176,17 @@ class About extends React.Component {
                 <div className="profile-wrap">
                   <img src="/team-profile-pics/rich-delmerico.png" className="profile-img" />
                   <h3 className="profile-name">
-                    Rich Delmerico, Advisor
+                    Rich Delmerico
                   </h3>
                   <h4 className="profile-title">
                     Electrical/Industrial Engineering <br />
                     Business M.S.
                   </h4>
                 </div>
-
-                <div className="profile-wrap">
-                  <img src="/team-profile-pics/etinosa-ogiesoba.png" className="profile-img" />
-                  <h3 className="profile-name">
-                    Etinosa Ogiesoba, Advisor
-                  </h3>
-                  <h4 className="profile-title">
-                    Electrical Engineer, ME, MBA
-                  </h4>
-                </div>
-                <div className="profile-wrap">
-                  <img src="/team-profile-pics/colin-bateson.png" className="profile-img" />
-                  <h3 className="profile-name">
-                    Colin Bateson, Advisor
-                  </h3>
-                  <h4 className="profile-title">
-                    Mechanical Engineer, PhD
-                  </h4>
-                </div>
                 <div className="profile-wrap">
                   <img src="/team-profile-pics/isabelle-heye.png" className="profile-img" />
                   <h3 className="profile-name">
-                    Isabelle Heye, Advisor
+                    Isabelle Heye
                   </h3>
                   <h4 className="profile-title">
                     Mechanical Engineer, ME

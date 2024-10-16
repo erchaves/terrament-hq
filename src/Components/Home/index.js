@@ -14,7 +14,6 @@ const videoPosterBg = 'homepage-bg.jpg';
 const videoPosterDesign = 'terrament-prototype-R7-cover.png';
 const videoMp4Bg = 'homepage-bg.mp4?v2';
 const videoMp4 = 'terrament-product-demo-video-compressed.mp4';
-const videoYoutubeSrc = 'https://www.youtube.com/embed/RZ5RDMw1my4?si=BGFTinN1o21vN_z7&amp;controls=0';
 // todo #deDup
 const videoVimeoSrc = 'https://player.vimeo.com/video/913860588?h=8ec504d4e6&autoplay=0&loop=1&title=0&byline=0&portrait=0';
 
@@ -121,7 +120,7 @@ class Home extends React.Component {
 
               <div className="media-wrap responsive-google-slides">
                 <iframe
-                  src="https://docs.google.com/presentation/d/e/2PACX-1vSmAH2_biVYfPhQIAx5u20iVjzVy3tzJ2EUBYDYVGLekjvaqqlLcQIrk_l0frg69jSPwGcioM5CrNXm/embed?start=false&loop=false&delayms=10000"
+                  src="https://docs.google.com/presentation/d/e/2PACX-1vTZTuJzX6mpODIcdLhEGAltsfGoxXH9iIWfBcOAR63Y4RAKKiSUIfsPdfNwUOmn0eDWh2C0Kk1JGKc4/embed?start=false&loop=false&delayms=10000"
                   frameBorder={0}
                   width={960}
                   height={569}
@@ -138,10 +137,10 @@ class Home extends React.Component {
                 The threat of climate change has sparked action to replace fossil fuels with wind and solar energy. But wind and solar are intermittent resources; the wind doesn't always blow, and the sun doesn't always shine. So without energy storage, our urgent transition to renewable energy will stall.
               </p>
               <p>
-              According to NREL, energy storage capacity in the U.S. needs to <a
-                  href="https://www.nrel.gov/news/program/2021/grid-scale-storage-us-storage-capacity-could-grow-five-fold-by-2050.html"
-                  title="NREL: Grid-Scale U.S. Storage Capacity Could Grow Five-Fold by 2050"
-                  target="_blank" rel="noopener noreferrer">grow five times larger by 2050</a> to support wind and solar energy.
+              According to BloombergNEF, energy storage capacity in the U.S. will need to <a
+                  href="https://assets.bbhub.io/professional/sites/24/847353_NEO24_ExecSum.pdf"
+                  title="BloombergNEF: Installed battery storage capacity to hit 4TW – more than 50 times levels in 2023"
+                  target="_blank" rel="noopener noreferrer">grow 50 times larger by 2050</a> to support wind and solar energy.
               </p>
               <p>
                   But we have a big problem: We don't yet have proven, low-cost technologies that can reach this scale.
