@@ -74,9 +74,9 @@ class HowItWorks extends React.Component {
 
                   <span className="caption">
                     How Terrament's Gravity Storage works (video by <a
-                    href="https://www.extinctionmachine.com"
-                    title="Extinction Machine: High-impact video content for high-tech startups"
-                    target="_blank" rel="noopener noreferrer">Extinction Machine</a>)
+                    href="https://www.machinemythology.com/"
+                    title="Machine Mythology: High-impact video content for high-tech startups"
+                    target="_blank" rel="noopener noreferrer">Machine Mythology</a>)
                   </span>
                 </div>
               </div>
