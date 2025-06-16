@@ -30,40 +30,10 @@ class Home extends React.Component {
         </div>
 
         <Navbar/>
-        <div className="page-screen">
-          <div className="screen-content screen-content-above-fold">
-            <ScrollLink
-              to="belowfold"
-              smooth={true}
-              duration={500}
-              className="scroll-link"
-            >
-              <VideoComp
-                // blocking the auto-load of the video to save bandwidth.
-                // this will result in just the bg image showing... quick fix.
-                autoPlay={false}
-                isBackgroundVideo={true}
-                poster={videoPosterBg}
-              >
-                <source src={videoMp4Bg} type="video/mp4" />
-              </VideoComp>
-
-              <div className="h1-wrap">
-                <h1 className="h1">
-                  <img src="/terrament-logo-text-white.svg" alt="Terrament logo" />
-                </h1>
-                <h2 className="h2">
-                  Modular Underground Gravity Storage
-                </h2>
-                <img className="down-caret" src="/down-caret-white.png" alt="down-caret" />
-              </div>
-            </ScrollLink>
-          </div>
+        <div className="screen-content screen-content-above-fold-short">
+          <img className="background-image" src={videoPosterBg} alt="Terrament background image" />
         </div>
-        <div className="page-screen"
-          name="belowfold"
-          id="belowfold"
-        >
+        <div>
           <div className="screen-content screen-content-below-fold">
             <div className="content-section">
               <h2 className="h2">

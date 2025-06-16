@@ -26,14 +26,23 @@
     z-index: 3;
 
     img {
-      margin: $menu-margin-x;
-      max-width: $logo-size;
+      margin: $menu-margin-x * 1.6 $menu-margin-x;
+      max-width: $logo-size * 3;
     }
   }
 
   .nav-content {
     width: 100%;
     z-index: 4;
+    transition: all 0.3s ease;
+
+    &.sticky {
+      position: fixed;
+      top: 0;
+      left: 0;
+      background: $color-primary;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
   }
 
   .footer {
