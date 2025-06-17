@@ -6,8 +6,6 @@ $background-color: #1a1a1a;
 
 .hamburger-menu {
   .menu-ul {
-    margin: ($menu-margin-x * 1.75) $menu-margin-x;
-
     a {
       color: $color-white;
       cursor: pointer;
@@ -33,7 +31,7 @@ $background-color: #1a1a1a;
   }
 
   .main-menu {
-    position: absolute;
+    position: relative;
     top: 0;
   }
 
@@ -63,11 +61,12 @@ $background-color: #1a1a1a;
 
   .main-menu {
     position: absolute;
+    display: flex;
     right: 0;
   }
 
   .main-menu li {
-    display: inline-block;
+    display: flex;
     padding: 0;
   }
 
@@ -95,10 +94,11 @@ $background-color: #1a1a1a;
       cursor: pointer;
       height: 2em;
       width: 2em;
-      padding: .5em;
-      margin: $menu-margin-x;
+      margin: $logo-size * .25;
       right: 0;
+      top: 0;
       position: absolute;
+      outline: none;
     }
     .menu-btn {
       position: relative;
@@ -139,7 +139,7 @@ $background-color: #1a1a1a;
      Offscreen menu style
     */
     .main-menu {
-      position: absolute;
+      position: fixed;
       top: 0;
       height: 100vh;
       overflow-y: auto;
@@ -148,6 +148,7 @@ $background-color: #1a1a1a;
       transform: translateX(100vw);
       z-index: 999;
       background: $background-color;
+      width: 100%;
     }
 
     .main-menu a {
@@ -158,14 +159,19 @@ $background-color: #1a1a1a;
     .main-menu ul {
       margin: 0;
       padding-top: $logo-size;
-      top: $menu-margin-x;
+      // top: $menu-margin-x;
       list-style: none;
       text-align: right;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
     }
 
     .main-menu li {
       margin: 0;
       display: flex;
+      width: 100%;
+      justify-content: flex-end;
     }
 
     .main-menu li:first-child a {
@@ -210,13 +216,6 @@ $background-color: #1a1a1a;
       width: 100%;
       left: 0;
       z-index: 1000;
-    }
-
-    @supports (position: fixed) {
-      .main-menu {
-        position: fixed;
-        width: 100%;
-      }
     }
   }
 }

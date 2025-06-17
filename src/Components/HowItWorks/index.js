@@ -17,12 +17,6 @@ class HowItWorks extends React.Component {
   render() {
     return (
       <div className={`page page-howItWorks`}>
-        <Link className="header-logo"
-          to="/"
-        >
-          <img src="/terrament-logo-white.png" alt="Terrament logo" />
-        </Link>
-
         <Navbar/>
 
         <div className="page-screen">

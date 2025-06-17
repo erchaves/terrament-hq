@@ -19,7 +19,12 @@ const Navbar = () => {
 
   return (
     <nav className="nav-content" id="navbar">
-      <HamburgerMenu />
+      <div className="nav-container">
+        <Link className="nav-logo" to="/">
+          <img src="/terrament-logo-white.png" alt="Terrament logo" />
+        </Link>
+        <HamburgerMenu />
+      </div>
     </nav>
   );
 };

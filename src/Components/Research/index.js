@@ -18,12 +18,6 @@ class Research extends React.Component {
   render() {
     return (
       <div className={`page page-research`}>
-        <Link className="header-logo"
-          to="/"
-        >
-          <img src="/terrament-logo-white.png" alt="Terrament logo" />
-        </Link>
-
         <Navbar/>
 
         <div className="page-screen">

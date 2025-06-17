@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Navbar from "../Navbar";
 import VideoComp from "../VideoComp";
@@ -25,15 +24,11 @@ class Home extends React.Component {
   render() {
     return (
       <div className={`page page-home`}>
-        <div className="header-logo">
-          <img src="/terrament-logo-white.png" alt="Terrament logo" />
-        </div>
-
         <Navbar/>
         <div className="screen-content screen-content-above-fold-short">
           <img className="background-image" src={videoPosterBg} alt="Terrament background image" />
         </div>
-        <div>
+        <div className="page-screen">
           <div className="screen-content screen-content-below-fold">
             <div className="content-section">
               <h2 className="h2">
@@ -41,18 +36,17 @@ class Home extends React.Component {
               </h2>
 
               <p>
-                Terrament is building long-duration energy storage with gravity batteries deployed deep underground.
+                Terrament is building long-duration energy storage for grid utilities and AI data centers using gravity batteries deployed underground.
               </p>
-              <p>
-                Our patented design achieves high scale and low cost by maximizing the two simple ingredients of gravity storage: height and weight.
+              <p>By maximizing height and weight, our patented solution achieves 20x more energy density than any other gravity solution.
               </p>
               <p>
                 <ul className="bullets meet-terrament-bullets">
                   <li>
-                    Height: We dig a mile deep into bedrock using existing drilling tech.
+                    Height: We dig a mile deep into bedrock using proven drilling tech.
                   </li>
                   <li>
-                    Weight: We support modular weight with shaft bedrock, not a winch cable.
+                    Weight: We support modular weight with shaft bedrock, not a cable hoist.
                   </li>
                 </ul>
               </p>
@@ -104,34 +98,52 @@ class Home extends React.Component {
                 The Energy Storage Problem
               </h3>
               <p>
-                The threat of climate change has sparked action to replace fossil fuels with wind and solar energy. But wind and solar are intermittent resources; the wind doesn't always blow, and the sun doesn't always shine. So without energy storage, our urgent transition to renewable energy will stall.
-              </p>
-              <p>
-              According to BloombergNEF, energy storage capacity in the U.S. will need to <a
-                  href="https://assets.bbhub.io/professional/sites/24/847353_NEO24_ExecSum.pdf"
-                  title="BloombergNEF: Installed battery storage capacity to hit 4TW – more than 50 times levels in 2023"
-                  target="_blank" rel="noopener noreferrer">grow 50 times larger by 2050</a> to support wind and solar energy.
-              </p>
-              <p>
-                  But we have a big problem: We don't yet have proven, low-cost technologies that can reach this scale.
-              </p>
+               The threat of climate change has sparked action to replace fossil fuels with wind and solar energy. But wind and solar are intermittent resources; the wind doesn't always blow, and the sun doesn't always shine. At the same time, artificial intelligence is driving explosive growth in data centers, with AI servers using up to 10 times the power of standard servers.
+             </p>
               <p>Today, 90% of the world's energy storage is pumped hydro, which is a <a
                   href="https://www.energy.gov/sites/prod/files/2018/02/f49/Hydropower-Vision-021518.pdf"
                   title="NREL: Grid-Scale U.S. Storage Capacity Could Grow Five-Fold by 2050"
                   target="_blank" rel="noopener noreferrer">nearly tapped out resource</a>. And Lithium-ion batteries are too expensive at long durations.
               </p>
-              <p>
-                So we need a new solution. A solution which is low-risk, high-scale, and low-cost.
-              </p>
+              <p>Terrament replicates pumped hydro, but without needing water or hills.</p>
             </div>
 
             <div className="content-section">
               <h3 className="h3">
-                About Us
+                Grant-funded Research Validation
               </h3>
 
               <p>
-                Terrament is a clean-tech startup based in Brooklyn, NY. We are grateful to have been accepted into the following programs:
+                Terrament is based out of Newlab in Brooklyn, NY. We have been awarded two U.S. Patents, with further patents pending. We are grateful to receive pro bono legal support from <a
+                  href="https://foleyhoag.com" target="_blank" rel="noopener noreferrer"
+                    >Foley Hoag LLP</a>
+              </p>
+              <ul className="energywerx-list">
+                <li>
+                  <img src="doe-logo.jpg" />
+                  <span>We recently won U.S. federal grant funding to support outside research validation of our breakthrough technology. We won two <a
+                  href="https://www.energy.gov/technologytransitions/articles/doe-announces-20-million-vouchers-support-over-170-organizations" target="_blank" rel="noopener noreferrer"
+                    >EnergyWERX awards from the DOE</a> valued at around $500,000.
+                  </span>
+                </li>
+                <li>
+                  <img src="wcet-logo.png" />
+                  <span>Our research partner <a href="https://www.wcet.washington.edu/" target="_blank" rel="noopener noreferrer">University of Washington, Washington Clean Energy Testbeds</a> developed and validated our techno-economic model to conclude that Terrament's lifetime cost (levelized cost, or LCOS) is under 10¢/kWh for a 1GWh facility, and approaches 5¢/kWh at larger scales. This is cheaper than any competitors in our target market.
+                  </span>
+                </li>
+                <li>
+                  <img src="lhp-engineering-logo.png" />
+                  <span>Our research partner <a href="https://www.lhpes.com/" target="_blank" rel="noopener noreferrer">LHP Engineering</a> conducted extensive mechanical/electrical modeling and physics simulations to conclude that Terrament's round trip efficiency (RTE) is over 80%. This is as good or better than any competitors in our target market.
+                  </span>
+                </li>
+              </ul>
+            </div>
+            <div className="content-section">
+              <h3 className="h3">
+                Accelerators and Partners
+              </h3>
+              <p>
+                We are grateful to have been accepted into the following programs:
                 <ul className="bullets">
                   <li>
                     <a
@@ -157,7 +169,7 @@ class Home extends React.Component {
                     <a
                     href="https://www.cleantechopen.org/en/page/northeast-en"
                     target="_blank" rel="noopener noreferrer"
-                    >Clean Tech Open Program</a> (Northeast, in 2024).
+                    >Cleantech Open Program</a> (Northeast, in 2024).
                   </li>
                 </ul>
               </p>
@@ -192,13 +204,12 @@ class Home extends React.Component {
               </p>
 
               <p>
-                We have been awarded a U.S. Patent, and we have two more pending patent applications. We're seeking our first round of investment.
-              </p>
-              <p>
-                <Link className="block-link"
-                  to="/about"
-                > Learn More
-                </Link>
+                Please reach out to us about investment opportunities.
+                &nbsp;
+                <a className=""
+                  href="mailto:eric@terramenthq.com?subject=Hello"
+                  target="_blank" rel="noopener noreferrer"
+                >Email Us</a>
               </p>
             </div>
             <div className="content-section">
