@@ -123,7 +123,7 @@ class Home extends React.Component {
                   <img src="doe-logo.jpg" />
                   <span>We recently won U.S. federal grant funding to support outside research validation of our breakthrough technology. We won two <a
                   href="https://www.energy.gov/technologytransitions/articles/doe-announces-20-million-vouchers-support-over-170-organizations" target="_blank" rel="noopener noreferrer"
-                    >EnergyWERX awards from the DOE</a> valued at around $500,000.
+                    >EnergyWERX awards from the DOE</a> valued at around $300,000.
                   </span>
                 </li>
                 <li>
