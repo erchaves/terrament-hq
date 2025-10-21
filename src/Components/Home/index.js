@@ -43,7 +43,7 @@ class Home extends React.Component {
               <p>
                 <ul className="bullets meet-terrament-bullets">
                   <li>
-                    More height: 20x duration from a mile of height using proven drilling tech.
+                    More Height: 20x duration from a mile of height using proven drilling tech.
                   </li>
                   <li>
                     More Weight: 10x power from our cable-free, shaft wall mounted rail design.
@@ -63,7 +63,7 @@ class Home extends React.Component {
                 <script src="https://player.vimeo.com/api/player.js"></script>
 
                 <span className="caption">
-                  How Terrament's Gravity Storage works (video by <a
+                  How Terrament's gravity storage works (video by <a
                   href="https://www.machinemythology.com/"
                   title="Machine Mythology: High-impact video content for high-tech startups"
                   target="_blank" rel="noopener noreferrer">Machine Mythology</a>)
@@ -74,7 +74,10 @@ class Home extends React.Component {
                 Terrament's gravity storage solution is low-risk:
               </p>
               <p>
-                We don't depend on critical minerals, and we don't use any chemical batteries. Our innovative system uses only well-established technologies: We leverage the same motor/generators used in wind turbines, and we use the same mile-deep mine shafts which have been built by mining companies for over 50 years.
+                Terrament's gravity storage solution is low-risk: we don't depend on critical minerals, and we don't use any chemical batteries.
+              </p>
+              <p>
+                Our innovative system uses only well-established technologies: we leverage the same motor/generators used in wind turbines, and we use the same deep mine shafts which have been built by mining companies for over 50 years.
               </p>
             </div>
             <div className="content-section">

@@ -43,7 +43,7 @@ class HowItWorks extends React.Component {
                 <p>
                   <ul className="bullets meet-terrament-bullets">
                     <li>
-                      More height: 20x duration from a mile of height using proven drilling tech.
+                      More Height: 20x duration from a mile of height using proven drilling tech.
                     </li>
                     <li>
                       More Weight: 10x power from our cable-free, shaft wall mounted rail design.
@@ -96,13 +96,13 @@ class HowItWorks extends React.Component {
                   Why Gravity Storage?
                 </h2>
                 <p>
-                  Gravity Storage is reliable, efficient, low-risk, and cheap to scale.
+                  Gravity storage is reliable, efficient, low-risk, and cheap to scale.
                 </p>
                 <p>
                   There are many types of energy storage, and they all have unique value propositions. Gravity storage is very good at providing low-cost, efficient energy storage for our power grid. Comparatively, methods like thermal storage, iron air, or power-to-gas-to-power, have far lower round-trip efficiencies - often below 50% – which means they waste half the energy on every cycle.
                 </p>
                 <p>
-                  Terrament's gravity storage is low-cost and low-risk. We don't rely on chemical supply chains, and we project that we'll reach 80-90% round-trip efficiencies.
+                  Terrament's gravity storage is low-cost and low-risk. We don't rely on chemical supply chains, and we project that we'll reach 80-85% round-trip efficiencies.
                 </p>
               </div>
 
