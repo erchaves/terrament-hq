@@ -36,7 +36,7 @@ class Home extends React.Component {
               </h2>
 
               <p>
-                Terrament is building long-duration energy storage for grid utilities and AI data centers using gravity batteries deployed underground.
+                Terrament is a New York based clean-tech startup building a patented long-duration energy storage solution that reimagines gravity storage.
               </p>
               <p>Our patented solution maximizes height and weight to achieve 20x more energy density than other gravity-based energy storage solutions.
               </p>
@@ -101,19 +101,20 @@ class Home extends React.Component {
                 The Energy Storage Problem
               </h3>
               <p>
-               The threat of climate change has sparked action to replace fossil fuels with wind and solar energy. But wind and solar are intermittent resources; the wind doesn't always blow, and the sun doesn't always shine. At the same time, artificial intelligence is driving explosive growth in data centers, with AI servers using up to 10 times the power of standard servers.
-             </p>
+               Artificial intelligence is driving explosive growth in data centers, with AI servers using up to 10 times the power of standard servers. If data centers were a country, they're projected to be the fourth largest electricity user by 2035. The biggest cloud service providers want to run entirely off green energy, especially useful in off-grid systems, which are favored due to long interconnection queue timelines.  However, wind and solar are intermittent resources; the wind doesn't always blow, and the sun doesn't always shine.
+              </p>
               <p>Today, 90% of the world's energy storage is pumped hydro, which is a <a
                   href="https://www.energy.gov/sites/prod/files/2018/02/f49/Hydropower-Vision-021518.pdf"
                   title="NREL: Grid-Scale U.S. Storage Capacity Could Grow Five-Fold by 2050"
-                  target="_blank" rel="noopener noreferrer">nearly tapped out resource</a>. And Lithium-ion batteries are too expensive at long durations.
+                  target="_blank" rel="noopener noreferrer">nearly tapped out resource</a>. And lithium-ion batteries are too expensive at long durations.
               </p>
-              <p>Terrament replicates pumped hydro, but without needing water or hills.</p>
+              <p>Terrament replicates pumped hydro's capabilities, but without the large footprint, water usage, or need for hills.
+              </p>
             </div>
 
             <div className="content-section">
               <h3 className="h3">
-                Grant-funded Research Validation
+                Grant-Funded Research Validation
               </h3>
 
               <p>

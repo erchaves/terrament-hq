@@ -25,13 +25,13 @@ class About extends React.Component {
           <div className="screen-content screen-content-below-fold">
             <div className="content-section">
               <h2 className="h2">
-                About our Team
+                About Our Team
               </h2>
                <p>
-                Terrament is a New York based clean-tech startup building long-duration energy storage with gravity batteries deployed deep underground.
+                Terrament is a New York based clean-tech startup building a patented long-duration energy storage solution that reimagines gravity storage.
               </p>
               <p>
-                We have been awarded one US Patent, and we have two more pending patent applications. We are grateful to have been accepted into the following programs:
+                We have been awarded two U.S. patents with one more pending. We are grateful to have been accepted into the following programs:
                 <ul className="bullets">
                   <li>
                     <a

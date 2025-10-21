@@ -8,7 +8,7 @@ export default {
   getSiteData: () => ({
     title: 'Terrament | Modular Underground Gravity Storage',
     siteRoot: siteRoot,
-    description: 'Terrament builds grid-scale energy storage with underground gravity batteries. We maximize gravity storage with a modular design combined with deep mine shafts.',
+    description: 'Terrament is a New York based clean-tech startup building a patented long-duration energy storage solution that reimagines gravity storage.',
     imageUrl: `${siteRoot}/terrament-logo.png`,
     imageWideUrl: `${siteRoot}/logo-combined.png`,
     type: 'website',

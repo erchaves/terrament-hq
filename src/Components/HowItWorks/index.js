@@ -36,7 +36,7 @@ class HowItWorks extends React.Component {
                 </h2>
 
                 <p>
-                  Terrament is building long-duration energy storage for grid utilities and AI data centers using gravity batteries deployed underground.
+                  Terrament is a New York based clean-tech startup building a patented long-duration energy storage solution that reimagines gravity storage.
                 </p>
                 <p>Our patented solution maximizes height and weight to achieve 20x more energy density than other gravity-based energy storage solutions.
                 </p>
@@ -79,7 +79,7 @@ class HowItWorks extends React.Component {
                   Why Long Duration Storage?
                 </h2>
                 <p>
-                  While Lithium-ion batteries are good at providing shorter duration storage, in order to support the massive growth of renewable energy, longer duration storage technologies are needed to balance the grid.
+                  While lithium-ion batteries are good at providing shorter duration storage, longer duration storage technologies are needed to balance the grid in order to support the massive growth of energy required by AI data centers.
                 </p>
                 <p>
                   Read McKinsey's report on why Long Duration Energy Storage is growing exponentially and why LDES has a potential value creation of $1.3 trillion by 2040.
