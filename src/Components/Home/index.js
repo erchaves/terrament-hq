@@ -38,15 +38,15 @@ class Home extends React.Component {
               <p>
                 Terrament is building long-duration energy storage for grid utilities and AI data centers using gravity batteries deployed underground.
               </p>
-              <p>By maximizing height and weight, our patented solution achieves 20x more energy density than any other gravity solution.
+              <p>Our patented solution maximizes height and weight to achieve 20x more energy density than other gravity-based energy storage solutions.
               </p>
               <p>
                 <ul className="bullets meet-terrament-bullets">
                   <li>
-                    Height: We dig a mile deep into bedrock using proven drilling tech.
+                    More height: 20x duration from a mile of height using proven drilling tech.
                   </li>
                   <li>
-                    Weight: We support modular weight with shaft bedrock, not a cable hoist.
+                    More Weight: 10x power from our cable-free, shaft wall mounted rail design.
                   </li>
                 </ul>
               </p>

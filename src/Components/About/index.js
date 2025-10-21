@@ -99,7 +99,24 @@ class About extends React.Component {
             </div>
             <div className="content-section">
               <h3 className="h3">
-                Eric Chaves, CEO/Founder
+                Katie Gardner | Co-founder, CEO
+              </h3>
+              <div className="profile-row">
+                <div className="profile-wrap full-row">
+                  <div className="profile-img-wrap profile-img-wrap-founder">
+                    <img src="/team-profile-pics/kathryn-gardner.png" className="profile-img crop-circle" />
+                  </div>
+                  <div className="profile-content-wrap">
+                    <p>
+                      Katie Gardner is a business and technical leader with a unique combination of mining, legal, and project finance experience. She served as Head of Product at Banyan Infrastructure, a ClimateTech SaaS platform specializing in sustainable infrastructure project finance, and she worked as an underground mine engineer at Newmont Mining Corporation's northern Nevada operations, with hands-on experience in deep shaft construction. Katie graduated from the Carey JD/MBA program at the University of Pennsylvania Law School and the Wharton School, and she holds a BS in Mining Engineering from the University of Kentucky. She is a professionally licensed mining engineer in the state of Nevada (ina) as well as a California Bar certified attorney. She brings the technical credibility and business acumen essential for scaling Terrament's underground gravity storage technology with her mining and legal experience.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="content-section">
+              <h3 className="h3">
+                Eric Chaves | Founder, COO
               </h3>
               <div className="profile-row">
                 <div className="profile-wrap full-row">
@@ -109,7 +126,7 @@ class About extends React.Component {
                   </div>
                   <div className="profile-content-wrap">
                     <p>
-                      Eric Chaves is a technical entrepreneur with 20 years experience spanning Architecture, Industrial Design, and Software Engineering. Terrament is his third company. His former companies include a media-tech startup called Antenna, and a software and design studio called Syllable. He is a <a href="https://www.newlab.com/blogs/founder-fellowship-2023" title="Newlab 2023 Founder Fellowship" target="_blank" rel="noopener noreferrer">Founder Fellow at Newlab</a>, and a member of the <a href="https://cebip.org/companies/terrament" title="CEBIP accelerator at Stony Brook University" target="_blank" rel="noopener noreferrer">CEBIP accelerator at Stony Brook University</a>. He has won a U.S. patent for Modular Underground Gravity Storage, and has a pending patent for Terrament's novel Linear Drive Conveyance System, a key enabler for gravity storage scale.
+                      Eric Chaves is a technical entrepreneur with 20 years experience spanning Architecture, Industrial Design, and Software Engineering. He was the co-founder of Antenna, a media-tech startup that reached millions and achieved a successful exit, he was a Founder Fellow at Newlab, and he was a member of the CEBIP accelerator at Stony Brook University. He is the author of Terrament's assigned IP, including two awarded U.S. patents for <i>Modular Underground Gravity Storage</i> and a pending patent for our <i>Linear Drive Conveyance System</i>, a key enabler for gravity storage scale.
                     </p>
                   </div>
                 </div>
@@ -120,8 +137,9 @@ class About extends React.Component {
                 Advisory Support Team
               </h3>
               <h4 className="h4">
-                With funding support from NY State, our advisor team provides broad expertise including Engineering, Finance, and Market Modeling.
+                With funding support from NY State, our advisor team provides broad expertise.
               </h4>
+              <br />
               <div className="profile-row">
                 <div className="profile-wrap">
                   <img src="/team-profile-pics/wei-li.png" className="profile-img" />
@@ -134,25 +152,13 @@ class About extends React.Component {
                   </h4>
                 </div>
 
-                 <div className="profile-wrap">
-                  <img src="/team-profile-pics/kathryn-gardner.png" className="profile-img" />
-                  <h3 className="profile-name">
-                    Kathryn Gardner
-                  </h3>
-                  <h4 className="profile-title">
-                    Mining Engineer, P.E., MBA, Esq.
-                  </h4>
-                </div>
-
-
                 <div className="profile-wrap">
-                  <img src="/team-profile-pics/steven-decarlo.png" className="profile-img" />
+                  <img src="/team-profile-pics/shruti.png" className="profile-img" />
                   <h3 className="profile-name">
-                    Steven DeCarlo
+                    Shruti Sharma, Ph.D.
                   </h3>
                   <h4 className="profile-title">
-                    Electrical Engineering, MBA <br />
-                    Grid Utilities + Pumped Hydro
+                    Materials Science, Engineering, Clean Tech Advisor<br />
                   </h4>
                 </div>
 
@@ -164,26 +170,6 @@ class About extends React.Component {
                   <h4 className="profile-title">
                     Mechanical Engineering, M.S. <br />
                     Battery Tech, Statistics
-                  </h4>
-                </div>
-
-                <div className="profile-wrap">
-                  <img src="/team-profile-pics/rich-delmerico.png" className="profile-img" />
-                  <h3 className="profile-name">
-                    Rich Delmerico
-                  </h3>
-                  <h4 className="profile-title">
-                    Electrical/Industrial Engineering <br />
-                    Business M.S.
-                  </h4>
-                </div>
-                <div className="profile-wrap">
-                  <img src="/team-profile-pics/isabelle-heye.png" className="profile-img" />
-                  <h3 className="profile-name">
-                    Isabelle Heye
-                  </h3>
-                  <h4 className="profile-title">
-                    Mechanical Engineer, ME
                   </h4>
                 </div>
               </div>

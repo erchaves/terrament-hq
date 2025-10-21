@@ -36,21 +36,21 @@ class HowItWorks extends React.Component {
                 </h2>
 
                 <p>
-                  Terrament is building long-duration energy storage with gravity batteries deployed deep underground.
+                  Terrament is building long-duration energy storage for grid utilities and AI data centers using gravity batteries deployed underground.
                 </p>
-                <p>
-                  Our patented design achieves high scale and low cost by maximizing the two simple ingredients of gravity storage: height and weight.
+                <p>Our patented solution maximizes height and weight to achieve 20x more energy density than other gravity-based energy storage solutions.
                 </p>
                 <p>
                   <ul className="bullets meet-terrament-bullets">
                     <li>
-                      Height: We dig a mile deep into bedrock using existing drilling tech.
+                      More height: 20x duration from a mile of height using proven drilling tech.
                     </li>
                     <li>
-                      Weight: We support modular weight with shaft bedrock, not a winch cable.
+                      More Weight: 10x power from our cable-free, shaft wall mounted rail design.
                     </li>
                   </ul>
                 </p>
+
                 <p>
                   Watch our video to learn how gravity storage supports our power grid.
                 </p>
@@ -105,14 +105,7 @@ class HowItWorks extends React.Component {
                   Terrament's gravity storage is low-cost and low-risk. We don't rely on chemical supply chains, and we project that we'll reach 80-90% round-trip efficiencies.
                 </p>
               </div>
-              <div className="content-section">
-                <h2 className="h2">
-                  Learn More
-                </h2>
-                <p>
-                  More details coming soon...
-                </p>
-              </div>
+
             </div>
           </div>
 

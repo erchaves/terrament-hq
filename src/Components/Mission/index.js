@@ -28,57 +28,29 @@ class Mission extends React.Component {
                 Mission Statements
               </h2>
               <p>
-                At Terrament, our mission is to build high-impact solutions that mitigate climate damage.
+                Terrament's mission is building energy technologies that support a more sustainable and abundant energy future.
               </p>
-              <p>
-                Terrament was born out of an urgent call to action: that society can, and must, mitigate the catastrophic costs of <a
-                  href="https://www.climate.gov/news-features/climate-qa/what-evidence-exists-earth-warming-and-humans-are-main-cause"
-                  target="_blank" rel="noopener noreferrer"
-                >human-caused</a> climate damage, and that we must do so justly.
-              </p>
+
             </div>
             <div className="content-section">
               <h2 className="h2">
                 Just Transition
               </h2>
               <p>
-                Terrament acknowledges that climate costs are wide-reaching including human costs, environmental costs, and financial costs. Society cannot afford to ignore climate threats.
+                Terrament acknowledges that climate costs are wide-reaching including human costs, environmental costs, and financial costs. It's too expensive to do nothing.
               </p>
               <p>
-                We acknowledge that climate damage impacts society unjustly; populations who cause more climate damage often feel less impacts, and vice versa.
-              </p>
-              <p>
-                To mitigate climate damage, society must transition to a safer, more sustainable, and more just energy infrastructure. A just transition requires that no one is left behind to endure unjust hardship and that no one is disenfranchised from the energy transition’s wealth of opportunity.
-              </p>
-              <p>
-                We believe that a healthy economy and a clean environment can and should co-exist. We believe this is possible without costing workers or community residents their health, environment, jobs, or economic assets. And we understand that a just transition is only possible if the organizations working towards it are also just and inclusive.
+                To mitigate climate costs, society must transition to a safer, more sustainable energy infrastructure. We believe it's in Terrament's best business interests to support a just climate transition.
               </p>
             </div>
             <div className="content-section">
               <h2 className="h2">
-                Terrament's Commitment to DEI+
+                Inclusivity and Excellence
               </h2>
               <p>
-                Terrament is committed to upholding principles of DEI+ in all of our business practices, both internal and external. These principles include Diversity, Equity, Inclusion, Justice, Belonging, and Accessibility.
+                Terrament is committed to fostering an inclusive workplace culture where every person can contribute their best work and advance based on merit and performance. We believe that diverse perspectives, experiences, and approaches strengthen our ability to solve complex problems and achieve our mission of transforming energy storage.
               </p>
-              <p>
-                <strong>Diversity:</strong> Fostering an organization whose differences include a broad spectrum of insights, ideas, perspectives, values, and cultural understandings.
-              </p>
-              <p>
-                <strong>Equity:</strong> Guaranteeing fair treatment, access, opportunity and advancement for all people. Ensuring that we identify and eliminate barriers which prevent the full participation of marginalized groups.
-              </p>
-              <p>
-                <strong>Inclusion:</strong> Ensuring that new populations and identities are actively welcomed and are given pathways to contribute meaningfully in a positive, mutually beneficial way.
-              </p>
-              <p>
-                <strong>Justice:</strong> Ensuring that everyone receives equitable economic, political, and social rights and opportunities.
-              </p>
-              <p>
-                <strong>Belonging:</strong> Ensuring that everyone has full membership in the organization including rewarded participation and decision-making.
-              </p>
-              <p>
-                <strong>Accessibility:</strong> Ensuring that everyone has equal ability to access our systems, products, services, and built environments, both internally and externally.
-              </p>
+
             </div>
             <div className="content-section">
               <h2 className="h2">
