@@ -141,10 +141,11 @@ class About extends React.Component {
               </h4>
               <br />
               <div className="profile-row">
+
                 <div className="profile-wrap">
                   <img src="/team-profile-pics/wei-li.png" className="profile-img" />
                   <h3 className="profile-name">
-                    Dr. Wei Li
+                    Wei Li, PhD
                   </h3>
                   <h4 className="profile-title">
                     Geo-scientist, Civil Engineer, PhD <br />
@@ -153,12 +154,23 @@ class About extends React.Component {
                 </div>
 
                 <div className="profile-wrap">
-                  <img src="/team-profile-pics/shruti.png" className="profile-img" />
+                  <img src="/team-profile-pics/jon-longtin.png" className="profile-img" />
                   <h3 className="profile-name">
-                    Shruti Sharma, Ph.D.
+                    Jon Longtin, PhD
                   </h3>
                   <h4 className="profile-title">
-                    Materials Science, Engineering, Clean Tech Advisor<br />
+                    Mechaniacal Engineer, PhD, P.E.<br />
+                    Professor, Stony Brook
+                  </h4>
+                </div>
+
+                <div className="profile-wrap">
+                  <img src="/team-profile-pics/shruti.png" className="profile-img" />
+                  <h3 className="profile-name">
+                    Shruti Sharma, PhD
+                  </h3>
+                  <h4 className="profile-title">
+                    Materials Science, Engineering, Clean Tech<br />
                   </h4>
                 </div>
 

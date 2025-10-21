@@ -38,7 +38,7 @@ class Home extends React.Component {
               <p>
                 Terrament is a New York based clean-tech startup building a patented long-duration energy storage solution that reimagines gravity storage.
               </p>
-              <p>Our patented solution maximizes height and weight to achieve 20x more energy density than other gravity-based energy storage solutions.
+              <p>Our technology maximizes height and weight to achieve 20x more energy density than other gravity-based energy storage solutions.
               </p>
               <p>
                 <ul className="bullets meet-terrament-bullets">
@@ -69,10 +69,6 @@ class Home extends React.Component {
                   target="_blank" rel="noopener noreferrer">Machine Mythology</a>)
                 </span>
               </div>
-
-              <p>
-                Terrament's gravity storage solution is low-risk:
-              </p>
               <p>
                 Terrament's gravity storage solution is low-risk: we don't depend on critical minerals, and we don't use any chemical batteries.
               </p>
