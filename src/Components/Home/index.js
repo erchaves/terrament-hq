@@ -4,6 +4,7 @@ import VideoComp from "../VideoComp";
 import VideoYoutube from "../VideoYoutube";
 import Footer from "../Footer";
 import MailchimpForm from "../MailchimpForm";
+import AnnouncementBanner from "../AnnouncementBanner";
 import { Link } from '@reach/router'
 import { Link as ScrollLink } from "react-scroll";
 
@@ -24,6 +25,7 @@ class Home extends React.Component {
   render() {
     return (
       <div className={`page page-home`}>
+        <AnnouncementBanner />
         <Navbar/>
         <div className="screen-content screen-content-above-fold-short">
           <img className="background-image" src={videoPosterBg} alt="Terrament background image" />
