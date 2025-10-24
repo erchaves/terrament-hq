@@ -137,7 +137,7 @@ class About extends React.Component {
                 Advisory Support Team
               </h3>
               <h4 className="h4">
-                With funding support from NY State, our advisor team provides broad expertise.
+                In part through grants and accelerator programs, we've been fortunate for amazing support from many advisors across a broad range of expertise.
               </h4>
               <br />
               <div className="profile-row">
