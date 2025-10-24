@@ -154,13 +154,13 @@ class About extends React.Component {
                 </div>
 
                 <div className="profile-wrap">
-                  <img src="/team-profile-pics/jon-longtin.png" className="profile-img" />
+                  <img src="/team-profile-pics/steven-decarlo.png" className="profile-img" />
                   <h3 className="profile-name">
-                    Jon Longtin, PhD
+                    Steven DeCarlo
                   </h3>
                   <h4 className="profile-title">
-                    Mechaniacal Engineer, PhD, P.E.<br />
-                    Professor, Stony Brook
+                    Electrical Engineer, MBA<br />
+                    Grid Energy Storage, Pumped Hydro
                   </h4>
                 </div>
 
