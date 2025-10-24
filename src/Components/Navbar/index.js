@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { Link } from '@reach/router'
 import HamburgerMenu from '../HamburgerMenu';
+import AnnouncementBanner from '../AnnouncementBanner';
 
 const Navbar = () => {
   useEffect(() => {
@@ -18,14 +19,17 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className="nav-content" id="navbar">
-      <div className="nav-container">
-        <Link className="nav-logo" to="/">
-          <img src="/terrament-logo-white.png" alt="Terrament logo" />
-        </Link>
-        <HamburgerMenu />
-      </div>
-    </nav>
+    <>
+      <AnnouncementBanner />
+      <nav className="nav-content" id="navbar">
+        <div className="nav-container">
+          <Link className="nav-logo" to="/">
+            <img src="/terrament-logo-white.png" alt="Terrament logo" />
+          </Link>
+          <HamburgerMenu />
+        </div>
+      </nav>
+    </>
   );
 };
 
