@@ -1,0 +1,23 @@
+---
+description: Implementation quality standards for frontend edits
+alwaysApply: true
+---
+
+# Frontend Implementation Quality
+
+- Reuse existing tokens and shared styles before introducing new hardcoded values.
+- If new design tokens are needed, add them in shared variables and apply consistently.
+- Keep selectors maintainable and avoid unnecessary specificity escalation.
+- Maintain responsive behavior at existing breakpoints; verify mobile and desktop outcomes.
+- Keep accessibility basics intact: semantic structure, alt text, focus visibility, and readable contrast.
+
+## Assets and Placeholders
+
+- You may replace visuals with placeholders when polish requires it.
+- Clearly mark placeholder assets in code comments with concise replacement notes.
+- Do not remove media without providing a styled fallback.
+
+## Validation
+
+- After substantive edits, run lint diagnostics on changed files and fix introduced issues.
+- Report what changed by file and why each change supports the design objective.
