@@ -12,14 +12,318 @@ $fadeinTime: 3s;
 }
 
 .page-home {
-  .background-image {
+  #pitch-deck {
+    scroll-margin-top: 5rem;
+  }
+
+  // Full-width section wrappers (override global `.screen-content` max-width from app.scss).
+  // Use `padding: 0` only on the base selector; band/surface MUST be chained with the same
+  // or higher specificity — otherwise `padding: 0` wins over `.screen-content--band` padding
+  // longhands and horizontal gutters disappear.
+  .page-screen > .screen-content {
+    max-width: none;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .page-screen > .screen-content.screen-content--band {
+    background: $color-page-bg;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+    padding-left: $section-padding-x;
+    padding-right: $section-padding-x;
+    padding-top: $section-block-y;
+    padding-bottom: $section-block-y;
+    width: 100vw;
+    box-sizing: border-box;
+  }
+
+  .page-screen > .screen-content.screen-content--band.screen-content-below-fold {
+    padding-top: calc(#{$space-10} + #{$section-block-y});
+  }
+
+  .page-screen > .screen-content.screen-content--surface {
+    padding: $section-block-y $section-padding-x;
+  }
+
+  // Pitch deck: full-bleed brand green band
+  .page-screen > .screen-content.screen-content--surface.screen-content--pitch-deck {
+    background: $color-text-muted;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+    .h3 {
+      color: $color-white;
+    }
+
+    .deck-embed {
+      background: none;
+      border: none;
+      box-shadow: none;
+      padding: 0;
+      margin: 0;
+    }
+  }
+
+  .page-screen > .screen-content:not(:last-child) {
+    border-bottom: 1px solid $color-border;
+  }
+
+  .page-screen > .screen-content .content-section {
+    max-width: $prose-max-width;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    margin-bottom: 0;
+    border-bottom: none;
+
+    // Avoid double spacing with `.screen-content--surface`; elevated cards keep full inset padding.
+    &:not(.home-surface-card) {
+      padding-bottom: 0;
+    }
+  }
+
+  .home-hero {
+    position: relative;
+    height: 82vh;
+    min-height: 34rem;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .home-hero-video {
+    position: absolute;
+    inset: 0;
     width: 100%;
     height: 100%;
-    position: absolute;
     object-fit: cover;
-    object-position: 20% 100%;
-    top: 0;
-    left: 0;
+    object-position: center;
+  }
+
+  .home-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, rgba(11, 24, 23, 0.72) 0%, rgba(11, 24, 23, 0.5) 42%, rgba(11, 24, 23, 0.22) 100%);
+
+    &::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      opacity: 0.045;
+      pointer-events: none;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    }
+  }
+
+  .home-hero-content {
+    position: absolute;
+    z-index: 2;
+    left: 6vw;
+    right: 6vw;
+    bottom: 10vh;
+    max-width: 54rem;
+    color: $color-white;
+  }
+
+  // Single fluid scale for headline + subtitle (subtitle = 1em, title = em multiple of parent).
+  // Shared max-width keeps subtitle from spanning wider than the title block at mid viewports.
+  .home-hero-text {
+    font-size: clamp(1rem, 1.55vw, 1.42rem);
+    width: 100%;
+
+  }
+
+  .home-hero-title {
+    margin: 0 0 0.7rem 0;
+    font-family: $font-family-bold;
+    font-weight: $font-weight-bold;
+    line-height: 0.98;
+    letter-spacing: 0.01em;
+    // Max headline / max body (4.75 / 1.42); scales with .home-hero-text
+    font-size: 3.45em;
+    text-transform: uppercase;
+  }
+
+  .home-hero-subtitle {
+    margin: 0;
+    // `ch` = width of "0" in this element’s font — scales with .home-hero-text clamp()
+    max-width: min(100%, 54ch);
+    font-size: 1em;
+    line-height: 1.45;
+    color: rgba(255, 255, 255, 0.95);
+  }
+
+  // Mid-width viewports: slightly tighter column so lines don’t feel “stretched.”
+  @media screen and (max-width: 68rem) and (min-width: 25rem) {
+    .home-hero-text {
+      max-width: min(32rem, calc(100vw - 3rem));
+    }
+  }
+
+  .home-hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: $space-3;
+    margin-top: $space-6;
+  }
+
+  .home-hero-cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 2.75rem;
+    padding: 0.55em 1.35em;
+    border-radius: 0.35rem;
+    font-family: $font-family-bold;
+    font-weight: $font-weight-bold;
+    font-size: 0.95rem;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    transition:
+      background-color $transition-base,
+      color $transition-base,
+      border-color $transition-base,
+      box-shadow $transition-base;
+
+    &:focus-visible {
+      outline: 2px solid rgba(255, 255, 255, 0.85);
+      outline-offset: 3px;
+    }
+  }
+
+  // First-pass pairing: primary defaults light on the hero; hover inverts to brand fill.
+  .home-hero-cta--primary {
+    background: $color-white;
+    color: $color-primary;
+    border: 1px solid rgba(255, 255, 255, 0.95);
+    box-shadow:
+      0 2px 14px rgba(0, 0, 0, 0.2),
+      inset 0 1px 0 rgba(255, 255, 255, 0.85);
+
+    &:hover {
+      background: rgba($color-primary, 0.97);
+      color: $color-white;
+      border-color: rgba(255, 255, 255, 0.22);
+      box-shadow:
+        0 14px 44px rgba(0, 0, 0, 0.35),
+        0 0 0 1px rgba(255, 255, 255, 0.12),
+        inset 0 1px 0 rgba(255, 255, 255, 0.06);
+    }
+  }
+
+  .home-hero-cta--ghost {
+    background: transparent;
+    color: rgba(255, 255, 255, 0.95);
+    border: 1px solid rgba(255, 255, 255, 0.45);
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.14);
+      color: $color-white;
+      border-color: rgba(255, 255, 255, 0.88);
+      box-shadow:
+        0 10px 36px rgba(0, 0, 0, 0.22),
+        0 0 0 1px rgba(255, 255, 255, 0.28);
+    }
+  }
+
+  .home-stats {
+    background: $color-surface;
+    border-bottom: 1px solid $color-border;
+  }
+
+  .home-stats__inner {
+    max-width: 60rem;
+    margin: 0 auto;
+    padding: $space-10 $section-padding-x $space-10;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: $space-8 $space-6;
+  }
+
+  .home-stats__item {
+    margin: 0;
+    padding: 0 0 0 $space-6;
+    position: relative;
+    border-left: none;
+
+    // Hairline column dividers (inset, soft gradient — not full-height slab)
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 12%;
+      bottom: 12%;
+      width: 1px;
+      border-radius: 1px;
+      background: linear-gradient(
+        180deg,
+        transparent 0%,
+        rgba($color-primary, 0.12) 14%,
+        rgba($color-primary, 0.2) 50%,
+        rgba($color-primary, 0.12) 86%,
+        transparent 100%
+      );
+      pointer-events: none;
+    }
+
+    &:nth-child(4n + 1)::before {
+      display: none;
+    }
+  }
+
+  .home-stats__value {
+    margin: 0 0 $space-2;
+    font-family: $font-family-bold;
+    font-weight: $font-weight-bold;
+    font-size: clamp(1.35rem, 2.5vw, 1.85rem);
+    line-height: 1.15;
+    color: $color-primary;
+    letter-spacing: 0.02em;
+  }
+
+  .home-stats__label {
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    color: $color-text-muted;
+  }
+
+  @media screen and (max-width: 68rem) {
+    .home-stats__inner {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .home-stats__item {
+      &::before {
+        display: none;
+      }
+
+      &:nth-child(even)::before {
+        display: block;
+      }
+    }
+  }
+
+  .below-fold-video-section {
+    position: relative;
+    padding: 0;
+    min-height: 60vh;
+    overflow: hidden;
+    border-radius: 0;
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+  }
+
+  .below-fold-video {
+    width: 100%;
+    height: 60vh;
+    display: block;
+    object-fit: cover;
+    object-position: 20% 60%;
   }
 
   span.icon-mail {
@@ -57,5 +361,302 @@ $fadeinTime: 3s;
     width: 1.5em;
     opacity: $fadeinMax;
     animation: fadeInOut $fadeinTime infinite;
+  }
+
+  // Shared elevated card (Accelerators + Grant-Funded sections)
+  .home-surface-card {
+    background: $color-surface;
+    border: 1px solid $color-border;
+    border-radius: 1rem;
+    padding: 1.75rem 1.5rem;
+    box-shadow: $shadow-sm;
+
+    .h3 {
+      font-size: clamp(1.5rem, 2.2vw, $font-size-h3);
+      margin-bottom: 0.65rem;
+    }
+
+    &__logo-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0.875rem 1rem;
+      margin: 2rem 0 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    &__logo-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 7.5rem;
+      padding: 1.25rem 1rem;
+      background: $color-page-bg;
+      border: 1px solid $color-border;
+      border-radius: 0.5rem;
+      transition: border-color $transition-base, box-shadow $transition-base, transform 200ms ease-out;
+
+      &:focus-visible {
+        outline: 2px solid rgba($color-link, 0.55);
+        outline-offset: 2px;
+      }
+
+      &:hover,
+      &:focus-visible {
+        transform: translateY(-2px);
+        border-color: rgba($color-primary, 0.22);
+        box-shadow: 0 8px 24px rgba(18, 28, 27, 0.08);
+      }
+
+      img {
+        width: 100%;
+        max-width: 11rem;
+        max-height: 3.5rem;
+        height: auto;
+        object-fit: contain;
+        filter: grayscale(100%);
+        opacity: 0.88;
+        transition: filter $transition-base, opacity $transition-base;
+      }
+
+      &:hover img,
+      &:focus-visible img {
+        filter: grayscale(0%);
+        opacity: 1;
+      }
+    }
+
+    &.grant-funded {
+      // Body links in the card (e.g. Foley Hoag in intro copy): no underline until hover/focus.
+      p a {
+        color: $color-link;
+        text-decoration: none;
+        transition: color $transition-base, text-decoration-color $transition-base;
+
+        &:hover,
+        &:focus-visible {
+          color: $color-link-dark;
+          text-decoration: underline;
+          text-decoration-thickness: 1px;
+          text-underline-offset: 0.14em;
+        }
+      }
+
+      .energywerx-list {
+        margin: 1rem 0 0;
+        padding: 0;
+
+        li {
+          align-items: flex-start;
+          gap: $space-4;
+          margin: 1.25rem 0 0;
+
+          &:first-child {
+            margin-top: 0;
+          }
+        }
+
+        img {
+          flex: 0 0 8.75rem;
+          width: 8.75rem;
+          max-width: min(40%, 10rem);
+          height: auto;
+          min-height: 5.5rem;
+          padding: 1.1rem 0.85rem;
+          box-sizing: border-box;
+          background: $color-page-bg;
+          border: 1px solid $color-border;
+          border-radius: 0.5rem;
+          object-fit: contain;
+          align-self: flex-start;
+        }
+
+        span {
+          align-self: center;
+
+          a {
+            color: $color-link;
+            text-decoration: none;
+            transition: color $transition-base, text-decoration-color $transition-base;
+
+            &:hover,
+            &:focus-visible {
+              color: $color-link-dark;
+              text-decoration: underline;
+              text-decoration-thickness: 1px;
+              text-underline-offset: 0.14em;
+            }
+          }
+        }
+      }
+    }
+
+    &.accelerators-partners {
+      .accelerators-partners__intro {
+        margin: 0 0 0.75rem;
+        max-width: 70ch;
+        color: $color-text-muted;
+      }
+
+      .accelerators-partners__list {
+        margin: 0 0 0 1.25em;
+        max-width: 70ch;
+
+        a {
+          color: $color-link;
+          text-decoration: none;
+          transition: color $transition-base, text-decoration-color $transition-base;
+
+          &:hover,
+          &:focus-visible {
+            color: $color-link-dark;
+            text-decoration: underline;
+            text-decoration-thickness: 1px;
+            text-underline-offset: 0.14em;
+          }
+        }
+      }
+
+      .accelerators-partners__contact {
+        margin: 1.5rem 0 0;
+        padding-top: 1.25rem;
+        border-top: 1px solid $color-border;
+        font-size: $font-size-sm;
+        color: $color-text-muted;
+        max-width: 70ch;
+      }
+
+      .accelerators-partners__email-link {
+        display: inline-flex;
+        align-items: center;
+        margin-left: 0.15rem;
+        padding: 0.45em 1em;
+        border: 1px solid $color-border;
+        border-radius: 0.35rem;
+        background: $color-surface;
+        color: $color-link;
+        font-size: 0.95em;
+        text-decoration: none;
+        transition: border-color $transition-base, color $transition-base, background-color $transition-base;
+
+        &:focus-visible {
+          outline: 2px solid rgba($color-link, 0.55);
+          outline-offset: 2px;
+        }
+
+        &:hover,
+        &:focus-visible {
+          color: $color-link-dark;
+          border-color: rgba($color-link, 0.45);
+          background: rgba($color-page-bg, 0.85);
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: $screen-size-mobile) {
+    .page-screen > .screen-content.screen-content--band.screen-content-below-fold {
+      padding-top: calc(2.5rem + #{$section-block-y});
+    }
+
+    .below-fold-video-section {
+      min-height: 45vh;
+    }
+
+    .below-fold-video {
+      height: 45vh;
+    }
+
+    .home-hero {
+      height: 70vh;
+      min-height: 26rem;
+    }
+
+    .home-hero-content {
+      bottom: 8vh;
+    }
+
+    // Match old min headline (2.2rem) while keeping subtitle–title coupling via em.
+    .home-hero-title {
+      font-size: 2.2em;
+    }
+
+    .home-hero-text {
+      max-width: min(100%, 32rem);
+    }
+
+    .home-hero-subtitle {
+      max-width: min(100%, 40ch);
+    }
+
+    .home-stats__inner {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0;
+      padding-top: $space-8;
+      padding-bottom: $space-8;
+    }
+
+    .home-stats__item {
+      flex: none;
+      min-width: 0;
+      max-width: none;
+      width: 100%;
+      padding-left: 0;
+      padding-bottom: $space-6;
+
+      &::before {
+        display: none !important;
+      }
+
+      &:not(:first-child) {
+        border-top: 1px solid rgba($color-primary, 0.12);
+        padding-top: $space-6;
+      }
+
+      &:last-child {
+        padding-bottom: 0;
+      }
+    }
+
+    .home-hero-actions {
+      margin-top: $space-4;
+    }
+
+    .home-surface-card {
+      padding: 1.35rem 1.1rem 1.35rem;
+
+      &__logo-grid {
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+      }
+
+      &__logo-link {
+        min-height: 6.5rem;
+      }
+
+      &.grant-funded .energywerx-list {
+        li {
+          display: flex;
+          flex-direction: column;
+          align-items: stretch;
+          gap: $space-3;
+        }
+
+        img {
+          float: none;
+          flex: none;
+          width: 100%;
+          max-width: none;
+          min-height: 6rem;
+        }
+      }
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .down-caret {
+      animation: none;
+    }
   }
 }

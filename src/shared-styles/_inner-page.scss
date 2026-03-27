@@ -1,0 +1,89 @@
+@import './variables.scss';
+
+// Video hero + full-bleed bands shared by About, Mission, How It Works, Research (matches Home refresh).
+.inner-page-hero {
+  position: relative;
+  height: 46vh;
+  min-height: 18rem;
+  max-height: 36rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+.inner-page-hero__video,
+.inner-page-hero__img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 35% 0;
+  filter: saturate(0.8) contrast(0.92);
+}
+
+.page-inner-shell {
+  position: relative;
+  min-height: 0;
+
+  > .screen-content {
+    max-width: none;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  > .screen-content.screen-content--band {
+    background: $color-page-bg;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+    padding-left: $section-padding-x;
+    padding-right: $section-padding-x;
+    padding-top: $section-block-y;
+    padding-bottom: $section-block-y;
+    width: 100vw;
+    box-sizing: border-box;
+  }
+
+  > .screen-content.screen-content--band.screen-content-below-fold {
+    padding-top: calc(#{$space-10} + #{$section-block-y});
+  }
+
+  > .screen-content.screen-content--surface {
+    background: $color-surface;
+    padding: $section-block-y $section-padding-x;
+  }
+
+  > .screen-content:not(:last-child) {
+    border-bottom: 1px solid $color-border;
+  }
+
+  > .screen-content .content-section {
+    max-width: $prose-max-width;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+
+  > .screen-content .content-section:not(:last-child) {
+    margin-bottom: $space-10;
+  }
+
+  > .screen-content.screen-content--surface .content-section:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.page-about,
+.page-mission,
+.page-howItWorks,
+.page-research,
+.page-404 {
+  .footer {
+    margin-top: 0;
+  }
+}

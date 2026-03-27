@@ -9,14 +9,14 @@ export default class Footer extends Component {
           <Link className="footer-link hide-desktop"
               to="/"
             >
-              <img src="/terrament-logo-text-white.png" alt="Terrament logo" />
+              <img src="/terrament-logo-2026.svg" alt="Terrament logo" />
           </Link>
         </div>
         <div className="footer-center hide-mobile">
           <Link className="footer-link"
               to="/"
             >
-              <img src="/terrament-logo-text-white.png" alt="Terrament logo" />
+              <img src="/terrament-logo-2026.svg" alt="Terrament logo" />
           </Link>
         </div>
         <div className="footer-right">
@@ -27,7 +27,7 @@ export default class Footer extends Component {
               <span className="menu-item__icon icon-twitter"></span>
           </a>
           <a className="footer-link"
-              href="mailto:eric@terramenthq.com?subject=Hello"
+              href="mailto:hello@terramenthq.com.com?subject=Hello"
               target="_blank" rel="noopener noreferrer"
             >
               <span className="menu-item__icon icon-mail"></span>

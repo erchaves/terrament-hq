@@ -1,5 +1,6 @@
 @import './shared-styles/variables.scss';
 @import './shared-styles/mixins.scss';
+@import './shared-styles/inner-page';
 @import './shared-styles/reset.scss';
 @import './shared-styles/fontello/css/fontello.css';
 @import './page.scss';
@@ -7,6 +8,8 @@
 html,
 body {
   font-size: $font-size-sm;
+  background: $color-page-bg;
+  color: $color-text;
 }
 
 body {
@@ -30,25 +33,32 @@ i {
 .page {
   position: relative;
   width: $page-width;
-  background: $color-primary;
-  color: $color-white;
+  background: $color-page-bg;
+  color: $color-text;
   margin: 0 auto;
 }
 
 .page-screen {
   position: relative;
   min-height: 100vh;
-  background: white;
-  color: $color-primary;
+  background: $color-surface;
+  color: $color-text;
 }
 
 a {
-  text-decoration: none;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.14em;
   color: $color-link;
+  transition: color $transition-base;
+
+  &:hover {
+    color: $color-link-dark;
+  }
 }
 
 p {
-  margin-bottom: 1rem;
+  margin-bottom: 1.1rem;
+  color: $color-text;
 
   &.block {
     display: inline-block;
@@ -80,23 +90,24 @@ strong {
 }
 
 .screen-content {
-  // the 6rem leaves enough room for the globe footer
-  padding: 5vh 5vw 3rem 5vw;
-  max-width: 40rem;
+  padding: 6vh $section-padding-x 3.5rem $section-padding-x;
+  max-width: 48rem;
   margin: 0 auto;
 
   .h2 {
     font-size: $font-size-lg;
     font-family: $font-family-bold;
     font-weight: $font-weight-bold;
-    margin: 1rem 0;
+    margin: 0 0 1.2rem 0;
+    color: $color-primary;
   }
 
   .h3 {
     font-size: $font-size-h3;
     font-family: $font-family-bold;
     font-weight: $font-weight-bold;
-    margin-bottom: .75rem;
+    margin-bottom: .9rem;
+    color: $color-primary;
   }
 
   &.screen-content-dark {
@@ -131,6 +142,48 @@ strong {
     width: 100% !important;
     height: 100% !important;
   }
+}
+
+// Framed deck / doc embeds (home pitch deck)
+.deck-embed {
+  margin-top: $space-4;
+  margin-bottom: $space-6;
+  padding: $space-3;
+  border-radius: 0.5rem;
+  border: 1px solid $color-border;
+  background: $color-page-bg;
+  box-shadow: $shadow-deck;
+
+  .responsive-google-slides {
+    margin-top: 0;
+    margin-bottom: 0;
+    border-radius: 0.35rem;
+    overflow: hidden;
+  }
+}
+
+.content-section {
+  padding-bottom: 2.5rem;
+  border-bottom: 1px solid $color-border;
+
+  // Elevated cards (e.g. Home) set their own inset padding; do not strip bottom padding when last.
+  &:last-child:not(.home-surface-card) {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+}
+
+.media-frame-42 {
+  padding: 42.81% 0 0 0;
+  position: relative;
+}
+
+.media-frame-fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 

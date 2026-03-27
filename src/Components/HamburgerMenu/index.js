@@ -18,11 +18,6 @@ export default () => (
         </label>
         <ul className="menu-ul">
           <li className="menu-li">
-            <Link to="/about" >
-              Team
-            </Link>
-          </li>
-          <li className="menu-li">
             <Link to="/howItWorks" >
               How it Works
             </Link>
@@ -30,6 +25,11 @@ export default () => (
           <li className="menu-li">
             <Link to="/mission" >
               Mission + Values
+            </Link>
+          </li>
+          <li className="menu-li">
+            <Link to="/about" >
+              Team
             </Link>
           </li>
           <li className="menu-li">

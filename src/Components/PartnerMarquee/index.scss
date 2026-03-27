@@ -1,0 +1,129 @@
+@import '../../shared-styles/variables.scss';
+
+.partner-marquee {
+  // Full-bleed inside padded band: cancel parent horizontal padding (see `.screen-content--band`).
+  width: calc(100% + 2 * #{$section-padding-x});
+  margin-left: -$section-padding-x;
+  margin-right: -$section-padding-x;
+  box-sizing: border-box;
+}
+
+.partner-marquee__viewport {
+  overflow: hidden;
+  width: 100%;
+  border-top: 1px solid $color-border;
+  border-bottom: 1px solid $color-border;
+  background: rgba($color-surface, 0.65);
+  padding: $partner-marquee-viewport-padding-y $section-padding-x;
+  box-sizing: border-box;
+
+  &:hover .partner-marquee__track {
+    animation-play-state: paused;
+  }
+}
+
+// Two groups + same gap as between logos; loop distance is set in JS (--partner-marquee-shift)
+// because translateX(-50%) is wrong when total width is 2W + gap between copies.
+.partner-marquee__track {
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  width: max-content;
+  gap: $space-6;
+  animation: partner-marquee-scroll 52s linear infinite;
+  will-change: transform;
+}
+
+.partner-marquee__group {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: $space-6;
+  flex-shrink: 0;
+}
+
+.partner-marquee__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 1 auto;
+  min-width: 0;
+  padding: 0;
+  opacity: var(--partner-marquee-logo-opacity, 1);
+  transition: opacity $transition-base;
+
+  &:hover {
+    opacity: calc(var(--partner-marquee-logo-opacity, 1) * #{$opacity-off-hover});
+  }
+
+  img {
+    display: block;
+    height: calc(#{$partner-marquee-logo-height} * var(--partner-marquee-logo-scale, 1));
+    width: auto;
+    max-width: min(#{$partner-marquee-logo-max-width}, 42vw);
+    max-height: calc(#{$partner-marquee-logo-max-height} * var(--partner-marquee-logo-scale, 1));
+    object-fit: contain;
+    object-position: center;
+    filter: grayscale(1);
+  }
+}
+
+.partner-marquee__dup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 1 auto;
+  min-width: 0;
+  padding: 0;
+  opacity: var(--partner-marquee-logo-opacity, 1);
+  pointer-events: none;
+
+  img {
+    display: block;
+    height: calc(#{$partner-marquee-logo-height} * var(--partner-marquee-logo-scale, 1));
+    width: auto;
+    max-width: min(#{$partner-marquee-logo-max-width}, 42vw);
+    max-height: calc(#{$partner-marquee-logo-max-height} * var(--partner-marquee-logo-scale, 1));
+    object-fit: contain;
+    filter: grayscale(1);
+  }
+}
+
+@media (max-width: 48rem) {
+  .partner-marquee__track,
+  .partner-marquee__group {
+    gap: $space-4;
+  }
+}
+
+@keyframes partner-marquee-scroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    // Set by JS: first group width + flex gap (exact one period). Fallback only before measure.
+    transform: translateX(var(--partner-marquee-shift, -50%));
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .partner-marquee__viewport {
+    padding-left: $section-padding-x;
+    padding-right: $section-padding-x;
+  }
+
+  .partner-marquee__track {
+    animation: none;
+    width: 100%;
+    max-width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: $space-6 $space-8;
+  }
+
+  .partner-marquee__dup {
+    display: none;
+  }
+}

@@ -1,11 +1,7 @@
 import React from 'react';
-import Navbar from "../Navbar";
-import Footer from "../Footer";
-import { Link } from '@reach/router'
-import MailchimpForm from "../MailchimpForm";
-import './index.scss';
+import SiteChrome from "../SiteChrome";
 
-const videoBgShort = '/video-bg-short.jpg';
+const innerPageHeroBanner = '/video-bg-end.jpg';
 
 class Mission extends React.Component {
   componentDidMount() {
@@ -14,15 +10,18 @@ class Mission extends React.Component {
 
   render() {
     return (
-      <div className={`page page-mission`}>
-        <Navbar/>
+      <SiteChrome pageClassName="page-mission">
+        <section className="inner-page-hero" aria-label="Mission">
+          <img
+            className="inner-page-hero__img"
+            src={innerPageHeroBanner}
+            alt=""
+            aria-hidden="true"
+          />
+        </section>
 
-        <div className="page-screen">
-          <div className="screen-content screen-content-above-fold-short">
-            <img className="img-background"
-              src={videoBgShort} alt="Terrament energy storage background image" />
-          </div>
-          <div className="screen-content screen-content-below-fold">
+        <div className="page-screen page-inner-shell">
+          <div className="screen-content screen-content--band screen-content-below-fold">
             <div className="content-section">
               <h2 className="h2">
                 Mission Statements
@@ -64,15 +63,14 @@ class Mission extends React.Component {
               </p>
               <p>
                 (We currently have no job openings. But feel free to drop us an <a
-                  href="mailto:eric@terramenthq.com?subject=Hello"
+                  href="mailto:hello@terramenthq.com?subject=Hello"
                   target="_blank" rel="noopener noreferrer"
                 >email</a>.)
               </p>
             </div>
           </div>
         </div>
-        <Footer />
-      </div>
+      </SiteChrome>
     );
   }
 }

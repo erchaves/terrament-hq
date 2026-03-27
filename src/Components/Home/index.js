@@ -1,20 +1,11 @@
 import React from 'react';
-import Navbar from "../Navbar";
-import VideoComp from "../VideoComp";
-import VideoYoutube from "../VideoYoutube";
-import Footer from "../Footer";
+import SiteChrome from "../SiteChrome";
 import MailchimpForm from "../MailchimpForm";
-import { Link } from '@reach/router'
-import { Link as ScrollLink } from "react-scroll";
+import PartnerMarquee from '../PartnerMarquee';
 
 import './index.scss';
 
-const videoPosterBg = 'homepage-bg.jpg';
-const videoPosterDesign = 'terrament-prototype-R7-cover.png';
-const videoMp4Bg = 'homepage-bg.mp4?v2';
-const videoMp4 = 'terrament-product-demo-video-compressed.mp4';
-// todo #deDup
-const videoVimeoSrc = 'https://player.vimeo.com/video/913860588?h=8ec504d4e6&autoplay=0&loop=1&title=0&byline=0&portrait=0';
+const videoMp4Bg = 'terrament-promo-video-compressed.mp4';
 
 class Home extends React.Component {
   componentDidMount() {
@@ -23,13 +14,70 @@ class Home extends React.Component {
 
   render() {
     return (
-      <div className={`page page-home`}>
-        <Navbar/>
-        <div className="screen-content screen-content-above-fold-short">
-          <img className="background-image" src={videoPosterBg} alt="Terrament background image" />
-        </div>
+      <SiteChrome pageClassName="page-home">
+        <section className="home-hero">
+          <video
+            className="home-hero-video"
+            playsInline
+            muted
+            loop
+            autoPlay
+            preload="auto"
+            src={videoMp4Bg}
+            aria-hidden="true"
+          />
+          <div className="home-hero-overlay" />
+          <div className="home-hero-content">
+            <div className="home-hero-text">
+              <h1 className="home-hero-title">Terrament<br />Gravity Storage</h1>
+              <p className="home-hero-subtitle">
+                Terrament is a New York based clean-tech startup building a patented long-duration energy storage solution that reimagines gravity storage.
+              </p>
+            </div>
+            <div className="home-hero-actions" role="navigation" aria-label="Primary actions">
+              <a href="#pitch-deck" className="home-hero-cta home-hero-cta--primary">
+                View pitch deck
+              </a>
+              <a
+                className="home-hero-cta home-hero-cta--ghost"
+                href="mailto:hello@terramenthq.com?subject=Hello"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Email us
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <section
+          className="home-stats"
+          aria-label="Key metrics from Terrament technology and validation"
+        >
+          <ul className="home-stats__inner">
+            <li className="home-stats__item">
+              <p className="home-stats__value">20×</p>
+              <p className="home-stats__label">
+                20x more energy potential than other gravity-based energy storage solutions.
+              </p>
+            </li>
+            <li className="home-stats__item">
+              <p className="home-stats__value">80%+</p>
+              <p className="home-stats__label">
+                Terrament&apos;s round trip efficiency (RTE) is over 80%.
+              </p>
+            </li>
+            <li className="home-stats__item">
+              <p className="home-stats__value">&lt;8¢/kWh</p>
+              <p className="home-stats__label">
+                Terrament&apos;s lifetime cost (levelized cost, or LCOS) is under 8¢/kWh for a 1GWh facility (unsubsidized), and approaches 5¢/kWh at larger scales.
+              </p>
+            </li>
+          </ul>
+        </section>
+
         <div className="page-screen">
-          <div className="screen-content screen-content-below-fold">
+          <div className="screen-content screen-content--band screen-content-below-fold">
             <div className="content-section">
               <h2 className="h2">
                 Terrament Gravity Storage
@@ -51,24 +99,6 @@ class Home extends React.Component {
                 </ul>
               </p>
 
-              <div className="media-wrap">
-                <div style={{padding:'42.81% 0 0 0', position:'relative'}}>
-                  <iframe src={videoVimeoSrc}
-                    frameBorder="0"
-                    allow="autoplay; fullscreen; picture-in-picture"
-                    style={{"position":"absolute","top":"0","left":"0","width":"100%","height":"100%"}}
-                    title="Terrament Gravity Storage Concept">
-                  </iframe>
-                </div>
-                <script src="https://player.vimeo.com/api/player.js"></script>
-
-                <span className="caption">
-                  How Terrament's gravity storage works (video by <a
-                  href="https://www.machinemythology.com/"
-                  title="Machine Mythology: High-impact video content for high-tech startups"
-                  target="_blank" rel="noopener noreferrer">Machine Mythology</a>)
-                </span>
-              </div>
               <p>
                 Terrament's gravity storage solution is low-risk: we don't depend on critical minerals, and we don't use any chemical batteries.
               </p>
@@ -76,25 +106,31 @@ class Home extends React.Component {
                 Our innovative system uses only well-established technologies: we leverage the same motor/generators used in wind turbines, and we use the same deep mine shafts which have been built by mining companies for over 50 years.
               </p>
             </div>
-            <div className="content-section">
+          </div>
+
+          <div className="screen-content screen-content--surface screen-content--pitch-deck">
+            <div className="content-section" id="pitch-deck">
               <h3 className="h3">
                 Terrament Pitch Deck
               </h3>
 
-              <div className="media-wrap responsive-google-slides">
-                <iframe
-                  src="https://docs.google.com/presentation/d/e/2PACX-1vQt5SE1m4VDN-bBcPQ5efZW7g-PE-0KEDKscu0r0D_1aCQTWqZyQBQfeiFJe5QyKA/pubembed?start=false&loop=false&delayms=10000"
-                  frameBorder={0}
-                  width={960}
-                  height={569}
-                  allowFullScreen={true}
-                  mozallowfullscreen={true}
-                  webkitallowfullscreen={true}
+              <div className="deck-embed">
+                <div className="media-wrap responsive-google-slides">
+                  <iframe
+                    src="https://docs.google.com/presentation/d/e/2PACX-1vQt5SE1m4VDN-bBcPQ5efZW7g-PE-0KEDKscu0r0D_1aCQTWqZyQBQfeiFJe5QyKA/pubembed?start=false&loop=false&delayms=10000"
+                    frameBorder={0}
+                    width={960}
+                    height={569}
+                    allowFullScreen={true}
+                    title="Terrament pitch deck"
                   >
-                </iframe>
+                  </iframe>
+                </div>
               </div>
             </div>
+          </div>
 
+          <div className="screen-content screen-content--band">
             <div className="content-section">
               <h3 className="h3">
                 The Energy Storage Problem
@@ -110,8 +146,12 @@ class Home extends React.Component {
               <p>Terrament replicates pumped hydro's capabilities, but without the large footprint, water usage, or need for hills.
               </p>
             </div>
+          </div>
 
-            <div className="content-section">
+          <PartnerMarquee />
+
+          <div className="screen-content screen-content--surface">
+            <div className="content-section home-surface-card grant-funded">
               <h3 className="h3">
                 Grant-Funded Research Validation
               </h3>
@@ -123,98 +163,105 @@ class Home extends React.Component {
               </p>
               <ul className="energywerx-list">
                 <li>
-                  <img src="doe-logo.jpg" />
+                  <img src="/partner-logos/doe-logo.jpg" alt="U.S. Department of Energy partner logo" />
                   <span>We recently won U.S. federal grant funding to support outside research validation of our breakthrough technology. We won two <a
                   href="https://www.energy.gov/technologytransitions/articles/doe-announces-20-million-vouchers-support-over-170-organizations" target="_blank" rel="noopener noreferrer"
                     >EnergyWERX awards from the DOE</a> valued at around $300,000.
                   </span>
                 </li>
                 <li>
-                  <img src="wcet-logo.png" />
-                  <span>Our research partner <a href="https://www.wcet.washington.edu/" target="_blank" rel="noopener noreferrer">University of Washington, Washington Clean Energy Testbeds</a> developed and validated our techno-economic model to conclude that Terrament's lifetime cost (levelized cost, or LCOS) is under 10¢/kWh for a 1GWh facility, and approaches 5¢/kWh at larger scales. This is cheaper than any competitors in our target market.
+                  <img src="/partner-logos/wcet-logo.png" alt="University of Washington Washington Clean Energy Testbeds partner logo" />
+                  <span>Our research partner <a href="https://www.wcet.washington.edu/" target="_blank" rel="noopener noreferrer">University of Washington, Washington Clean Energy Testbeds</a> developed and validated our techno-economic model to conclude that Terrament's lifetime cost (levelized cost, or LCOS) is under 8¢/kWh for a 1GWh facility, and approaches 5¢/kWh at larger scales. This is cheaper than any competitors in our target market.
                   </span>
                 </li>
                 <li>
-                  <img src="lhp-engineering-logo.png" />
+                  <img src="/partner-logos/lhp-engineering-logo.png" alt="LHP Engineering partner logo" />
                   <span>Our research partner <a href="https://www.lhpes.com/" target="_blank" rel="noopener noreferrer">LHP Engineering</a> conducted extensive mechanical/electrical modeling and physics simulations to conclude that Terrament's round trip efficiency (RTE) is over 80%. This is as good or better than any competitors in our target market.
                   </span>
                 </li>
               </ul>
             </div>
-            <div className="content-section">
+          </div>
+
+          <div className="screen-content screen-content--surface">
+            <div className="content-section home-surface-card accelerators-partners">
               <h3 className="h3">
                 Accelerators and Partners
               </h3>
-              <p>
+              <p className="accelerators-partners__intro">
                 We are grateful to have been accepted into the following programs:
-                <ul className="bullets">
-                  <li>
-                    <a
+              </p>
+              <ul className="bullets accelerators-partners__list">
+                <li>
+                  <a
                     href="https://www.cebip.org/terrament"
                     target="_blank" rel="noopener noreferrer"
-                    >CEBIP accelerator program</a> at Stony Brook University (since 2021).
-                  </li>
+                  >CEBIP accelerator program</a> at Stony Brook University (since 2021).
+                </li>
 
-                  <li>
-                    <a
+                <li>
+                  <a
                     href="https://www.newlab.com/articles/founder-fellowship-2023"
                     target="_blank" rel="noopener noreferrer"
-                    >Founder Fellowship cohort at Newlab</a> (in 2023, still active).
-                  </li>
+                  >Founder Fellowship cohort at Newlab</a> (in 2023, still active).
+                </li>
 
-                  <li>
-                    <a
+                <li>
+                  <a
                     href="https://www.plugandplaytechcenter.com/japan/"
                     target="_blank" rel="noopener noreferrer"
-                    >Plug and Play Program</a> (Japan - Energy focus, in 2024).
-                  </li>
-                  <li>
-                    <a
+                  >Plug and Play Program</a> (Japan - Energy focus, in 2024).
+                </li>
+                <li>
+                  <a
                     href="https://www.cleantechopen.org/en/page/northeast-en"
                     target="_blank" rel="noopener noreferrer"
-                    >Cleantech Open Program</a> (Northeast, in 2024).
-                  </li>
-                </ul>
-              </p>
-              <p className="brand-logo-section">
-                <a className="brand-logo"
-                  href="https://www.cebip.org/terrament"
-                  target="_blank" rel="noopener noreferrer"
-                >
-                  <img src="/cebip-logo.png" alt="CEBIP logo" />
-                </a>
+                  >Cleantech Open Program</a> (Northeast, in 2024).
+                </li>
+              </ul>
 
-                <a className="brand-logo"
-                  href="https://www.cleantechopen.org/en/page/northeast-en"
-                  target="_blank" rel="noopener noreferrer"
-                >
-                  <img src="/clean-tech-open-logo.png" alt="Cleantech Open Logo" />
-                </a>
-              </p>
-              <p className="brand-logo-section row-2">
-                <a className="brand-logo"
-                  href="https://www.newlab.com"
-                  target="_blank" rel="noopener noreferrer"
-                >
-                  <img src="/newlab-logo.svg" alt="NEWLAB logo" />
-                </a>
-               <a className="brand-logo"
-                  href="https://www.plugandplaytechcenter.com/japan/"
-                  target="_blank" rel="noopener noreferrer"
-                >
-                  <img src="/plug-and-play-logo-blue.png" alt="Plug and Play logo" />
-                </a>
-              </p>
-
-              <p>
-                Please reach out to us about investment opportunities.
-                &nbsp;
-                <a className=""
-                  href="mailto:eric@terramenthq.com?subject=Hello"
-                  target="_blank" rel="noopener noreferrer"
-                >Email Us</a>
-              </p>
+              <ul className="home-surface-card__logo-grid">
+                <li>
+                  <a
+                    className="home-surface-card__logo-link"
+                    href="https://www.cebip.org/terrament"
+                    target="_blank" rel="noopener noreferrer"
+                  >
+                    <img src="/partner-logos/cebip-logo.png" alt="CEBIP partner logo" />
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="home-surface-card__logo-link"
+                    href="https://www.cleantechopen.org/en/page/northeast-en"
+                    target="_blank" rel="noopener noreferrer"
+                  >
+                    <img src="/partner-logos/clean-tech-open-logo.png" alt="Cleantech Open partner logo" />
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="home-surface-card__logo-link"
+                    href="https://www.newlab.com"
+                    target="_blank" rel="noopener noreferrer"
+                  >
+                    <img src="/partner-logos/newlab-logo.png" alt="Newlab partner logo" />
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="home-surface-card__logo-link"
+                    href="https://www.plugandplaytechcenter.com/japan/"
+                    target="_blank" rel="noopener noreferrer"
+                  >
+                    <img src="/partner-logos/plug-and-play-logo-blue.png" alt="Plug and Play partner logo" />
+                  </a>
+                </li>
+              </ul>
             </div>
+          </div>
+
+          <div className="screen-content screen-content--surface">
             <div className="content-section">
               <h3 className="h3">
                 Stay in Touch
@@ -223,9 +270,7 @@ class Home extends React.Component {
             </div>
           </div>
         </div>
-
-        <Footer />
-      </div>
+      </SiteChrome>
     );
   }
 }
