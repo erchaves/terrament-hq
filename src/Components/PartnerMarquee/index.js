@@ -48,7 +48,7 @@ const PARTNER_MARQUEE_MANIFEST = [
     heightPercent: 80,
   },
   {
-    filename: 'doe-logo.jpg',
+    filename: 'doe-logo.png',
     href: 'https://www.energy.gov/',
     alt: 'U.S. Department of Energy partner logo',
     heightPercent: 82,

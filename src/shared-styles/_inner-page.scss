@@ -36,14 +36,7 @@
 
   > .screen-content.screen-content--band {
     background: $color-page-bg;
-    margin-left: calc(50% - 50vw);
-    margin-right: calc(50% - 50vw);
-    padding-left: $section-padding-x;
-    padding-right: $section-padding-x;
-    padding-top: $section-block-y;
-    padding-bottom: $section-block-y;
-    width: 100vw;
-    box-sizing: border-box;
+    padding: $section-block-y $section-padding-x;
   }
 
   > .screen-content.screen-content--band.screen-content-below-fold {

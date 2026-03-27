@@ -1,5 +1,4 @@
 @import '../../shared-styles/variables.scss';
-@import '../../shared-styles/mixins.scss';
 
 // todo move this
 $fadeinMin: .3;
@@ -12,14 +11,26 @@ $fadeinTime: 3s;
 }
 
 .page-home {
+  // No pure white ($color-surface) as large-area fills — match or sit above $color-page-bg.
+  $home-cell-bg: mix($color-primary, $color-page-bg, 7%);
+
+  .page-screen {
+    background: $color-page-bg;
+  }
+
+  .nav-content {
+    background: rgba($color-page-bg, 0.96);
+  }
+
+  .partner-marquee__viewport {
+    background: rgba($color-page-bg, 0.92);
+  }
+
   #pitch-deck {
     scroll-margin-top: 5rem;
   }
 
-  // Full-width section wrappers (override global `.screen-content` max-width from app.scss).
-  // Use `padding: 0` only on the base selector; band/surface MUST be chained with the same
-  // or higher specificity — otherwise `padding: 0` wins over `.screen-content--band` padding
-  // longhands and horizontal gutters disappear.
+  // Section wrappers: undo global `.screen-content` max-width; `--band` / `--surface` set padding.
   .page-screen > .screen-content {
     max-width: none;
     margin-left: 0;
@@ -31,14 +42,7 @@ $fadeinTime: 3s;
 
   .page-screen > .screen-content.screen-content--band {
     background: $color-page-bg;
-    margin-left: calc(50% - 50vw);
-    margin-right: calc(50% - 50vw);
-    padding-left: $section-padding-x;
-    padding-right: $section-padding-x;
-    padding-top: $section-block-y;
-    padding-bottom: $section-block-y;
-    width: 100vw;
-    box-sizing: border-box;
+    padding: $section-block-y $section-padding-x;
   }
 
   .page-screen > .screen-content.screen-content--band.screen-content-below-fold {
@@ -49,7 +53,18 @@ $fadeinTime: 3s;
     padding: $section-block-y $section-padding-x;
   }
 
-  // Pitch deck: full-bleed brand green band
+  // Grant-funded research: green tint (padding from `.screen-content--surface`)
+  .page-screen > .screen-content.screen-content--surface.screen-content--green-dark {
+    background: $color-primary;
+    border-bottom: 1px solid rgba($color-primary, 0.14);
+  }
+
+  .page-screen > .screen-content.screen-content--surface.screen-content--green-light {
+    background: $color-text-muted;
+    border-bottom: 1px solid rgba($color-primary, 0.14);
+  }
+
+  // Pitch deck: deck frame uses page-bg (not white); padding from `.screen-content--surface`
   .page-screen > .screen-content.screen-content--surface.screen-content--pitch-deck {
     background: $color-text-muted;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -230,7 +245,7 @@ $fadeinTime: 3s;
   }
 
   .home-stats {
-    background: $color-surface;
+    background: $color-page-bg;
     border-bottom: 1px solid $color-border;
   }
 
@@ -313,9 +328,7 @@ $fadeinTime: 3s;
     min-height: 60vh;
     overflow: hidden;
     border-radius: 0;
-    width: 100vw;
-    margin-left: calc(50% - 50vw);
-    margin-right: calc(50% - 50vw);
+    width: 100%;
   }
 
   .below-fold-video {
@@ -365,7 +378,7 @@ $fadeinTime: 3s;
 
   // Shared elevated card (Accelerators + Grant-Funded sections)
   .home-surface-card {
-    background: $color-surface;
+    background: $color-page-bg;
     border: 1px solid $color-border;
     border-radius: 1rem;
     padding: 1.75rem 1.5rem;
@@ -391,7 +404,7 @@ $fadeinTime: 3s;
       justify-content: center;
       min-height: 7.5rem;
       padding: 1.25rem 1rem;
-      background: $color-page-bg;
+      background: $home-cell-bg;
       border: 1px solid $color-border;
       border-radius: 0.5rem;
       transition: border-color $transition-base, box-shadow $transition-base, transform 200ms ease-out;
@@ -464,7 +477,7 @@ $fadeinTime: 3s;
           min-height: 5.5rem;
           padding: 1.1rem 0.85rem;
           box-sizing: border-box;
-          background: $color-page-bg;
+          background: $home-cell-bg;
           border: 1px solid $color-border;
           border-radius: 0.5rem;
           object-fit: contain;
@@ -533,7 +546,7 @@ $fadeinTime: 3s;
         padding: 0.45em 1em;
         border: 1px solid $color-border;
         border-radius: 0.35rem;
-        background: $color-surface;
+        background: $color-page-bg;
         color: $color-link;
         font-size: 0.95em;
         text-decoration: none;

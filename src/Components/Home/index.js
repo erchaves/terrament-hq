@@ -150,7 +150,7 @@ class Home extends React.Component {
 
           <PartnerMarquee />
 
-          <div className="screen-content screen-content--surface">
+          <div className="screen-content screen-content--surface screen-content--green-light">
             <div className="content-section home-surface-card grant-funded">
               <h3 className="h3">
                 Grant-Funded Research Validation
@@ -163,7 +163,7 @@ class Home extends React.Component {
               </p>
               <ul className="energywerx-list">
                 <li>
-                  <img src="/partner-logos/doe-logo.jpg" alt="U.S. Department of Energy partner logo" />
+                  <img src="/partner-logos/doe-logo.png" alt="U.S. Department of Energy partner logo" />
                   <span>We recently won U.S. federal grant funding to support outside research validation of our breakthrough technology. We won two <a
                   href="https://www.energy.gov/technologytransitions/articles/doe-announces-20-million-vouchers-support-over-170-organizations" target="_blank" rel="noopener noreferrer"
                     >EnergyWERX awards from the DOE</a> valued at around $300,000.
@@ -183,7 +183,7 @@ class Home extends React.Component {
             </div>
           </div>
 
-          <div className="screen-content screen-content--surface">
+          <div className="screen-content screen-content--surface screen-content--green-dark">
             <div className="content-section home-surface-card accelerators-partners">
               <h3 className="h3">
                 Accelerators and Partners
