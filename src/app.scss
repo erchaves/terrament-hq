@@ -206,28 +206,6 @@ strong {
   padding-left: $flex-padding;
 }
 
-.energywerx-list {
-  display: flex;
-  justify-items: center;
-  flex-direction: column;
-
-  li {
-    display: flex;
-    margin: 1rem 0;
-  }
-
-  img {
-    width: 30%;
-    height: auto;
-    padding-right: 2rem;
-    object-fit: contain;
-  }
-
-  span {
-    align-self: center;
-  }
-}
-
 @media screen and (max-width: $screen-size-mobile) {
   html,
   body {
@@ -259,18 +237,5 @@ strong {
   .flex-66 {
     width: 100%;
     padding-left: 0;
-  }
-
-  .energywerx-list {
-
-    li {
-      display: inline-block;
-      margin-bottom: 3rem;
-    }
-
-    img {
-      float: left;
-      width: 40%;
-    }
   }
 }

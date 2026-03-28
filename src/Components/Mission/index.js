@@ -1,7 +1,6 @@
 import React from 'react';
 import SiteChrome from "../SiteChrome";
-
-const innerPageHeroBanner = '/video-bg-end.jpg';
+import InnerPageHero from '../InnerPageHero';
 
 class Mission extends React.Component {
   componentDidMount() {
@@ -11,35 +10,25 @@ class Mission extends React.Component {
   render() {
     return (
       <SiteChrome pageClassName="page-mission">
-        <section className="inner-page-hero" aria-label="Mission">
-          <img
-            className="inner-page-hero__img"
-            src={innerPageHeroBanner}
-            alt=""
-            aria-hidden="true"
-          />
-        </section>
+        <InnerPageHero ariaLabel="Mission" />
 
         <div className="page-screen page-inner-shell">
           <div className="screen-content screen-content--band screen-content-below-fold">
             <div className="content-section">
               <h2 className="h2">
-                Mission Statements
+                Mission Statement
               </h2>
               <p>
-                Terrament's mission is building energy technologies that support a more sustainable and abundant energy future.
+                Terrament's mission is to build energy technologies that unlock a sustainable and abundant energy future while creating durable value for our customers, our partners, and global communities.
               </p>
 
             </div>
             <div className="content-section">
               <h2 className="h2">
-                Just Transition
+                A Just Transition
               </h2>
               <p>
-                Terrament acknowledges that climate costs are wide-reaching including human costs, environmental costs, and financial costs. It's too expensive to do nothing.
-              </p>
-              <p>
-                To mitigate climate costs, society must transition to a safer, more sustainable energy infrastructure. We believe it's in Terrament's best business interests to support a just climate transition.
+                We believe that a transition to clean, sustainable energy is also the path of greatest value for businesses, economies, and communities. This must be a just transition, which means addressing the stark disparity between those responsible for the largest share of greenhouse gas emissions and the communities most harmed by climate impacts. It must create real opportunities for all communities as industries change. Workers and communities must be treated fairly. And they should have real opportunities to share in the benefits of new infrastructure.
               </p>
             </div>
             <div className="content-section">

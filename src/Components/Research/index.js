@@ -1,7 +1,6 @@
 import React from 'react';
 import SiteChrome from "../SiteChrome";
-
-const innerPageHeroBanner = '/video-bg-end.jpg';
+import InnerPageHero from '../InnerPageHero';
 
 class Research extends React.Component {
   componentDidMount() {
@@ -11,14 +10,7 @@ class Research extends React.Component {
   render() {
     return (
       <SiteChrome pageClassName="page-research">
-        <section className="inner-page-hero" aria-label="Research and case studies">
-          <img
-            className="inner-page-hero__img"
-            src={innerPageHeroBanner}
-            alt=""
-            aria-hidden="true"
-          />
-        </section>
+        <InnerPageHero ariaLabel="Research and case studies" />
 
         <div className="page-screen page-inner-shell">
           <div className="screen-content screen-content--band screen-content-below-fold">

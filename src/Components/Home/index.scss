@@ -101,6 +101,8 @@ $fadeinTime: 3s;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
     margin-bottom: 0;
     border-bottom: none;
 
@@ -391,6 +393,10 @@ $fadeinTime: 3s;
 
   // Shared elevated card (Accelerators + Grant-Funded sections)
   .home-surface-card {
+    box-sizing: border-box;
+    max-width: 100%;
+    min-width: 0;
+    overflow-wrap: break-word;
     background: $color-page-bg;
     border: 1px solid $color-border;
     border-radius: 1rem;
@@ -416,12 +422,14 @@ $fadeinTime: 3s;
       display: flex;
       align-items: center;
       justify-content: center;
+      min-width: 0;
       min-height: 7.5rem;
       padding: 1.25rem 1rem;
       background: $home-cell-bg;
       border: 1px solid $color-border;
       border-radius: 0.5rem;
-      transition: border-color $transition-base, box-shadow $transition-base, transform 200ms ease-out;
+      transition: border-color $transition-base, box-shadow $transition-base, background-color $transition-base,
+        transform 200ms ease-out;
 
       &:focus-visible {
         outline: 2px solid rgba($color-link, 0.55);
@@ -437,7 +445,7 @@ $fadeinTime: 3s;
 
       img {
         width: 100%;
-        max-width: 11rem;
+        max-width: min(11rem, 100%);
         max-height: 3.5rem;
         height: auto;
         object-fit: contain;
@@ -470,36 +478,72 @@ $fadeinTime: 3s;
       }
 
       .energywerx-list {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
         margin: 1rem 0 0;
         padding: 0;
 
         li {
-          align-items: flex-start;
+          display: flex;
+          flex-direction: row;
+          align-items: stretch;
           gap: $space-4;
           margin: 1.25rem 0 0;
+          min-width: 0;
+          max-width: 100%;
 
           &:first-child {
             margin-top: 0;
           }
         }
 
-        img {
-          flex: 0 0 8.75rem;
-          width: 8.75rem;
-          max-width: min(40%, 10rem);
-          height: auto;
-          min-height: 5.5rem;
-          padding: 1.1rem 0.85rem;
+        &__logo-link {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex: 0 0 7.75rem;
+          width: 7.75rem;
+          max-width: 7.75rem;
+          min-width: 0;
+          min-height: 5.25rem;
+          align-self: stretch;
+          padding: 0.75rem 0.65rem;
           box-sizing: border-box;
-          background: $home-cell-bg;
-          border: 1px solid $color-border;
+          background: $partner-tile-pnp-bg;
+          border: 1px solid rgba($color-link, 0.26);
           border-radius: 0.5rem;
-          object-fit: contain;
-          align-self: flex-start;
+          text-decoration: none;
+          transition: border-color $transition-base, box-shadow $transition-base, background-color $transition-base;
+
+          &:focus-visible {
+            outline: 2px solid rgba($color-link, 0.55);
+            outline-offset: 2px;
+          }
+
+          &:hover,
+          &:focus-visible {
+            border-color: rgba($color-link, 0.42);
+            background: mix($color-link, $color-page-bg, 21%);
+            box-shadow: 0 8px 26px rgba($color-link, 0.12);
+          }
+
+          img {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            max-height: 100%;
+            min-height: 0;
+            object-fit: contain;
+            object-position: center;
+            display: block;
+          }
         }
 
         span {
-          align-self: center;
+          flex: 1 1 auto;
+          min-width: 0;
+          overflow-wrap: break-word;
 
           a {
             color: $color-link;
@@ -578,12 +622,45 @@ $fadeinTime: 3s;
           background: rgba($color-page-bg, 0.85);
         }
       }
+
+      // Same light blue field on every tile (was distinct grays / green per partner).
+      .home-surface-card__logo-grid .home-surface-card__logo-link {
+        background: $partner-tile-pnp-bg;
+        border-color: rgba($color-link, 0.26);
+
+        &:hover,
+        &:focus-visible {
+          border-color: rgba($color-link, 0.42);
+          background: mix($color-link, $color-page-bg, 21%);
+          box-shadow: 0 8px 26px rgba($color-link, 0.12);
+        }
+      }
+
+      .home-surface-card__logo-grid .home-surface-card__logo-link img {
+        filter: none;
+        opacity: 0.96;
+      }
+
+      // Cleantech mark is visually lighter than wide wordmarks — allow a larger draw area.
+      .home-surface-card__logo-link--cleantech img {
+        max-width: min(13rem, 100%);
+        max-height: 4.5rem;
+      }
+
+      .home-surface-card__logo-grid .home-surface-card__logo-link:hover img,
+      .home-surface-card__logo-grid .home-surface-card__logo-link:focus-visible img {
+        opacity: 1;
+      }
     }
   }
 
   @media screen and (max-width: $screen-size-mobile) {
+    .home-stats {
+      display: none;
+    }
+
     .page-screen > .screen-content.screen-content--band.screen-content-below-fold {
-      padding-top: calc(2.5rem + #{$section-block-y});
+      padding-top: calc(#{$space-8} + #{$space-6});
     }
 
     .below-fold-video-section {
@@ -616,38 +693,13 @@ $fadeinTime: 3s;
       max-width: min(100%, 40ch);
     }
 
-    .home-stats__inner {
-      flex-direction: column;
-      align-items: stretch;
-      gap: 0;
-      padding-top: $space-8;
-      padding-bottom: $space-8;
-    }
-
-    .home-stats__item {
-      flex: none;
-      min-width: 0;
-      max-width: none;
-      width: 100%;
-      padding-left: 0;
-      padding-bottom: $space-6;
-
-      &::before {
-        display: none !important;
-      }
-
-      &:not(:first-child) {
-        border-top: 1px solid rgba($color-primary, 0.12);
-        padding-top: $space-6;
-      }
-
-      &:last-child {
-        padding-bottom: 0;
-      }
-    }
-
     .home-hero-actions {
       margin-top: $space-4;
+    }
+
+    .page-screen > .screen-content.screen-content--green-dark {
+      padding-left: clamp(1rem, 5vw, #{$section-padding-x});
+      padding-right: clamp(1rem, 5vw, #{$section-padding-x});
     }
 
     .home-surface-card {
@@ -670,12 +722,18 @@ $fadeinTime: 3s;
           gap: $space-3;
         }
 
-        img {
+        &__logo-link {
           float: none;
-          flex: none;
-          width: 100%;
-          max-width: none;
-          min-height: 6rem;
+          align-self: center;
+          flex: 0 0 auto;
+          width: 7.75rem;
+          max-width: 7.75rem;
+          min-height: 5.25rem;
+          height: auto;
+
+          img {
+            max-height: 3.5rem;
+          }
         }
       }
     }

@@ -14,6 +14,9 @@ $color-border: #d7dfdd;
 $color-link: #2c6a9e;
 $color-link-dark: #1f4d6e;
 
+// Home “Accelerators and Partners” logo grid — unified light blue wash (link hue on page bg)
+$partner-tile-pnp-bg: mix($color-link, $color-page-bg, 15%);
+
 // Spacing rhythm (4px base)
 $space-2: 0.5rem;
 $space-3: 0.75rem;

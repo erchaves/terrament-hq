@@ -64,13 +64,13 @@ class Home extends React.Component {
             <li className="home-stats__item">
               <p className="home-stats__value">80%+</p>
               <p className="home-stats__label">
-                Terrament&apos;s round trip efficiency (RTE) is over 80%.
+                Round trip efficiency (RTE) over 80%, best in class for long-duration storage.
               </p>
             </li>
             <li className="home-stats__item">
               <p className="home-stats__value">&lt;8¢/kWh</p>
               <p className="home-stats__label">
-                Terrament&apos;s levelized cost (LCOS) is under 8¢/kWh unsubsidized, with the potential to hit 5¢/kWh.
+                Levelized cost (LCOS) under 8¢/kWh unsubsidized, with potential to hit 5¢/kWh.
               </p>
             </li>
           </ul>
@@ -88,16 +88,14 @@ class Home extends React.Component {
               </p>
               <p>Our technology maximizes height and weight to achieve 20x more energy density than other gravity-based energy storage solutions.
               </p>
-              <p>
-                <ul className="bullets meet-terrament-bullets">
-                  <li>
-                    More Height: 20x duration from a mile of height using proven drilling tech.
-                  </li>
-                  <li>
-                    More Weight: 10x power from our cable-free, shaft wall mounted rail design.
-                  </li>
-                </ul>
-              </p>
+              <ul className="bullets meet-terrament-bullets">
+                <li>
+                  More Height: 20x duration from a mile of height using proven drilling tech.
+                </li>
+                <li>
+                  More Weight: 10x power from our cable-free, shaft wall mounted rail design.
+                </li>
+              </ul>
 
               <p>
                 Terrament's gravity storage solution is low-risk: we don't depend on critical minerals, and we don't use any chemical batteries.
@@ -157,25 +155,46 @@ class Home extends React.Component {
               </h3>
 
               <p>
-                Terrament is based out of Newlab in Brooklyn, NY. We have been awarded two U.S. Patents, with further patents pending. We are grateful to receive pro bono legal support from <a
+                Terrament is based out of Newlab in Brooklyn, NY. We've been awarded two U.S. Patents, with further patents pending. We're grateful to have pro bono legal support from <a
                   href="https://foleyhoag.com" target="_blank" rel="noopener noreferrer"
                     >Foley Hoag LLP</a>
               </p>
               <ul className="energywerx-list">
                 <li>
-                  <img src="/partner-logos/doe-logo.png" alt="U.S. Department of Energy partner logo" />
+                  <a
+                    className="energywerx-list__logo-link"
+                    href="https://www.energy.gov/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img src="/partner-logos/doe-logo.png" alt="U.S. Department of Energy partner logo" />
+                  </a>
                   <span>We recently won U.S. federal grant funding to support outside research validation of our breakthrough technology. We won two <a
                   href="https://www.energy.gov/technologytransitions/articles/doe-announces-20-million-vouchers-support-over-170-organizations" target="_blank" rel="noopener noreferrer"
                     >EnergyWERX awards from the DOE</a> valued at around $300,000.
                   </span>
                 </li>
                 <li>
-                  <img src="/partner-logos/wcet-logo.png" alt="University of Washington Washington Clean Energy Testbeds partner logo" />
+                  <a
+                    className="energywerx-list__logo-link"
+                    href="https://www.wcet.washington.edu/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img src="/partner-logos/wcet-logo.png" alt="University of Washington Washington Clean Energy Testbeds partner logo" />
+                  </a>
                   <span>Our research partner <a href="https://www.wcet.washington.edu/" target="_blank" rel="noopener noreferrer">University of Washington, Washington Clean Energy Testbeds</a> developed and validated our techno-economic model to conclude that Terrament's lifetime cost (levelized cost, or LCOS) is under 8¢/kWh for a 1GWh facility, and approaches 5¢/kWh at larger scales. This is cheaper than any competitors in our target market.
                   </span>
                 </li>
                 <li>
-                  <img src="/partner-logos/lhp-engineering-logo.png" alt="LHP Engineering partner logo" />
+                  <a
+                    className="energywerx-list__logo-link"
+                    href="https://www.lhpes.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img src="/partner-logos/lhp-engineering-logo.png" alt="LHP Engineering partner logo" />
+                  </a>
                   <span>Our research partner <a href="https://www.lhpes.com/" target="_blank" rel="noopener noreferrer">LHP Engineering</a> conducted extensive mechanical/electrical modeling and physics simulations to conclude that Terrament's round trip efficiency (RTE) is over 80%. This is as good or better than any competitors in our target market.
                   </span>
                 </li>
@@ -230,7 +249,7 @@ class Home extends React.Component {
                 </li>
                 <li>
                   <a
-                    className="home-surface-card__logo-link"
+                    className="home-surface-card__logo-link home-surface-card__logo-link--cleantech"
                     href="https://www.cleantechopen.org/en/page/northeast-en"
                     target="_blank" rel="noopener noreferrer"
                   >

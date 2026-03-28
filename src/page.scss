@@ -16,14 +16,15 @@
   .header-logo,
   .nav-content {
     position: absolute;
-    // fixes annoying issue with chrome graphic optimization that makes the video sometimes hide the menu
-    backface-visibility: hidden;
     top: 0;
     left: 0;
   }
 
   .header-logo {
     z-index: 3;
+    // Chrome compositing workaround — keep scoped here; the same on `.nav-content` made `position:fixed`
+    // descendants (mobile drawer) size to the narrow hamburger column instead of the viewport.
+    backface-visibility: hidden;
 
     img {
       margin: $menu-margin-x * 1.6 $menu-margin-x;
@@ -39,6 +40,7 @@
   .nav-content {
     width: 100%;
     z-index: 4;
+    isolation: isolate;
     transition: box-shadow $transition-base, background-color $transition-base;
     background: rgba($color-white, 0.94);
     border-bottom: 1px solid rgba(0, 0, 0, 0.08);
@@ -76,17 +78,21 @@
 
   @media screen and (max-width: $screen-size-mobile) {
     .hamburger-menu {
-      .menu-btn:before,
-      .menu-btn:after {
-        background-color: $color-primary;
+      // Drawer sits on $color-primary — links and icons must stay white (override bar rule above).
+      .main-menu a {
+        color: $color-white;
       }
 
-      .menu-btn:before {
-        box-shadow: 0 10px 0 $color-primary;
-      }
+      // Green hamburger only on the light header control, not the in-drawer close (green-on-green).
+      .menu-wrap > .menu-toggle:not(.menu-close) {
+        .menu-btn:before,
+        .menu-btn:after {
+          background-color: $color-primary;
+        }
 
-      .menu-btn.btn-close:before {
-        box-shadow: 0 0 0 $color-primary;
+        .menu-btn:before {
+          box-shadow: 0 10px 0 $color-primary;
+        }
       }
     }
   }
@@ -220,7 +226,7 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
-      object-position: 35% 50%;
+      object-position: 15% 80%;
       filter: saturate(0.8) contrast(0.92);
     }
   }
@@ -275,7 +281,7 @@
         font-size: 3.25vw;
       }
     }
-
+    
     .footer img {
       height: $logo-size-footer * .75;
     }

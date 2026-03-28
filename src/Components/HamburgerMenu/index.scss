@@ -155,15 +155,20 @@ $background-color: $color-primary;
     */
     .main-menu {
       position: fixed;
-      top: 0;
-      height: 100vh;
+      inset: 0;
+      width: auto;
+      max-width: none;
+      height: auto;
+      min-height: 100vh;
+      min-height: 100dvh;
+      box-sizing: border-box;
       overflow-y: auto;
-      overflow-x: visible;
+      overflow-x: hidden;
       transition: transform 0.3s ease;
-      transform: translateX(100vw);
+      transform: translate3d(100%, 0, 0);
       z-index: 999;
       background: $background-color;
-      width: 100%;
+      padding-top: env(safe-area-inset-top, 0px);
     }
 
     .main-menu a {
@@ -194,6 +199,11 @@ $background-color: $color-primary;
       border-top: 1px solid rgba($color-white, 0.18);
     }
 
+    /* Desktop zeros last link’s right padding; restore inset so the Twitter mark isn’t clipped */
+    .main-menu li:last-child a {
+      padding-right: max(1rem, env(safe-area-inset-right, 0px));
+    }
+
     .main-menu a:hover,
     .main-menu a:focus,
     .main-menu .menu-close:hover,
@@ -218,7 +228,7 @@ $background-color: $color-primary;
     #main-menu-checkbox:checked ~ .menu-wrap .main-menu,
     .main-menu[aria-expanded="true"] {
       outline: none;
-      transform: translateX(0);
+      transform: translate3d(0, 0, 0);
     }
 
     #main-menu-checkbox:checked ~ .menu-wrap .menu-close,

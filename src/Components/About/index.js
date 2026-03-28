@@ -1,9 +1,8 @@
 import React from 'react';
 import SiteChrome from "../SiteChrome";
 import PartnerMarquee from '../PartnerMarquee';
+import InnerPageHero from '../InnerPageHero';
 import './index.scss';
-
-const innerPageHeroBanner = '/video-bg-end.jpg';
 
 class About extends React.Component {
   componentDidMount() {
@@ -13,17 +12,7 @@ class About extends React.Component {
   render() {
     return (
       <SiteChrome pageClassName="page-about">
-        <section
-          className="inner-page-hero"
-          aria-label="About our team"
-        >
-          <img
-            className="inner-page-hero__img"
-            src={innerPageHeroBanner}
-            alt=""
-            aria-hidden="true"
-          />
-        </section>
+        <InnerPageHero ariaLabel="About our team" />
 
         <div className="page-screen page-inner-shell">
           <div className="screen-content screen-content--band screen-content-below-fold">
@@ -36,35 +25,35 @@ class About extends React.Component {
               </p>
               <p>
                 We have been awarded two U.S. patents with one more pending. We are grateful to have been accepted into the following programs:
-                <ul className="bullets">
-                  <li>
-                    <a
-                    href="https://www.cebip.org/terrament"
-                    target="_blank" rel="noopener noreferrer"
-                    >CEBIP accelerator program</a> at Stony Brook University (since 2021).
-                  </li>
-
-                  <li>
-                    <a
-                    href="https://www.newlab.com/articles/founder-fellowship-2023"
-                    target="_blank" rel="noopener noreferrer"
-                    >Founder Fellowship cohort at Newlab</a> (in 2023, still active).
-                  </li>
-
-                  <li>
-                    <a
-                    href="https://www.plugandplaytechcenter.com/japan/"
-                    target="_blank" rel="noopener noreferrer"
-                    >Plug and Play Program</a> (Japan - Energy focus, in 2024).
-                  </li>
-                  <li>
-                    <a
-                    href="https://www.cleantechopen.org/en/page/northeast-en"
-                    target="_blank" rel="noopener noreferrer"
-                    >Clean Tech Open Program</a> (Northeast, in 2024).
-                  </li>
-                </ul>
               </p>
+              <ul className="bullets">
+                <li>
+                  <a
+                  href="https://www.cebip.org/terrament"
+                  target="_blank" rel="noopener noreferrer"
+                  >CEBIP accelerator program</a> at Stony Brook University (since 2021).
+                </li>
+
+                <li>
+                  <a
+                  href="https://www.newlab.com/articles/founder-fellowship-2023"
+                  target="_blank" rel="noopener noreferrer"
+                  >Founder Fellowship cohort at Newlab</a> (in 2023, still active).
+                </li>
+
+                <li>
+                  <a
+                  href="https://www.plugandplaytechcenter.com/japan/"
+                  target="_blank" rel="noopener noreferrer"
+                  >Plug and Play Program</a> (Japan - Energy focus, in 2024).
+                </li>
+                <li>
+                  <a
+                  href="https://www.cleantechopen.org/en/page/northeast-en"
+                  target="_blank" rel="noopener noreferrer"
+                  >Clean Tech Open Program</a> (Northeast, in 2024).
+                </li>
+              </ul>
             </div>
           </div>
 

@@ -1,7 +1,6 @@
 import React from 'react';
 import SiteChrome from "../SiteChrome";
-
-const innerPageHeroBanner = '/video-bg-end.jpg';
+import InnerPageHero from '../InnerPageHero';
 const videoVimeoSrc = 'https://player.vimeo.com/video/913860588?h=8ec504d4e6&autoplay=0&loop=1&title=0&byline=0&portrait=0';
 
 class HowItWorks extends React.Component {
@@ -12,14 +11,7 @@ class HowItWorks extends React.Component {
   render() {
     return (
       <SiteChrome pageClassName="page-howItWorks">
-        <section className="inner-page-hero" aria-label="How Terrament gravity storage works">
-          <img
-            className="inner-page-hero__img"
-            src={innerPageHeroBanner}
-            alt=""
-            aria-hidden="true"
-          />
-        </section>
+        <InnerPageHero ariaLabel="How Terrament gravity storage works" />
 
         <div className="page-screen page-inner-shell">
           <div
@@ -36,16 +28,14 @@ class HowItWorks extends React.Component {
               </p>
               <p>Our technology maximizes height and weight to achieve 20x more energy density than other gravity-based energy storage solutions.
               </p>
-              <p>
-                <ul className="bullets meet-terrament-bullets">
-                  <li>
-                    More Height: 20x duration from a mile of height using proven drilling tech.
-                  </li>
-                  <li>
-                    More Weight: 10x power from our cable-free, shaft wall mounted rail design.
-                  </li>
-                </ul>
-              </p>
+              <ul className="bullets meet-terrament-bullets">
+                <li>
+                  More Height: 20x duration from a mile of height using proven drilling tech.
+                </li>
+                <li>
+                  More Weight: 10x power from our cable-free, shaft wall mounted rail design.
+                </li>
+              </ul>
 
               <p>
                 Watch our video to learn how gravity storage supports our power grid.
