@@ -1,7 +1,22 @@
 import React from 'react';
 
-const siteRoot = 'https://www.terramenthq.com';
-const stagingSiteRoot = 'http://localhost:3000';
+function normalizeSiteRoot(url) {
+  if (!url || typeof url !== 'string') return '';
+  return url.trim().replace(/\/$/, '');
+}
+
+const defaultProdRoot = 'https://www.terramenthq.com';
+// SITE_ROOT: explicit override (any host). URL: set by Netlify to the site's primary URL.
+const siteRoot =
+  normalizeSiteRoot(process.env.SITE_ROOT) ||
+  normalizeSiteRoot(process.env.URL) ||
+  defaultProdRoot;
+
+const stagingSiteRoot = process.env.STAGING_SITE_ROOT
+  ? normalizeSiteRoot(process.env.STAGING_SITE_ROOT)
+  : process.env.SITE_ROOT || process.env.URL
+    ? siteRoot
+    : 'http://localhost:3000';
 
 // static.config.js
 export default {
