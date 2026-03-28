@@ -70,6 +70,9 @@ class HowItWorks extends React.Component {
                 </span>
               </div>
             </div>
+          </div>
+
+          <div className="screen-content screen-content--surface screen-content--green-dark">
             <div className="content-section">
               <h2 className="h2">
                 Why Long Duration Storage?
@@ -89,7 +92,7 @@ class HowItWorks extends React.Component {
             </div>
           </div>
 
-          <div className="screen-content screen-content--surface">
+          <div className="screen-content screen-content--green-light">
             <div className="content-section">
               <h2 className="h2">
                 Why Gravity Storage?

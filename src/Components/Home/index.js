@@ -70,7 +70,7 @@ class Home extends React.Component {
             <li className="home-stats__item">
               <p className="home-stats__value">&lt;8¢/kWh</p>
               <p className="home-stats__label">
-                Terrament&apos;s lifetime cost (levelized cost, or LCOS) is under 8¢/kWh for a 1GWh facility (unsubsidized), and approaches 5¢/kWh at larger scales.
+                Terrament&apos;s levelized cost (LCOS) is under 8¢/kWh unsubsidized, with the potential to hit 5¢/kWh.
               </p>
             </li>
           </ul>
@@ -130,6 +130,8 @@ class Home extends React.Component {
             </div>
           </div>
 
+          <PartnerMarquee />
+
           <div className="screen-content screen-content--band">
             <div className="content-section">
               <h3 className="h3">
@@ -148,9 +150,7 @@ class Home extends React.Component {
             </div>
           </div>
 
-          <PartnerMarquee />
-
-          <div className="screen-content screen-content--surface screen-content--green-light">
+          <div className="screen-content screen-content--surface screen-content--green-dark">
             <div className="content-section home-surface-card grant-funded">
               <h3 className="h3">
                 Grant-Funded Research Validation
@@ -181,9 +181,7 @@ class Home extends React.Component {
                 </li>
               </ul>
             </div>
-          </div>
 
-          <div className="screen-content screen-content--surface screen-content--green-dark">
             <div className="content-section home-surface-card accelerators-partners">
               <h3 className="h3">
                 Accelerators and Partners

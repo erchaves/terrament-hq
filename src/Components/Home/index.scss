@@ -1,4 +1,4 @@
-@import '../../shared-styles/variables.scss';
+@import '../../shared-styles/mixins.scss';
 
 // todo move this
 $fadeinMin: .3;
@@ -23,7 +23,7 @@ $fadeinTime: 3s;
   }
 
   .partner-marquee__viewport {
-    background: rgba($color-page-bg, 0.92);
+    background: mix($color-surface, $color-page-bg, 6%);
   }
 
   #pitch-deck {
@@ -41,7 +41,7 @@ $fadeinTime: 3s;
   }
 
   .page-screen > .screen-content.screen-content--band {
-    background: $color-page-bg;
+    @include section-light-atmosphere($color-page-bg);
     padding: $section-block-y $section-padding-x;
   }
 
@@ -53,21 +53,26 @@ $fadeinTime: 3s;
     padding: $section-block-y $section-padding-x;
   }
 
-  // Grant-funded research: green tint (padding from `.screen-content--surface`)
+  // Closing section (e.g. Stay in Touch): same shell as bands, no extra modifiers
+  .page-screen > .screen-content.screen-content--surface:last-child {
+    @include section-light-atmosphere($color-page-bg);
+  }
+
+  // Grant-funded research: mint shell (pairs with inner pages)
   .page-screen > .screen-content.screen-content--surface.screen-content--green-dark {
-    background: $color-primary;
-    border-bottom: 1px solid rgba($color-primary, 0.14);
+    @include section-primary-band;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   }
 
   .page-screen > .screen-content.screen-content--surface.screen-content--green-light {
-    background: $color-text-muted;
-    border-bottom: 1px solid rgba($color-primary, 0.14);
+    @include section-light-atmosphere($color-green-light);
+    border-bottom: 1px solid rgba($color-primary, 0.08);
   }
 
-  // Pitch deck: deck frame uses page-bg (not white); padding from `.screen-content--surface`
+  // Pitch deck: deep primary family (replaces slate $color-text-muted)
   .page-screen > .screen-content.screen-content--surface.screen-content--pitch-deck {
-    background: $color-text-muted;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    @include section-deep-band;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 
     .h3 {
       color: $color-white;
@@ -83,7 +88,12 @@ $fadeinTime: 3s;
   }
 
   .page-screen > .screen-content:not(:last-child) {
-    border-bottom: 1px solid $color-border;
+    border-bottom: 1px solid rgba($color-primary, 0.07);
+  }
+
+  .page-screen > .screen-content.screen-content--pitch-deck:not(:last-child),
+  .page-screen > .screen-content.screen-content--green-dark:not(:last-child) {
+    border-bottom-color: rgba(255, 255, 255, 0.09);
   }
 
   .page-screen > .screen-content .content-section {
@@ -94,6 +104,9 @@ $fadeinTime: 3s;
     margin-bottom: 0;
     border-bottom: none;
 
+    &.home-surface-card:not(:last-child) {
+      margin-bottom: 2.5rem;
+    }
     // Avoid double spacing with `.screen-content--surface`; elevated cards keep full inset padding.
     &:not(.home-surface-card) {
       padding-bottom: 0;
@@ -245,12 +258,12 @@ $fadeinTime: 3s;
   }
 
   .home-stats {
-    background: $color-page-bg;
-    border-bottom: 1px solid $color-border;
+    @include section-light-atmosphere($color-page-bg);
+    border-bottom: 1px solid rgba($color-primary, 0.07);
   }
 
   .home-stats__inner {
-    max-width: 60rem;
+    max-width: $prose-max-width;
     margin: 0 auto;
     padding: $space-10 $section-padding-x $space-10;
     display: grid;
@@ -383,6 +396,7 @@ $fadeinTime: 3s;
     border-radius: 1rem;
     padding: 1.75rem 1.5rem;
     box-shadow: $shadow-sm;
+    margin-bottom: 2.5rem;
 
     .h3 {
       font-size: clamp(1.5rem, 2.2vw, $font-size-h3);
