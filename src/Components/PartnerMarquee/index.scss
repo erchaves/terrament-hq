@@ -8,6 +8,14 @@
   box-sizing: border-box;
 }
 
+// Home / About: marquee sits directly under `.page-screen`, which has no horizontal padding — the
+// breakout above would widen the layout by ~2× section padding and trigger horizontal scroll.
+.page-screen > .partner-marquee {
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+
 .partner-marquee__viewport {
   overflow: hidden;
   width: 100%;
