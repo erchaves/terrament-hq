@@ -1,15 +1,12 @@
 @import '../../shared-styles/mixins.scss';
 
 .partner-marquee {
-  // Full-bleed inside padded band: cancel parent horizontal padding (see `.screen-content--band`).
   width: calc(100% + 2 * #{$section-padding-x});
   margin-left: -$section-padding-x;
   margin-right: -$section-padding-x;
   box-sizing: border-box;
 }
 
-// Home / About: marquee sits directly under `.page-screen`, which has no horizontal padding — the
-// breakout above would widen the layout by ~2× section padding and trigger horizontal scroll.
 .page-screen > .partner-marquee {
   width: 100%;
   margin-left: 0;
@@ -18,6 +15,8 @@
 
 .partner-marquee__viewport {
   overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: hidden;
   width: 100%;
   border-top: 1px solid rgba($color-primary, 0.07);
   border-bottom: 1px solid rgba($color-primary, 0.07);
@@ -30,34 +29,39 @@
   }
 }
 
-// Two groups + same gap as between logos; loop distance is set in JS (--partner-marquee-shift)
-// because translateX(-50%) is wrong when total width is 2W + gap between copies.
 .partner-marquee__track {
-  position: relative;
   display: flex;
+  flex-direction: row;
   flex-wrap: nowrap;
   align-items: center;
   width: max-content;
-  gap: $space-6;
-  animation: partner-marquee-scroll 52s linear infinite;
+  min-width: max-content;
   will-change: transform;
+  animation: partner-marquee-scroll 36s linear infinite;
 }
 
 .partner-marquee__group {
   display: flex;
+  flex-direction: row;
   flex-wrap: nowrap;
   align-items: center;
   gap: $space-6;
-  flex-shrink: 0;
+  padding-right: $space-6;
+  margin: 0;
+  list-style: none;
+  flex: 0 0 auto;
+}
+
+.partner-marquee__item {
+  display: flex;
+  align-items: center;
+  flex: 0 0 auto;
 }
 
 .partner-marquee__link {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  flex: 0 1 auto;
-  min-width: 0;
-  padding: 0;
   opacity: var(--partner-marquee-logo-opacity, 1);
   transition: opacity $transition-base;
 
@@ -78,12 +82,9 @@
 }
 
 .partner-marquee__dup {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  flex: 0 1 auto;
-  min-width: 0;
-  padding: 0;
   opacity: var(--partner-marquee-logo-opacity, 1);
   pointer-events: none;
 
@@ -94,44 +95,32 @@
     max-width: min(#{$partner-marquee-logo-max-width}, 42vw);
     max-height: calc(#{$partner-marquee-logo-max-height} * var(--partner-marquee-logo-scale, 1));
     object-fit: contain;
+    object-position: center;
     filter: grayscale(1);
-  }
-}
-
-@media (max-width: 48rem) {
-  .partner-marquee__track,
-  .partner-marquee__group {
-    gap: $space-4;
   }
 }
 
 @keyframes partner-marquee-scroll {
   from {
-    transform: translateX(0);
+    transform: translate3d(0, 0, 0);
   }
 
   to {
-    // Set by JS: first group width + flex gap (exact one period). Fallback only before measure.
-    transform: translateX(var(--partner-marquee-shift, -50%));
+    transform: translate3d(-50%, 0, 0);
   }
 }
 
+@media (max-width: 48rem) {
+  .partner-marquee__group {
+    gap: $space-4;
+    padding-right: $space-4;
+  }
+}
+
+// Keep the same infinite scroll (no scrollbars, both logo groups for a seamless loop).
+// When reduced motion is requested, only slow the animation — do not switch to overflow scroll.
 @media (prefers-reduced-motion: reduce) {
-  .partner-marquee__viewport {
-    padding-left: $section-padding-x;
-    padding-right: $section-padding-x;
-  }
-
   .partner-marquee__track {
-    animation: none;
-    width: 100%;
-    max-width: 100%;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: $space-6 $space-8;
-  }
-
-  .partner-marquee__dup {
-    display: none;
+    animation-duration: 50s;
   }
 }

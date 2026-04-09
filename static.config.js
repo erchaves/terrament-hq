@@ -23,7 +23,7 @@ export default {
   getSiteData: () => ({
     title: 'Terrament | Modular Underground Gravity Storage',
     siteRoot: siteRoot,
-    description: 'Terrament is a New York based clean-tech startup building a patented long-duration energy storage solution that reimagines gravity storage.',
+    description: 'Terrament is a clean-tech company building a patented long-duration energy storage solution that reimagines gravity storage.',
     imageUrl: `${siteRoot}/terrament-logo-2026.svg`,
     imageWideUrl: `${siteRoot}/terrament-logo-2026.svg`,
     type: 'website',

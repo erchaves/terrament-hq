@@ -15,49 +15,7 @@ class About extends React.Component {
         <InnerPageHero ariaLabel="About our team" />
 
         <div className="page-screen page-inner-shell">
-          <div className="screen-content screen-content--band screen-content-below-fold">
-            <div className="content-section">
-              <h2 className="h2">
-                About Our Team
-              </h2>
-               <p>
-                Terrament is a New York based clean-tech startup building a patented long-duration energy storage solution that reimagines gravity storage.
-              </p>
-              <p>
-                We have been awarded two U.S. patents with one more pending. We are grateful to have been accepted into the following programs:
-              </p>
-              <ul className="bullets">
-                <li>
-                  <a
-                  href="https://www.cebip.org/terrament"
-                  target="_blank" rel="noopener noreferrer"
-                  >CEBIP accelerator program</a> at Stony Brook University (since 2021).
-                </li>
-
-                <li>
-                  <a
-                  href="https://www.newlab.com/articles/founder-fellowship-2023"
-                  target="_blank" rel="noopener noreferrer"
-                  >Founder Fellowship cohort at Newlab</a> (in 2023, still active).
-                </li>
-
-                <li>
-                  <a
-                  href="https://www.plugandplaytechcenter.com/japan/"
-                  target="_blank" rel="noopener noreferrer"
-                  >Plug and Play Program</a> (Japan - Energy focus, in 2024).
-                </li>
-                <li>
-                  <a
-                  href="https://www.cleantechopen.org/en/page/northeast-en"
-                  target="_blank" rel="noopener noreferrer"
-                  >Clean Tech Open Program</a> (Northeast, in 2024).
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="screen-content screen-content--surface">
+          <div className="screen-content screen-content--surface screen-content--green-light">
             <div className="content-section">
               <h2 className="h2">
                 Terrament Team
@@ -95,6 +53,56 @@ class About extends React.Component {
             </div>
           </div>
 
+          <div className="screen-content screen-content--band">
+            <div className="content-section">
+              <h3 className="h3">
+                Intellectual Property
+              </h3>
+              <p>
+                With pro bono support from Foley Hoag LLP, Terrament has been awarded two U.S. patents for our Modular Underground Gravity Storage system. This protects our core architecture of rail-based, large-height, modular gravity storage in deep vertical shafts.
+              </p>
+              <p>
+                We also have a pending patent for our novel hoisting technology: Our Linear Drive Conveyance System (LDCS). This is a cable-free, track-based hoist which adapts the proven cycloidal drive principles into a linear format, enabling heavier loads and greater heights than any existing gravity storage approach.
+              </p>
+              <p>
+                All IP is wholly owned by Terrament, Inc., with freedom to operate confirmed.
+              </p>
+              <h3 className="h3">
+                Accelerator Programs
+              </h3>
+              <p>
+                We are grateful to have been accepted into the following programs:
+              </p>
+              <ul className="bullets">
+                <li>
+                  <a
+                    href="https://www.cebip.org/terrament"
+                    target="_blank" rel="noopener noreferrer"
+                  >CEBIP accelerator program</a> at Stony Brook University (since 2021).
+                </li>
+
+                <li>
+                  <a
+                    href="https://www.newlab.com/articles/founder-fellowship-2023"
+                    target="_blank" rel="noopener noreferrer"
+                  >Founder Fellowship cohort at Newlab</a> (in 2023, still active).
+                </li>
+
+                <li>
+                  <a
+                    href="https://www.plugandplaytechcenter.com/japan/"
+                    target="_blank" rel="noopener noreferrer"
+                  >Plug and Play Program</a> (Japan - Energy focus, in 2024).
+                </li>
+                <li>
+                  <a
+                    href="https://www.cleantechopen.org/en/page/northeast-en"
+                    target="_blank" rel="noopener noreferrer"
+                  >Clean Tech Open Program</a> (Northeast, in 2024).
+                </li>
+              </ul>
+            </div>
+          </div>
           <div className="screen-content screen-content--band">
             <div className="content-section">
               <h3 className="h3">
@@ -151,6 +159,7 @@ class About extends React.Component {
               </div>
             </div>
           </div>
+
           <PartnerMarquee />
         </div>
       </SiteChrome>

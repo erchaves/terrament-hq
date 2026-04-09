@@ -24,7 +24,7 @@ class HowItWorks extends React.Component {
               </h2>
 
               <p>
-                Terrament is a New York based clean-tech startup building a patented long-duration energy storage solution that reimagines gravity storage.
+                Terrament is a clean-tech company building a patented long-duration energy storage solution that reimagines gravity storage.
               </p>
               <p>Our technology maximizes height and weight to achieve 20x more energy density than other gravity-based energy storage solutions.
               </p>
@@ -62,7 +62,7 @@ class HowItWorks extends React.Component {
             </div>
           </div>
 
-          <div className="screen-content screen-content--surface screen-content--green-dark">
+          <div className="screen-content screen-content--surface screen-content--green-light">
             <div className="content-section">
               <h2 className="h2">
                 Why Long Duration Storage?
@@ -98,7 +98,28 @@ class HowItWorks extends React.Component {
               </p>
             </div>
           </div>
+
+          <div className="screen-content screen-content--green-light">
+            <div className="content-section" id="pitch-deck">
+              <h2 className="h2">
+                Terrament's Trillion Dollar Market Opportunity
+              </h2>
+              <div className="deck-embed">
+                <div className="media-wrap responsive-google-slides">
+                  <iframe
+                    src="https://docs.google.com/presentation/d/e/2PACX-1vQt5SE1m4VDN-bBcPQ5efZW7g-PE-0KEDKscu0r0D_1aCQTWqZyQBQfeiFJe5QyKA/pubembed?start=false&loop=false&delayms=10000"
+                    width={960}
+                    height={569}
+                    allowFullScreen={true}
+                    title="Terrament pitch deck"
+                  >
+                  </iframe>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+
       </SiteChrome>
     );
   }

@@ -1,14 +1,18 @@
 // core brand and neutrals
 $color-primary: #16312f;
 $color-white: #ffffff;
-$color-page-bg: #f5f7f6;
-$color-surface: #ffffff;
+$color-offwhite: #f5f7f6;
+$color-page-bg: $color-offwhite;
+$color-surface: $color-white;
 // Subtle mint band for highlighted inner-page sections (pairs with $color-primary)
 $color-green-light: $color-page-bg;
 // Deep section bands (pitch deck, etc.) — primary family, not slate gray
+$color-text: $color-primary;
+$color-primary-muted: #5a6a67;
+$color-text-muted: $color-primary-muted;
+
 $color-primary-deep: mix(#000000, $color-primary, 24%);
-$color-text: #243533;
-$color-text-muted: #5a6a67;
+$color-primary-muted-bg: mix(#bbbbbb, $color-primary-muted, 50%);
 $color-border: #d7dfdd;
 // Accent: restrained teal — investor / climate-tech, not generic SaaS blue
 $color-link: #2c6a9e;

@@ -58,24 +58,18 @@ $fadeinTime: 3s;
     @include section-light-atmosphere($color-page-bg);
   }
 
-  // Grant-funded research: mint shell (pairs with inner pages)
-  .page-screen > .screen-content.screen-content--surface.screen-content--green-dark {
-    @include section-primary-band;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-  }
-
   .page-screen > .screen-content.screen-content--surface.screen-content--green-light {
-    @include section-light-atmosphere($color-green-light);
+    @include section-light-atmosphere($color-page-bg);
     border-bottom: 1px solid rgba($color-primary, 0.08);
   }
 
   // Pitch deck: deep primary family (replaces slate $color-text-muted)
   .page-screen > .screen-content.screen-content--surface.screen-content--pitch-deck {
-    @include section-deep-band;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    @include section-light-atmosphere($color-page-bg);
+    border-bottom: 1px solid rgba($color-primary, 0.1);
 
     .h3 {
-      color: $color-white;
+      color: $color-offwhite;
     }
 
     .deck-embed {
@@ -91,9 +85,8 @@ $fadeinTime: 3s;
     border-bottom: 1px solid rgba($color-primary, 0.07);
   }
 
-  .page-screen > .screen-content.screen-content--pitch-deck:not(:last-child),
-  .page-screen > .screen-content.screen-content--green-dark:not(:last-child) {
-    border-bottom-color: rgba(255, 255, 255, 0.09);
+  .page-screen > .screen-content.screen-content--pitch-deck:not(:last-child) {
+    border-bottom-color: rgba($color-offwhite, 0.09);
   }
 
   .page-screen > .screen-content .content-section {
@@ -154,7 +147,7 @@ $fadeinTime: 3s;
     right: 6vw;
     bottom: 10vh;
     max-width: 54rem;
-    color: $color-white;
+    color: $color-offwhite;
   }
 
   // Single fluid scale for headline + subtitle (subtitle = 1em, title = em multiple of parent).
@@ -182,7 +175,7 @@ $fadeinTime: 3s;
     max-width: min(100%, 54ch);
     font-size: 1em;
     line-height: 1.45;
-    color: rgba(255, 255, 255, 0.95);
+    color: rgba($color-offwhite, 0.95);
   }
 
   // Mid-width viewports: slightly tighter column so lines don’t feel “stretched.”
@@ -219,49 +212,49 @@ $fadeinTime: 3s;
       box-shadow $transition-base;
 
     &:focus-visible {
-      outline: 2px solid rgba(255, 255, 255, 0.85);
+      outline: 2px solid rgba($color-offwhite, 0.85);
       outline-offset: 3px;
     }
   }
 
   // First-pass pairing: primary defaults light on the hero; hover inverts to brand fill.
   .home-hero-cta--primary {
-    background: $color-white;
+    background: $color-offwhite;
     color: $color-primary;
-    border: 1px solid rgba(255, 255, 255, 0.95);
+    border: 1px solid rgba($color-offwhite, 0.95);
     box-shadow:
       0 2px 14px rgba(0, 0, 0, 0.2),
-      inset 0 1px 0 rgba(255, 255, 255, 0.85);
+      inset 0 1px 0 rgba($color-offwhite, 0.85);
 
     &:hover {
       background: rgba($color-primary, 0.97);
-      color: $color-white;
-      border-color: rgba(255, 255, 255, 0.22);
+      color: $color-offwhite;
+      border-color: rgba($color-offwhite, 0.22);
       box-shadow:
         0 14px 44px rgba(0, 0, 0, 0.35),
-        0 0 0 1px rgba(255, 255, 255, 0.12),
-        inset 0 1px 0 rgba(255, 255, 255, 0.06);
+        0 0 0 1px rgba($color-offwhite, 0.12),
+        inset 0 1px 0 rgba($color-offwhite, 0.06);
     }
   }
 
   .home-hero-cta--ghost {
     background: transparent;
-    color: rgba(255, 255, 255, 0.95);
-    border: 1px solid rgba(255, 255, 255, 0.45);
+    color: rgba($color-offwhite, 0.95);
+    border: 1px solid rgba($color-offwhite, 0.45);
 
     &:hover {
-      background: rgba(255, 255, 255, 0.14);
-      color: $color-white;
-      border-color: rgba(255, 255, 255, 0.88);
+      background: rgba($color-offwhite, 0.14);
+      color: $color-offwhite;
+      border-color: rgba($color-offwhite, 0.88);
       box-shadow:
         0 10px 36px rgba(0, 0, 0, 0.22),
-        0 0 0 1px rgba(255, 255, 255, 0.28);
+        0 0 0 1px rgba($color-offwhite, 0.28);
     }
   }
 
   .home-stats {
     @include section-light-atmosphere($color-page-bg);
-    border-bottom: 1px solid rgba($color-primary, 0.07);
+    border-bottom: 1px solid rgba($color-primary, 0.1);
   }
 
   .home-stats__inner {
@@ -697,7 +690,7 @@ $fadeinTime: 3s;
       margin-top: $space-4;
     }
 
-    .page-screen > .screen-content.screen-content--green-dark {
+    .page-screen > .screen-content.screen-content--green-light {
       padding-left: clamp(1rem, 5vw, #{$section-padding-x});
       padding-right: clamp(1rem, 5vw, #{$section-padding-x});
     }
@@ -722,14 +715,16 @@ $fadeinTime: 3s;
           gap: $space-3;
         }
 
+        // Logo band spans the list column only — same horizontal inset as body copy (no card bleed).
         &__logo-link {
           float: none;
-          align-self: center;
+          align-self: stretch;
           flex: 0 0 auto;
-          width: 7.75rem;
-          max-width: 7.75rem;
+          width: 100%;
+          max-width: 100%;
           min-height: 5.25rem;
           height: auto;
+          border-radius: 0.5rem;
 
           img {
             max-height: 3.5rem;

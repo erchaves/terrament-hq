@@ -31,12 +31,12 @@ class Home extends React.Component {
             <div className="home-hero-text">
               <h1 className="home-hero-title">Terrament<br />Gravity Storage</h1>
               <p className="home-hero-subtitle">
-                Terrament is a New York based clean-tech startup building a patented long-duration energy storage solution that reimagines gravity storage.
+                Terrament is a clean-tech company building a patented long-duration energy storage solution that reimagines gravity storage.
               </p>
             </div>
             <div className="home-hero-actions" role="navigation" aria-label="Primary actions">
-              <a href="#pitch-deck" className="home-hero-cta home-hero-cta--primary">
-                View pitch deck
+              <a href="/howItWorks" className="home-hero-cta home-hero-cta--primary">
+                How it Works
               </a>
               <a
                 className="home-hero-cta home-hero-cta--ghost"
@@ -84,7 +84,7 @@ class Home extends React.Component {
               </h2>
 
               <p>
-                Terrament is a New York based clean-tech startup building a patented long-duration energy storage solution that reimagines gravity storage.
+                Terrament is a clean-tech company building a patented long-duration energy storage solution that reimagines gravity storage.
               </p>
               <p>Our technology maximizes height and weight to achieve 20x more energy density than other gravity-based energy storage solutions.
               </p>
@@ -106,30 +106,6 @@ class Home extends React.Component {
             </div>
           </div>
 
-          <div className="screen-content screen-content--surface screen-content--pitch-deck">
-            <div className="content-section" id="pitch-deck">
-              <h3 className="h3">
-                Terrament Pitch Deck
-              </h3>
-
-              <div className="deck-embed">
-                <div className="media-wrap responsive-google-slides">
-                  <iframe
-                    src="https://docs.google.com/presentation/d/e/2PACX-1vQt5SE1m4VDN-bBcPQ5efZW7g-PE-0KEDKscu0r0D_1aCQTWqZyQBQfeiFJe5QyKA/pubembed?start=false&loop=false&delayms=10000"
-                    frameBorder={0}
-                    width={960}
-                    height={569}
-                    allowFullScreen={true}
-                    title="Terrament pitch deck"
-                  >
-                  </iframe>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <PartnerMarquee />
-
           <div className="screen-content screen-content--band">
             <div className="content-section">
               <h3 className="h3">
@@ -148,7 +124,9 @@ class Home extends React.Component {
             </div>
           </div>
 
-          <div className="screen-content screen-content--surface screen-content--green-dark">
+          <PartnerMarquee />
+
+          <div className="screen-content screen-content--surface screen-content--green-light">
             <div className="content-section home-surface-card grant-funded">
               <h3 className="h3">
                 Grant-Funded Research Validation
@@ -157,7 +135,7 @@ class Home extends React.Component {
               <p>
                 Terrament is based out of Newlab in Brooklyn, NY. We've been awarded two U.S. Patents, with further patents pending. We're grateful to have pro bono legal support from <a
                   href="https://foleyhoag.com" target="_blank" rel="noopener noreferrer"
-                    >Foley Hoag LLP</a>
+                    >Foley Hoag LLP</a>.
               </p>
               <ul className="energywerx-list">
                 <li>

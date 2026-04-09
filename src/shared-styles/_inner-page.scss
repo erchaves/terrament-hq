@@ -64,33 +64,6 @@
     padding: $section-block-y $section-padding-x;
   }
 
-  // Matches Home `.page-screen … screen-content--green-dark` (primary band); not scoped to page-home only
-  > .screen-content.screen-content--surface.screen-content--green-dark {
-    @include section-primary-band;
-    padding: $section-block-y $section-padding-x;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-
-    .h2 {
-      color: $color-white;
-    }
-
-    p {
-      color: rgba(255, 255, 255, 0.92);
-    }
-
-    a {
-      color: rgba(255, 255, 255, 0.95);
-      text-decoration: underline;
-      text-decoration-color: rgba(255, 255, 255, 0.4);
-
-      &:hover,
-      &:focus-visible {
-        color: $color-white;
-        text-decoration-color: rgba(255, 255, 255, 0.85);
-      }
-    }
-  }
-
   > .screen-content.screen-content--green-light {
     @include section-light-atmosphere($color-green-light);
     padding: $section-block-y $section-padding-x;
@@ -98,10 +71,6 @@
 
   > .screen-content:not(:last-child) {
     border-bottom: 1px solid rgba($color-primary, 0.07);
-  }
-
-  > .screen-content.screen-content--surface.screen-content--green-dark:not(:last-child) {
-    border-bottom-color: rgba(255, 255, 255, 0.09);
   }
 
   > .screen-content .content-section {

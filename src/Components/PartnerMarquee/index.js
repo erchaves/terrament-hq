@@ -1,17 +1,13 @@
-import React, { useEffect, useLayoutEffect, useRef, useState } from 'react';
+import React from 'react';
 import './index.scss';
-
-// useLayoutEffect warns on SSR/static export; measurement only needed in the browser.
-const useIsomorphicLayoutEffect =
-  typeof window !== 'undefined' ? useLayoutEffect : useEffect;
 
 /**
  * @typedef {Object} PartnerMarqueeItem
  * @property {string} href
  * @property {string} src
  * @property {string} alt
- * @property {number} [heightPercent] — Percent of `$partner-marquee-logo-height` / `$partner-marquee-logo-max-height` (default 100). Lower for wide marks that read small.
- * @property {number} [opacity] — Visual weight from 0 to 1 (default 1). Values below 1 soften marks that read too dark or heavy vs. the strip.
+ * @property {number} [heightPercent]
+ * @property {number} [opacity]
  */
 
 /**
@@ -78,87 +74,54 @@ function logoItemStyle(item) {
   const style = {
     '--partner-marquee-logo-scale': String(scale),
   };
+
   if (item.opacity != null) {
-    const o = Math.max(0.2, Math.min(1, item.opacity));
-    style['--partner-marquee-logo-opacity'] = String(o);
+    const opacity = Math.max(0.2, Math.min(1, item.opacity));
+    style['--partner-marquee-logo-opacity'] = String(opacity);
   }
+
   return style;
 }
 
 /**
- * Distance to shift so the duplicate group lines up with the first (one full loop).
- * With flex gap between the two groups, translateX(-50%) is wrong (total width is 2W + gap).
- */
-function measureLoopShiftPx(firstGroupEl, secondGroupEl) {
-  if (!firstGroupEl || !secondGroupEl) return null;
-  const dx = secondGroupEl.offsetLeft - firstGroupEl.offsetLeft;
-  return dx > 0 ? -dx : null;
-}
-
-/**
- * Full-bleed horizontal logo strip: two identical groups + CSS var for exact loop distance.
+ * CSS-only infinite marquee: two identical groups, translate -50% on the track (see CodePen pattern).
  * @param {{ items?: PartnerMarqueeItem[], ariaLabel?: string }} props
  */
 function PartnerMarquee({ items = DEFAULT_PARTNER_LOGOS, ariaLabel = 'Partner logos' }) {
-  const trackRef = useRef(null);
-  const firstGroupRef = useRef(null);
-  const secondGroupRef = useRef(null);
-  const [loopShiftPx, setLoopShiftPx] = useState(null);
+  const renderItem = (item, duplicate = false) => {
+    const key = duplicate ? `dup-${item.src}` : item.src;
 
-  useIsomorphicLayoutEffect(() => {
-    const g1 = firstGroupRef.current;
-    const g2 = secondGroupRef.current;
-    const track = trackRef.current;
-    if (!g1 || !g2 || !track) return undefined;
-
-    const update = () => {
-      setLoopShiftPx(measureLoopShiftPx(g1, g2));
-    };
-
-    update();
-    const ro = new ResizeObserver(update);
-    ro.observe(g1);
-    ro.observe(g2);
-    ro.observe(track);
-    return () => ro.disconnect();
-  }, [items]);
-
-  const trackStyle =
-    loopShiftPx != null ? { '--partner-marquee-shift': `${loopShiftPx}px` } : undefined;
+    return (
+      <li className="partner-marquee__item" key={key}>
+        {duplicate ? (
+          <span className="partner-marquee__dup" style={logoItemStyle(item)}>
+            <img src={item.src} alt="" />
+          </span>
+        ) : (
+          <a
+            className="partner-marquee__link"
+            href={item.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            style={logoItemStyle(item)}
+          >
+            <img src={item.src} alt={item.alt} />
+          </a>
+        )}
+      </li>
+    );
+  };
 
   return (
     <div className="partner-marquee" role="region" aria-label={ariaLabel}>
       <div className="partner-marquee__viewport">
-        <div className="partner-marquee__track" ref={trackRef} style={trackStyle}>
-          <div className="partner-marquee__group" ref={firstGroupRef}>
-            {items.map((item) => (
-              <a
-                key={item.src}
-                className="partner-marquee__link"
-                href={item.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                style={logoItemStyle(item)}
-              >
-                <img src={item.src} alt={item.alt} />
-              </a>
-            ))}
-          </div>
-          <div
-            className="partner-marquee__group"
-            ref={secondGroupRef}
-            aria-hidden="true"
-          >
-            {items.map((item) => (
-              <span
-                key={`marquee-dup-${item.src}`}
-                className="partner-marquee__dup"
-                style={logoItemStyle(item)}
-              >
-                <img src={item.src} alt="" />
-              </span>
-            ))}
-          </div>
+        <div className="partner-marquee__track">
+          <ul className="partner-marquee__group">
+            {items.map((item) => renderItem(item))}
+          </ul>
+          <ul className="partner-marquee__group" aria-hidden="true">
+            {items.map((item) => renderItem(item, true))}
+          </ul>
         </div>
       </div>
     </div>
