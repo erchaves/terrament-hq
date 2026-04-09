@@ -5,7 +5,7 @@ import PartnerMarquee from '../PartnerMarquee';
 
 import './index.scss';
 
-const videoMp4Bg = 'terrament-promo-video-compressed.mp4';
+const videoMp4Bg = 'terrament-promo-video-no-text.mp4';
 
 class Home extends React.Component {
   componentDidMount() {
