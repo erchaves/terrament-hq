@@ -1,6 +1,5 @@
 import React from 'react';
 import SiteChrome from "../SiteChrome";
-import MailchimpForm from "../MailchimpForm";
 import PartnerMarquee from '../PartnerMarquee';
 
 import './index.scss';
@@ -31,7 +30,7 @@ class Home extends React.Component {
             <div className="home-hero-text">
               <h1 className="home-hero-title">Terrament<br />Gravity Storage</h1>
               <p className="home-hero-subtitle">
-                Terrament is a clean-tech company building a patented long-duration energy storage solution that reimagines gravity storage.
+                Breakthrough gravity storage in underutilized mines, solving the <br className="home-hero-subtitle__break" /> trillion dollar Long-duration energy storage market.
               </p>
             </div>
             <div className="home-hero-actions" role="navigation" aria-label="Primary actions">
@@ -40,11 +39,9 @@ class Home extends React.Component {
               </a>
               <a
                 className="home-hero-cta home-hero-cta--ghost"
-                href="mailto:hello@terramenthq.com?subject=Hello"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="/contact"
               >
-                Email us
+                Contact Us
               </a>
             </div>
           </div>
@@ -77,16 +74,16 @@ class Home extends React.Component {
         </section>
 
         <div className="page-screen">
-          <div className="screen-content screen-content--band screen-content-below-fold">
+          <div className="screen-content screen-content--band">
             <div className="content-section">
               <h2 className="h2">
                 Terrament Gravity Storage
               </h2>
-
               <p>
-                Terrament is a clean-tech company building a patented long-duration energy storage solution that reimagines gravity storage.
+                Terrament's patented technology reimagines gravity storage to achieve maximum height and weight.
               </p>
-              <p>Our technology maximizes height and weight to achieve 20x more energy density than other gravity-based energy storage solutions.
+              <p>
+                Our solution achieves 20x more energy density than other gravity-based energy storage solutions.
               </p>
               <ul className="bullets meet-terrament-bullets">
                 <li>
@@ -98,10 +95,8 @@ class Home extends React.Component {
               </ul>
 
               <p>
-                Terrament's gravity storage solution is low-risk: we don't depend on critical minerals, and we don't use any chemical batteries.
-              </p>
-              <p>
-                Our innovative system uses only well-established technologies: we leverage the same motor/generators used in wind turbines, and we use the same deep mine shafts which have been built by mining companies for over 50 years.
+                Our system is built on proven technology without science risk. We have no reliance on critical minerals or chemical batteries.
+                We leverage motor/generators developed for wind turbines, and mine shaft technology proven for 50 years.
               </p>
             </div>
           </div>
@@ -123,8 +118,6 @@ class Home extends React.Component {
               </p>
             </div>
           </div>
-
-          <PartnerMarquee />
 
           <div className="screen-content screen-content--surface screen-content--green-light">
             <div className="content-section home-surface-card grant-funded">
@@ -256,14 +249,7 @@ class Home extends React.Component {
             </div>
           </div>
 
-          <div className="screen-content screen-content--surface">
-            <div className="content-section">
-              <h3 className="h3">
-                Stay in Touch
-              </h3>
-              <MailchimpForm />
-            </div>
-          </div>
+          <PartnerMarquee />
         </div>
       </SiteChrome>
     );

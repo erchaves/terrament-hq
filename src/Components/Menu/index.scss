@@ -4,13 +4,20 @@
 $outline-color: #c8d4d1;
 $background-color: $color-primary;
 
-.hamburger-menu {
+.menu {
   .menu-ul {
     a {
       color: $color-white;
       cursor: pointer;
       line-height: $logo-size;
     }
+  }
+
+  svg.icon-linkedin {
+    width: 1.5em;
+    height: 1.5em;
+    fill: $color-white;
+    display: block;
   }
 
   .menu-li {
@@ -199,7 +206,7 @@ $background-color: $color-primary;
       border-top: 1px solid rgba($color-white, 0.18);
     }
 
-    /* Desktop zeros last link’s right padding; restore inset so the Twitter mark isn’t clipped */
+    /* Desktop zeros last link's right padding; restore inset so the LinkedIn mark isn't clipped */
     .main-menu li:last-child a {
       padding-right: max(1rem, env(safe-area-inset-right, 0px));
     }

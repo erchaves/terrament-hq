@@ -3,7 +3,7 @@ import { Link } from '@reach/router'
 import './index.scss';
 
 export default () => (
-  <div className="hamburger-menu">
+  <div className="menu">
     <input id="main-menu-checkbox" type="checkbox" />
     <div className="menu-wrap">
       <label htmlFor="main-menu-checkbox" className="menu-toggle">
@@ -24,18 +24,18 @@ export default () => (
           </li>
           <li className="menu-li">
             <Link to="/mission" >
-              Mission + Values
+              Our Mission
             </Link>
           </li>
           <li className="menu-li">
             <Link to="/about" >
-              Team
+              Company
             </Link>
           </li>
           <li className="menu-li">
-            <a href="https://twitter.com/terrament" target="_blank" rel="noopener noreferrer">
-              <span className="menu-item__icon icon-twitter"></span>
-            </a>
+            <Link to="/contact" >
+              Contact
+            </Link>
           </li>
         </ul>
       </nav>

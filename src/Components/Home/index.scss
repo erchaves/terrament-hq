@@ -45,7 +45,7 @@ $fadeinTime: 3s;
     padding: $section-block-y $section-padding-x;
   }
 
-  .page-screen > .screen-content.screen-content--band.screen-content-below-fold {
+  .page-screen > .screen-content:first-child {
     padding-top: calc(#{$space-10} + #{$section-block-y});
   }
 
@@ -165,7 +165,7 @@ $fadeinTime: 3s;
     line-height: 0.98;
     letter-spacing: 0.01em;
     // Max headline / max body (4.75 / 1.42); scales with .home-hero-text
-    font-size: 3.45em;
+    font-size: 3.14em;
     text-transform: uppercase;
   }
 
@@ -176,6 +176,14 @@ $fadeinTime: 3s;
     font-size: 1em;
     line-height: 1.45;
     color: rgba($color-offwhite, 0.95);
+  }
+
+  // Manual line break only meaningful on desktop; hidden below the shared mobile breakpoint
+  // so copy reflows naturally on narrow viewports.
+  .home-hero-subtitle__break {
+    @media screen and (max-width: 68rem) {
+      display: none;
+    }
   }
 
   // Mid-width viewports: slightly tighter column so lines don’t feel “stretched.”
@@ -559,7 +567,6 @@ $fadeinTime: 3s;
       .accelerators-partners__intro {
         margin: 0 0 0.75rem;
         max-width: 70ch;
-        color: $color-text-muted;
       }
 
       .accelerators-partners__list {
@@ -652,7 +659,7 @@ $fadeinTime: 3s;
       display: none;
     }
 
-    .page-screen > .screen-content.screen-content--band.screen-content-below-fold {
+    .page-screen > .screen-content:first-child {
       padding-top: calc(#{$space-8} + #{$space-6});
     }
 
@@ -683,7 +690,7 @@ $fadeinTime: 3s;
     }
 
     .home-hero-subtitle {
-      max-width: min(100%, 40ch);
+      max-width: min(100%, 44ch);
     }
 
     .home-hero-actions {

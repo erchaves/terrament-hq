@@ -53,6 +53,10 @@ export default {
       template: 'src/Components/Research',
     },
     {
+      path: 'contact',
+      template: 'src/Components/Contact',
+    },
+    {
       path: '404',
       template: 'src/Components/404',
     },

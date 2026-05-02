@@ -10,10 +10,10 @@ class Mission extends React.Component {
   render() {
     return (
       <SiteChrome pageClassName="page-mission">
-        <InnerPageHero ariaLabel="Mission" />
+        <InnerPageHero ariaLabel="Mission" title="Our Mission" />
 
-        <div className="page-screen page-inner-shell">
-          <div className="screen-content screen-content--band screen-content-below-fold">
+        <div className="page-screen">
+          <div className="screen-content screen-content--band">
             <div className="content-section">
               <h2 className="h2">
                 Mission Statement
