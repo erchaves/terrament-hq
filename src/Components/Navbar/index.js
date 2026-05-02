@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { Link } from '@reach/router'
-import HamburgerMenu from '../HamburgerMenu';
+import Menu from '../Menu';
 
 const Navbar = () => {
   useEffect(() => {
@@ -24,7 +24,7 @@ const Navbar = () => {
           <Link className="nav-logo" to="/">
             <img src="/terrament-logo-2026.svg" alt="Terrament logo" />
           </Link>
-          <HamburgerMenu />
+          <Menu />
         </div>
       </nav>
     </>

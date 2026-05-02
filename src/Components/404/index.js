@@ -4,7 +4,7 @@ import './index.scss';
 
 export default () => (
   <SiteChrome pageClassName="page-404">
-    <div className="page-screen page-inner-shell page-404__main">
+    <div className="page-screen page-404__main">
       <div className="screen-content screen-content--band">
         <div className="content-section page-404__content">
           <h1 className="h1">404</h1>

@@ -2,7 +2,7 @@
 
 .page-about {
   // Partner strip sits in its own band at page bottom; band padding supplies vertical rhythm.
-  .page-inner-shell > .screen-content--band:last-child .partner-marquee {
+  .page-screen > .screen-content--band:last-child .partner-marquee {
     margin-top: 0;
   }
 
@@ -14,6 +14,57 @@
     margin-right: -$flex-padding;
   }
 
+  .founder-name {
+    // margin-bottom: .1em !important;
+  }
+
+  .founder-title {
+    font-size: 1.25rem !important;
+    margin-bottom: $space-3;
+    font-weight: $font-weight-normal;
+    font-family: $font-family;
+  }
+
+  .team-intro {
+    margin-top: $space-4;
+  }
+
+  .founders-row {
+    display: flex;
+    gap: $space-8;
+    align-items: flex-start;
+  }
+
+  .founder-card {
+    flex: 1 1 0;
+    min-width: 0;
+
+    // Contain the float so card height includes all wrapped content.
+    &::after {
+      content: '';
+      display: table;
+      clear: both;
+    }
+
+    .profile-img-wrap {
+      float: left;
+      width: 9rem;
+      margin: 0 $space-4 0 0;
+      shape-outside: circle(50%);
+      shape-margin: 0.5rem;
+    }
+
+    .profile-img.crop-circle {
+      aspect-ratio: 1;
+      margin-bottom: 0;
+    }
+
+    p {
+      font-size: $font-size-sm;
+      line-height: $line-height-sm;
+    }
+  }
+
   .profile-wrap {
     width: 25%;
     box-sizing: border-box;
@@ -23,39 +74,6 @@
     p {
       font-size: $font-size-sm;
       line-height: $line-height-sm;
-    }
-
-    &.full-row {
-      width: 100%;
-      display: block;
-
-      // Contain float so the section height includes wrapped text below the image.
-      &::after {
-        content: '';
-        display: table;
-        clear: both;
-      }
-
-      .profile-img-wrap {
-        float: left;
-        width: 12rem;
-        max-width: 42%;
-        // No bottom margin: margin on a float extends its box downward and adds a dead band
-        // before wrapped text can return to full measure (see CSS2.1 float margin edges).
-        margin: 0 $space-8 0 0;
-        padding-right: 0;
-        box-sizing: border-box;
-      }
-
-      .profile-content-wrap {
-        padding-left: 0;
-        box-sizing: border-box;
-      }
-
-      .profile-img.crop-circle {
-        aspect-ratio: 1;
-        margin-bottom: 0;
-      }
     }
   }
 
@@ -79,7 +97,7 @@
 
   .profile-img {
     width: 100%;
-    margin-bottom: .25rem;
+    margin-bottom: 0;
 
     &.crop-circle {
       overflow: hidden;
@@ -89,24 +107,22 @@
   }
 
   @media screen and (max-width: $screen-size-mobile) {
+    .founders-row {
+      flex-direction: column;
+      gap: $space-6;
+    }
+
+    .founder-card {
+      .profile-img-wrap {
+        float: none;
+        width: 8rem;
+        margin: 0 auto $space-4;
+      }
+    }
+
     .profile-wrap {
       width: 50%;
       padding: $flex-padding;
-
-      &.full-row {
-        width: 100%;
-
-        .profile-img-wrap {
-          float: none;
-          width: 12rem;
-          max-width: 100%;
-          margin: 0 auto $space-6;
-        }
-
-        .profile-content-wrap {
-          padding: 0;
-        }
-      }
     }
   }
 }

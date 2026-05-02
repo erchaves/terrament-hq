@@ -12,41 +12,37 @@ class About extends React.Component {
   render() {
     return (
       <SiteChrome pageClassName="page-about">
-        <InnerPageHero ariaLabel="About our team" />
+        <InnerPageHero ariaLabel="About our team" title="Company" />
 
-        <div className="page-screen page-inner-shell">
+        <div className="page-screen">
           <div className="screen-content screen-content--surface screen-content--green-light">
             <div className="content-section">
               <h2 className="h2">
                 Terrament Team
               </h2>
+              {/* TODO: Replace with your intro copy */}
+              <p className="team-intro">
+                Terrament's founders bring a rare combination of underground mining engineering, energy project finance, legal and business expertise, and decades of hardware and technical product leadership.
+              </p>
             </div>
-            <div className="content-section">
-              <h3 className="h3">
-                Katie Gardner | Co-founder, CEO
-              </h3>
-              <div className="profile-wrap full-row">
-                <div className="profile-img-wrap">
-                  <img src="/team-profile-pics/kathryn-gardner.png" className="profile-img crop-circle" />
-                </div>
-                <div className="profile-content-wrap">
+            <div className="content-section founders-section">
+              <div className="founders-row">
+                <div className="founder-card">
+                  <h3 className="h3 founder-name">Katie Gardner <span className="founder-title">| Co-Founder, CEO</span></h3>
+                  <div className="profile-img-wrap">
+                    <img src="/team-profile-pics/kathryn-gardner.png" className="profile-img crop-circle" alt="Katie Gardner" />
+                  </div>
                   <p>
-                    Katie Gardner is a business and technical leader with a unique combination of mining, legal, and project finance experience. She served as Head of Product at Banyan Infrastructure, a ClimateTech SaaS platform specializing in sustainable infrastructure project finance, and she worked as an underground mine engineer at Newmont Mining Corporation's northern Nevada operations, with hands-on experience in deep shaft construction. Katie graduated from the Carey JD/MBA program at the University of Pennsylvania Law School and the Wharton School, and she holds a BS in Mining Engineering from the University of Kentucky. She is a professionally licensed mining engineer in the state of Nevada (ina) as well as a California Bar certified attorney. She brings the technical credibility and business acumen essential for scaling Terrament's underground gravity storage technology with her mining and legal experience.
+                    Katie Gardner is a business leader with deep technical roots. Her broad expertise spans mining engineering, infrastructure, and law. She worked underground as a mine engineer at Newmont's Twin Creeks operation in northern Nevada, then served as Head of Product at Banyan Infrastructure, a ClimateTech SaaS platform specializing in sustainable infrastructure project finance. She holds a JD from Penn Law, an MBA from Wharton, and a Professional Engineer license in mining.
                   </p>
                 </div>
-              </div>
-            </div>
-            <div className="content-section">
-              <h3 className="h3">
-                Eric Chaves | Founder, COO
-              </h3>
-              <div className="profile-wrap full-row">
-                <div className="profile-img-wrap">
-                  <img src="/team-profile-pics/eric-chaves.png" className="profile-img crop-circle" />
-                </div>
-                <div className="profile-content-wrap">
+                <div className="founder-card">
+                  <h3 className="h3 founder-name">Eric Chaves <span className="founder-title">| Founder, COO</span></h3>
+                  <div className="profile-img-wrap">
+                    <img src="/team-profile-pics/eric-chaves.png" className="profile-img crop-circle" alt="Eric Chaves" />
+                  </div>
                   <p>
-                    Eric Chaves is a technical entrepreneur with 20 years experience spanning Architecture, Industrial Design, and Software Engineering. He was the co-founder of Antenna, a media-tech startup that reached millions and achieved a successful exit, he was a Founder Fellow at Newlab, and he was a member of the CEBIP accelerator at Stony Brook University. He is the author of Terrament's assigned IP, including two awarded U.S. patents for <i>Modular Underground Gravity Storage</i> and a pending patent for our <i>Linear Drive Conveyance System</i>, a key enabler for gravity storage scale.
+                    Eric Chaves is a technical entrepreneur with 20 years of experience spanning architecture, industrial design, and software engineering. He co-founded Antenna, a media-tech startup that reached millions of users and achieved a successful exit. He was a Founder Fellow at Newlab and a member of the CEBIP accelerator at Stony Brook University. He is the inventor of Terrament's core technology and leads engineering, product, and operations as Founder and COO.
                   </p>
                 </div>
               </div>
@@ -55,18 +51,6 @@ class About extends React.Component {
 
           <div className="screen-content screen-content--band">
             <div className="content-section">
-              <h3 className="h3">
-                Intellectual Property
-              </h3>
-              <p>
-                With pro bono support from Foley Hoag LLP, Terrament has been awarded two U.S. patents for our Modular Underground Gravity Storage system. This protects our core architecture of rail-based, large-height, modular gravity storage in deep vertical shafts.
-              </p>
-              <p>
-                We also have a pending patent for our novel hoisting technology: Our Linear Drive Conveyance System (LDCS). This is a cable-free, track-based hoist which adapts the proven cycloidal drive principles into a linear format, enabling heavier loads and greater heights than any existing gravity storage approach.
-              </p>
-              <p>
-                All IP is wholly owned by Terrament, Inc., with freedom to operate confirmed.
-              </p>
               <h3 className="h3">
                 Accelerator Programs
               </h3>

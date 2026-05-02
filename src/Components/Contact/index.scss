@@ -1,0 +1,105 @@
+@import '../../shared-styles/variables.scss';
+
+.page-contact {
+  .contact-methods {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin-top: $space-6;
+  }
+
+  .contact-method {
+    display: inline-flex;
+    align-items: center;
+    gap: $space-2;
+    padding: $space-2 0;
+    border: none;
+    background: transparent;
+    text-decoration: none;
+    color: $color-text;
+    font-family: $font-family;
+    font-size: $font-size-sm;
+    width: fit-content;
+
+    &[href]:hover {
+      color: $color-link;
+      text-decoration: none;
+    }
+  }
+
+  .contact-method__partner-logo {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    width: 3.5rem;
+    justify-content: center;
+  }
+
+  .contact-method__action-icon {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contact-method__glyph {
+    font-size: 1.25rem;
+    padding: 0;
+    line-height: 1;
+    color: $color-primary-muted;
+  }
+
+  .contact-method__logo {
+    width: 100%;
+    height: auto;
+    display: block;
+    opacity: 0.6;
+  }
+
+  .contact-locations-intro {
+    margin-top: $space-4;
+    margin-bottom: 0;
+    color: $color-text-muted;
+    font-size: $font-size-sm;
+  }
+
+  .contact-method__address {
+    font-size: $font-size-sm-x;
+    color: $color-text-muted;
+    font-family: $font-family;
+  }
+
+  .contact-method--location {
+    cursor: default;
+    align-items: flex-start;
+    padding-left: 0;
+    gap: $space-4;
+
+    .contact-method__partner-logo {
+      margin-top: 3px;
+    }
+  }
+
+  .contact-location-photo {
+    float: right;
+    width: 32%;
+    margin: 0 0 $space-4 $space-6;
+    border-radius: 4px;
+    object-fit: cover;
+  }
+
+  .content-section:has(.contact-location-photo)::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+
+  @media screen and (max-width: $screen-size-mobile) {
+    .contact-location-photo {
+      float: none;
+      width: 100%;
+      margin: 0 0 $space-6 0;
+    }
+  }
+
+}

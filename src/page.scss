@@ -69,7 +69,7 @@
     }
   }
 
-  .hamburger-menu {
+  .menu {
     .menu-ul a,
     .main-menu a {
       color: $color-primary;
@@ -77,7 +77,7 @@
   }
 
   @media screen and (max-width: $screen-size-mobile) {
-    .hamburger-menu {
+    .menu {
       // Drawer sits on $color-primary — links and icons must stay white (override bar rule above).
       .main-menu a {
         color: $color-white;
@@ -166,17 +166,33 @@
     @include center-both();
   }
 
-  .footer-left {
-    // Footer left content styling can be added here if needed
-  }
 
   .footer-right {
     align-self: center;
     margin-right: $logo-size-footer;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+
+    // Override the generic footer-link padding for icon-only links in this zone
+    .footer-link {
+      padding: 0.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
 
     span {
       color: $color-white;
       font-size: $logo-size-footer * .9;
+      line-height: 1;
+    }
+
+    svg.icon-linkedin {
+      width: $logo-size-footer * .9;
+      height: $logo-size-footer * .9;
+      fill: $color-white;
+      display: block;
     }
   }
 
@@ -269,6 +285,7 @@
     margin-left: 1.25em;
     list-style: disc;
     margin-top: 0.5em;
+    margin-bottom: 0.5em;
   }
 
   .meet-terrament-bullets {

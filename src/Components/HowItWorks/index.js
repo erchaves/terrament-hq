@@ -11,11 +11,11 @@ class HowItWorks extends React.Component {
   render() {
     return (
       <SiteChrome pageClassName="page-howItWorks">
-        <InnerPageHero ariaLabel="How Terrament gravity storage works" />
+        <InnerPageHero ariaLabel="How Terrament gravity storage works" title="How it Works" />
 
-        <div className="page-screen page-inner-shell">
+        <div className="page-screen">
           <div
-            className="screen-content screen-content--band screen-content-below-fold"
+            className="screen-content screen-content--band"
             id="belowfold"
           >
             <div className="content-section">
@@ -65,13 +65,13 @@ class HowItWorks extends React.Component {
           <div className="screen-content screen-content--surface screen-content--green-light">
             <div className="content-section">
               <h2 className="h2">
-                Why Long Duration Storage?
+                Why Long-duration Storage?
               </h2>
               <p>
                 While lithium-ion batteries are good at providing shorter duration storage, longer duration storage technologies are needed to balance the grid in order to support the massive growth of energy required by AI data centers.
               </p>
               <p>
-                Read McKinsey's report on why Long Duration Energy Storage is growing exponentially and why LDES has a potential value creation of $1.3 trillion by 2040.
+                Read McKinsey's report on why long-duration energy storage is growing exponentially and why LDES has a potential value creation of $1.3 trillion by 2040.
               </p>
               <p>
                 <a

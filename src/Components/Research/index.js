@@ -12,8 +12,8 @@ class Research extends React.Component {
       <SiteChrome pageClassName="page-research">
         <InnerPageHero ariaLabel="Research and case studies" />
 
-        <div className="page-screen page-inner-shell">
-          <div className="screen-content screen-content--band screen-content-below-fold">
+        <div className="page-screen">
+          <div className="screen-content screen-content--band">
             <div className="content-section">
               <h2 className="h2">
                 Research and Case Studies
