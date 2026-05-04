@@ -52,44 +52,6 @@ class About extends React.Component {
           <div className="screen-content screen-content--band">
             <div className="content-section">
               <h3 className="h3">
-                Accelerator Programs
-              </h3>
-              <p>
-                We are grateful to have been accepted into the following programs:
-              </p>
-              <ul className="bullets">
-                <li>
-                  <a
-                    href="https://www.cebip.org/terrament"
-                    target="_blank" rel="noopener noreferrer"
-                  >CEBIP accelerator program</a> at Stony Brook University (since 2021).
-                </li>
-
-                <li>
-                  <a
-                    href="https://www.newlab.com/articles/founder-fellowship-2023"
-                    target="_blank" rel="noopener noreferrer"
-                  >Founder Fellowship cohort at Newlab</a> (in 2023, still active).
-                </li>
-
-                <li>
-                  <a
-                    href="https://www.plugandplaytechcenter.com/japan/"
-                    target="_blank" rel="noopener noreferrer"
-                  >Plug and Play Program</a> (Japan - Energy focus, in 2024).
-                </li>
-                <li>
-                  <a
-                    href="https://www.cleantechopen.org/en/page/northeast-en"
-                    target="_blank" rel="noopener noreferrer"
-                  >Clean Tech Open Program</a> (Northeast, in 2024).
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div className="screen-content screen-content--band">
-            <div className="content-section">
-              <h3 className="h3">
                 Advisory Support Team
               </h3>
               <h4 className="h4">
