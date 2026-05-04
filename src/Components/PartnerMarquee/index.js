@@ -88,12 +88,13 @@ function logoItemStyle(item) {
  * @param {{ items?: PartnerMarqueeItem[], ariaLabel?: string }} props
  */
 function PartnerMarquee({ items = DEFAULT_PARTNER_LOGOS, ariaLabel = 'Partner logos' }) {
-  const renderItem = (item, duplicate = false) => {
-    const key = duplicate ? `dup-${item.src}` : item.src;
+  // keySuffix='' → real linked item; any suffix → aria-hidden duplicate
+  const renderItem = (item, keySuffix = '') => {
+    const isDuplicate = keySuffix !== '';
 
     return (
-      <li className="partner-marquee__item" key={key}>
-        {duplicate ? (
+      <li className="partner-marquee__item" key={`${item.src}${keySuffix}`}>
+        {isDuplicate ? (
           <span className="partner-marquee__dup" style={logoItemStyle(item)}>
             <img src={item.src} alt="" />
           </span>
@@ -115,12 +116,20 @@ function PartnerMarquee({ items = DEFAULT_PARTNER_LOGOS, ariaLabel = 'Partner lo
   return (
     <div className="partner-marquee" role="region" aria-label={ariaLabel}>
       <div className="partner-marquee__viewport">
+        {/* Four identical groups so the track always overflows the viewport on any screen width.
+            The animation scrolls -25% (one group) before looping seamlessly. */}
         <div className="partner-marquee__track">
           <ul className="partner-marquee__group">
             {items.map((item) => renderItem(item))}
           </ul>
           <ul className="partner-marquee__group" aria-hidden="true">
-            {items.map((item) => renderItem(item, true))}
+            {items.map((item) => renderItem(item, '-dup1'))}
+          </ul>
+          <ul className="partner-marquee__group" aria-hidden="true">
+            {items.map((item) => renderItem(item, '-dup2'))}
+          </ul>
+          <ul className="partner-marquee__group" aria-hidden="true">
+            {items.map((item) => renderItem(item, '-dup3'))}
           </ul>
         </div>
       </div>
