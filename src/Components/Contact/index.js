@@ -38,11 +38,11 @@ class Contact extends React.Component {
               <div className="contact-methods">
                 <div className="contact-method contact-method--location">
                   <span className="contact-method__partner-logo" aria-hidden="true">
-                    <img src="/partner-logos/laci-logo.png" alt="LACI" className="contact-method__logo" />
+                    <img src="/partner-logos/la-accel-anon.png" alt="la-accel-anon" className="contact-method__logo" />
                   </span>
                   <span className="contact-method__label">
-                    <strong>Los Angeles</strong> — LACI<br />
-                    <span className="contact-method__address">525 S. Hewitt St, Los Angeles, CA 90013</span>
+                    <strong>Los Angeles</strong> — Coming Soon<br />
+                    <span className="contact-method__address">Coming soon, Los Angeles, CA</span>
                   </span>
                 </div>
                 <div className="contact-method contact-method--location">
