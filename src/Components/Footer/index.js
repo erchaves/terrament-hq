@@ -30,10 +30,11 @@ export default class Footer extends Component {
               </svg>
           </a>
           <a className="footer-link"
-              href="mailto:hello@terramenthq.com.com?subject=Hello"
+              href="mailto:hello@terramenthq.com?subject=Hello"
               target="_blank" rel="noopener noreferrer"
+              aria-label="Email Terrament"
             >
-              <span className="menu-item__icon icon-mail"></span>
+              <span className="menu-item__icon icon-mail" aria-hidden="true"></span>
           </a>
         </div>
       </div>

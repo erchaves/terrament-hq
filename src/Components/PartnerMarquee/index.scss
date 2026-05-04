@@ -106,7 +106,8 @@
   }
 
   to {
-    transform: translate3d(-50%, 0, 0);
+    // -25% = exactly one group width across four groups → seamless loop
+    transform: translate3d(-25%, 0, 0);
   }
 }
 

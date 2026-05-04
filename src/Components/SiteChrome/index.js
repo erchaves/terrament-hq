@@ -8,8 +8,11 @@ import Footer from '../Footer';
  */
 const SiteChrome = ({ pageClassName, children }) => (
   <div className={`page ${pageClassName}`}>
+    <a href="#main-content" className="skip-link">Skip to main content</a>
     <Navbar />
-    {children}
+    <main id="main-content">
+      {children}
+    </main>
     <Footer />
   </div>
 );

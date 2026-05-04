@@ -50,8 +50,6 @@ class HowItWorks extends React.Component {
                     title="Terrament Gravity Storage Concept">
                   </iframe>
                 </div>
-                <script src="https://player.vimeo.com/api/player.js"></script>
-
                 <span className="caption">
                   How Terrament's Gravity Storage works (video by <a
                   href="https://www.machinemythology.com/"

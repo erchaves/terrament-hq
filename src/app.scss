@@ -5,6 +5,54 @@
 @import './shared-styles/fontello/css/fontello.css';
 @import './page.scss';
 
+// Visually hidden but available to screen readers.
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+// Skip-to-content link: hidden until focused by keyboard.
+.skip-link {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+
+  &:focus {
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    z-index: 10000;
+    width: auto;
+    height: auto;
+    padding: 0.75rem 1.25rem;
+    margin: 0;
+    overflow: visible;
+    clip: auto;
+    white-space: normal;
+    background: $color-primary;
+    color: $color-white;
+    border-radius: 0.25rem;
+    font-family: $font-family;
+    font-size: $font-size-sm;
+    text-decoration: none;
+    outline: 3px solid $color-white;
+    outline-offset: 2px;
+  }
+}
+
 html,
 body {
   font-size: $font-size-sm;
