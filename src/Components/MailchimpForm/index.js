@@ -19,8 +19,7 @@ const MailchimpForm = () => (
             </div>
           </div>
           <div className="mc-field-group field-group-email">
-            <label htmlFor="mce-EMAIL">Email Address  <span className="asterisk">*</span>
-            </label>
+            <label htmlFor="mce-EMAIL">Email Address</label>
             <div className="indicates-required"><span className="asterisk">*</span> required</div>
             <input type="email" defaultValue="" name="EMAIL" className="required email" id="mce-EMAIL" />
           </div>
@@ -30,7 +29,7 @@ const MailchimpForm = () => (
           </div>
           {/* Honeypot field — do not remove; prevents bot signups */}
           <div style={{"position":"absolute","left":"-5000px"}} aria-hidden="true"><input type="text" name="b_a601fde40fc75bf8b19ced729_7f2d982d5d" tabIndex={-1} defaultValue="" /></div>
-          <div className="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" className="button" /></div>
+          <div className="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" className="button subscribe-button" /></div>
         </div>
       </form>
     </div>

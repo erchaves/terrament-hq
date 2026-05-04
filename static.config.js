@@ -113,8 +113,14 @@ export default {
           <meta charSet="UTF-8"/>
           <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
-          <link rel="icon" href="/favicon.ico" />
-          <link rel="icon" href="/terrament-logo-2026.svg" type="image/svg+xml" />
+          <link rel="icon" href="/favicon/favicon.ico" />
+          <link rel="icon" href="/favicon/terrament-logo-favicon.svg" type="image/svg+xml" />
+          <link rel="icon" href="/favicon/favicon-16x16.png" sizes="16x16" type="image/png" />
+          <link rel="icon" href="/favicon/favicon-32x32.png" sizes="32x32" type="image/png" />
+          <link rel="icon" href="/favicon/android-chrome-192x192.png" sizes="192x192" type="image/png" />
+          <link rel="icon" href="/favicon/android-chrome-512x512.png" sizes="512x512" type="image/png" />
+          <link rel="apple-touch-icon" href="/favicon/apple-touch-icon.png" />
+          <link rel="manifest" href="/favicon/site.webmanifest" />
 
           {/* Preload only woff2 — all modern browsers support it; woff is a fallback loaded by @font-face only when needed. */}
           <link rel="preload" as="font" href="/fonts/Matter-Regular.woff2" type="font/woff2" crossOrigin="anonymous"/>
