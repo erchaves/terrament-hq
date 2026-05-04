@@ -1,0 +1,24 @@
+---
+description: Visual system standards for established brand feel
+alwaysApply: true
+---
+
+# Established Brand Design System
+
+- Optimize for an established, credible, industrial-tech brand expression.
+- Prefer clean editorial layouts with strong hierarchy and disciplined whitespace.
+- Use restrained color contrast and avoid overly saturated accents.
+- Keep typography calm and legible; avoid novelty display styles.
+- Maintain consistency in paddings, heading rhythm, and section spacing across pages.
+
+## Visual Quality Checks
+
+- Navigation and footer must feel consistent with the same design language.
+- Hero and media sections should feel premium through crop, framing, and contrast control.
+- Embedded media should sit in intentional containers with consistent spacing.
+- Logo grids and partner marks must align cleanly with balanced visual weight.
+
+## Motion
+
+- Use minimal transitions (roughly 150ms to 250ms) for hover/focus/state changes.
+- Avoid decorative animations unless they support comprehension.

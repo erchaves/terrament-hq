@@ -1,0 +1,22 @@
+---
+description: Guardrails for website refresh work
+alwaysApply: true
+---
+
+# Website Refresh Guardrails
+
+- Do not change website copy, claims, names, dates, or links unless explicitly asked.
+- Prioritize visual polish through layout, spacing, typography, color, imagery, and component styling.
+- Preserve existing page structure and information hierarchy unless explicitly asked to restructure.
+- Keep interactions restrained: no flashy motion, no parallax-heavy effects, no attention-grabbing loops.
+- Favor subtle transitions only when they improve clarity.
+
+## Content Safety
+
+- Treat all text content as locked by default.
+- If an edit requires text adjustment for technical reasons, pause and ask first.
+
+## Delivery Style
+
+- Make focused, reversible changes.
+- Prefer shared style/token updates over one-off component hacks.

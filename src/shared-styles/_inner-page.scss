@@ -1,0 +1,138 @@
+@import './mixins.scss';
+
+// Inner-page hero: section shell + `.inner-page-hero__bg` layer (markup: `Components/InnerPageHero`).
+.inner-page-hero {
+  position: relative;
+  height: 46vh;
+  min-height: 18rem;
+  max-height: 36rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+.inner-page-hero__label {
+  position: absolute;
+  bottom: $space-6;
+  left: 0;
+  right: 0;
+  // Mirror the section band's horizontal padding so the text left-edge aligns
+  // with the content-section text at all viewport widths.
+  padding: 0 $section-padding-x;
+}
+
+.inner-page-hero__label-inner {
+  // Mirror .content-section: center within max-prose-width, left-align text inside.
+  max-width: $prose-max-width;
+  margin: 0 auto;
+}
+
+.inner-page-hero__title {
+  font-family: $font-family-bold;
+  font-size: $font-size-sm-x;
+  font-weight: $font-weight-bold;
+  letter-spacing: $letter-spacing-small-text;
+  text-transform: uppercase;
+  color: rgba($color-white, 0.82);
+  margin: 0;
+  line-height: 1;
+}
+
+@media screen and (max-width: $screen-size-mobile) {
+  .inner-page-hero__label {
+    bottom: $space-4;
+  }
+}
+
+.inner-page-hero__bg {
+  position: absolute;
+  inset: 0;
+  background-image: url('/video-bg-end.jpg');
+  background-position: 80% 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: saturate(0.8) contrast(0.92);
+}
+
+@media screen and (max-width: $screen-size-mobile) {
+  .inner-page-hero {
+    height: 20vh;
+  }
+  .inner-page-hero__bg {
+    margin-top: 4rem;
+    background-position: 80% 0%;
+    background-image: url('/video-bg-mobile.jpg');
+  }
+}
+
+.page-about,
+.page-mission,
+.page-howItWorks,
+.page-research,
+.page-contact,
+.page-404 {
+  .footer {
+    margin-top: 0;
+  }
+
+  .page-screen {
+    position: relative;
+    min-height: 0;
+
+    > .screen-content {
+      max-width: none;
+      margin-left: 0;
+      margin-right: 0;
+      width: 100%;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    > .screen-content.screen-content--band {
+      @include section-light-atmosphere($color-page-bg);
+      padding: $section-block-y $section-padding-x;
+    }
+
+    > .screen-content.screen-content--surface {
+      background: $color-surface;
+      padding: $section-block-y $section-padding-x;
+    }
+
+    > .screen-content.screen-content--green-light {
+      @include section-light-atmosphere($color-green-light);
+      padding: $section-block-y $section-padding-x;
+    }
+
+    > .screen-content:first-child {
+      padding-top: calc(#{$space-10} + #{$section-block-y});
+    }
+
+    > .screen-content:not(:last-child) {
+      border-bottom: 1px solid rgba($color-primary, 0.07);
+    }
+
+    > .screen-content .content-section {
+      max-width: $prose-max-width;
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+      margin-bottom: 0;
+      padding-bottom: 0;
+      border-bottom: none;
+    }
+
+    > .screen-content .content-section:not(:last-child) {
+      margin-bottom: $space-10;
+    }
+
+    > .screen-content.screen-content--surface .content-section:last-child,
+    > .screen-content.screen-content--green-light .content-section:last-child {
+      margin-bottom: 0;
+    }
+
+    @media screen and (max-width: $screen-size-mobile) {
+      > .screen-content:first-child {
+        padding-top: calc(#{$space-8} + #{$space-6});
+      }
+    }
+  }
+}

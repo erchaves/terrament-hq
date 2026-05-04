@@ -1,14 +1,6 @@
 import React from 'react';
-import Navbar from "../Navbar";
-import VideoComp from "../VideoComp";
-import Footer from "../Footer";
-import { Link } from '@reach/router'
-
-import './index.scss';
-
-const videoBgShort = '/video-bg-short.jpg';
-const videoMp4Bg = 'homepage-bg-uphs.mp4';
-const videoPosterBg = 'homepage-bg.jpg';
+import SiteChrome from "../SiteChrome";
+import InnerPageHero from '../InnerPageHero';
 
 class Research extends React.Component {
   componentDidMount() {
@@ -17,15 +9,11 @@ class Research extends React.Component {
 
   render() {
     return (
-      <div className={`page page-research`}>
-        <Navbar/>
+      <SiteChrome pageClassName="page-research">
+        <InnerPageHero ariaLabel="Research and case studies" />
 
         <div className="page-screen">
-          <div className="screen-content screen-content-above-fold-short">
-            <img className="img-background"
-              src={videoBgShort} alt="Terrament energy storage background image" />
-          </div>
-          <div className="screen-content screen-content-below-fold">
+          <div className="screen-content screen-content--band">
             <div className="content-section">
               <h2 className="h2">
                 Research and Case Studies
@@ -48,9 +36,7 @@ class Research extends React.Component {
             </div>
           </div>
         </div>
-
-        <Footer />
-      </div>
+      </SiteChrome>
     );
   }
 }

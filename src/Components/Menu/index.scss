@@ -1,0 +1,254 @@
+@import '../../shared-styles/variables.scss';
+@import '../../shared-styles/mixins.scss';
+
+$outline-color: #c8d4d1;
+$background-color: $color-primary;
+
+.menu {
+  .menu-ul {
+    a {
+      color: $color-white;
+      cursor: pointer;
+      line-height: $logo-size;
+    }
+  }
+
+  svg.icon-linkedin {
+    width: 1.5em;
+    height: 1.5em;
+    fill: $color-white;
+    display: block;
+  }
+
+  .menu-li {
+    display: inline-block;
+    font-size: $font-size-md;
+    margin: 0 .8rem;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  #main-menu-checkbox {
+    top: 0;
+    right: 0;
+    position: absolute;
+    /* get it off the screen */
+    transform: translateX(-100vw);
+  }
+
+  .main-menu {
+    position: relative;
+    top: 0;
+  }
+
+  .menu-wrap {
+    display: flex;
+    align-items: baseline;
+  }
+
+  .menu-ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    align-items: center;
+  }
+
+  .main-menu a,
+  .main-menu .menu-close {
+    right: 0;
+  }
+
+  .main-menu a {
+    padding: 0.95rem 0.85rem;
+    line-height: 1em;
+    color: $color-white;
+    text-decoration: none;
+    outline: none;
+  }
+
+  .menu-toggle,
+  .main-menu .menu-close,
+  #main-menu-checkbox {
+    display: none;
+  }
+
+  .main-menu {
+    position: static;
+    display: flex;
+    right: auto;
+  }
+
+  .main-menu li {
+    display: flex;
+    padding: 0;
+  }
+
+  .main-menu li:first-child a {
+    padding-left: 0.2rem;
+  }
+
+  .main-menu li:last-child a {
+    padding-right: 0;
+  }
+
+  @media screen and (max-width: $screen-size-mobile) {
+    /* Screen reader only */
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0,0,0,0);
+      border: 0;
+    }
+
+    .menu-toggle,
+    .main-menu .menu-close,
+    #main-menu-checkbox {
+      display: block;
+    }
+
+    /* Button styling */
+    .menu-toggle {
+      cursor: pointer;
+      height: 2em;
+      width: 2em;
+      margin: $logo-size * .25;
+      right: 0;
+      top: 0;
+      position: absolute;
+      outline: none;
+    }
+    .menu-btn {
+      position: relative;
+      display: block;
+      left: 50%;
+      top: 50%;
+      width: 36px;
+      transform: translate(-50%,-50%);
+    }
+
+    .menu-btn:before,
+    .menu-btn:after {
+      background-color: $color-white;
+      content: '';
+      display: block;
+      height: 4px;
+      transition: all 200ms ease-in-out;
+    }
+    .menu-btn:before {
+      box-shadow: 0 10px 0 $color-white;
+      margin-bottom: 16px;
+    }
+    .menu-btn.btn-close:before {
+      box-shadow: 0 0 0 $color-white;
+      transform: translateY(10px) rotate(45deg);
+    }
+    .menu-btn.btn-close:after{
+      transform: translateY(-10px) rotate(-45deg);
+    }
+    .menu-toggle:hover,
+    #main-menu-checkbox:focus ~ .menu-wrap .menu-toggle {
+      color: $outline-color;
+      outline: 2px solid $outline-color;
+    }
+
+    /*
+     Default styles + Mobile first
+     Offscreen menu style
+    */
+    .main-menu {
+      position: fixed;
+      inset: 0;
+      width: auto;
+      max-width: none;
+      height: auto;
+      min-height: 100vh;
+      min-height: 100dvh;
+      box-sizing: border-box;
+      overflow-y: auto;
+      overflow-x: hidden;
+      transition: transform 0.3s ease;
+      transform: translate3d(100%, 0, 0);
+      z-index: 999;
+      background: $background-color;
+      padding-top: env(safe-area-inset-top, 0px);
+    }
+
+    .main-menu a {
+      width: 100%;
+      border-bottom: 1px solid rgba($color-white, 0.18);
+      color: $color-white;
+    }
+
+    .main-menu ul {
+      margin: 0;
+      padding-top: $logo-size;
+      // top: $menu-margin-x;
+      list-style: none;
+      text-align: right;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+
+    .main-menu li {
+      margin: 0;
+      display: flex;
+      width: 100%;
+      justify-content: flex-end;
+    }
+
+    .main-menu li:first-child a {
+      border-top: 1px solid rgba($color-white, 0.18);
+    }
+
+    /* Desktop zeros last link's right padding; restore inset so the LinkedIn mark isn't clipped */
+    .main-menu li:last-child a {
+      padding-right: max(1rem, env(safe-area-inset-right, 0px));
+    }
+
+    .main-menu a:hover,
+    .main-menu a:focus,
+    .main-menu .menu-close:hover,
+    #main-menu-checkbox:focus ~ .menu-wrap .menu-close {
+      background: #333;
+      text-decoration: underline;
+    }
+
+    .main-menu .menu-close {
+      position: absolute;
+      top: 0;
+      cursor: pointer;
+    }
+
+    /*
+     On small devices, allow it to toggle...
+    */
+    /*
+     :target for non-JavaScript
+     aria-expanded="true/false" will be for JavaScript
+    */
+    #main-menu-checkbox:checked ~ .menu-wrap .main-menu,
+    .main-menu[aria-expanded="true"] {
+      outline: none;
+      transform: translate3d(0, 0, 0);
+    }
+
+    #main-menu-checkbox:checked ~ .menu-wrap .menu-close,
+    .main-menu[aria-expanded="true"] .menu-close {
+      z-index: 1001;
+    }
+
+    #main-menu-checkbox:checked ~ .menu-wrap .main-menu ul,
+    .main-menu[aria-expanded="true"] ul {
+      position: relative;
+      width: 100%;
+      left: 0;
+      z-index: 1000;
+    }
+  }
+}

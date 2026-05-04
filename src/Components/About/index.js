@@ -1,11 +1,8 @@
 import React from 'react';
-import Navbar from "../Navbar";
-import Footer from "../Footer";
-import { Link } from '@reach/router'
-import MailchimpForm from "../MailchimpForm";
+import SiteChrome from "../SiteChrome";
+import PartnerMarquee from '../PartnerMarquee';
+import InnerPageHero from '../InnerPageHero';
 import './index.scss';
-
-const videoBgShort = '/video-bg-short.jpg';
 
 class About extends React.Component {
   componentDidMount() {
@@ -14,124 +11,45 @@ class About extends React.Component {
 
   render() {
     return (
-      <div className={`page page-about`}>
-        <Navbar/>
+      <SiteChrome pageClassName="page-about">
+        <InnerPageHero ariaLabel="About our team" title="Company" />
 
         <div className="page-screen">
-          <div className="screen-content screen-content-above-fold-short">
-            <img className="img-background"
-              src={videoBgShort} alt="Terrament energy storage background image" />
-          </div>
-          <div className="screen-content screen-content-below-fold">
-            <div className="content-section">
-              <h2 className="h2">
-                About Our Team
-              </h2>
-               <p>
-                Terrament is a New York based clean-tech startup building a patented long-duration energy storage solution that reimagines gravity storage.
-              </p>
-              <p>
-                We have been awarded two U.S. patents with one more pending. We are grateful to have been accepted into the following programs:
-                <ul className="bullets">
-                  <li>
-                    <a
-                    href="https://www.cebip.org/terrament"
-                    target="_blank" rel="noopener noreferrer"
-                    >CEBIP accelerator program</a> at Stony Brook University (since 2021).
-                  </li>
-
-                  <li>
-                    <a
-                    href="https://www.newlab.com/articles/founder-fellowship-2023"
-                    target="_blank" rel="noopener noreferrer"
-                    >Founder Fellowship cohort at Newlab</a> (in 2023, still active).
-                  </li>
-
-                  <li>
-                    <a
-                    href="https://www.plugandplaytechcenter.com/japan/"
-                    target="_blank" rel="noopener noreferrer"
-                    >Plug and Play Program</a> (Japan - Energy focus, in 2024).
-                  </li>
-                  <li>
-                    <a
-                    href="https://www.cleantechopen.org/en/page/northeast-en"
-                    target="_blank" rel="noopener noreferrer"
-                    >Clean Tech Open Program</a> (Northeast, in 2024).
-                  </li>
-                </ul>
-              </p>
-              <p className="brand-logo-section">
-                <a className="brand-logo"
-                  href="https://www.cebip.org/terrament"
-                  target="_blank" rel="noopener noreferrer"
-                >
-                  <img src="/cebip-logo.png" alt="CEBIP logo" />
-                </a>
-
-                <a className="brand-logo"
-                  href="https://www.cleantechopen.org/en/page/northeast-en"
-                  target="_blank" rel="noopener noreferrer"
-                >
-                  <img src="/clean-tech-open-logo.png" alt="Cleantech Open Logo" />
-                </a>
-              </p>
-              <p className="brand-logo-section row-2">
-                <a className="brand-logo"
-                  href="https://www.newlab.com"
-                  target="_blank" rel="noopener noreferrer"
-                >
-                  <img src="/newlab-logo.svg" alt="NEWLAB logo" />
-                </a>
-               <a className="brand-logo"
-                  href="https://www.plugandplaytechcenter.com/japan/"
-                  target="_blank" rel="noopener noreferrer"
-                >
-                  <img src="/plug-and-play-logo-blue.png" alt="Plug and Play logo" />
-                </a>
-              </p>
-
-            </div>
+          <div className="screen-content screen-content--surface screen-content--green-light">
             <div className="content-section">
               <h2 className="h2">
                 Terrament Team
               </h2>
+              {/* TODO: Replace with your intro copy */}
+              <p className="team-intro">
+                Terrament's founders bring a rare combination of underground mining engineering, energy project finance, legal and business expertise, and decades of hardware and technical product leadership.
+              </p>
             </div>
-            <div className="content-section">
-              <h3 className="h3">
-                Katie Gardner | Co-founder, CEO
-              </h3>
-              <div className="profile-row">
-                <div className="profile-wrap full-row">
-                  <div className="profile-img-wrap profile-img-wrap-founder">
-                    <img src="/team-profile-pics/kathryn-gardner.png" className="profile-img crop-circle" />
+            <div className="content-section founders-section">
+              <div className="founders-row">
+                <div className="founder-card">
+                  <h3 className="h3 founder-name">Katie Gardner <span className="founder-title">| Co-Founder, CEO</span></h3>
+                  <div className="profile-img-wrap">
+                    <img src="/team-profile-pics/kathryn-gardner.png" className="profile-img crop-circle" alt="Katie Gardner" />
                   </div>
-                  <div className="profile-content-wrap">
-                    <p>
-                      Katie Gardner is a business and technical leader with a unique combination of mining, legal, and project finance experience. She served as Head of Product at Banyan Infrastructure, a ClimateTech SaaS platform specializing in sustainable infrastructure project finance, and she worked as an underground mine engineer at Newmont Mining Corporation's northern Nevada operations, with hands-on experience in deep shaft construction. Katie graduated from the Carey JD/MBA program at the University of Pennsylvania Law School and the Wharton School, and she holds a BS in Mining Engineering from the University of Kentucky. She is a professionally licensed mining engineer in the state of Nevada (ina) as well as a California Bar certified attorney. She brings the technical credibility and business acumen essential for scaling Terrament's underground gravity storage technology with her mining and legal experience.
-                    </p>
+                  <p>
+                    Katie Gardner is a business leader with deep technical roots. Her broad expertise spans mining engineering, infrastructure, and law. She worked underground as a mine engineer at Newmont's Twin Creeks operation in northern Nevada, then served as Head of Product at Banyan Infrastructure, a ClimateTech SaaS platform specializing in sustainable infrastructure project finance. She holds a JD from Penn Law, an MBA from Wharton, and a Professional Engineer license in mining.
+                  </p>
+                </div>
+                <div className="founder-card">
+                  <h3 className="h3 founder-name">Eric Chaves <span className="founder-title">| Founder, COO</span></h3>
+                  <div className="profile-img-wrap">
+                    <img src="/team-profile-pics/eric-chaves.png" className="profile-img crop-circle" alt="Eric Chaves" />
                   </div>
+                  <p>
+                    Eric Chaves is a technical entrepreneur with 20 years of experience spanning architecture, industrial design, and software engineering. He co-founded Antenna, a media-tech startup that reached millions of users and achieved a successful exit. He was a Founder Fellow at Newlab and a member of the CEBIP accelerator at Stony Brook University. He is the inventor of Terrament's core technology and leads engineering, product, and operations as Founder and COO.
+                  </p>
                 </div>
               </div>
             </div>
-            <div className="content-section">
-              <h3 className="h3">
-                Eric Chaves | Founder, COO
-              </h3>
-              <div className="profile-row">
-                <div className="profile-wrap full-row">
-                  <div className="profile-img-wrap profile-img-wrap-founder">
-                    <img src="/team-profile-pics/eric-chaves.png" className="profile-img crop-circle" />
+          </div>
 
-                  </div>
-                  <div className="profile-content-wrap">
-                    <p>
-                      Eric Chaves is a technical entrepreneur with 20 years experience spanning Architecture, Industrial Design, and Software Engineering. He was the co-founder of Antenna, a media-tech startup that reached millions and achieved a successful exit, he was a Founder Fellow at Newlab, and he was a member of the CEBIP accelerator at Stony Brook University. He is the author of Terrament's assigned IP, including two awarded U.S. patents for <i>Modular Underground Gravity Storage</i> and a pending patent for our <i>Linear Drive Conveyance System</i>, a key enabler for gravity storage scale.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div className="screen-content screen-content--band">
             <div className="content-section">
               <h3 className="h3">
                 Advisory Support Team
@@ -143,55 +61,54 @@ class About extends React.Component {
               <div className="profile-row">
 
                 <div className="profile-wrap">
-                  <img src="/team-profile-pics/wei-li.png" className="profile-img" />
-                  <h3 className="profile-name">
+                  <img src="/team-profile-pics/wei-li.png" className="profile-img" alt="Wei Li" />
+                  <h4 className="profile-name">
                     Wei Li, PhD
-                  </h3>
-                  <h4 className="profile-title">
+                  </h4>
+                  <p className="profile-title">
                     Geo-scientist, Civil Engineer, PhD <br />
                     Professor, Stony Brook
-                  </h4>
+                  </p>
                 </div>
 
                 <div className="profile-wrap">
-                  <img src="/team-profile-pics/steven-decarlo.png" className="profile-img" />
-                  <h3 className="profile-name">
+                  <img src="/team-profile-pics/steven-decarlo.png" className="profile-img" alt="Steven DeCarlo" />
+                  <h4 className="profile-name">
                     Steven DeCarlo
-                  </h3>
-                  <h4 className="profile-title">
+                  </h4>
+                  <p className="profile-title">
                     Electrical Engineer, MBA<br />
                     Grid Energy Storage, Pumped Hydro
-                  </h4>
+                  </p>
                 </div>
 
                 <div className="profile-wrap">
-                  <img src="/team-profile-pics/shruti.png" className="profile-img" />
-                  <h3 className="profile-name">
+                  <img src="/team-profile-pics/shruti.png" className="profile-img" alt="Shruti Sharma" />
+                  <h4 className="profile-name">
                     Shruti Sharma, PhD
-                  </h3>
-                  <h4 className="profile-title">
-                    Materials Science, Engineering, Clean Tech<br />
                   </h4>
+                  <p className="profile-title">
+                    Materials Science, Engineering, Clean Tech<br />
+                  </p>
                 </div>
 
                 <div className="profile-wrap">
-                  <img src="/team-profile-pics/courtney-reich.png" className="profile-img" />
-                  <h3 className="profile-name">
+                  <img src="/team-profile-pics/courtney-reich.png" className="profile-img" alt="Courtney Reich" />
+                  <h4 className="profile-name">
                     Courtney Reich
-                  </h3>
-                  <h4 className="profile-title">
+                  </h4>
+                  <p className="profile-title">
                     Mechanical Engineering, M.S. <br />
                     Battery Tech, Statistics
-                  </h4>
+                  </p>
                 </div>
               </div>
             </div>
-
           </div>
-        </div>
 
-        <Footer />
-      </div>
+          <PartnerMarquee />
+        </div>
+      </SiteChrome>
     );
   }
 }

@@ -1,11 +1,6 @@
 import React from 'react';
-import Navbar from "../Navbar";
-import Footer from "../Footer";
-import { Link } from '@reach/router'
-import MailchimpForm from "../MailchimpForm";
-import './index.scss';
-
-const videoBgShort = '/video-bg-short.jpg';
+import SiteChrome from "../SiteChrome";
+import InnerPageHero from '../InnerPageHero';
 
 class Mission extends React.Component {
   componentDidMount() {
@@ -14,33 +9,26 @@ class Mission extends React.Component {
 
   render() {
     return (
-      <div className={`page page-mission`}>
-        <Navbar/>
+      <SiteChrome pageClassName="page-mission">
+        <InnerPageHero ariaLabel="Mission" title="Our Mission" />
 
         <div className="page-screen">
-          <div className="screen-content screen-content-above-fold-short">
-            <img className="img-background"
-              src={videoBgShort} alt="Terrament energy storage background image" />
-          </div>
-          <div className="screen-content screen-content-below-fold">
+          <div className="screen-content screen-content--band">
             <div className="content-section">
               <h2 className="h2">
-                Mission Statements
+                Mission Statement
               </h2>
               <p>
-                Terrament's mission is building energy technologies that support a more sustainable and abundant energy future.
+                Terrament's mission is to build energy technologies that unlock a sustainable and abundant energy future while creating durable value for our customers, our partners, and global communities.
               </p>
 
             </div>
             <div className="content-section">
               <h2 className="h2">
-                Just Transition
+                A Just Transition
               </h2>
               <p>
-                Terrament acknowledges that climate costs are wide-reaching including human costs, environmental costs, and financial costs. It's too expensive to do nothing.
-              </p>
-              <p>
-                To mitigate climate costs, society must transition to a safer, more sustainable energy infrastructure. We believe it's in Terrament's best business interests to support a just climate transition.
+                We believe that a transition to clean, sustainable energy is also the path of greatest value for businesses, economies, and communities. This must be a just transition, which means addressing the stark disparity between those responsible for the largest share of greenhouse gas emissions and the communities most harmed by climate impacts. It must create real opportunities for all communities as industries change. Workers and communities must be treated fairly. And they should have real opportunities to share in the benefits of new infrastructure.
               </p>
             </div>
             <div className="content-section">
@@ -64,15 +52,14 @@ class Mission extends React.Component {
               </p>
               <p>
                 (We currently have no job openings. But feel free to drop us an <a
-                  href="mailto:eric@terramenthq.com?subject=Hello"
+                  href="mailto:hello@terramenthq.com?subject=Hello"
                   target="_blank" rel="noopener noreferrer"
                 >email</a>.)
               </p>
             </div>
           </div>
         </div>
-        <Footer />
-      </div>
+      </SiteChrome>
     );
   }
 }

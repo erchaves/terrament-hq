@@ -1,26 +1,42 @@
 @import '../../shared-styles/variables.scss';
-@import '../../shared-styles/mixins.scss';
 
 .page-404 {
-  height: 100vh;
-  width: 100%;
-  background: $color-primary;
+  background: $color-white;
+  min-height: 100vh;
 
-  .wrap {
-    @include center-both();
+  .footer {
+    bottom: 0;
+  }
 
-    font-family: $font-family;
+  .page-404__main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+  }
+
+  .page-404__content {
     text-align: center;
-    color: $color-white;
+    padding: $space-8;
+    max-width: 36rem;
+  }
+
+  .screen-content .h1 {
+    font-size: clamp(2.75rem, 8vw, 4rem);
+    font-family: $font-family-bold;
+    font-weight: $font-weight-bold;
+    margin: 0 0 $space-4 0;
+    color: $color-primary;
+    line-height: 1.05;
+  }
+
+  .screen-content .h2 {
+    margin-top: 0;
     font-size: $font-size-md;
-  }
-
-  .h1 {
-    font-size: $font-size-lg * 2;
     font-family: $font-family;
-    margin-bottom: 1rem;
-  }
-
-  .h2 {
+    font-weight: 400;
+    color: $color-text-muted;
+    line-height: $line-height-sm;
   }
 }

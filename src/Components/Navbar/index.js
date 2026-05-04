@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import { Link } from '@reach/router'
-import HamburgerMenu from '../HamburgerMenu';
-import AnnouncementBanner from '../AnnouncementBanner';
+import Menu from '../Menu';
 
 const Navbar = () => {
   useEffect(() => {
@@ -20,13 +19,12 @@ const Navbar = () => {
 
   return (
     <>
-      <AnnouncementBanner />
       <nav className="nav-content" id="navbar">
         <div className="nav-container">
           <Link className="nav-logo" to="/">
-            <img src="/terrament-logo-white.png" alt="Terrament logo" />
+            <img src="/terrament-logo-2026.svg" alt="Terrament logo" />
           </Link>
-          <HamburgerMenu />
+          <Menu />
         </div>
       </nav>
     </>

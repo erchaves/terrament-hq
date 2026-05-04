@@ -27,13 +27,31 @@
     }
 
     label {
+      display: block;
       font-size: 1rem;
+      margin-bottom: 3px;
     }
 
-    .indicates-required {
-      display: inline-block;
-      float: right;
-      margin-right: 0;
+    .asterisk {
+      color: #e85c41;
+    }
+
+    .button{
+      color: #fff;
+      border: none;
+      margin-top: 1em;
+    }
+
+    input[type="text"],
+    input[type="email"] {
+      display: block;
+      clear: both;
+      width: 100%;
+      border: 1px solid #abb0b2;
+      border-radius: 3px;
+      color: #343434;
+      background-color: #fff;
+      box-sizing: border-box;
     }
 
     input,
@@ -46,6 +64,8 @@
     }
 
     .mc-field-group {
+      padding-bottom: 0.5rem;
+
       &:first-child {
         margin-right: 0.5rem;
       }
@@ -53,9 +73,22 @@
 
     .field-group-email {
       width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
 
       label {
-        float: left;
+        flex: 1 1 auto;
+        float: none;
+      }
+
+      .indicates-required {
+        flex: 0 0 auto;
+        float: none;
+      }
+
+      input[type="email"] {
+        flex: 0 0 100%;
       }
     }
 

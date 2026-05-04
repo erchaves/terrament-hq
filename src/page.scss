@@ -4,8 +4,8 @@
 .page {
   position: relative;
   width: $page-width;
-  background: $color-primary;
-  color: $color-white;
+  background: $color-page-bg;
+  color: $color-text;
   margin: 0 auto;
 
   .content-section {
@@ -16,14 +16,15 @@
   .header-logo,
   .nav-content {
     position: absolute;
-    // fixes annoying issue with chrome graphic optimization that makes the video sometimes hide the menu
-    backface-visibility: hidden;
     top: 0;
     left: 0;
   }
 
   .header-logo {
     z-index: 3;
+    // Chrome compositing workaround — keep scoped here; the same on `.nav-content` made `position:fixed`
+    // descendants (mobile drawer) size to the narrow hamburger column instead of the viewport.
+    backface-visibility: hidden;
 
     img {
       margin: $menu-margin-x * 1.6 $menu-margin-x;
@@ -35,12 +36,15 @@
     display: flex;
   }
 
+  // Site-wide header (matches home refresh): light bar + primary ink; not the legacy solid primary bar.
   .nav-content {
     width: 100%;
     z-index: 4;
-    transition: all 0.3s ease;
-    background: $color-primary;
-    top: $announcement-banner-height;
+    isolation: isolate;
+    transition: box-shadow $transition-base, background-color $transition-base;
+    background: rgba($color-white, 0.94);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    top: 0;
 
     .nav-container {
       display: flex;
@@ -59,9 +63,43 @@
 
     &.sticky {
       position: fixed;
-      top: $announcement-banner-height;
+      top: 0;
       left: 0;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 10px 28px rgba(18, 28, 27, 0.08);
+    }
+  }
+
+  .menu {
+    .menu-ul a,
+    .main-menu a {
+      color: $color-primary;
+    }
+  }
+
+  @media screen and (max-width: $screen-size-mobile) {
+    .menu {
+      // Drawer sits on $color-primary — links and icons must stay white (override bar rule above).
+      .main-menu a {
+        color: $color-white;
+      }
+
+      // Green hamburger only on the light header control, not the in-drawer close (green-on-green).
+      .menu-wrap > .menu-toggle:not(.menu-close) {
+        .menu-btn:before,
+        .menu-btn:after {
+          background-color: $color-primary;
+        }
+
+        .menu-btn:before {
+          box-shadow: 0 10px 0 $color-primary;
+        }
+      }
+    }
+  }
+
+  &.page-home {
+    .footer {
+      margin-top: 0;
     }
   }
 
@@ -69,6 +107,7 @@
     position: absolute;
     width: 100%;
     background: $color-primary;
+    border-top: 1px solid rgba($color-white, 0.14);
     padding: ($logo-size-footer * .5) 0;
     display: flex;
     justify-content: space-between;
@@ -84,6 +123,8 @@
     img {
       height: $logo-size-footer;
       width: auto;
+      // Logo SVG is dark brand ink; footer bar is same hue family — force a light mark.
+      filter: brightness(0) invert(1);
     }
   }
 
@@ -125,17 +166,33 @@
     @include center-both();
   }
 
-  .footer-left {
-    // Footer left content styling can be added here if needed
-  }
 
   .footer-right {
     align-self: center;
     margin-right: $logo-size-footer;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+
+    // Override the generic footer-link padding for icon-only links in this zone
+    .footer-link {
+      padding: 0.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
 
     span {
-      color: white;
+      color: $color-white;
       font-size: $logo-size-footer * .9;
+      line-height: 1;
+    }
+
+    svg.icon-linkedin {
+      width: $logo-size-footer * .9;
+      height: $logo-size-footer * .9;
+      fill: $color-white;
+      display: block;
     }
   }
 
@@ -185,7 +242,8 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
-      object-position: 35% 50%;
+      object-position: 15% 80%;
+      filter: saturate(0.8) contrast(0.92);
     }
   }
 
@@ -227,6 +285,7 @@
     margin-left: 1.25em;
     list-style: disc;
     margin-top: 0.5em;
+    margin-bottom: 0.5em;
   }
 
   .meet-terrament-bullets {

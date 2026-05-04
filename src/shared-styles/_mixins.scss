@@ -80,3 +80,69 @@
   transition: $animation-transition;
   transition-property: transform;
 }
+
+// Fractal noise tile (same technique as home hero) — low opacity, pointer-events none
+$texture-noise-data-uri: "data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E";
+
+// Dark editorial band: primary hue + soft top highlight + grain (sections only)
+@mixin section-deep-band($base: $color-primary-deep) {
+  position: relative;
+  isolation: isolate;
+  background-color: $base;
+  background-image: radial-gradient(
+    ellipse 110% 78% at 50% 0%,
+    rgba(255, 255, 255, 0.07) 0%,
+    transparent 55%
+  );
+
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    opacity: 0.04;
+    pointer-events: none;
+    background-image: url($texture-noise-data-uri);
+  }
+}
+
+// Same family as deep band but anchored on $color-primary (e.g. accelerators strip)
+@mixin section-primary-band() {
+  position: relative;
+  isolation: isolate;
+  background-color: $color-primary;
+  background-image: radial-gradient(
+    ellipse 115% 80% at 50% 100%,
+    rgba(255, 255, 255, 0.045) 0%,
+    transparent 58%
+  );
+
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    opacity: 0.035;
+    pointer-events: none;
+    background-image: url($texture-noise-data-uri);
+  }
+}
+
+// Light mint / page bands — whisper of depth at bottom edge + grain
+@mixin section-light-atmosphere($base: $color-green-light) {
+  position: relative;
+  isolation: isolate;
+  background-color: $base;
+  background-image: radial-gradient(
+    ellipse 120% 70% at 50% 100%,
+    rgba($color-primary, 0.05) 0%,
+    transparent 50%
+  );
+
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    opacity: 0.024;
+    pointer-events: none;
+    background-image: url($texture-noise-data-uri);
+  }
+}
