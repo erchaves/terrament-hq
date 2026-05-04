@@ -38,7 +38,7 @@ class Contact extends React.Component {
               <div className="contact-methods">
                 <div className="contact-method contact-method--location">
                   <span className="contact-method__partner-logo" aria-hidden="true">
-                    <img src="/partner-logos/la-accel-anon.png" alt="la-accel-anon" className="contact-method__logo" />
+                    <img src="/partner-logos/la-accel-anon.png" alt="Los Angeles accelerator partner logo" className="contact-method__logo" />
                   </span>
                   <span className="contact-method__label">
                     <strong>Los Angeles</strong> — Coming Soon<br />

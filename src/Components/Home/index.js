@@ -21,7 +21,7 @@ class Home extends React.Component {
             muted
             loop
             autoPlay
-            preload="auto"
+            preload="none"
             src={videoMp4Bg}
             aria-hidden="true"
           />

@@ -61,46 +61,46 @@ class About extends React.Component {
               <div className="profile-row">
 
                 <div className="profile-wrap">
-                  <img src="/team-profile-pics/wei-li.png" className="profile-img" />
-                  <h3 className="profile-name">
+                  <img src="/team-profile-pics/wei-li.png" className="profile-img" alt="Wei Li" />
+                  <h4 className="profile-name">
                     Wei Li, PhD
-                  </h3>
-                  <h4 className="profile-title">
+                  </h4>
+                  <p className="profile-title">
                     Geo-scientist, Civil Engineer, PhD <br />
                     Professor, Stony Brook
-                  </h4>
+                  </p>
                 </div>
 
                 <div className="profile-wrap">
-                  <img src="/team-profile-pics/steven-decarlo.png" className="profile-img" />
-                  <h3 className="profile-name">
+                  <img src="/team-profile-pics/steven-decarlo.png" className="profile-img" alt="Steven DeCarlo" />
+                  <h4 className="profile-name">
                     Steven DeCarlo
-                  </h3>
-                  <h4 className="profile-title">
+                  </h4>
+                  <p className="profile-title">
                     Electrical Engineer, MBA<br />
                     Grid Energy Storage, Pumped Hydro
-                  </h4>
+                  </p>
                 </div>
 
                 <div className="profile-wrap">
-                  <img src="/team-profile-pics/shruti.png" className="profile-img" />
-                  <h3 className="profile-name">
+                  <img src="/team-profile-pics/shruti.png" className="profile-img" alt="Shruti Sharma" />
+                  <h4 className="profile-name">
                     Shruti Sharma, PhD
-                  </h3>
-                  <h4 className="profile-title">
-                    Materials Science, Engineering, Clean Tech<br />
                   </h4>
+                  <p className="profile-title">
+                    Materials Science, Engineering, Clean Tech<br />
+                  </p>
                 </div>
 
                 <div className="profile-wrap">
-                  <img src="/team-profile-pics/courtney-reich.png" className="profile-img" />
-                  <h3 className="profile-name">
+                  <img src="/team-profile-pics/courtney-reich.png" className="profile-img" alt="Courtney Reich" />
+                  <h4 className="profile-name">
                     Courtney Reich
-                  </h3>
-                  <h4 className="profile-title">
+                  </h4>
+                  <p className="profile-title">
                     Mechanical Engineering, M.S. <br />
                     Battery Tech, Statistics
-                  </h4>
+                  </p>
                 </div>
               </div>
             </div>
