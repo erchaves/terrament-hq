@@ -69,6 +69,20 @@
       "css": "mail",
       "code": 59394,
       "src": "fontawesome"
+    },
+    {
+      "uid": "c8f4a2e91b0d3e7f6a5c4b2d1e9f8a7b",
+      "css": "substack",
+      "code": 59395,
+      "src": "custom_icons",
+      "selected": true,
+      "svg": {
+        "path": "M939.1 343.4H60.8V225.2h878.3v118.2zM60.8 450.5V1000L500 754.6 939.2 1000V450.5H60.8zM939.2 0H60.8v118.2h878.3V0z",
+        "width": 1000
+      },
+      "search": [
+        "substack"
+      ]
     }
   ]
 }

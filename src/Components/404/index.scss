@@ -1,18 +1,25 @@
 @import '../../shared-styles/variables.scss';
 
 .page-404 {
+  background: $color-white;
+  min-height: 100vh;
+
+  .footer {
+    bottom: 0;
+  }
+
   .page-404__main {
     display: flex;
-    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    min-height: calc(100vh - #{$logo-size});
+    min-height: 100vh;
     box-sizing: border-box;
   }
 
   .page-404__content {
     text-align: center;
-    padding-top: $space-8;
-    padding-bottom: $space-8;
+    padding: $space-8;
+    max-width: 36rem;
   }
 
   .screen-content .h1 {
