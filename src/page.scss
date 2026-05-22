@@ -168,6 +168,8 @@
 
 
   .footer-right {
+    $footer-icon-size: $logo-size-footer * .9;
+
     align-self: center;
     margin-right: $logo-size-footer;
     display: flex;
@@ -182,17 +184,75 @@
       justify-content: center;
     }
 
-    span {
-      color: $color-white;
-      font-size: $logo-size-footer * .9;
-      line-height: 1;
+    .icon-linkedin-wrap,
+    .menu-item__icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: $footer-icon-size;
+      height: $footer-icon-size;
+      flex-shrink: 0;
     }
 
-    svg.icon-linkedin {
-      width: $logo-size-footer * .9;
-      height: $logo-size-footer * .9;
-      fill: $color-white;
+    .menu-item__icon {
+      color: $color-white;
+      transition: color 200ms ease;
+
+      &:before {
+        margin: 0;
+        width: auto;
+        line-height: 1;
+        font-size: $footer-icon-size;
+      }
+    }
+
+    .icon-substack:before {
+      font-size: $footer-icon-size * 0.96;
+    }
+
+    .icon-mail:before {
+      font-size: $footer-icon-size * 1.1;
+    }
+
+    .icon-linkedin-wrap {
+      position: relative;
       display: block;
+    }
+
+    .icon-linkedin-bg {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      display: block;
+      opacity: 0;
+      transition: opacity 200ms ease;
+    }
+
+    .icon-linkedin-wrap .icon-linkedin {
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      height: 100%;
+      display: block;
+      fill: $color-white;
+      transition: fill 200ms ease;
+    }
+
+    .footer-link:hover .icon-linkedin-bg {
+      opacity: 1;
+    }
+
+    .footer-link:hover .icon-linkedin-wrap .icon-linkedin {
+      fill: #0a66c2;
+    }
+
+    .footer-link:hover .icon-substack {
+      color: #ff6719;
+    }
+
+    .footer-link:hover .icon-mail {
+      color: #00ffbb;
     }
   }
 

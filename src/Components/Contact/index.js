@@ -1,7 +1,7 @@
 import React from 'react';
 import SiteChrome from "../SiteChrome";
 import InnerPageHero from '../InnerPageHero';
-import MailchimpForm from '../MailchimpForm';
+import SubstackEmbed from '../SubstackEmbed';
 import { FaLinkedin } from 'react-icons/fa';
 import './index.scss';
 
@@ -60,7 +60,7 @@ class Contact extends React.Component {
               <h2 className="h2">
                 Newsletter
               </h2>
-              <MailchimpForm />
+              <SubstackEmbed />
             </div>
           </div>
         </div>
