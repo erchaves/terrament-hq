@@ -195,6 +195,7 @@
     }
 
     .menu-item__icon {
+      font-size: $footer-icon-size;
       color: $color-white;
       transition: color 200ms ease;
 
@@ -202,16 +203,16 @@
         margin: 0;
         width: auto;
         line-height: 1;
-        font-size: $footer-icon-size;
+        font-size: 1em;
       }
     }
 
     .icon-substack:before {
-      font-size: $footer-icon-size * 0.96;
+      font-size: 0.96em;
     }
 
     .icon-mail:before {
-      font-size: $footer-icon-size * 1.1;
+      font-size: 1.1em;
     }
 
     .icon-linkedin-wrap {
