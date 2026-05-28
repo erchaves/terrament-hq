@@ -104,8 +104,9 @@ class HowItWorks extends React.Component {
               </h2>
               <div className="deck-embed">
                 <div className="media-wrap responsive-google-slides">
+                  {/* 1EbLyt91aSLyVuLdi_kpaMuDMgJOImDZv */}
                   <iframe
-                    src="https://docs.google.com/presentation/d/e/2PACX-1vQt5SE1m4VDN-bBcPQ5efZW7g-PE-0KEDKscu0r0D_1aCQTWqZyQBQfeiFJe5QyKA/pubembed?start=false&loop=false&delayms=10000"
+                    src="https://docs.google.com/presentation/d/e/2PACX-1vSUpn16oFOiqe7cHDAl0NRLu0iiz-xES6hejmZ0PyHGv6M6soQosjcqDkmZQFVWqg/pubembed?start=false&loop=false&delayms=10000"
                     width={960}
                     height={569}
                     allowFullScreen={true}
