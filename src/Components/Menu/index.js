@@ -28,7 +28,7 @@ const Menu = () => {
           </label>
           <ul className="menu-ul">
             <li className="menu-li">
-              <Link to="/howItWorks" onClick={close}>
+              <Link to="/howitworks" onClick={close}>
                 How it Works
               </Link>
             </li>
