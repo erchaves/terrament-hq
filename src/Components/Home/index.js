@@ -34,7 +34,7 @@ class Home extends React.Component {
               </p>
             </div>
             <div className="home-hero-actions" role="navigation" aria-label="Primary actions">
-              <a href="/howItWorks" className="home-hero-cta home-hero-cta--primary">
+              <a href="/howitworks" className="home-hero-cta home-hero-cta--primary">
                 How it Works
               </a>
               <a

@@ -10,7 +10,7 @@ class HowItWorks extends React.Component {
 
   render() {
     return (
-      <SiteChrome pageClassName="page-howItWorks">
+      <SiteChrome pageClassName="page-howitworks">
         <InnerPageHero ariaLabel="How Terrament gravity storage works" title="How it Works" />
 
         <div className="page-screen">

@@ -57,7 +57,7 @@ export default {
       }),
     },
     {
-      path: 'howItWorks',
+      path: 'howitworks',
       template: 'src/Components/HowItWorks',
       getData: () => ({
         pageMeta: {
