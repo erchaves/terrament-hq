@@ -102,6 +102,18 @@
     }
   }
 
+  .careers-list {
+    margin-top: $space-2;
+    margin-bottom: $space-4;
+  }
+
+  .careers-stay-tuned {
+    margin: 0;
+    font-size: $font-size-sm-x;
+    font-style: italic;
+    color: $color-text-muted;
+  }
+
   .content-section:has(.substack-embed) {
     display: flex;
     flex-direction: column;

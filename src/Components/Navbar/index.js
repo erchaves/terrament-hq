@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { Link } from '@reach/router'
 import Menu from '../Menu';
 
-const Navbar = () => {
+const Navbar = ({ minimal = false }) => {
   useEffect(() => {
     const handleScroll = () => {
       const navbar = document.getElementById('navbar');
@@ -24,7 +24,7 @@ const Navbar = () => {
           <Link className="nav-logo" to="/">
             <img src="/terrament-logo-2026.svg" alt="Terrament logo" />
           </Link>
-          <Menu />
+          {!minimal && <Menu />}
         </div>
       </nav>
     </>

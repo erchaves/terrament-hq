@@ -87,6 +87,16 @@ export default {
       }),
     },
     {
+      path: 'careers/cto-mechanical-engineering',
+      template: 'src/Components/CareerCtoMechanicalEngineering',
+      getData: () => ({
+        pageMeta: {
+          title: 'CTO, Mechanical Engineering | Careers at Terrament',
+          description: 'Terrament is seeking a CTO with deep experience as a mechanical engineer in heavy industry to co-lead development of underground gravity energy storage.',
+        },
+      }),
+    },
+    {
       path: '404',
       template: 'src/Components/404',
     },

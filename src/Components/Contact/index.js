@@ -38,11 +38,11 @@ class Contact extends React.Component {
               <div className="contact-methods">
                 <div className="contact-method contact-method--location">
                   <span className="contact-method__partner-logo" aria-hidden="true">
-                    <img src="/partner-logos/la-accel-anon.png" alt="Los Angeles accelerator partner logo" className="contact-method__logo" />
+                    <img src="/partner-logos/laci-logo.png" alt="LACI" className="contact-method__logo" />
                   </span>
                   <span className="contact-method__label">
-                    <strong>Los Angeles</strong> — Coming Soon<br />
-                    <span className="contact-method__address">Coming soon, Los Angeles, CA</span>
+                    <strong>Los Angeles</strong> — LACI<br />
+                    <span className="contact-method__address">525 S Hewitt St, Los Angeles, CA 90013</span>
                   </span>
                 </div>
                 <div className="contact-method contact-method--location">
@@ -55,6 +55,19 @@ class Contact extends React.Component {
                   </span>
                 </div>
               </div>
+            </div>
+            <div className="content-section">
+              <h2 className="h2">
+                Careers
+              </h2>
+              <ul className="bullets careers-list">
+                <li>
+                  <a href="/careers/cto-mechanical-engineering">
+                    CTO, Mechanical Engineering
+                  </a>
+                </li>
+              </ul>
+              <p className="careers-stay-tuned">Stay tuned for future roles</p>
             </div>
             <div className="content-section">
               <h2 className="h2">

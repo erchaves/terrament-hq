@@ -1,0 +1,36 @@
+@import '../../shared-styles/variables.scss';
+
+.page-careers {
+  .career-posting__brand {
+    margin: 0 0 $space-2;
+    font-family: $font-family-bold;
+    font-weight: $font-weight-bold;
+    font-size: $font-size-sm;
+    letter-spacing: $letter-spacing-small-text;
+    text-transform: uppercase;
+    color: $color-text-muted;
+  }
+
+  .career-posting__date {
+    margin: 0 0 $space-6;
+    font-size: $font-size-sm-x;
+    color: $color-text-muted;
+  }
+
+  .career-posting__seeking {
+    margin: 0 0 $space-2;
+    font-size: $font-size-sm-x;
+    letter-spacing: $letter-spacing-small-text;
+    text-transform: uppercase;
+    color: $color-text-muted;
+  }
+
+  .career-posting__title {
+    margin-top: 0;
+    margin-bottom: $space-8;
+  }
+
+  .career-posting .h2 {
+    margin-top: $space-8;
+  }
+}
